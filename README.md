@@ -28,20 +28,26 @@ sudo pacman -S tesseract-data-ron
 ```
 
 ## Docker
-
+Install docker and docker compose
  ```
  sudo pacman -Sy docker docker-compose
  sudo systemctl enable docker.service
  sudo systemctl start docker.service  
  sudo usermod -aG docker $USER
- docker compose up -d
  ```
-[Setting up a custom admin password](https://opensearch.org/docs/latest/security/configuration/demo-configuration/#setting-up-a-custom-admin-password)
+[Set up a custom admin password](https://opensearch.org/docs/latest/security/configuration/demo-configuration/#setting-up-a-custom-admin-password)
 ```
 export OPENSEARCH_INITIAL_ADMIN_PASSWORD="<passwd>"
 ```
 
+Create and start the cluster as a background process
+```
+docker compose up -d
+```
+
 ## OpenSearch setup
+#### [Neural search tutorial](https://opensearch.org/docs/latest/search-plugins/neural-search-tutorial/)
+
 #### Update ML-related cluster settings:
 ```
 PUT _cluster/settings
@@ -53,8 +59,6 @@ PUT _cluster/settings
   }
 }
 ```
-
-### [Neural search tutorial](https://opensearch.org/docs/latest/search-plugins/neural-search-tutorial/)
 
 ### Registering a model
 
@@ -187,7 +191,7 @@ PUT /rag-knn-index
 }
 ```
 
-### Search data
+## Search data
 Get all elements
 ```
 GET /rag-knn-index/_search
