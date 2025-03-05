@@ -1,0 +1,271 @@
+2025-03-03 22:29:06 [scrapy.utils.log] INFO: Scrapy 2.12.0 started (bot: crawler)
+2025-03-03 22:29:06 [scrapy.utils.log] INFO: Versions: lxml 5.3.1.0, libxml2 2.12.9, cssselect 1.2.0, parsel 1.10.0, w3lib 2.3.1, Twisted 24.11.0, Python 3.12.3 (main, Apr 23 2024, 09:16:07) [GCC 13.2.1 20240417], pyOpenSSL 25.0.0 (OpenSSL 3.4.1 11 Feb 2025), cryptography 44.0.1, Platform Linux-6.8.9-arch1-2-x86_64-with-glibc2.39
+2025-03-03 22:29:06 [scrapy.addons] INFO: Enabled addons:
+[]
+2025-03-03 22:29:06 [scrapy.extensions.telnet] INFO: Telnet Password: c9265bc216b48b2f
+2025-03-03 22:29:06 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2025-03-03 22:29:06 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'crawler',
+ 'CONCURRENT_REQUESTS_PER_IP': 16,
+ 'DOWNLOAD_DELAY': 3,
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'LOG_FILE': 'logs.txt',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'crawler.spiders',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['crawler.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor'}
+2025-03-03 22:29:07 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy_selenium.SeleniumMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2025-03-03 22:29:07 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2025-03-03 22:29:07 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2025-03-03 22:29:07 [scrapy.core.engine] INFO: Spider opened
+2025-03-03 22:29:07 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2025-03-03 22:29:07 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2025-03-03 22:29:12 [upb] INFO: PDF with name Regulament-de-organizare-si-functionare-al-Consiliului-Cercetarii.pdf from url https://upb.ro/wp-content/uploads/2025/02/Regulament-de-organizare-si-functionare-al-Consiliului-Cercetarii.pdf already exists and has not been modified.
+2025-03-03 22:29:24 [upb] INFO: PDF with name Plan-Oprerational-de-Investitii-pentru-anul-2022.pdf from url https://upb.ro/wp-content/uploads/2022/03/Plan-Oprerational-de-Investitii-pentru-anul-2022.pdf already exists and has not been modified.
+2025-03-03 22:29:33 [scrapy.crawler] INFO: Received SIGINT, shutting down gracefully. Send again to force 
+2025-03-03 22:29:33 [scrapy.core.engine] INFO: Closing spider (shutdown)
+2025-03-03 22:29:33 [scrapy.crawler] INFO: Received SIGINT twice, forcing unclean shutdown
+2025-03-03 22:29:33 [scrapy.core.downloader.handlers.http11] WARNING: Got data loss in https://docs.upb.ro/wp-content/uploads/2021/11/l_20620210611ro00010461.pdf.ro_.pdf. If you want to process broken responses set the setting DOWNLOAD_FAIL_ON_DATALOSS = False -- This message won't be shown in further requests
+2025-03-03 22:29:33 [scrapy.core.downloader.handlers.http11] WARNING: Got data loss in https://upb.ro/wp-content/uploads/2022/11/CCM-POLITEHNICA-Bucuresti-1.pdf. If you want to process broken responses set the setting DOWNLOAD_FAIL_ON_DATALOSS = False -- This message won't be shown in further requests
+2025-03-03 22:29:33 [scrapy.core.downloader.handlers.http11] WARNING: Got data loss in https://upb.ro/wp-content/uploads/2022/06/HS_444-Strategie-digitalizare.pdf. If you want to process broken responses set the setting DOWNLOAD_FAIL_ON_DATALOSS = False -- This message won't be shown in further requests
+2025-03-03 22:29:33 [scrapy.core.downloader.handlers.http11] WARNING: Got data loss in https://upb.ro/wp-content/uploads/2018/02/Master-plan-Campus-Studentesc-Regie-2020.pdf. If you want to process broken responses set the setting DOWNLOAD_FAIL_ON_DATALOSS = False -- This message won't be shown in further requests
+2025-03-03 22:29:50 [scrapy.utils.log] INFO: Scrapy 2.12.0 started (bot: crawler)
+2025-03-03 22:29:50 [scrapy.utils.log] INFO: Versions: lxml 5.3.1.0, libxml2 2.12.9, cssselect 1.2.0, parsel 1.10.0, w3lib 2.3.1, Twisted 24.11.0, Python 3.12.3 (main, Apr 23 2024, 09:16:07) [GCC 13.2.1 20240417], pyOpenSSL 25.0.0 (OpenSSL 3.4.1 11 Feb 2025), cryptography 44.0.1, Platform Linux-6.8.9-arch1-2-x86_64-with-glibc2.39
+2025-03-03 22:29:50 [scrapy.addons] INFO: Enabled addons:
+[]
+2025-03-03 22:29:50 [scrapy.extensions.telnet] INFO: Telnet Password: 3e9a295eebb4c402
+2025-03-03 22:29:50 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2025-03-03 22:29:50 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'crawler',
+ 'CONCURRENT_REQUESTS_PER_IP': 16,
+ 'DOWNLOAD_DELAY': 3,
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'LOG_FILE': 'logs.txt',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'crawler.spiders',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['crawler.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor'}
+2025-03-03 22:29:51 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy_selenium.SeleniumMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2025-03-03 22:29:51 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2025-03-03 22:29:51 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2025-03-03 22:29:51 [scrapy.core.engine] INFO: Spider opened
+2025-03-03 22:29:51 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2025-03-03 22:29:51 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2025-03-03 22:29:57 [upb] INFO: Created metadata file ../../../data/upb/metadata.json
+2025-03-03 22:29:57 [upb] INFO: PDF with name Regulament-de-organizare-si-functionare-al-Consiliului-Cercetarii.pdf from url https://upb.ro/wp-content/uploads/2025/02/Regulament-de-organizare-si-functionare-al-Consiliului-Cercetarii.pdf already exists and has not been modified.
+2025-03-03 22:30:01 [upb] INFO: PDF with name 8-Regulament-de-organizare-si-functionare-al-centrului-de-antreprenoriat-studentesc.pdf from url https://upb.ro/wp-content/uploads/2018/02/8-Regulament-de-organizare-si-functionare-al-centrului-de-antreprenoriat-studentesc.pdf already exists and has not been modified.
+2025-03-03 22:30:06 [upb] INFO: PDF with name Metodologie-Euraxess.pdf from url https://posturivacante.upb.ro/wp-content/uploads/2023/10/Metodologie-Euraxess.pdf already exists and has not been modified.
+2025-03-03 22:30:07 [upb] INFO: PDF with name 7-Regulament-privind-infiintarea-si-functionarea-Centrelor-de-cercetare-din-cadrul-UPB.pdf from url https://upb.ro/wp-content/uploads/2018/02/7-Regulament-privind-infiintarea-si-functionarea-Centrelor-de-cercetare-din-cadrul-UPB.pdf already exists and has not been modified.
+2025-03-03 22:30:17 [upb] INFO: PDF with name HARTI-CAMPUS-UPB.pdf from url https://upb.ro/wp-content/uploads/2017/11/HARTI-CAMPUS-UPB.pdf already exists and has not been modified.
+2025-03-03 22:30:22 [upb] INFO: PDF with name l_20620210611ro00010461.pdf.ro_.pdf from url https://docs.upb.ro/wp-content/uploads/2021/11/l_20620210611ro00010461.pdf.ro_.pdf already exists and has not been modified.
+2025-03-03 22:30:23 [upb] INFO: PDF with name Regulament-acces-UPB_actualizat-noiembrie-2022.pdf from url https://upb.ro/wp-content/uploads/2022/11/Regulament-acces-UPB_actualizat-noiembrie-2022.pdf already exists and has not been modified.
+2025-03-03 22:30:24 [upb] INFO: PDF with name 2-Regulament-Intern.pdf from url https://upb.ro/wp-content/uploads/2018/02/2-Regulament-Intern.pdf already exists and has not been modified.
+2025-03-03 22:30:26 [upb] INFO: PDF with name HS_325-Strategia-de-prevenire-si-combatere-a-fenomenului-de-plagiat-in-Universitatea-Politehnica-din-Bucuresti.pdf from url https://upb.ro/wp-content/uploads/2021/12/HS_325-Strategia-de-prevenire-si-combatere-a-fenomenului-de-plagiat-in-Universitatea-Politehnica-din-Bucuresti.pdf already exists and has not been modified.
+2025-03-03 22:30:38 [upb] INFO: PDF with name Metodologie-Gradatie-de-Merit-2023-2024.pdf from url https://upb.ro/wp-content/uploads/2023/07/Metodologie-Gradatie-de-Merit-2023-2024.pdf already exists and has not been modified.
+2025-03-03 22:30:41 [upb] INFO: PDF with name UEFISCDI-Ghid_pentru_prevenirea_hartuirii_sexuale_la_locul_de_munca.pdf from url https://upb.ro/wp-content/uploads/2022/11/UEFISCDI-Ghid_pentru_prevenirea_hartuirii_sexuale_la_locul_de_munca.pdf already exists and has not been modified.
+2025-03-03 22:30:45 [upb] INFO: PDF with name Regulament-de-organizare-si-desfasurare-alegeri-UNSTPB-1.pdf from url https://upb.ro/wp-content/uploads/2023/11/Regulament-de-organizare-si-desfasurare-alegeri-UNSTPB-1.pdf already exists and has not been modified.
+2025-03-03 22:30:49 [upb] INFO: PDF with name Plan-de-egalitate-de-gen.pdf from url https://upb.ro/wp-content/uploads/2022/07/Plan-de-egalitate-de-gen.pdf already exists and has not been modified.
+2025-03-03 22:30:49 [upb] INFO: PDF with name Metodologie-referendum-desemnare-rector_3.pdf from url https://upb.ro/wp-content/uploads/2023/09/Metodologie-referendum-desemnare-rector_3.pdf already exists and has not been modified.
+2025-03-03 22:30:50 [upb] INFO: PDF with name REZULTATE-REFERENDUM.pdf from url https://upb.ro/wp-content/uploads/2023/09/REZULTATE-REFERENDUM.pdf already exists and has not been modified.
+2025-03-03 22:30:50 [upb] INFO: PDF with name calendar-dezbateri-publice-03.pdf from url https://upb.ro/wp-content/uploads/2023/09/calendar-dezbateri-publice-03.pdf already exists and has not been modified.
+2025-03-03 22:30:51 [scrapy.extensions.logstats] INFO: Crawled 20 pages (at 20 pages/min), scraped 0 items (at 0 items/min)
+2025-03-03 22:30:52 [upb] INFO: PDF with name Lista-sectiillor-de-votare-referendum-alegeri-2024-2029-1.pdf from url https://upb.ro/wp-content/uploads/2023/08/Lista-sectiillor-de-votare-referendum-alegeri-2024-2029-1.pdf already exists and has not been modified.
+2025-03-03 22:30:55 [upb] INFO: PDF with name METODOLOGIE_SELECTIE_PARTENERI_final.pdf from url https://upb.ro/wp-content/uploads/2018/02/METODOLOGIE_SELECTIE_PARTENERI_final.pdf already exists and has not been modified.
+2025-03-03 22:31:00 [upb] INFO: PDF with name hotararea_749_24.06.2009.pdf from url https://upb.ro/wp-content/uploads/2018/02/hotararea_749_24.06.2009.pdf already exists and has not been modified.
+2025-03-03 22:31:00 [upb] INFO: PDF with name upb-operator-date.pdf from url https://upb.ro/wp-content/uploads/2018/02/upb-operator-date.pdf already exists and has not been modified.
+2025-03-03 22:31:04 [upb] INFO: PDF with name lista-documente.pdf from url https://upb.ro/wp-content/uploads/2018/02/lista-documente.pdf already exists and has not been modified.
+2025-03-03 22:31:08 [upb] INFO: PDF with name Procedura-opera%C5%A3ional%C4%83-privind-transferul-de-active-fixe-%C5%9Fi-obiecte-de-inventar-%C3%AEntre-Universitatea-Politehnica-din-Bucure%C8%99ti-%C8%99i-alte-institu%C8%9Bii-publice.pdf from url https://upb.ro/wp-content/uploads/2017/11/Procedura-opera%C5%A3ional%C4%83-privind-transferul-de-active-fixe-%C5%9Fi-obiecte-de-inventar-%C3%AEntre-Universitatea-Politehnica-din-Bucure%C8%99ti-%C8%99i-alte-institu%C8%9Bii-publice.pdf already exists and has not been modified.
+2025-03-03 22:31:10 [upb] INFO: PDF with name Procedura-opera%C5%A3ional%C4%83-privind-eliberarea-din-magazie-a-materialelor-pentru-consum-%C3%AEn-cadrul-UPB.pdf from url https://upb.ro/wp-content/uploads/2017/11/Procedura-opera%C5%A3ional%C4%83-privind-eliberarea-din-magazie-a-materialelor-pentru-consum-%C3%AEn-cadrul-UPB.pdf already exists and has not been modified.
+2025-03-03 22:31:13 [upb] INFO: PDF with name Procedura-opera%C5%A3ional%C4%83-privind-Func%C5%A3iile-sensibile-%C3%AEn-cadrul-Direc%C5%A3iei-Financiar-Contabile.pdf from url https://upb.ro/wp-content/uploads/2017/11/Procedura-opera%C5%A3ional%C4%83-privind-Func%C5%A3iile-sensibile-%C3%AEn-cadrul-Direc%C5%A3iei-Financiar-Contabile.pdf already exists and has not been modified.
+2025-03-03 22:31:17 [upb] INFO: PDF with name Lista-functiilor-sensibile-in-cadrul-Directiei-Financiar-Contabile.pdf from url https://upb.ro/wp-content/uploads/2017/11/Lista-functiilor-sensibile-in-cadrul-Directiei-Financiar-Contabile.pdf already exists and has not been modified.
+2025-03-03 22:31:21 [upb] INFO: PDF with name Procedura-opera%C5%A3ional%C4%83-privind-circuitul-documentelor-%C3%AEn-cadrul-Direc%C5%A3iei-Financiar-Contabile.pdf from url https://upb.ro/wp-content/uploads/2017/11/Procedura-opera%C5%A3ional%C4%83-privind-circuitul-documentelor-%C3%AEn-cadrul-Direc%C5%A3iei-Financiar-Contabile.pdf already exists and has not been modified.
+2025-03-03 22:31:30 [upb] INFO: PDF with name Procedura-opera%C5%A3ional%C4%83-privind-gestionarea-%C5%9Fi-r%C4%83spunderea-%C3%AEn-leg%C4%83tur%C4%83-cu-gestionarea-bunurilor.pdf from url https://upb.ro/wp-content/uploads/2017/11/Procedura-opera%C5%A3ional%C4%83-privind-gestionarea-%C5%9Fi-r%C4%83spunderea-%C3%AEn-leg%C4%83tur%C4%83-cu-gestionarea-bunurilor.pdf already exists and has not been modified.
+2025-03-03 22:31:33 [upb] INFO: PDF with name Procedura-opera%C5%A3ional%C4%83-privind-eviden%C5%A3a-mijloacelor-fixe-la-locurile-de-utilizare-%C5%9Fi_sau-p%C4%83strare-%C3%AEn-UPB.pdf from url https://upb.ro/wp-content/uploads/2017/11/Procedura-opera%C5%A3ional%C4%83-privind-eviden%C5%A3a-mijloacelor-fixe-la-locurile-de-utilizare-%C5%9Fi_sau-p%C4%83strare-%C3%AEn-UPB.pdf already exists and has not been modified.
+2025-03-03 22:31:34 [upb] INFO: PDF with name Procedura-opera%C5%A3ional%C4%83-privind-sponsorizarea-%C3%AEn-UPB.pdf from url https://upb.ro/wp-content/uploads/2017/11/Procedura-opera%C5%A3ional%C4%83-privind-sponsorizarea-%C3%AEn-UPB.pdf already exists and has not been modified.
+2025-03-03 22:31:36 [upb] INFO: PDF with name Procedura-opera%C5%A3ional%C4%83-privind-efectuarea-opera%C5%A3iunilor-de-%C3%AEncas%C4%83ri-%C5%9Fi-pl%C4%83%C5%A3i-%C3%AEn-numerar-prin-casieria-UPB.pdf from url https://upb.ro/wp-content/uploads/2017/11/Procedura-opera%C5%A3ional%C4%83-privind-efectuarea-opera%C5%A3iunilor-de-%C3%AEncas%C4%83ri-%C5%9Fi-pl%C4%83%C5%A3i-%C3%AEn-numerar-prin-casieria-UPB.pdf already exists and has not been modified.
+2025-03-03 22:31:44 [upb] INFO: PDF with name Procedura-opera%C5%A3ional%C4%83-privind-elaborarea-proiectului-de-buget-de-venituri-%C5%9Fi-cheltuieli-al-UPB.pdf from url https://upb.ro/wp-content/uploads/2017/11/Procedura-opera%C5%A3ional%C4%83-privind-elaborarea-proiectului-de-buget-de-venituri-%C5%9Fi-cheltuieli-al-UPB.pdf already exists and has not been modified.
+2025-03-03 22:31:51 [scrapy.extensions.logstats] INFO: Crawled 35 pages (at 15 pages/min), scraped 0 items (at 0 items/min)
+2025-03-03 22:31:53 [upb] INFO: PDF with name Procedura-opera%C5%A3ional%C4%83-privind-%C3%AEntocmirea-registrului-de-cas%C4%83-precum-%C5%9Fi-a-altor-documente-de-%C3%AEncasare-%C5%9Fi-plata-%C3%AEn-numerar.pdf from url https://upb.ro/wp-content/uploads/2017/11/Procedura-opera%C5%A3ional%C4%83-privind-%C3%AEntocmirea-registrului-de-cas%C4%83-precum-%C5%9Fi-a-altor-documente-de-%C3%AEncasare-%C5%9Fi-plata-%C3%AEn-numerar.pdf already exists and has not been modified.
+2025-03-03 22:31:59 [upb] INFO: PDF with name Procedura-opera%C5%A3ional%C4%83-privind-%C3%AEnregistrarea-intr%C4%83rilor-%C5%9Fi-ie%C5%9Firilor-de-bunuri-din-patrimoniu-UPB.pdf from url https://upb.ro/wp-content/uploads/2017/11/Procedura-opera%C5%A3ional%C4%83-privind-%C3%AEnregistrarea-intr%C4%83rilor-%C5%9Fi-ie%C5%9Firilor-de-bunuri-din-patrimoniu-UPB.pdf already exists and has not been modified.
+2025-03-03 22:32:02 [upb] INFO: PDF with name Procedura-opera%C5%A3ional%C4%83-privind-decontarea-drepturilor-b%C4%83ne%C5%9Fti-%C3%AEn-perioada-deplas%C4%83rii-%C3%AEn-str%C4%83in%C4%83tate.pdf from url https://upb.ro/wp-content/uploads/2017/11/Procedura-opera%C5%A3ional%C4%83-privind-decontarea-drepturilor-b%C4%83ne%C5%9Fti-%C3%AEn-perioada-deplas%C4%83rii-%C3%AEn-str%C4%83in%C4%83tate.pdf already exists and has not been modified.
+2025-03-03 22:32:06 [upb] INFO: PDF with name Plan-strategic-de-luare-si-implementare-decizii-in-cadrul-Directiei-Financiar-Contabile.pdf from url https://upb.ro/wp-content/uploads/2017/11/Plan-strategic-de-luare-si-implementare-decizii-in-cadrul-Directiei-Financiar-Contabile.pdf already exists and has not been modified.
+2025-03-03 22:32:07 [upb] INFO: PDF with name Procedura-opera%C5%A3ional%C4%83-privind-transferul-de-active-fixe-%C5%9Fi-obiecte-de-inventar-%C3%AEntre-UPB-%C5%9Fi-alte-institu%C5%A3ii-publice.pdf from url https://upb.ro/wp-content/uploads/2017/11/Procedura-opera%C5%A3ional%C4%83-privind-transferul-de-active-fixe-%C5%9Fi-obiecte-de-inventar-%C3%AEntre-UPB-%C5%9Fi-alte-institu%C5%A3ii-publice.pdf already exists and has not been modified.
+2025-03-03 22:32:13 [upb] INFO: PDF with name Procedura-de-desemnare-a-autoritatii-ierarhiilor-de-autorizare-de-limitare-a-autoritatii-si-a-relatiilor-de-raportare-in-cadrul-DFC.pdf from url https://upb.ro/wp-content/uploads/2017/11/Procedura-de-desemnare-a-autoritatii-ierarhiilor-de-autorizare-de-limitare-a-autoritatii-si-a-relatiilor-de-raportare-in-cadrul-DFC.pdf already exists and has not been modified.
+2025-03-03 22:32:16 [upb] INFO: PDF with name Procedura-opera%C5%A3ional%C4%83-privind-sistemul-opera%C5%A3ional-de-luarea-deciziilor-%C3%AEn-cadrul-Direc%C5%A3iei-Financiar-Contabile.pdf from url https://upb.ro/wp-content/uploads/2017/11/Procedura-opera%C5%A3ional%C4%83-privind-sistemul-opera%C5%A3ional-de-luarea-deciziilor-%C3%AEn-cadrul-Direc%C5%A3iei-Financiar-Contabile.pdf already exists and has not been modified.
+2025-03-03 22:32:18 [upb] INFO: PDF with name Planul-strategic-privind-obiectivele-specifice-si-activitatile-intreprinse-in-vederea-realizari-lor-in-cadrul-DFC.pdf from url https://upb.ro/wp-content/uploads/2017/11/Planul-strategic-privind-obiectivele-specifice-si-activitatile-intreprinse-in-vederea-realizari-lor-in-cadrul-DFC.pdf already exists and has not been modified.
+2025-03-03 22:32:20 [upb] INFO: PDF with name Procedura-opera%C5%A3ional%C4%83-privind-decontarea-cheltuielilor-de-delegare-%C3%AEn-alt%C4%83-localitate-precum-%C5%9Fi-%C3%AEn-cazul-deplas%C4%83rii-%C3%AEn-cadrul-localit%C4%83%C5%A3ii.pdf from url https://upb.ro/wp-content/uploads/2017/11/Procedura-opera%C5%A3ional%C4%83-privind-decontarea-cheltuielilor-de-delegare-%C3%AEn-alt%C4%83-localitate-precum-%C5%9Fi-%C3%AEn-cazul-deplas%C4%83rii-%C3%AEn-cadrul-localit%C4%83%C5%A3ii.pdf already exists and has not been modified.
+2025-03-03 22:32:25 [upb] INFO: PDF with name PROCEDURA-angajare-pe-posturi-in-afara-organigramei.pdf from url https://upb.ro/wp-content/uploads/2024/10/PROCEDURA-angajare-pe-posturi-in-afara-organigramei.pdf already exists and has not been modified.
+2025-03-03 22:32:25 [upb] INFO: PDF with name Regulamentul-privind-organizarea-si-functionarea-Directiei-Financiar-Contabile.pdf from url https://upb.ro/wp-content/uploads/2017/11/Regulamentul-privind-organizarea-si-functionarea-Directiei-Financiar-Contabile.pdf already exists and has not been modified.
+2025-03-03 22:32:29 [upb] INFO: PDF with name PROCEDURA-selectie-personal-sursa-interna.pdf from url https://upb.ro/wp-content/uploads/2024/10/PROCEDURA-selectie-personal-sursa-interna.pdf already exists and has not been modified.
+2025-03-03 22:32:30 [upb] INFO: PDF with name 5.-REGULAMENT-DE-ORGANIZARE-%C5%9EI-FUNC%C5%A2IONARE.pdf from url https://upb.ro/wp-content/uploads/2018/02/5.-REGULAMENT-DE-ORGANIZARE-%C5%9EI-FUNC%C5%A2IONARE.pdf already exists and has not been modified.
+2025-03-03 22:32:32 [upb] INFO: PDF with name 4.-ELABORAREA-ACTUALIZAREA-%C8%98I-APROBAREA-FI%C8%98ELOR-DE-POST.pdf from url https://upb.ro/wp-content/uploads/2018/02/4.-ELABORAREA-ACTUALIZAREA-%C8%98I-APROBAREA-FI%C8%98ELOR-DE-POST.pdf already exists and has not been modified.
+2025-03-03 22:32:33 [upb] INFO: PDF with name 3.-ELABORAREA-APROBAREA-%C8%98I-MODIFICAREA-REGULAMENTULUI-DE-ORGANIZARE-%C8%98I-FUNC%C8%9AIONARE-AL-UNIVERSIT%C4%82%C8%9AII-POLITEHNICA-BUCURE%C8%98TI.pdf from url https://upb.ro/wp-content/uploads/2018/02/3.-ELABORAREA-APROBAREA-%C8%98I-MODIFICAREA-REGULAMENTULUI-DE-ORGANIZARE-%C8%98I-FUNC%C8%9AIONARE-AL-UNIVERSIT%C4%82%C8%9AII-POLITEHNICA-BUCURE%C8%98TI.pdf already exists and has not been modified.
+2025-03-03 22:32:38 [upb] INFO: PDF with name Procedura-promovare.pdf from url https://upb.ro/wp-content/uploads/2023/08/Procedura-promovare.pdf already exists and has not been modified.
+2025-03-03 22:32:42 [upb] INFO: PDF with name Procedura-ocupare-posturi-vacante.pdf from url https://upb.ro/wp-content/uploads/2023/08/Procedura-ocupare-posturi-vacante.pdf already exists and has not been modified.
+2025-03-03 22:32:47 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://upb.ro/wp-content/uploads/2020/01/poupb.pdf>: HTTP status code is not handled or not allowed
+2025-03-03 22:32:49 [upb] INFO: PDF with name 4.-Procedura-operationala-privind-intocmirea-registrului-rezultatelor-cercetarii.pdf from url https://upb.ro/wp-content/uploads/2018/02/4.-Procedura-operationala-privind-intocmirea-registrului-rezultatelor-cercetarii.pdf already exists and has not been modified.
+2025-03-03 22:32:51 [scrapy.extensions.logstats] INFO: Crawled 54 pages (at 19 pages/min), scraped 0 items (at 0 items/min)
+2025-03-03 22:32:55 [upb] INFO: PDF with name 3.-Procedura-operationala-privind-plata-partenerilor.pdf from url https://upb.ro/wp-content/uploads/2018/02/3.-Procedura-operationala-privind-plata-partenerilor.pdf already exists and has not been modified.
+2025-03-03 22:32:58 [upb] INFO: PDF with name 2.-Procedura-de-sistem-privind-gestiunea-contractelor-de-cercetare.pdf from url https://upb.ro/wp-content/uploads/2018/02/2.-Procedura-de-sistem-privind-gestiunea-contractelor-de-cercetare.pdf already exists and has not been modified.
+2025-03-03 22:33:01 [upb] INFO: PDF with name 1.-Procedura-operationala-privind-strategia-de-control-la-nivelul-SEGMCP.pdf from url https://upb.ro/wp-content/uploads/2018/02/1.-Procedura-operationala-privind-strategia-de-control-la-nivelul-SEGMCP.pdf already exists and has not been modified.
+2025-03-03 22:33:04 [upb] INFO: PDF with name Anexa_A10_Registrul_unic_al_procedurilor_op.pdf from url https://upb.ro/wp-content/uploads/2018/02/Anexa_A10_Registrul_unic_al_procedurilor_op.pdf already exists and has not been modified.
+2025-03-03 22:33:08 [upb] INFO: PDF with name Anexa_A9_Registrul_unic_proceduri_de_sistem_.pdf from url https://upb.ro/wp-content/uploads/2018/02/Anexa_A9_Registrul_unic_proceduri_de_sistem_.pdf already exists and has not been modified.
+2025-03-03 22:33:25 [upb] INFO: PDF with name PS-15-DJC-02_privind_arhivarea_documentelor.pdf from url https://upb.ro/wp-content/uploads/2018/02/PS-15-DJC-02_privind_arhivarea_documentelor.pdf already exists and has not been modified.
+2025-03-03 22:33:30 [upb] INFO: PDF with name UPB-Operator-de-date-cu-caracter-personal.pdf from url https://upb.ro/wp-content/uploads/2018/02/UPB-Operator-de-date-cu-caracter-personal.pdf already exists and has not been modified.
+2025-03-03 22:33:30 [upb] INFO: PDF with name Procedura-de-lucru-privind-desf.-online-grad-didactic-I.pdf from url https://upb.ro/wp-content/uploads/2020/03/Procedura-de-lucru-privind-desf.-online-grad-didactic-I.pdf already exists and has not been modified.
+2025-03-03 22:33:31 [upb] INFO: PDF with name PS-15-DJC-01_-_Functionarea_Comisiei_de_monitorizare.pdf from url https://upb.ro/wp-content/uploads/2018/02/PS-15-DJC-01_-_Functionarea_Comisiei_de_monitorizare.pdf already exists and has not been modified.
+2025-03-03 22:33:33 [upb] INFO: PDF with name Norme-metodologice-privind-acordarea-salariului-de-merit.pdf from url https://upb.ro/wp-content/uploads/2018/02/Norme-metodologice-privind-acordarea-salariului-de-merit.pdf already exists and has not been modified.
+2025-03-03 22:33:34 [upb] INFO: PDF with name Programul_de_dezvoltare_a_sistemului_de_control__intern.pdf from url https://upb.ro/wp-content/uploads/2018/02/Programul_de_dezvoltare_a_sistemului_de_control__intern.pdf already exists and has not been modified.
+2025-03-03 22:33:34 [upb] INFO: PDF with name Decont_extern.pdf from url https://upb.ro/wp-content/uploads/2018/02/Decont_extern.pdf already exists and has not been modified.
+2025-03-03 22:33:37 [upb] INFO: PDF with name Formular_decont_intern.pdf from url https://upb.ro/wp-content/uploads/2018/02/Formular_decont_intern.pdf already exists and has not been modified.
+2025-03-03 22:33:40 [upb] INFO: PDF with name DISPOZIIE_DE_INCASARE.pdf from url https://upb.ro/wp-content/uploads/2018/02/DISPOZIIE_DE_INCASARE.pdf already exists and has not been modified.
+2025-03-03 22:33:44 [upb] INFO: PDF with name Formular_deplasare_interna_II.pdf from url https://upb.ro/wp-content/uploads/2018/02/Formular_deplasare_interna_II.pdf already exists and has not been modified.
+2025-03-03 22:33:47 [upb] INFO: PDF with name CARTA_UNSTPB-2023.pdf from url https://upb.ro/wp-content/uploads/2023/11/CARTA_UNSTPB-2023.pdf already exists and has not been modified.
+2025-03-03 22:33:51 [upb] INFO: PDF with name FORMULAR-INSCRIERE-mobilitati-ARUT-2019.pdf from url https://upb.ro/wp-content/uploads/2017/11/FORMULAR-INSCRIERE-mobilitati-ARUT-2019.pdf already exists and has not been modified.
+2025-03-03 22:33:51 [scrapy.extensions.logstats] INFO: Crawled 71 pages (at 17 pages/min), scraped 0 items (at 0 items/min)
+2025-03-03 22:33:53 [upb] INFO: PDF with name Regulament-mobilitati-ARUT-S.pdf from url https://upb.ro/wp-content/uploads/2017/11/Regulament-mobilitati-ARUT-S.pdf already exists and has not been modified.
+2025-03-03 22:33:58 [upb] INFO: PDF with name Regulament-privind-organizarea-si-functionarea-procesului-de-invatamant-in-cadrul-studiilor-de-masterat-in-UPB-2020.pdf from url https://upb.ro/wp-content/uploads/2020/03/Regulament-privind-organizarea-si-functionarea-procesului-de-invatamant-in-cadrul-studiilor-de-masterat-in-UPB-2020.pdf already exists and has not been modified.
+2025-03-03 22:34:02 [upb] INFO: PDF with name HS_324-Regulamentul-de-organizare-si-functionare-a-programelor-de-studii-universitare-integrate-care-conduc-la-diplome-comune-joint-diploma.pdf from url https://upb.ro/wp-content/uploads/2021/12/HS_324-Regulamentul-de-organizare-si-functionare-a-programelor-de-studii-universitare-integrate-care-conduc-la-diplome-comune-joint-diploma.pdf already exists and has not been modified.
+2025-03-03 22:34:08 [upb] INFO: PDF with name HS_417-Regulament-Mobilitati-ERASMUS.pdf from url https://upb.ro/wp-content/uploads/2022/04/HS_417-Regulament-Mobilitati-ERASMUS.pdf already exists and has not been modified.
+2025-03-03 22:34:09 [upb] INFO: PDF with name Metodologie-admitere-romani-de-pretutindeni.pdf from url https://upb.ro/wp-content/uploads/2023/07/Metodologie-admitere-romani-de-pretutindeni.pdf already exists and has not been modified.
+2025-03-03 22:34:14 [upb] INFO: PDF with name Metodologie_Bursa_speciala_de_excelenta_George-Darie_02.pdf from url https://upb.ro/wp-content/uploads/2023/11/Metodologie_Bursa_speciala_de_excelenta_George-Darie_02.pdf already exists and has not been modified.
+2025-03-03 22:34:16 [upb] INFO: PDF with name Regulament_Mobilitati_ERASMUS_2024.pdf from url https://upb.ro/wp-content/uploads/2022/05/Regulament_Mobilitati_ERASMUS_2024.pdf already exists and has not been modified.
+2025-03-03 22:34:21 [upb] INFO: PDF with name Regulament-_CRID_2024.pdf from url https://upb.ro/wp-content/uploads/2022/05/Regulament-_CRID_2024.pdf already exists and has not been modified.
+2025-03-03 22:34:26 [upb] INFO: PDF with name Metodologie_Burse_speciale_Excellence_Scholarship_2024.pdf from url https://upb.ro/wp-content/uploads/2022/05/Metodologie_Burse_speciale_Excellence_Scholarship_2024.pdf already exists and has not been modified.
+2025-03-03 22:34:28 [upb] INFO: PDF with name Taxe-administrative-2024-2025.pdf from url https://upb.ro/wp-content/uploads/2022/11/Taxe-administrative-2024-2025.pdf already exists and has not been modified.
+2025-03-03 22:34:34 [upb] INFO: PDF with name Metodologie-privind-mobilitatea-academica-a-studentilor.pdf from url https://upb.ro/wp-content/uploads/2022/11/Metodologie-privind-mobilitatea-academica-a-studentilor.pdf already exists and has not been modified.
+2025-03-03 22:34:37 [upb] INFO: PDF with name Codul-drepturilor-si-obligatiilor-studentului-in-POLITEHNICA-BUCURESTI.pdf from url https://upb.ro/wp-content/uploads/2022/11/Codul-drepturilor-si-obligatiilor-studentului-in-POLITEHNICA-BUCURESTI.pdf already exists and has not been modified.
+2025-03-03 22:34:44 [upb] INFO: PDF with name IOSUD1_UPB_Raport.pdf from url https://upb.ro/wp-content/uploads/2022/03/IOSUD1_UPB_Raport.pdf already exists and has not been modified.
+2025-03-03 22:34:46 [upb] INFO: PDF with name Raport-evaluare-externa-a-calitatii-educatiei-la-UPB_21.pdf from url https://upb.ro/wp-content/uploads/2022/03/Raport-evaluare-externa-a-calitatii-educatiei-la-UPB_21.pdf already exists and has not been modified.
+2025-03-03 22:34:51 [scrapy.extensions.logstats] INFO: Crawled 85 pages (at 14 pages/min), scraped 0 items (at 0 items/min)
+2025-03-03 22:34:57 [upb] INFO: PDF with name Plan_strategic_MC_2016-2020.pdf from url https://upb.ro/wp-content/uploads/2018/02/Plan_strategic_MC_2016-2020.pdf already exists and has not been modified.
+2025-03-03 22:34:59 [upb] INFO: PDF with name Plan-Oprerational-de-Investitii-pentru-anul-2022.pdf from url https://upb.ro/wp-content/uploads/2022/03/Plan-Oprerational-de-Investitii-pentru-anul-2022.pdf already exists and has not been modified.
+2025-03-03 22:35:05 [upb] INFO: PDF with name Plan-Oprerational-de-Investitii-pentru-anul-2021.pdf from url https://upb.ro/wp-content/uploads/2022/03/Plan-Oprerational-de-Investitii-pentru-anul-2021.pdf already exists and has not been modified.
+2025-03-03 22:35:15 [upb] INFO: PDF with name Master-plan-Campus-Studentesc-Regie-2020.pdf from url https://upb.ro/wp-content/uploads/2018/02/Master-plan-Campus-Studentesc-Regie-2020.pdf already exists and has not been modified.
+2025-03-03 22:35:16 [upb] INFO: PDF with name 9-Regulament-privind-organizarea-%C5%9Fi-func%C5%A3ionarea-c%C4%83minelor-%C5%9Fi-cantinelor-care-apar%C5%A3in-UPB-2012.pdf from url https://upb.ro/wp-content/uploads/2018/02/9-Regulament-privind-organizarea-%C5%9Fi-func%C5%A3ionarea-c%C4%83minelor-%C5%9Fi-cantinelor-care-apar%C5%A3in-UPB-2012.pdf already exists and has not been modified.
+2025-03-03 22:35:17 [upb] INFO: PDF with name 11-Metodologie-privind-selectia-partenerilor-privati-pentru-proiectele-finalizate-din-fonduri-structurale-al-caror-beneficiar-este-UPB.pdf from url https://upb.ro/wp-content/uploads/2018/02/11-Metodologie-privind-selectia-partenerilor-privati-pentru-proiectele-finalizate-din-fonduri-structurale-al-caror-beneficiar-este-UPB.pdf already exists and has not been modified.
+2025-03-03 22:35:20 [upb] INFO: PDF with name Metodologie-alegeri-rector-UNSPTB-2024-2029-1.pdf from url https://upb.ro/wp-content/uploads/2023/11/Metodologie-alegeri-rector-UNSPTB-2024-2029-1.pdf already exists and has not been modified.
+2025-03-03 22:35:23 [upb] INFO: PDF with name HS_444-Strategie-digitalizare.pdf from url https://upb.ro/wp-content/uploads/2022/06/HS_444-Strategie-digitalizare.pdf already exists and has not been modified.
+2025-03-03 22:35:23 [upb] INFO: PDF with name Metodologie-Concurs-decani-2024-29_08.01.2024.pdf from url https://upb.ro/wp-content/uploads/2023/11/Metodologie-Concurs-decani-2024-29_08.01.2024.pdf already exists and has not been modified.
+2025-03-03 22:35:24 [upb] INFO: PDF with name Metodologie-Concurs-Director-CSUD-2024-29_08.01.2024.pdf from url https://upb.ro/wp-content/uploads/2023/11/Metodologie-Concurs-Director-CSUD-2024-29_08.01.2024.pdf already exists and has not been modified.
+2025-03-03 22:35:29 [upb] INFO: PDF with name Regulament-privind-acordarea-titlului-de-Doctor-Honoris-Causa-in-POLITEHNICA-Bucuresti.pdf from url https://upb.ro/wp-content/uploads/2022/11/Regulament-privind-acordarea-titlului-de-Doctor-Honoris-Causa-in-POLITEHNICA-Bucuresti.pdf already exists and has not been modified.
+2025-03-03 22:35:35 [upb] INFO: PDF with name Regulament-privind-abilitarea-si-acordarea-calitatii-de-conducator-de-doctorat-in-cadrul-IOSUD-Politehnica.pdf from url https://upb.ro/wp-content/uploads/2022/11/Regulament-privind-abilitarea-si-acordarea-calitatii-de-conducator-de-doctorat-in-cadrul-IOSUD-Politehnica.pdf already exists and has not been modified.
+2025-03-03 22:35:40 [upb] INFO: PDF with name Regulament-finalizare-studii-Politehnica-Bucuresti-2023-2024-_02.pdf from url https://upb.ro/wp-content/uploads/2022/11/Regulament-finalizare-studii-Politehnica-Bucuresti-2023-2024-_02.pdf already exists and has not been modified.
+2025-03-03 22:35:42 [upb] INFO: PDF with name Metodologie-admitere-doctorat-2024-1.pdf from url https://upb.ro/wp-content/uploads/2022/11/Metodologie-admitere-doctorat-2024-1.pdf already exists and has not been modified.
+2025-03-03 22:35:46 [upb] INFO: PDF with name CCM-POLITEHNICA-Bucuresti-1.pdf from url https://upb.ro/wp-content/uploads/2022/11/CCM-POLITEHNICA-Bucuresti-1.pdf already exists and has not been modified.
+2025-03-03 22:35:49 [upb] INFO: PDF with name Metodologie-admitere-doctorat-2025-2026.pdf from url https://upb.ro/wp-content/uploads/2024/12/Metodologie-admitere-doctorat-2025-2026.pdf already exists and has not been modified.
+2025-03-03 22:35:51 [upb] INFO: PDF with name Regulament-admitere-masterat-2025-2026.pdf from url https://upb.ro/wp-content/uploads/2024/12/Regulament-admitere-masterat-2025-2026.pdf already exists and has not been modified.
+2025-03-03 22:35:51 [scrapy.extensions.logstats] INFO: Crawled 102 pages (at 17 pages/min), scraped 0 items (at 0 items/min)
+2025-03-03 22:35:53 [upb] INFO: PDF with name Regulament_Admitere_Master_2024-2025.pdf from url https://upb.ro/wp-content/uploads/2022/11/Regulament_Admitere_Master_2024-2025.pdf already exists and has not been modified.
+2025-03-03 22:36:02 [upb] INFO: PDF with name Regulament-org-studii-univ-licenta_2024.pdf from url https://upb.ro/wp-content/uploads/2022/11/Regulament-org-studii-univ-licenta_2024.pdf already exists and has not been modified.
+2025-03-03 22:36:04 [upb] INFO: PDF with name Regulament_admitere_licenta_2025.pdf from url https://upb.ro/wp-content/uploads/2024/12/Regulament_admitere_licenta_2025.pdf already exists and has not been modified.
+2025-03-03 22:36:05 [upb] INFO: PDF with name Sistem-de-taxe-scolare-2024-2025.pdf from url https://upb.ro/wp-content/uploads/2022/11/Sistem-de-taxe-scolare-2024-2025.pdf already exists and has not been modified.
+2025-03-03 22:36:06 [upb] INFO: PDF with name Regulament_Admitere_Licenta_2024-2025.pdf from url https://upb.ro/wp-content/uploads/2022/11/Regulament_Admitere_Licenta_2024-2025.pdf already exists and has not been modified.
+2025-03-03 22:36:08 [upb] INFO: PDF with name Taxe-administrative-2024-2025-02.pdf from url https://upb.ro/wp-content/uploads/2022/11/Taxe-administrative-2024-2025-02.pdf already exists and has not been modified.
+2025-03-03 22:36:08 [upb] INFO: PDF with name Structura-an-universitar-2024-2025.pdf from url https://upb.ro/wp-content/uploads/2022/11/Structura-an-universitar-2024-2025.pdf already exists and has not been modified.
+2025-03-03 22:36:14 [upb] INFO: PDF with name Regulament-regimul-actelor-de-studii-si-al-documentelor-universitare.pdf from url https://upb.ro/wp-content/uploads/2022/11/Regulament-regimul-actelor-de-studii-si-al-documentelor-universitare.pdf already exists and has not been modified.
+2025-03-03 22:36:16 [upb] INFO: PDF with name Metodologie-privind-acordarea-punctelor-de-credit-de-studii-transferabile-pentru-activitatile-de-voluntariat.pdf from url https://upb.ro/wp-content/uploads/2022/11/Metodologie-privind-acordarea-punctelor-de-credit-de-studii-transferabile-pentru-activitatile-de-voluntariat.pdf already exists and has not been modified.
+2025-03-03 22:36:20 [upb] INFO: PDF with name Metodologie-pentru-organizarea-activitatii-de-consiliere-si-pentru-functionarea-Centrului-de-Consiliere-si-Orientare-in-Cariera.pdf from url https://upb.ro/wp-content/uploads/2022/11/Metodologie-pentru-organizarea-activitatii-de-consiliere-si-pentru-functionarea-Centrului-de-Consiliere-si-Orientare-in-Cariera.pdf already exists and has not been modified.
+2025-03-03 22:36:24 [upb] INFO: PDF with name Regulament-studii-doctorale-POLITEHNICA-Bucuresti.pdf from url https://upb.ro/wp-content/uploads/2022/11/Regulament-studii-doctorale-POLITEHNICA-Bucuresti.pdf already exists and has not been modified.
+2025-03-03 22:36:28 [upb] INFO: PDF with name Regulament-Comisia-de-Etica-Universitara.pdf from url https://upb.ro/wp-content/uploads/2022/11/Regulament-Comisia-de-Etica-Universitara.pdf already exists and has not been modified.
+2025-03-03 22:36:31 [upb] INFO: PDF with name Metodologie-mentinerea-calitatii-de-titular-2024-2025.pdf from url https://upb.ro/wp-content/uploads/2022/11/Metodologie-mentinerea-calitatii-de-titular-2024-2025.pdf already exists and has not been modified.
+2025-03-03 22:36:36 [upb] INFO: PDF with name Instructiuni-State-functii_2024.pdf from url https://upb.ro/wp-content/uploads/2022/11/Instructiuni-State-functii_2024.pdf already exists and has not been modified.
+2025-03-03 22:36:39 [upb] INFO: PDF with name Regulament-deplasari-externe-si-interne.pdf from url https://upb.ro/wp-content/uploads/2022/11/Regulament-deplasari-externe-si-interne.pdf already exists and has not been modified.
+2025-03-03 22:36:43 [upb] INFO: PDF with name Metodologie_scolarizare_studenti_state_terte_2024.pdf from url https://upb.ro/wp-content/uploads/2022/11/Metodologie_scolarizare_studenti_state_terte_2024.pdf already exists and has not been modified.
+2025-03-03 22:36:46 [upb] INFO: PDF with name Metodologie_admitere-si-scolarizare_RP_septembrie-2024.pdf from url https://upb.ro/wp-content/uploads/2022/11/Metodologie_admitere-si-scolarizare_RP_septembrie-2024.pdf already exists and has not been modified.
+2025-03-03 22:36:51 [upb] INFO: PDF with name Metodologie-privind-organizarea-invatamantului-universitar-si-postuniversitar-in-sistem-mixt.pdf from url https://upb.ro/wp-content/uploads/2022/11/Metodologie-privind-organizarea-invatamantului-universitar-si-postuniversitar-in-sistem-mixt.pdf already exists and has not been modified.
+2025-03-03 22:36:51 [scrapy.extensions.logstats] INFO: Crawled 120 pages (at 18 pages/min), scraped 0 items (at 0 items/min)
+2025-03-03 22:36:54 [upb] INFO: PDF with name Metodologie-de-concurs-pentru-ocuparea-posturilor-didactice-si-de-cercetare-vacante-2024-1.pdf from url https://upb.ro/wp-content/uploads/2022/11/Metodologie-de-concurs-pentru-ocuparea-posturilor-didactice-si-de-cercetare-vacante-2024-1.pdf already exists and has not been modified.
+2025-03-03 22:36:58 [upb] INFO: PDF with name REGULAMENT-ALEGERI-STUDENTI-REPREZENTANTI-UNSTPB-2024-2025.pdf from url https://upb.ro/wp-content/uploads/2022/11/REGULAMENT-ALEGERI-STUDENTI-REPREZENTANTI-UNSTPB-2024-2025.pdf already exists and has not been modified.
+2025-03-03 22:37:01 [upb] INFO: PDF with name Regulament_alegeri-scoli-doctorale-si-CSUD-2024.pdf from url https://upb.ro/wp-content/uploads/2022/11/Regulament_alegeri-scoli-doctorale-si-CSUD-2024.pdf already exists and has not been modified.
+2025-03-03 22:37:04 [upb] INFO: PDF with name Metodologie-privind-utilizarea-platformei-Euraxess.pdf from url https://upb.ro/wp-content/uploads/2022/11/Metodologie-privind-utilizarea-platformei-Euraxess.pdf already exists and has not been modified.
+2025-03-03 22:37:11 [upb] INFO: PDF with name Regulament-privind-raportarea-institutionala-in-vederea-obtinerii-finantarii-publice-a-universitatii.pdf from url https://upb.ro/wp-content/uploads/2022/11/Regulament-privind-raportarea-institutionala-in-vederea-obtinerii-finantarii-publice-a-universitatii.pdf already exists and has not been modified.
+2025-03-03 22:37:12 [upb] INFO: PDF with name Regulament-privind-organizarea-si-functionarea-studiilor-universitare-de-masterat.pdf from url https://upb.ro/wp-content/uploads/2022/11/Regulament-privind-organizarea-si-functionarea-studiilor-universitare-de-masterat.pdf already exists and has not been modified.
+2025-03-03 22:37:14 [upb] INFO: PDF with name Regulament-finalizare-studii-an-pregatitor-limba-romana.pdf from url https://upb.ro/wp-content/uploads/2022/05/Regulament-finalizare-studii-an-pregatitor-limba-romana.pdf already exists and has not been modified.
+2025-03-03 22:37:18 [upb] INFO: PDF with name Metodologie-burse_rectificata.pdf from url https://upb.ro/wp-content/uploads/2024/12/Metodologie-burse_rectificata.pdf already exists and has not been modified.
+2025-03-03 22:37:22 [upb] INFO: PDF with name Regulament-Profesor-Emerit_final.pdf from url https://upb.ro/wp-content/uploads/2025/01/Regulament-Profesor-Emerit_final.pdf already exists and has not been modified.
+2025-03-03 22:37:27 [upb] INFO: PDF with name Procedura-finalizare-studii-doctorale-28.01.2025.pdf from url https://upb.ro/wp-content/uploads/2025/01/Procedura-finalizare-studii-doctorale-28.01.2025.pdf already exists and has not been modified.
+2025-03-03 22:37:28 [upb] INFO: PDF with name Regulament-de-organizare-si-functionare-a-centrului-pentru-invatamant-cu-frecventa-redusa-si-invatamant-la-distanta-centrul-I.F.R-I.D.pdf from url https://upb.ro/wp-content/uploads/2025/02/Regulament-de-organizare-si-functionare-a-centrului-pentru-invatamant-cu-frecventa-redusa-si-invatamant-la-distanta-centrul-I.F.R-I.D.pdf already exists and has not been modified.
+2025-03-03 22:37:32 [upb] INFO: PDF with name Regulament-privind-organizarea-si-desfasurarea-examenelor-de-absolvire-licentadiploma-si-disertatie-pentru-anul-universitar-2024_2025.pdf from url https://upb.ro/wp-content/uploads/2025/02/Regulament-privind-organizarea-si-desfasurarea-examenelor-de-absolvire-licentadiploma-si-disertatie-pentru-anul-universitar-2024_2025.pdf already exists and has not been modified.
+2025-03-03 22:37:37 [upb] INFO: Downloaded PDF: ../../../data/upb/Metodologie-infiintare-unitati-cercetare.pdf
+2025-03-03 22:37:37 [scrapy.core.engine] INFO: Closing spider (finished)
+2025-03-03 22:37:37 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 46036,
+ 'downloader/request_count': 132,
+ 'downloader/request_method_count/GET': 132,
+ 'downloader/response_bytes': 180173253,
+ 'downloader/response_count': 133,
+ 'downloader/response_status_count/200': 132,
+ 'downloader/response_status_count/404': 1,
+ 'dupefilter/filtered': 18,
+ 'elapsed_time_seconds': 465.410746,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2025, 3, 3, 20, 37, 37, 338504, tzinfo=datetime.timezone.utc),
+ 'httpcompression/response_bytes': 168914294,
+ 'httpcompression/response_count': 129,
+ 'httperror/response_ignored_count': 1,
+ 'httperror/response_ignored_status_count/404': 1,
+ 'items_per_minute': None,
+ 'log_count/INFO': 147,
+ 'memusage/max': 147996672,
+ 'memusage/startup': 78450688,
+ 'request_depth_max': 1,
+ 'response_received_count': 133,
+ 'responses_per_minute': None,
+ 'robotstxt/request_count': 3,
+ 'robotstxt/response_count': 3,
+ 'robotstxt/response_status_count/200': 3,
+ 'scheduler/dequeued': 130,
+ 'scheduler/dequeued/memory': 130,
+ 'scheduler/enqueued': 130,
+ 'scheduler/enqueued/memory': 130,
+ 'start_time': datetime.datetime(2025, 3, 3, 20, 29, 51, 927758, tzinfo=datetime.timezone.utc)}
+2025-03-03 22:37:37 [scrapy.core.engine] INFO: Spider closed (finished)
