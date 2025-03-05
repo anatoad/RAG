@@ -1,32 +1,65 @@
-from typing import Generator
-
 from scrapy_selenium import SeleniumRequest
 from urllib.parse import urljoin
 import scrapy
-
-from .config import PDF_FILES_PATH
+from pathlib import Path
 from datetime import datetime
 import json
-import re
 import os
 
-def compare_dates(old_date, new_date):
+# Construct the path to the data directory
+FILE_DIR = Path(__file__).resolve().parent
+DATA_DIR = FILE_DIR.parent.parent.parent / "data"
+
+def is_date_updated(old_date: str, new_date: str) -> bool:
     date_format = "%a, %d %b %Y %H:%M:%S %Z"
-    old_datetime = datetime.strptime(old_date.decode('utf-8'), date_format)
-    new_datetime = datetime.strptime(new_date.decode('utf-8'), date_format)
+    old_datetime = datetime.strptime(old_date, date_format)
+    new_datetime = datetime.strptime(new_date, date_format)
 
     return old_datetime < new_datetime
 
-def file_exists(filename, file_path, last_modified):
-    # TODO: check here if a file with the same name exists
-    # and if it does, check the last_modified date and if it has changed, overwrite it
+def file_exists(
+    filename: str,
+    file_path: str,
+    last_modified: str,
+    metadata_filepath: str
+) -> bool:
+    """
+    Check if a file with the given name exists,
+    overwrite it if the last_modified timestamp in the metadata file was updated. 
+    """
     if os.path.isfile(file_path):
-        return True
+        data = get_metadata(filename, metadata_filepath)
+        if not data or "last_modified" not in data:
+            return False
+        
+        return not is_date_updated(data["last_modified"], last_modified)
 
     return False
 
-def append_to_metadata_file(metadata_filepath, filename, url):
-    # save the source url
+def get_metadata(filename: str,metadata_filepath: str) -> dict:
+    with open(metadata_filepath, "r+") as jsonFile:
+        try:
+            data = json.load(jsonFile)
+        except:
+            return None
+    
+        if filename not in data:
+            return None
+        
+        return data[filename]
+
+def append_to_metadata_file(
+    metadata_filepath: str,
+    filename: str,
+    url: str,
+    last_modified: str
+) -> None:
+    """
+    Add information to metadata file.
+    url: source url where pdf was downloaded from
+    last_modified: timestamp when the file was last changed
+        (Last-Modified field from response header)
+    """
     with open(metadata_filepath, "r+") as jsonFile:
         try:
             data = json.load(jsonFile)
@@ -37,6 +70,9 @@ def append_to_metadata_file(metadata_filepath, filename, url):
             data[filename] = {}
         
         data[filename]["url"] = url
+
+        if last_modified:
+            data[filename]["last_modified"] = last_modified
 
         jsonFile.seek(0)
         json.dump(data, jsonFile, indent=4)
@@ -63,7 +99,7 @@ class UpbSpider(scrapy.Spider):
         #     f.write(text)
 
         # Create directory and json source file
-        pdf_dir = os.path.join(PDF_FILES_PATH, self.name)
+        pdf_dir = os.path.join(DATA_DIR, self.name)
         metadata_filepath = os.path.join(pdf_dir, "metadata.json")
 
         os.makedirs(pdf_dir, exist_ok=True)
@@ -87,20 +123,16 @@ class UpbSpider(scrapy.Spider):
 
         last_modified = None
         if 'Last-Modified' in response.headers:
-            last_modified = response.headers['Last-Modified']
+            last_modified = response.headers['Last-Modified'].decode("utf-8")
 
-            # check to see if a file with the same name, from the same url already exists
-            # overwrite it if the last_modified date
-            if file_exists(filename, pdf_path, last_modified):
+            if file_exists(filename, pdf_path, last_modified, metadata_filepath):
                 self.logger.info(f"PDF with name {filename} from url {response.url} already exists and has not been modified.")
-
                 return
 
-        # save pdf
+        # Save pdf
         with open(pdf_path, 'wb') as f:
             f.write(response.body)
         
-        # save the source url
-        append_to_metadata_file(metadata_filepath, filename, response.url)
+        append_to_metadata_file(metadata_filepath, filename, response.url, last_modified)
 
         self.logger.info(f"Downloaded PDF: {pdf_path}")
