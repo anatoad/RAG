@@ -75,7 +75,7 @@ def append_to_metadata_file(
             data[filename]["last_modified"] = last_modified
 
         jsonFile.seek(0)
-        json.dump(data, jsonFile, indent=4)
+        json.dump(data, jsonFile, indent=4, sort_keys=True)
         jsonFile.truncate()
 
 class UpbSpider(scrapy.Spider):
