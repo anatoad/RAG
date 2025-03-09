@@ -1,17 +1,11 @@
 # Rag
 
-## Description
-
-
-## Crawler
-```
-scrapy crawl upb
-```
-
 ## Dependencies
-Replicate the environment:
+`Python 3.12` was used.
+
+To create a virtual environment and install dependencies from `requirements.txt` run:
 ```
-pip install -r requirements.txt
+make setup
 ```
 
 Tools used:
@@ -20,35 +14,45 @@ Tools used:
 - scrapy-selenium
 - PyMUPDF
 - spaCy
-- OCRmyPDF
+- OCRmyPDF, tesseract
 
 ```
 yay -Sy ocrmypdf tesseract
 sudo pacman -S tesseract-data-ron
 ```
 
-## Docker
-Install docker and docker compose
+## Crawler
+```
+scrapy crawl upb
+```
+
+## Docker setup
+Install `docker` and `docker-compose`
  ```
  sudo pacman -Sy docker docker-compose
  sudo systemctl enable docker.service
  sudo systemctl start docker.service  
  sudo usermod -aG docker $USER
  ```
-[Set up a custom admin password](https://opensearch.org/docs/latest/security/configuration/demo-configuration/#setting-up-a-custom-admin-password)
-```
-export OPENSEARCH_INITIAL_ADMIN_PASSWORD="<passwd>"
-```
+To [set up a custom admin password](https://opensearch.org/docs/latest/security/configuration/demo-configuration/#setting-up-a-custom-admin-password), do one of the following:
+
+- run: `export OPENSEARCH_INITIAL_ADMIN_PASSWORD=<passwd>`
+- create an `.env` file with: `OPENSEARCH_INITIAL_ADMIN_PASSWORD=<passwd>`
 
 Create and start the cluster as a background process
 ```
 docker compose up -d
 ```
 
+## OpenSearch Dashboard
+Open: `http://localhost:5601/` \
+Default username: `admin` \
+Password: `$OPENSEARCH_INITIAL_ADMIN_PASSWORD`
+
 ## OpenSearch setup
 #### [Neural search tutorial](https://opensearch.org/docs/latest/search-plugins/neural-search-tutorial/)
 
-#### Update ML-related cluster settings:
+#### Update ML-related cluster settings
 ```
 PUT _cluster/settings
 {
@@ -72,6 +76,15 @@ POST /_plugins/_ml/model_groups/_register
 }
 ```
 
+You will need the `model_group_id`
+```
+{
+  "model_group_id": "ckKnd5UB_e6dONcE9pdb",
+  "status": "CREATED"
+}
+```
+
+To get all model groups:
 ```
 POST /_plugins/_ml/model_groups/_search
 {
@@ -81,14 +94,8 @@ POST /_plugins/_ml/model_groups/_search
 }
 ```
 
-```
-{
-  "model_group_id": "RWo2V5UB7VJulTW8i0FV",
-  "status": "CREATED"
-}
-```
 
-#### Register the model to the model group:
+#### Register the model to the model group
 ```
 POST /_plugins/_ml/models/_register
 {
@@ -98,39 +105,42 @@ POST /_plugins/_ml/models/_register
   "model_format": "TORCH_SCRIPT"
 }
 ```
-
+Response:
 ```
 {
-  "task_id": "i31YV5UBxZa1z7yEnrPw",
+  "task_id": "f0Krd5UB_e6dONcEBpec",
   "status": "CREATED"
 }
 ```
-
+Use the `task_id`:
 ```
-GET /_plugins/_ml/tasks/i31YV5UBxZa1z7yEnrPw
+GET /_plugins/_ml/tasks/f0Krd5UB_e6dONcEBpec
 ```
 
 ```
 {
-  "model_id": "j31YV5UBxZa1z7yEpLM-",
+  "model_id": "g0Krd5UB_e6dONcEC5dk",
   "task_type": "REGISTER_MODEL",
   "function_name": "TEXT_EMBEDDING",
   "state": "COMPLETED",
   "worker_node": [
-    "fUYVAX5xSGelP5vt1gVnwg"
+    "CpF0gs_vT1uHwx_LxmrMVg"
   ],
-  "create_time": 1740927180392,
-  "last_update_time": 1740927493212,
+  "create_time": 1741469451791,
+  "last_update_time": 1741469598173,
   "is_async": true
 }
 ```
 
-#### Deploy the model:
+#### Deploy the model
 ```
-POST /_plugins/_ml/models/j31YV5UBxZa1z7yEpLM-/_deploy
+POST /_plugins/_ml/models/g0Krd5UB_e6dONcEC5dk/_deploy
 ```
 
 ### Create an ingest pipeline
+
+You will need the `model_id` of the model you registered.
+
 ```
 PUT /_ingest/pipeline/nlp-ingest-pipeline
 {
@@ -138,7 +148,7 @@ PUT /_ingest/pipeline/nlp-ingest-pipeline
   "processors": [
     {
       "text_embedding": {
-        "model_id": "j31YV5UBxZa1z7yEpLM-",
+        "model_id": "g0Krd5UB_e6dONcEC5dk",
         "field_map": {
           "text": "embedding"
         }
@@ -181,11 +191,11 @@ PUT /rag-knn-index
         "type": "keyword"
       },
       "filename": {
-        "type": "keyword",
+        "type": "keyword"
       },
       "page_number": {
         "type": "integer"
-      },
+      }
     }
   }
 }
@@ -225,10 +235,13 @@ GET /rag-knn-index/_search
     "neural": {
       "embedding": {
         "query_text": "control financiar preventiv",
-        "model_id": "j31YV5UBxZa1z7yEpLM-",
+        "model_id": "g0Krd5UB_e6dONcEC5dk",
         "k": 5
       }
     }
   }
 }
 ```
+
+## Ingest data
+
