@@ -3,3 +3,5 @@ env/
 data/
 models/
 .env
+.vscode/
+metadata.json

@@ -108,7 +108,6 @@ requests==2.32.3
 requests-file==2.1.0
 rich==13.9.4
 ro_core_news_lg @ https://github.com/explosion/spacy-models/releases/download/ro_core_news_lg-3.8.0/ro_core_news_lg-3.8.0-py3-none-any.whl#sha256=f8c71487a60125af5a84cdf487fc1670ec9cd1e28cfd9f7ef9561be0e25d2c8e
-ro_core_news_sm @ https://github.com/explosion/spacy-models/releases/download/ro_core_news_sm-3.8.0/ro_core_news_sm-3.8.0-py3-none-any.whl#sha256=3cebfba2437131efe95345adcc7ea2131e4463915652df9099c577e618460cd9
 safetensors==0.5.2
 scikit-learn==1.6.1
 scipy==1.15.2
