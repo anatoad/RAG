@@ -1,6 +1,44 @@
 from pathlib import Path
 import json
 import hashlib
+import os
+import sys
+import logging
+from config import BASE_DIR
+from textwrap import TextWrapper
+
+def get_logger(
+    name,
+    log_dir=None,
+    level=logging.INFO,
+    format=f"%(asctime)s %(levelname)s: %(message)s",
+    stderr=False
+):
+    log_dir = log_dir or BASE_DIR / "logs"
+    os.makedirs(log_dir, exist_ok=True)
+
+    logger = logging.getLogger(name)
+    logger.setLevel(level)
+    logger.propagate = False
+
+    fileHandler = logging.FileHandler(f'{log_dir}/{name}.log')
+    fileHandler.setFormatter(logging.Formatter(format))
+    logger.addHandler(fileHandler)
+
+    if stderr:
+        streamHandler = logging.StreamHandler(sys.stderr)
+        streamHandler.setFormatter(logging.Formatter(format))
+        logger.addHandler(streamHandler)
+
+    return logger
+
+def get_text_wrapper():
+    wrapper = TextWrapper()
+    wrapper.width = 120
+    wrapper.replace_whitespace = False
+    wrapper.break_long_words = False
+    wrapper.break_on_hyphens = False
+    return wrapper
 
 def get_directories(path: str) -> list[str]:
     return sorted([d.name for d in Path(path).iterdir() if d.is_dir()])
