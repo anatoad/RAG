@@ -1,4 +1,10 @@
 from pathlib import Path
+import os
+
+# OpenSearch configuration
+ADMIN_PASSWD = os.environ['OPENSEARCH_INITIAL_ADMIN_PASSWORD']
+INDEX_NAME = 'rag-knn-index'
+MODEL_ID = 'g0Krd5UB_e6dONcEC5dk'
 
 # Get the absolute path of the directory where this file is located
 SRC_DIR = Path(__file__).resolve().parent
