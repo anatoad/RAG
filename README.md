@@ -5,9 +5,13 @@
 
 To create a virtual environment and install dependencies from `requirements.txt` run:
 ```
-make setup
+source ./setup.sh
 ```
 
+Activate virtual environment:
+```
+source env/bin/activate
+```
 Tools used:
 - Scrapy
 - Selenium
@@ -59,7 +63,8 @@ PUT _cluster/settings
   "persistent": {
     "plugins.ml_commons.only_run_on_ml_node": "false",
     "plugins.ml_commons.model_access_control_enabled": "true",
-    "plugins.ml_commons.native_memory_threshold": "99"
+    "plugins.ml_commons.native_memory_threshold": "99",
+    "plugins.ml_commons.allow_registering_model_via_url": "true"
   }
 }
 ```
@@ -96,6 +101,8 @@ POST /_plugins/_ml/model_groups/_search
 
 
 #### Register the model to the model group
+I used the [paraphrase-multilingual-MiniLM-L12-v2](https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2) sentence-transformer model from Hugging Face, trained on data for 50+ languages, including Romanian.
+
 ```
 POST /_plugins/_ml/models/_register
 {
@@ -139,6 +146,8 @@ POST /_plugins/_ml/models/g0Krd5UB_e6dONcEC5dk/_deploy
 
 ### Create an ingest pipeline
 
+Create an ingest pipeline to transform the text into embeddings using the registered embedding model before storing it.
+
 You will need the `model_id` of the model you registered.
 
 ```
@@ -157,6 +166,9 @@ PUT /_ingest/pipeline/nlp-ingest-pipeline
   ]
 }
 ```
+
+The pipeline automatically generates an embedding for `"text"` and stores it in the `"embedding"` field.
+
 
 ### Create a KNN index
 ```
@@ -202,6 +214,7 @@ PUT /rag-knn-index
 ```
 
 ## Search data
+
 Get all elements
 ```
 GET /rag-knn-index/_search
