@@ -207,6 +207,12 @@ PUT /rag-knn-index
       },
       "page_number": {
         "type": "integer"
+      },
+      "table_id": {
+        "type": "text"
+      },
+      "table_as_markdown": {
+        "type": "text"
       }
     }
   }
