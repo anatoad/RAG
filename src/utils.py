@@ -1,11 +1,12 @@
 from pathlib import Path
 import json
-import hashlib
 import os
 import sys
 import logging
-from config import BASE_DIR
+import settings
 from textwrap import TextWrapper
+from logging import Logger
+import pandas as pd
 
 def get_logger(
     name,
@@ -14,21 +15,22 @@ def get_logger(
     format=f"%(asctime)s %(levelname)s: %(message)s",
     stderr=False
 ):
-    log_dir = log_dir or BASE_DIR / "logs"
+    log_dir = log_dir or settings.BASE_DIR / "logs"
     os.makedirs(log_dir, exist_ok=True)
 
     logger = logging.getLogger(name)
     logger.setLevel(level)
     logger.propagate = False
 
-    fileHandler = logging.FileHandler(f'{log_dir}/{name}.log')
-    fileHandler.setFormatter(logging.Formatter(format))
-    logger.addHandler(fileHandler)
+    if not logger.handlers:
+        fileHandler = logging.FileHandler(f'{log_dir}/{name}.log')
+        fileHandler.setFormatter(logging.Formatter(format))
+        logger.addHandler(fileHandler)
 
-    if stderr:
-        streamHandler = logging.StreamHandler(sys.stderr)
-        streamHandler.setFormatter(logging.Formatter(format))
-        logger.addHandler(streamHandler)
+        if stderr:
+            streamHandler = logging.StreamHandler(sys.stderr)
+            streamHandler.setFormatter(logging.Formatter(format))
+            logger.addHandler(streamHandler)
 
     return logger
 
@@ -59,9 +61,3 @@ def write_to_json_file(filepath: str, data: dict) -> None:
     with open(filepath, "w") as jsonFile:
         json.dump(data, jsonFile, indent=4, sort_keys=True)
 
-def get_hash(string: str) -> int:
-    return hashlib.sha256(string.encode('utf-8')).hexdigest()
-
-def get_id(url: str, chunk_number: int) -> str:
-    hash = get_hash(url)
-    return f'{hash}-{chunk_number}'

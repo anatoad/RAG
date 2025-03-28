@@ -1,7 +1,9 @@
 **/__pycache__/
 .vscode/
 env/
+all_data/
 data/
+temp/
 models/
 logs/
 .env
