@@ -1,6 +1,6 @@
 import json
 import logging
-from config import *
+import settings
 from langchain_core.documents import Document
 from opensearch_client import OpenSearchClient
 
@@ -8,9 +8,9 @@ class Retriever:
     def __init__(
         self,
         logger: logging.Logger,
-        index: str = INDEX_NAME,
-        model_id: str = MODEL_ID,
-        k: int = 3,
+        index: str = settings.INDEX_NAME,
+        model_id: str = settings.MODEL_ID,
+        k: int = 10,
     ) -> None:
         """
         Initialize the Retriever with OpenSearch connection details.
