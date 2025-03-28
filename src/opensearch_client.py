@@ -1,8 +1,8 @@
 import json
 from logging import Logger
 from utils import get_logger
-from config import ADMIN_PASSWD, INDEX_NAME, MODEL_ID
-from opensearchpy import OpenSearch
+import settings
+from opensearchpy import OpenSearch, helpers
 
 def replace_placeholders(object: dict, **kwargs):
     if isinstance(object, dict):
@@ -28,7 +28,7 @@ class OpenSearchClient:
             client = OpenSearch(
                 hosts = [{'host': self.host, 'port': self.port}],
                 http_compress = True, # enables gzip compression for request bodies
-                http_auth = ('admin', ADMIN_PASSWD),
+                http_auth = ('admin', settings.ADMIN_PASSWD),
                 use_ssl = True,
                 verify_certs = False,
                 ssl_assert_hostname = False,
@@ -46,7 +46,7 @@ class OpenSearchClient:
             response = self.client.transport.perform_request(method, endpoint, body=body)
             self._logger.info(f"{method} {endpoint}")
             if body: self._logger.info(json.dumps(body, indent=4, ensure_ascii=False))
-            self._logger.info(f"RESPONSE:\n{json.dumps(response, indent=4, ensure_ascii=False)}")
+            self._logger.info(f"Response:\n{json.dumps(response, indent=4, ensure_ascii=False)}")
             return response
         except Exception as e:
             self._logger.error("Error during request", exc_info=True)
@@ -60,7 +60,6 @@ class OpenSearchClient:
     def _load_json_config(self, filepath: str, **kwargs):
         with open(filepath, 'r') as file:
             json_config = json.load(file)
-
         json_config = replace_placeholders(json_config, **kwargs)
         return json_config
 
@@ -89,14 +88,8 @@ class OpenSearchClient:
         endpoint = "/_plugins/_ml/model_groups/_search"
         body = {
             "query": {
-                "bool": {
-                    "must": [
-                        {
-                        "terms": {
-                            "name": [group_name]
-                        }
-                        }
-                    ]
+                "match": {
+                    "name": group_name
                 }
             }
         }
@@ -145,22 +138,41 @@ class OpenSearchClient:
     def deploy_model(self, model_id: str):
         self._logger.info(f"Deploy model, model_id = {model_id}")
         endpoint = f"/_plugins/_ml/models/{model_id}/_deploy"
-        response = self.client.transport.perform_request("POST", endpoint)
-        return response
+        return self._perform_request("POST", endpoint, body={})
 
     def check_index_exists(self, index_name: str):
         self._logger.info(f"Check if index exists, index_name = {index_name}")
         return self.client.indices.exists(index=index_name)
 
-    def create_ingest_pipeline(self, pipeline_id: str, description:str, processors: list[dict]):
-        endpoint = f"_ingest/pipeline/{pipeline_id}"
+    def create_ingest_pipeline(
+        self, 
+        pipeline_id: str,
+        description:str,
+        model_id: str | None = None,
+        processors: list[dict] | None = None,
+    ):
+        endpoint = f"/_ingest/pipeline/{pipeline_id}"
+        if not processors:
+            processors = [
+                {
+                    "text_embedding": {
+                        "model_id": model_id,
+                        "field_map": {
+                            "text": "embedding"
+                        }
+                    }
+                }
+            ]
         body = {
             "description": description,
             "processors": processors
         }
-        response = client.transport.perform_request("PUT", endpoint, body=body)
-        return response
+        return self._perform_request("PUT", endpoint, body=body)
 
+    def get_ingest_pipelines(self):
+        endpoint = "/_ingest/pipeline"
+        return self._perform_request("GET", endpoint, body={})
+    
     def get_elements_count(self, index_name: str):
         self._logger.info(f"Get elements count, index_name = {index_name}")
         response = self.client.count(index=index_name)
@@ -175,7 +187,7 @@ class OpenSearchClient:
             _source_excludes=["embedding"]  # exclude text embedding from the response
         )
 
-    def semantic_search(self, index_name: str, query_text: str, k: int = 3):
+    def semantic_search(self, index_name: str, query_text: str, k: int = 3, model_id: str = settings.MODEL_ID):
         self._logger.info(f"Semantic search, query_text = {query_text}")
         query = {
             "size": k,
@@ -183,7 +195,7 @@ class OpenSearchClient:
                 "neural": {
                         "embedding": {
                             "query_text": query_text,
-                            "model_id": MODEL_ID,
+                            "model_id": model_id,
                             "k": k
                         }
                     }
@@ -197,32 +209,28 @@ class OpenSearchClient:
     
     def create_index(self, index_name: str, body: json):
         self._logger.info(f"Create KNN index, index_name = {index_name}")
-        return self.client.search(
-            index=index_name,
-            body=body,
-            _source_excludes=["embedding"]
-        )
+        endpoint = f"/{index_name}"
+        return self._perform_request("PUT", endpoint, body=body)
 
-if __name__ == "__main__":
-    client = OpenSearchClient()
+    def get_indices(self):
+        self._logger.info(f"Get all indices")
+        endpoint = "/_cat/indices"
+        return self._perform_request("GET", endpoint, body={})
 
-    # client.register_model_group("dummy")
-
-    # response = client.register_model("huggingface/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2", "1.0.1", "dummy")
-    # task_id = response["task_id"]
-    # task_id = "gNEpqZUBJq99Lce6HLWB"
-    # # client.get_task(task_id)
-
-    # model_id = client.get_model_id(task_id)clus
-    # client.deploy_model(model_id)
-
-    # print(client.check_index_exists(INDEX_NAME))
-    # print(client.get_elements_count(INDEX_NAME))
-    # print(client.get_all_elements(INDEX_NAME))
-    # print(json.dumps(client.semantic_search(INDEX_NAME, "regulamentul de acordare al burselor pentru studenti"), indent=4))
-
-    # client.delete_model_group("dummy")
-    # client.get_models()
-    # print(json.dumps(client.get_model_groups(), indent=4))
-
-    # client._load_json_config("../opensearch-config/ingest-pipeline.json", model_id=MODEL_ID)
+    def ingest_data_bulk(self, data):
+        self._logger.info("Ingest data bulk")
+        try:
+            ret = helpers.parallel_bulk(
+                self.client, 
+                actions=data, 
+                chunk_size=10, 
+                raise_on_error=True,
+                raise_on_exception=False,
+                max_chunk_bytes=20 * 1024 * 1024,
+                request_timeout=60
+            )
+            self._logger.info("Successfully performed parallel bulk ingestion")
+            return ret
+        except Exception as e:
+            self._logger.error("Error during parallel bulk ingestion", exc_info=True)
+            return None
