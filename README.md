@@ -211,7 +211,7 @@ PUT /rag-knn-index
       "table_id": {
         "type": "text"
       },
-      "table_as_markdown": {
+      "table_text": {
         "type": "text"
       }
     }

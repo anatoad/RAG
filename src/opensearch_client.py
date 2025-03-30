@@ -41,9 +41,9 @@ class OpenSearchClient:
             self._logger.error(f"Could not connect to Opensearch: {e}")
             return None
 
-    def _perform_request(self, method: str, endpoint: str, body: dict):
+    def _perform_request(self, method: str, endpoint: str, body: dict, params: dict | None = None):
         try:
-            response = self.client.transport.perform_request(method, endpoint, body=body)
+            response = self.client.transport.perform_request(method, endpoint, body=body, params=params)
             self._logger.info(f"{method} {endpoint}")
             if body: self._logger.info(json.dumps(body, indent=4, ensure_ascii=False))
             self._logger.info(f"Response:\n{json.dumps(response, indent=4, ensure_ascii=False)}")
@@ -140,10 +140,6 @@ class OpenSearchClient:
         endpoint = f"/_plugins/_ml/models/{model_id}/_deploy"
         return self._perform_request("POST", endpoint, body={})
 
-    def check_index_exists(self, index_name: str):
-        self._logger.info(f"Check if index exists, index_name = {index_name}")
-        return self.client.indices.exists(index=index_name)
-
     def create_ingest_pipeline(
         self, 
         pipeline_id: str,
@@ -184,7 +180,8 @@ class OpenSearchClient:
         return self.client.search(
             index=index_name,
             body=query,
-            _source_excludes=["embedding"]  # exclude text embedding from the response
+            _source_excludes=["embedding"],  # exclude text embedding from the response
+            explain=True,
         )
 
     def semantic_search(self, index_name: str, query_text: str, k: int = 3, model_id: str = settings.MODEL_ID):
@@ -205,17 +202,36 @@ class OpenSearchClient:
             index=index_name,
             body=query,
             _source_excludes=["embedding"],
+
         )
-    
+
+    def check_index_exists(self, index_name: str):
+        self._logger.info(f"Check if index exists, index_name = {index_name}")
+        return self.client.indices.exists(index=index_name)
+
+    def get_indices(self):
+        self._logger.info(f"Get all indices")
+        endpoint = "/_cat/indices"
+        response = self._perform_request("GET", endpoint, body={})
+        return [] if not response else response.split('\n')
+
     def create_index(self, index_name: str, body: json):
         self._logger.info(f"Create KNN index, index_name = {index_name}")
         endpoint = f"/{index_name}"
         return self._perform_request("PUT", endpoint, body=body)
 
-    def get_indices(self):
-        self._logger.info(f"Get all indices")
-        endpoint = "/_cat/indices"
-        return self._perform_request("GET", endpoint, body={})
+    def delete_index(self, index_name: str):
+        self._logger.info(f"Delete index {index_name}")
+        if self.check_index_exists(index_name):
+            try:
+                response = self.client.indices.delete(index=index_name)
+                self._logger.info(f"Index {index_name} successfully deleted")
+                return response
+            except Exception as e:
+                self._logger.error(f"Error deleting index {index_name}", exc_info=True)
+        else:
+            self._logger.info(f"Index {index_name} does not exist.")
+
 
     def ingest_data_bulk(self, data):
         self._logger.info("Ingest data bulk")
@@ -226,7 +242,7 @@ class OpenSearchClient:
                 chunk_size=10, 
                 raise_on_error=True,
                 raise_on_exception=False,
-                max_chunk_bytes=20 * 1024 * 1024,
+                # max_chunk_bytes=20 * 1024 * 1024,
                 request_timeout=60
             )
             self._logger.info("Successfully performed parallel bulk ingestion")
