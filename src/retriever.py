@@ -1,6 +1,7 @@
 import json
 import logging
 import settings
+import utils
 from langchain_core.documents import Document
 from opensearch_client import OpenSearchClient
 
@@ -21,6 +22,8 @@ class Retriever:
         self._model_id = model_id
         self._client = OpenSearchClient(logger=self._logger)
         self._client._connect_to_opensearch()
+        self._wrapper = utils.get_text_wrapper()
+        self._SCORE_THRESHOLD = 0.07
 
     def retrieve_documents(self, query_text: str, k: int = None) -> list[Document]:
         """
@@ -32,18 +35,41 @@ class Retriever:
             k=k or self._k
         )
 
-        documents = [
-            Document(
-                page_content=document["_source"]["text"],
-                metadata={
-                    "id": document["_source"]["id"],
-                    "url": document["_source"]["url"],
-                    "filename": document["_source"]["filename"],
-                    "page_number": document["_source"]["page_number"],
-                }
-            )
+        # Handle tables
+        retrieved_documents = [
+            document 
             for document in response["hits"]["hits"]
+            if document["_score"] >= self._SCORE_THRESHOLD
         ]
+
+        # Sort document chunks - group by document, maintain order
+        retrieved_documents = sorted(retrieved_documents, key=lambda doc: doc["_id"])
+
+        table_ids = set()
+        documents = []
+
+        for document in retrieved_documents:
+            table_id = document["_source"]["table_id"]
+            if table_id and table_id in table_ids: # table can be split into multiple chunks
+                continue
+
+            if not table_id:
+                page_content = document["_source"]["text"]
+            elif table_id not in table_ids:
+                table_ids.add(table_id)
+                page_content = document["_source"]["table_text"]
+
+            documents.append(
+                Document(
+                    page_content=page_content,
+                    metadata={
+                        "score": document["_score"],
+                    } | {
+                        key: value
+                        for key, value in document["_source"].items() if "embedding" not in key
+                    }
+                )
+            )
 
         return documents
 
@@ -53,19 +79,22 @@ class Retriever:
         """
         return "\n\n".join(
             [
-            f"Source: {doc.metadata.get('url')}\nContent: {doc.page_content}"
+            f"Sursa: {doc.metadata.get('url')}\nConținut:\n{doc.page_content}"
             for doc in documents
             ]
         )
 
     def _print_document(self, document: Document) -> None:
-        print(json.dumps(
-            {
-                "page_content": document.page_content,
-                "metadata": document.metadata
-            },
-            indent=4,
-            ensure_ascii=False,
+        print(self._wrapper.fill(
+            json.dumps(
+                {
+                    "page_content": document.page_content.replace("\n", '\n'),
+                    "metadata": document.metadata
+                },
+                indent=4,
+                ensure_ascii=False,
+                separators=(',', ":"),
+            )
         ))
     
     def print_documents(self, documents: list[Document]) -> None:
