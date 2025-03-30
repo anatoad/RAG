@@ -40,9 +40,7 @@ class Chatbot:
             {query_text}
 
             Formatează răspunsul astfel:
-
-            <Răspunsul tău detaliat cu sursa citată explicit>
-            \n\n
+            <Răspunsul tău detaliat>
             Surse:
             - <sursă>: <url> <filename> și <page_number> dacă există
             """
@@ -50,6 +48,7 @@ class Chatbot:
             input_variables=["chat_history", "relevant_docs", "query_text"],
             template=prompt_template
         )
+        self.formatted_prompt = None
         self.retriever = retriever
         self.state = None
         self.llm = llm
@@ -102,13 +101,13 @@ class Chatbot:
         formatted_docs = self.retriever.format_documents(state["documents"])
 
         # Format the prompt
-        formatted_prompt = self.prompt.format(
+        self.formatted_prompt = self.prompt.format(
             chat_history=state["conversation_text"],
             relevant_docs=formatted_docs,
             query_text=state["query"]
         )
-    
-        response = self.llm.invoke(formatted_prompt)
+
+        response = self.llm.invoke(self.formatted_prompt)
         state["response"] = response.content
 
         return state
@@ -154,3 +153,9 @@ class Chatbot:
             print(self._wrapper.fill(f"{conversation["role"].upper()}:"))
             print(self._wrapper.fill(conversation["content"]))
             print('-' * self._wrapper.width)
+    
+    def _print_response(self):
+        for conversation in self.state["chat_history"][-2:]:
+            print(self._wrapper.fill(f"{conversation["role"].upper()}:"))
+            print(self._wrapper.fill(conversation["content"]))
+            print('-' * self._wrapper.width)        
