@@ -21,12 +21,6 @@ from unstructured.partition.pdf import partition_pdf
 from unstructured.documents.coordinates import PixelSpace
 import spacy
 
-TABLE_TOKEN = "[TABLE]"
-TABLE_TOKEN_SENT = {
-    "page_number": None,
-    "text": TABLE_TOKEN
-}
-
 class PdfProcessor:
     def __init__(
         self, 
@@ -49,6 +43,7 @@ class PdfProcessor:
         self.document = self._init_document(path)
         self.sentences = None
         self.chunks = []
+        self.num_chunks = 0
         self.elements = None
         self._logger = logger or get_logger(Path(__file__).resolve().name.split(".")[0])
 
@@ -137,15 +132,6 @@ class PdfProcessor:
         self.bw_path = output_path
         self._logger.info(f"Black and white PDF saved to: {self.bw_path}")
 
-    def _cleanup_text(self, text: str) -> str:
-        # remove extra whitespace
-        text = re.sub(r'\s+', ' ', text).strip()
-
-        # clean up table of contents
-        text = re.sub(r'\.{4,}\s*\d+', '', text).strip()
-
-        return text
-
     def sentencize(self) -> None:
         self.sentences = []
         
@@ -153,21 +139,16 @@ class PdfProcessor:
             text = self._cleanup_text(page.get_text())
             try:
                 doc = self.nlp(text)
-                self.sentences.extend([
-                    {
-                        "page_number": page_number + 1,
-                        "text": str(sentence)
-                    }
-                    for sentence in doc.sents
-                ])
+                sents = [str(sentence) for sentence in doc.sents]
+                self.sentences.extend(self._format_sentences(sents, page_number + 1))
             except Exception as e:
-                self._logger.error(e.with_traceback)
+                self._logger.error(f"An unexpected error occurred: {str(e)}", exc_info=True)
 
     def split_into_chunks(
         self,
         sentences: list[dict[str, str | int]],
         table_id: str | None = None,
-        table_as_markdown: str | None = None,
+        table_text: str | None = None,
     ) -> None:
         """
         Split text into chunks of sentences, taking into account the maximum sequence length of
@@ -176,10 +157,10 @@ class PdfProcessor:
 
         TODO: try chunking by title
         """
+        if not sentences: return
         chunks = []
         current_chunk = []
         current_tokens_count = 0
-        chunk_number = 1
         current_page = 1
 
         for sentence in sentences:
@@ -194,65 +175,40 @@ class PdfProcessor:
                 self._logger.error(f"pdf: {self.path}, page number {sentence["page_number"]}")
                 self._logger.error(f"Sentence: {sentence["text"]}")
 
-            if sentence["text"] == TABLE_TOKEN or current_tokens_count + sentence_tokens_count > self.max_tokens:
-                chunks.append(self._format_chunk(current_chunk, chunk_number, current_page))
-                chunk_number += 1
+            if current_tokens_count + sentence_tokens_count > self.max_tokens:
+                self.num_chunks += 1
+                chunks.append(
+                    self._format_chunk(
+                        sentences=current_chunk,
+                        chunk_number=self.num_chunks,
+                        page_number=current_page
+                    )
+                )
                 current_chunk = []
                 current_tokens_count = 0
                 current_page = sentence["page_number"]
             
-            if sentence["text"] != TABLE_TOKEN:
-                current_chunk.append(sentence["text"])
-                current_tokens_count += sentence_tokens_count
+            current_chunk.append(sentence["text"])
+            current_tokens_count += sentence_tokens_count
 
         if current_chunk:
+            self.num_chunks += 1
             chunks.append(
                 self._format_chunk(
                     sentences=current_chunk,
-                    chunk_number=chunk_number,
+                    chunk_number=self.num_chunks,
                     page_number=current_page,
                     table_id=table_id,
-                    table_as_markdown=table_as_markdown
+                    table_text=table_text
                 )
             )
         
         return chunks
-
-    def _format_chunk(
-        self,
-        sentences: list[str],
-        chunk_number: int,
-        page_number: int,
-        table_id: str | None = None,
-        table_as_markdown: str | None = None,
-    ) -> dict[str, str | int]:
-        return {
-            "id": get_id(self.url, chunk_number),
-            "text": " ".join(sentences),
-            "url": self.url,
-            "type": "pdf",
-            "filename": self.filename,
-            "page_number": page_number,
-            "table_id": table_id,
-            "table_as_markdown": table_as_markdown,
-        }
-
-    # def process(self) -> None:
-    #     if self._needs_ocr():
-    #         self.apply_ocr()
-
-    #     self.sentencize()
-
-    #     self.chunks = self.split_into_chunks(self.sentences)
-
-    def format_data(self, index_name: str) -> list[dict[str, str]]:
-        """
-        Format data for OpenSearch bulk ingestion.
-        """
-        return [
-            {"_index": index_name, "_id": chunk["id"]} | chunk
-            for chunk in self.chunks
-        ]
+    
+    def process(self) -> None:
+        self.partition_pdf()
+        self.cleanup_elements()
+        self.perform_chunking()
 
     def partition_pdf(self) -> None:
         """
@@ -283,13 +239,8 @@ class PdfProcessor:
         
         try:
             doc = self.nlp(clean_text)
-            sentences = [
-                {
-                    "page_number": element.metadata.page_number,
-                    "text": str(sentence)
-                }
-                for sentence in doc.sents
-            ]
+            sents = [str(sentence) for sentence in doc.sents]
+            sentences = self._format_sentences(sents, page_number=element.metadata.page_number)
         except Exception as e:
             self._logger.error(f"An unexpected error occurred: {str(e)}", exc_info=True)
 
@@ -315,40 +266,79 @@ class PdfProcessor:
                 sentences.extend(self._sentence_segmentation(element))
 
             elif element_category == ElementCategory.TABLE:
-                sentences.append(TABLE_TOKEN_SENT)
+                self.chunks.extend(self.split_into_chunks(sentences))
+                sentences = []
                 self.chunks.extend(self._get_table_chunks(element))
 
         # use the sentences to build text chunks
         self.chunks.extend(self.split_into_chunks(sentences))
 
-    def _get_table_chunks(self, table) -> str:
-        # convert table to dataframe
-        df = convert_table_to_dataframe(table)
+    def _format_table_row(self, row) -> str:
+        return " ; ".join(row) + " ; "
 
-        records = []
-        page_number = table.metadata.page_number
-
-        # get the header
-        records.append(' ; '.join(df.columns))
-
-        # chunk table by character number
-        for _, row in df.iterrows():
-            record = ' ; '.join([data for data in row]) + " ; "
-            records.append(record)
-
-        sentences = [
+    def _format_sentences(self, sentences: list[str], page_number: int) -> list[dict[str, str | int]]:
+        return [
             {
-                "text": record,
-                "page_number": page_number,
+                "text": sentence,
+                "page_number": page_number
             }
-            for record in records
+            for sentence in sentences
         ]
 
-        table_markdown = convert_table_to_markdown(table)
-        table_id = get_table_id(table_markdown)
-        table_chunks = self.split_into_chunks(sentences, table_id, table_markdown)
+    def _format_chunk(
+        self,
+        sentences: list[str],
+        chunk_number: int,
+        page_number: int,
+        table_id: str | None = None,
+        table_text: str | None = None,
+    ) -> dict[str, str | int]:
+        return {
+            "id": get_id(self.url, chunk_number),
+            "text": " ".join(sentences),
+            "url": self.url,
+            "type": "pdf",
+            "filename": self.filename,
+            "page_number": page_number,
+            "table_id": table_id,
+            "table_text": table_text,
+        }
+
+    def format_data(self, index_name: str) -> list[dict[str, str]]:
+        """
+        Format data for OpenSearch bulk ingestion.
+        """
+        return [
+            {"_index": index_name, "_id": chunk["id"]} | chunk
+            for chunk in self.chunks
+        ]
+
+    def _get_table_chunks(self, table) -> str:
+        df = convert_table_to_dataframe(table)
+
+        # get table header + rows
+        records = []
+        records.append(self._format_table_row(df.columns))
+        records.extend([self._format_table_row(row) for _, row in df.iterrows()])
+
+        sentences = self._format_sentences(records, page_number=table.metadata.page_number)
+
+        table_text = self._format_table_text(table)
+        table_id = get_table_id(table_text)
+        table_chunks = self.split_into_chunks(sentences, table_id, table_text)
         
         return table_chunks
+    
+    def _format_table_text(self, table: Table) -> str:
+        """
+        
+        """
+        markdown = convert_table_to_dataframe(table).to_markdown(index=False)
+        # remove whitespace
+        markdown = re.sub(r' +', ' ', markdown)
+        markdown = re.sub(r'\|:[-]{3,}', '|:--', markdown)
+
+        return markdown
 
     def _plot_page_with_boxes(self, page: pymupdf.Page, elements: list) -> None:
         # page -> pixmap -> PIL image
@@ -415,6 +405,15 @@ class PdfProcessor:
 
         cleaned_html = soup.prettify()
         table.metadata.text_as_html = cleaned_html
+
+    def _cleanup_text(self, text: str) -> str:
+        # remove extra whitespace
+        text = re.sub(r'\s+', ' ', text).strip()
+
+        # clean up table of contents
+        text = re.sub(r'\.{4,}\s*\d+', '', text).strip()
+
+        return text
 
     def _cleanup_textual_element(self, element: Element) -> None:
         element.text = self._cleanup_text(element.text)

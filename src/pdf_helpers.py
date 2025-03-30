@@ -66,9 +66,6 @@ def get_table_id(table_markdown: str) -> str:
 def convert_table_to_dataframe(table: Table) -> pd.DataFrame:
     return pd.read_html(StringIO(table.metadata.text_as_html))[0]
 
-def convert_table_to_markdown(table: Table) -> str:
-    return convert_table_to_dataframe(table).to_markdown(index=False)
-
 def is_page_number(element: Element) -> bool:
     return (element.category == ElementType.PAGE_NUMBER 
             or (element.category == ElementType.UNCATEGORIZED_TEXT and element.text == str(element.metadata.page_number)))
