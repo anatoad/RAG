@@ -53,7 +53,8 @@ class PdfProcessor:
         return pymupdf.open(path, filetype="pdf")
         
     def _needs_ocr(self) -> bool:
-        return not any([page.get_text().strip() for page in self.document])
+        self._logger.info([page.get_text() for page in self.document])
+        return not any([page.get_text() for page in self.document])
 
     def _perform_ocr(self, input_path: str, output_path: str, force_ocr: bool = False, redo_ocr: bool = False) -> None:
         ocrmypdf.ocr(
@@ -83,6 +84,7 @@ class PdfProcessor:
             dir = settings.OCR_DIR / parent_dir
 
         output_path = dir / self.filename
+        self._logger.info(output_path)
         os.makedirs(dir, exist_ok=True)
 
         if not os.path.exists(output_path):
@@ -170,7 +172,9 @@ class PdfProcessor:
                     self._format_chunk(
                         sentences=current_chunk,
                         chunk_number=self.num_chunks,
-                        page_number=current_page
+                        page_number=current_page,
+                        table_id=table_id,
+                        table_text=table_text,
                     )
                 )
                 current_chunk = []
@@ -402,6 +406,16 @@ class PdfProcessor:
             element.string = re.sub(r"\|+", " ", element.get_text(strip=True))
 
         cleaned_html = soup.prettify()
+        
+        # handle email addresses
+        email_regex = r"[\w\.-]+@[\w\.-]+\.[a-zA-Z]{2,}"
+        email_addresses = re.findall(email_regex, table.text)
+        if email_addresses:
+            for email_address in email_addresses:
+                index = email_address.find("@") + 1
+                domain = email_address[index:]
+                cleaned_html = re.sub(r"\([\w\.-]+{}".format(domain), f"@{domain}", cleaned_html, count=1)
+
         table.metadata.text_as_html = cleaned_html
 
     def _cleanup_text(self, text: str) -> str:
@@ -436,7 +450,7 @@ class PdfProcessor:
                     continue
 
                 # do some cleanup - hardcoded
-                cell.string = re.sub(r'^L', '', cell.string)
+                cell.string = re.sub(r'^L ', '', cell.string)
 
                 if delimiter in cell.string:
                     # split the cell text using the delimiter
