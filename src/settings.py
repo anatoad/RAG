@@ -21,6 +21,7 @@ OPENSEARCH_CONFIG_DIR = BASE_DIR / "opensearch-config"
 OCR_DIR = DATA_DIR / "_ocr"
 TEMP_DIR = BASE_DIR / "temp"
 CONTENT_DIR = DATA_DIR / "content"
+ARTICLES_DIR = BASE_DIR / "articles"
 
 # Ensure directories exist
 DATA_DIR.mkdir(parents=True, exist_ok=True)

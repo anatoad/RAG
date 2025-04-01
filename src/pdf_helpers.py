@@ -3,7 +3,7 @@ import hashlib
 import pandas as pd
 from io import StringIO
 from unstructured.documents.elements import Element, ElementType, Table
-
+import re
 class ElementCategory(Enum):
     TEXTUAL = "Textual"
     TABLE = "Table"
@@ -63,9 +63,34 @@ def get_id(url: str, chunk_number: int) -> str:
 def get_table_id(table_markdown: str) -> str:
     return get_hash(table_markdown)
 
+diacritics = {
+    'ţ': 'ț',
+}
+
+def normalize_romanian_diacritics(text):
+    normalized_text = text
+    if isinstance(text, str):
+        for char, value in diacritics.items():
+            normalized_text = normalized_text.replace(char, value)
+    return normalized_text
+
 def convert_table_to_dataframe(table: Table) -> pd.DataFrame:
-    return pd.read_html(StringIO(table.metadata.text_as_html))[0]
+    df = pd.read_html(StringIO(table.metadata.text_as_html), encoding='utf-8')[0]
+    # normalize diacritics for every string in the dataframe
+    df.columns = [normalize_romanian_diacritics(col) for col in df.columns]
+    df = df.map(lambda x: normalize_romanian_diacritics(x))
+
+    # cleanup missing values
+    df.columns = ['' if "Unnamed" in str(col) else str(col) for col in df.columns]
+    df = df.fillna('')
+
+    return df
 
 def is_page_number(element: Element) -> bool:
     return (element.category == ElementType.PAGE_NUMBER 
             or (element.category == ElementType.UNCATEGORIZED_TEXT and element.text == str(element.metadata.page_number)))
+
+def table_contains_html(table: Table) -> bool:
+    pattern = r">([^<]+)<"
+    matches = re.findall(pattern, table.metadata.text_as_html)
+    return matches and any(match.strip() for match in matches)

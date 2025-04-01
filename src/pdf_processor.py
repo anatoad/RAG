@@ -258,11 +258,14 @@ class PdfProcessor:
 
             if element_category == ElementCategory.TEXTUAL:
                 sentences.extend(self._sentencize(element))
-
-            elif element_category == ElementCategory.TABLE:
+            
+            elif element_category == ElementCategory.TABLE and table_contains_html(element):
                 self.chunks.extend(self.split_into_chunks(sentences))
                 sentences.clear()
                 self.chunks.extend(self._get_table_chunks(element))
+            
+            elif element_category == ElementCategory.TABLE and not table_contains_html(element):
+                sentences.extend(self._sentencize(element))
 
         # use the sentences to build text chunks
         self.chunks.extend(self.split_into_chunks(sentences))
