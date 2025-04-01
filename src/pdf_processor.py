@@ -90,7 +90,8 @@ class PdfProcessor:
                 self._logger.info(f"This PDF is marked as a Tagged PDF. Using --redo-ocr to override this error.")
                 self._perform_ocr(input_path, output_path, redo_ocr=True)
             except ocrmypdf.exceptions.PriorOcrFoundError:
-                self._logger.info(f"This PDF contains pages that already have text. Using --force-ocr to completely re-run the OCR regardless of the existing text.")
+                self._logger.info("This PDF contains pages that already have text.")
+                self._logger.info("Using --force-ocr to completely re-run the OCR regardless of the existing text.")
                 self._perform_ocr(input_path, output_path, force_ocr=True)
             except Exception as e:
                 self._logger.error(f"An unexpected error occurred: {str(e)}", exc_info=True)
@@ -102,7 +103,7 @@ class PdfProcessor:
 
     def convert_to_bw(self, output_path: str = None, dpi: int = 400, threshold: int = 128) -> None:
         """
-        Convert a PDF to black and white.
+        Convert PDF to black and white.
         """
         if not output_path:
             dir, filename = self.path.split("/")[-2:]
@@ -131,18 +132,6 @@ class PdfProcessor:
     
         self.bw_path = output_path
         self._logger.info(f"Black and white PDF saved to: {self.bw_path}")
-
-    def sentencize(self) -> None:
-        self.sentences = []
-        
-        for page_number, page in enumerate(self.document):
-            text = self._cleanup_text(page.get_text())
-            try:
-                doc = self.nlp(text)
-                sents = [str(sentence) for sentence in doc.sents]
-                self.sentences.extend(self._format_sentences(sents, page_number + 1))
-            except Exception as e:
-                self._logger.error(f"An unexpected error occurred: {str(e)}", exc_info=True)
 
     def split_into_chunks(
         self,
@@ -218,27 +207,29 @@ class PdfProcessor:
         output_dir = settings.CONTENT_DIR
         self.elements = partition_pdf(
             filename=self.path,
-            url=None,                                              # run inference locally, must have unstructured[local-inference] installed
-            languages=["ron"],                                     # use Romanian and English language packs for OCR
-            infer_table_structure=True,                            # extract tables
+            url=None,                                       # run inference locally, must have unstructured[local-inference] installed
+            languages=["ron"],                              # use Romanian Tesseract language pack for OCR
+            infer_table_structure=True,                     # extract tables
             strategy="hi_res",
-            extract_images_in_pdf=True,                            # mandatory to set as ``True``
-            extract_image_block_types=["Image", "Table"],          # optional
-            extract_image_block_to_payload=False,                  # optional
-            extract_image_block_output_dir=output_dir,             # optional - only works when ``extract_image_block_to_payload=False`
+            extract_images_in_pdf=True,                     # mandatory to be set as ``True``
+            extract_image_block_types=["Image", "Table"],   # optional
+            extract_image_block_to_payload=False,           # optional
+            extract_image_block_output_dir=output_dir,      # optional - only works when ``extract_image_block_to_payload=False``
             max_partition=None,
         )
-        self._logger.info(f"Partitioned PDF {self.path}")
 
-    def _sentence_segmentation(self, element: Element) -> list[str]:
+        self._logger.info(f"Partitioned PDF {self.path}. Extracted content found at {output_dir}")
+
+    def _sentencize(self, element: Element) -> list[str]:
         """
-        Split text into sentences using spaCy.
+        Perform sentence segmentation using spaCy model trained for Romanian language.
+        https://spacy.io/models/ro#ro_core_news_lg
         """
         sentences = []
-        clean_text = self._cleanup_text(element.text)
-        
+        text = self._cleanup_text(element.text)
+
         try:
-            doc = self.nlp(clean_text)
+            doc = self.nlp(text)
             sents = [str(sentence) for sentence in doc.sents]
             sentences = self._format_sentences(sents, page_number=element.metadata.page_number)
         except Exception as e:
@@ -255,19 +246,18 @@ class PdfProcessor:
         A single element that exceeds the maximum chunk size is divided into two or more chunks using
         sentence segmentation.
         """
-        if not self.elements:
-            return None
+        if not self.elements: return None
 
         sentences = []
         for element in self.elements:
             element_category = classify_element(element.category)
 
             if element_category == ElementCategory.TEXTUAL:
-                sentences.extend(self._sentence_segmentation(element))
+                sentences.extend(self._sentencize(element))
 
             elif element_category == ElementCategory.TABLE:
                 self.chunks.extend(self.split_into_chunks(sentences))
-                sentences = []
+                sentences.clear()
                 self.chunks.extend(self._get_table_chunks(element))
 
         # use the sentences to build text chunks
@@ -313,7 +303,7 @@ class PdfProcessor:
             for chunk in self.chunks
         ]
 
-    def _get_table_chunks(self, table) -> str:
+    def _get_table_chunks(self, table: Table) -> str:
         df = convert_table_to_dataframe(table)
 
         # get table header + rows
@@ -331,10 +321,10 @@ class PdfProcessor:
     
     def _format_table_text(self, table: Table) -> str:
         """
-        
+        Convert table to markdown format, clean and compact.
         """
         markdown = convert_table_to_dataframe(table).to_markdown(index=False)
-        # remove whitespace
+        # remove whitespace, make markdown more compact
         markdown = re.sub(r' +', ' ', markdown)
         markdown = re.sub(r'\|:[-]{3,}', '|:--', markdown)
 
@@ -382,7 +372,7 @@ class PdfProcessor:
     def cleanup_elements(self) -> list:
         if not self.elements:
             return None
-        
+
         # remove page numbers
         self.elements = [element for element in self.elements if not is_page_number(element)]
 
