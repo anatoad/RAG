@@ -22,14 +22,9 @@ class Chatbot:
     ) -> None:
         if not prompt_template:
             prompt_template = """
-            Ești un asistent care răspunde la întrebări pe baza istoricului conversației și documentelor relevante.
-            Folosește informațiile din istoricul conversației pentru a clarifica contextul întrebării și a putea oferi un răspuns adecvat.
+            Ești un asistent care răspunde la întrebări pe baza contextului din documentele relevante.
             Generează un răspuns formal pe baza datelor primite. Pentru fiecare afirmație furnizează explicit sursa extrasă din metadatele documentului.
             Dacă nu poți formula un răspuns pe baza datelor primite, spune că nu știi, nu încerca să inventezi un răspuns.
-
-            Istoricul conversației:
-            ---------------------
-            {chat_history}
 
             Documente relevante:
             ---------------------
@@ -102,7 +97,6 @@ class Chatbot:
 
         # Format the prompt
         self.formatted_prompt = self.prompt.format(
-            chat_history=state["conversation_text"],
             relevant_docs=formatted_docs,
             query_text=state["query"]
         )
