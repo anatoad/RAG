@@ -11,7 +11,7 @@ from pdf2image import convert_from_path
 from transformers import AutoTokenizer
 from bs4 import BeautifulSoup
 os.environ["EXTRACT_TABLE_AS_CELLS"] = "True"
-os.environ["TABLE_IMAGE_CROP_PAD"] = "10"
+os.environ["TABLE_IMAGE_CROP_PAD"] = "20"
 # os.environ["EXTRACT_IMAGE_BLOCK_CROP_VERTICAL_PAD"] = "0"
 # os.environ["EXTRACT_IMAGE_BLOCK_CROP_HORIZONTAL_PAD"] = "0"
 import matplotlib.patches as patches
@@ -20,6 +20,7 @@ from PIL import Image
 from unstructured.partition.pdf import partition_pdf
 from unstructured.documents.coordinates import PixelSpace
 import spacy
+from pandas.core.series import Index, Series
 
 class PdfProcessor:
     def __init__(
@@ -41,6 +42,7 @@ class PdfProcessor:
         self.tokenizer = tokenizer or AutoTokenizer.from_pretrained(settings.MODEL_NAME)
         self.max_tokens = max_tokens or tokenizer.model_max_length
         self.document = self._init_document(path)
+        self.num_pages = self.document.page_count
         self.sentences = None
         self.chunks = []
         self.num_chunks = 0
@@ -48,7 +50,7 @@ class PdfProcessor:
         self._logger = logger or get_logger(Path(__file__).resolve().name.split(".")[0])
 
     def _init_document(self, path: str) -> None:
-        return  pymupdf.open(path, filetype="pdf")
+        return pymupdf.open(path, filetype="pdf")
         
     def _needs_ocr(self) -> bool:
         return not any([page.get_text().strip() for page in self.document])
@@ -146,17 +148,15 @@ class PdfProcessor:
 
         TODO: try chunking by title
         """
-        if not sentences: return
+        if not sentences: return []
         chunks = []
         current_chunk = []
         current_tokens_count = 0
-        current_page = 1
+        current_page = sentences[0]["page_number"]
 
         for sentence in sentences:
             sentence_tokens = self.tokenizer.encode(sentence["text"], add_special_tokens=False)
             sentence_tokens_count = len(sentence_tokens)
-            if current_page is None:
-                current_page = sentence["page_number"]
 
             # TODO: deal with this
             if sentence_tokens_count > self.max_tokens:
@@ -263,8 +263,14 @@ class PdfProcessor:
         # use the sentences to build text chunks
         self.chunks.extend(self.split_into_chunks(sentences))
 
-    def _format_table_row(self, row) -> str:
-        return " ; ".join(row) + " ; "
+    def format_data(self, index_name: str) -> list[dict[str, str]]:
+        """
+        Format data for OpenSearch bulk ingestion.
+        """
+        return [
+            {"_index": index_name, "_id": chunk["id"]} | chunk
+            for chunk in self.chunks
+        ]
 
     def _format_sentences(self, sentences: list[str], page_number: int) -> list[dict[str, str | int]]:
         return [
@@ -294,17 +300,19 @@ class PdfProcessor:
             "table_text": table_text,
         }
 
-    def format_data(self, index_name: str) -> list[dict[str, str]]:
-        """
-        Format data for OpenSearch bulk ingestion.
-        """
-        return [
-            {"_index": index_name, "_id": chunk["id"]} | chunk
-            for chunk in self.chunks
-        ]
+    def _format_table_row(self, row) -> str:
+        if isinstance(row, Index):
+            if all(isinstance(item, tuple) for item in row._data.flatten().tolist()):
+                lines = [" ; ".join(list(set(tup))) for tup in zip(*row._data.flatten().tolist())]
+                return " ; ".join(lines) + " ; "
+            return " ; ".join(row._data.flatten().tolist()) + " ; "
+        elif isinstance(row, Series):
+            return " ; ".join(row.to_list()) + " ; "
+
+        return " ; ".join(row) + " ; "
 
     def _get_table_chunks(self, table: Table) -> str:
-        df = convert_table_to_dataframe(table)
+        df = self._convert_table_to_dataframe(table)
 
         # get table header + rows
         records = []
@@ -441,6 +449,15 @@ class PdfProcessor:
                         next_row_cells[col_idx].string = parts[1].strip() + " " + next_row_cells[col_idx].string
 
         return str(soup)
+
+    def _convert_table_to_dataframe(self, table: Table) -> str:
+        """
+        Convert table to dataframe.
+        TODO: fill in missing text.
+        """
+        df = convert_table_to_dataframe(table)
+
+        return df
 
     def _get_tables(self):
         return [element for element in self.elements if element.category == ElementType.TABLE]
