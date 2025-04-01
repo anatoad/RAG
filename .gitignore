@@ -7,4 +7,3 @@ temp/
 models/
 logs/
 .env
-metadata.json
