@@ -1,6 +1,7 @@
 import scrapy
 from scrapy_selenium import SeleniumRequest
-from urllib.parse import urljoin, urlparse
+from urllib.parse import urljoin, urlparse, unquote
+from datetime import datetime
 import trafilatura
 import json
 import logging
@@ -20,7 +21,7 @@ def load_urls(filename: str) -> dict[str, list[str]]:
         return {}
 
 def generate_tag(dir, filename):
-    return f"[{Path(dir).name} {re.sub(r'[-_.]', ' ', Path(filename).stem)}]".upper()
+    return f"[{Path(dir).name} {re.sub(r'[-_.]', ' ', Path(unquote(filename)).stem)}]".upper()
 
 def append_to_metadata_file(
     metadata_filepath: str,
@@ -63,6 +64,7 @@ class UpbSpider(scrapy.Spider):
     name = "upb"
     urls = load_urls("urls.json")
     logger = logging.getLogger(__name__)
+    TARGET_DATE = datetime(2024, 10, 1)
 
     def start_requests(self):
         for faculty, url_list in self.urls.items():
@@ -90,9 +92,18 @@ class UpbSpider(scrapy.Spider):
 
         self.logger.info(f"Page loaded: {response.url}, status code: {response.status}")
         
-        self.extract_page_content(response, dir, metadata_filepath)
+        self.logger.info("Downloading pdfs...")
 
-        self.download_pdfs(response, dir, metadata_filepath)
+        # pdf_links = response.xpath('//a[contains(@href, ".pdf")]/@href').getall()
+        pdf_links = response.xpath('//a[substring(@href, string-length(@href) - 3) = ".pdf"]/@href').getall()
+        self.logger.info(f"Links found: {len(pdf_links)}")
+        for link in pdf_links:
+            pdf_url = urljoin(response.url, link)
+            yield scrapy.Request(
+                pdf_url,
+                callback=self.save_pdf,
+                cb_kwargs=dict(dir=dir, metadata_filepath=metadata_filepath)
+            )
 
     def extract_page_content(self, response, dir, metadata_filepath):
         html_content = response.body
@@ -127,19 +138,18 @@ class UpbSpider(scrapy.Spider):
         append_to_metadata_file(metadata_filepath, filename, url, "html", dir)
 
         self.logger.info(f"Saved page content from {url} at {path}")
-
-    def download_pdfs(self, response, dir, metadata_filepath):
-        pdf_links = response.xpath('//a[contains(@href, ".pdf")]/@href').getall()
-        # pdf_links = response.css('a::attr(href)').re(r'.*\.pdf')
-        for link in pdf_links:
-            pdf_url = urljoin(response.url, link)
-            yield scrapy.Request(
-                pdf_url,
-                callback=self.save_pdf,
-                cb_kwargs=dict(dir=dir, metadata_filepath=metadata_filepath)
-            )
     
     def save_pdf(self, response, dir, metadata_filepath):
+        last_modified = response.headers.get('Last-Modified')
+        if last_modified:
+            last_modified = last_modified.decode('utf-8')
+            last_modified_date = datetime.strptime(last_modified, '%a, %d %b %Y %H:%M:%S GMT')
+
+            if last_modified_date < self.TARGET_DATE:
+                return
+    
+            self.logger.info(f"Last Modified: {last_modified_date}")
+
         filename = response.url.split("/")[-1]
         path = os.path.join(dir, filename)
 
