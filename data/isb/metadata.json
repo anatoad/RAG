@@ -26,12 +26,5 @@
         "url": "https://isb.pub.ro/master_isb/",
         "filetype": "html",
         "tag": "[ISB MASTER ISB]"
-    },
-    {
-        "title": "plan_inv_SBI.pdf",
-        "path": "plan_inv_SBI.pdf",
-        "url": "https://isb.pub.ro/wp-content/Planuri_inv/plan_inv_SBI.pdf",
-        "filetype": "pdf",
-        "tag": "[ISB PLAN INV SBI]"
     }
 ]
