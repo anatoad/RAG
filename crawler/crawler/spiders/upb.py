@@ -1,138 +1,158 @@
-from scrapy_selenium import SeleniumRequest
-from urllib.parse import urljoin
 import scrapy
-from pathlib import Path
-from datetime import datetime
+from scrapy_selenium import SeleniumRequest
+from urllib.parse import urljoin, urlparse
+import trafilatura
 import json
+import logging
+from pathlib import Path
 import os
+import re
 
-# Construct the path to the data directory
-FILE_DIR = Path(__file__).resolve().parent
-DATA_DIR = FILE_DIR.parent.parent.parent / "data"
+BASE_DIR = Path(__file__).resolve().parent.parent.parent.parent 
+DATA_DIR = BASE_DIR / "data"
 
-def is_date_updated(old_date: str, new_date: str) -> bool:
-    date_format = "%a, %d %b %Y %H:%M:%S %Z"
-    old_datetime = datetime.strptime(old_date, date_format)
-    new_datetime = datetime.strptime(new_date, date_format)
+def load_urls(filename: str) -> dict[str, list[str]]:
+    try:
+        with open(filename, 'r') as file:
+            data = json.load(file)
+        return data
+    except Exception as e:
+        return {}
 
-    return old_datetime < new_datetime
-
-def file_exists(
-    filename: str,
-    file_path: str,
-    last_modified: str,
-    metadata_filepath: str
-) -> bool:
-    """
-    Check if a file with the given name exists,
-    overwrite it if the last_modified timestamp in the metadata file was updated. 
-    """
-    if os.path.isfile(file_path):
-        data = get_metadata(filename, metadata_filepath)
-        if not data or "last_modified" not in data:
-            return False
-        
-        return not is_date_updated(data["last_modified"], last_modified)
-
-    return False
-
-def get_metadata(filename: str,metadata_filepath: str) -> dict:
-    with open(metadata_filepath, "r+") as jsonFile:
-        try:
-            data = json.load(jsonFile)
-        except:
-            return None
-    
-        if filename not in data:
-            return None
-        
-        return data[filename]
+def generate_tag(dir, filename):
+    return f"[{Path(dir).name} {re.sub(r'[-_.]', ' ', Path(filename).stem)}]".upper()
 
 def append_to_metadata_file(
     metadata_filepath: str,
     filename: str,
     url: str,
-    last_modified: str
+    filetype: str,
+    dir: str,
+    title: str | None = None,
+    tag: str | None = None,
 ) -> None:
     """
     Add information to metadata file.
     url: source url where pdf was downloaded from
-    last_modified: timestamp when the file was last changed
-        (Last-Modified field from response header)
     """
     with open(metadata_filepath, "r+") as jsonFile:
         try:
             data = json.load(jsonFile)
         except:
-            data = {}
+            data = []
 
-        if filename not in data:
-            data[filename] = {}
-        
-        data[filename]["url"] = url
+    if any(entry['url'] == url for entry in data):
+        return
+    
+    tag = tag or generate_tag(dir, filename)
 
-        if last_modified:
-            data[filename]["last_modified"] = last_modified
+    data.append(
+        {
+            "title": title or filename,
+            "path": filename,
+            "url": url,
+            "filetype": filetype,
+            "tag": tag
+        }
+    )
 
-        jsonFile.seek(0)
-        json.dump(data, jsonFile, indent=4, sort_keys=True)
-        jsonFile.truncate()
+    with open(metadata_filepath, "w") as jsonFile:
+        json.dump(data, jsonFile, indent=4)
 
 class UpbSpider(scrapy.Spider):
     name = "upb"
-    urls = [
-        # "https://upb.ro/",
-        "https://upb.ro/regulamente-si-rapoarte/",
-    ]
+    urls = load_urls("urls.json")
+    logger = logging.getLogger(__name__)
 
     def start_requests(self):
-        for url in self.urls:
-            yield SeleniumRequest(url=url, callback=self.parse)
+        for faculty, url_list in self.urls.items():
+            # create directory
+            dir = (DATA_DIR / faculty).as_posix()
+            os.makedirs(dir, exist_ok=True)
 
-    def parse(self, response):
-        page_url = response.url
+            # create metadata file
+            metadata_filepath = os.path.join(dir, "metadata.json")
+            os.open(metadata_filepath, os.O_CREAT | os.O_WRONLY)
 
-        # # Extract text from page body
-        # text = "".join(response.xpath('//body//text()[not(ancestor::style) and not(ancestor::script)]').getall())
-        # text = re.sub(r'\s+', ' ', text).strip()
-        # with open(f"text_{self.name}.txt", "w+", encoding="utf-8") as f:
-        #     f.write(text)
+            for url in url_list:
+                yield SeleniumRequest(
+                    url=url,
+                    callback=self.parse,
+                    errback=self.handle_error,
+                    cb_kwargs={"dir": dir, "metadata_filepath": metadata_filepath},
+                    wait_time=3,
+                )
 
-        # Create directory and json source file
-        pdf_dir = os.path.join(DATA_DIR, self.name)
-        metadata_filepath = os.path.join(pdf_dir, "metadata.json")
+    def parse(self, response, dir, metadata_filepath):
+        if response.status != 200:
+            self.logger.error(f"Failed to fetch {response.url}, status code: {response.status}")
+            return
 
-        os.makedirs(pdf_dir, exist_ok=True)
-        if not os.path.exists(metadata_filepath):
-            open(metadata_filepath, "x")
-            self.logger.info(f"Created metadata file {metadata_filepath}")
+        self.logger.info(f"Page loaded: {response.url}, status code: {response.status}")
+        
+        self.extract_page_content(response, dir, metadata_filepath)
 
-        # Download pdfs
+        self.download_pdfs(response, dir, metadata_filepath)
+
+    def extract_page_content(self, response, dir, metadata_filepath):
+        html_content = response.body
+        clean_markdown = trafilatura.extract(html_content, include_tables=True)
+        # extracted_markdown = trafilatura.extract(html_content, output_format="markdown", include_formatting=True)
+
+        # # cleanup bolded text
+        # clean_markdown = re.sub(r'(\*\*|\_\_)(.*?)\1', r'\2', extracted_markdown)
+
+        # # cleanup italics
+        # clean_markdown = re.sub(r'(\*|_)(.*?)\1', r'\2', clean_markdown)
+
+        if not clean_markdown:
+            self.logger.info(f"No content extracted from page {response.url}")
+            return
+        
+        self.save_markdown(dir, response.url, clean_markdown, metadata_filepath)
+
+    def save_markdown(self, dir, url, content, metadata_filepath):
+        path = urlparse(url).path.strip('/').replace('/', '_')
+        if not path: path = urlparse(url).netloc.lstrip('www.').replace('/', '_')
+        filename = path + ".txt"
+        path = os.path.join(dir, filename)
+
+        if os.path.isfile(path):
+            self.logger.info(f"File with name {path} already exists.")
+            return
+        
+        with open(path, "w+", encoding='utf-8') as file:
+            file.write(content)
+        
+        append_to_metadata_file(metadata_filepath, filename, url, "html", dir)
+
+        self.logger.info(f"Saved page content from {url} at {path}")
+
+    def download_pdfs(self, response, dir, metadata_filepath):
         pdf_links = response.xpath('//a[contains(@href, ".pdf")]/@href').getall()
+        # pdf_links = response.css('a::attr(href)').re(r'.*\.pdf')
         for link in pdf_links:
             pdf_url = urljoin(response.url, link)
             yield scrapy.Request(
                 pdf_url,
-                callback=self.download_pdf,
-                cb_kwargs=dict(pdf_dir=pdf_dir, metadata_filepath=metadata_filepath)
+                callback=self.save_pdf,
+                cb_kwargs=dict(dir=dir, metadata_filepath=metadata_filepath)
             )
-
-    def download_pdf(self, response, pdf_dir, metadata_filepath):
+    
+    def save_pdf(self, response, dir, metadata_filepath):
         filename = response.url.split("/")[-1]
-        pdf_path = os.path.join(pdf_dir, filename)
+        path = os.path.join(dir, filename)
 
-        last_modified = None
-        if 'Last-Modified' in response.headers:
-            last_modified = response.headers['Last-Modified'].decode("utf-8")
+        if os.path.isfile(path):
+            self.logger.info(f"PDF with name {filename} from url {response.url} already exists.")
+            return
 
-            if file_exists(filename, pdf_path, last_modified, metadata_filepath):
-                self.logger.info(f"PDF with name {filename} from url {response.url} already exists and has not been modified.")
-                return
-
-        # Save pdf
-        with open(pdf_path, 'wb') as f:
-            f.write(response.body)
+        with open(path, 'wb') as file:
+            file.write(response.body)
         
-        append_to_metadata_file(metadata_filepath, filename, response.url, last_modified)
+        append_to_metadata_file(metadata_filepath, filename, response.url, "pdf", dir)
 
-        self.logger.info(f"Downloaded PDF: {pdf_path}")
+        self.logger.info(f"Saved PDF from {response.url} at {path}")
+
+    def handle_error(self, response):
+        self.logger.error(f"Ignored request: {response.url}. Possibly timed out.")
