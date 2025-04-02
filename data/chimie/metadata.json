@@ -33,5 +33,12 @@
         "url": "https://chimie.upb.ro/educatie/programe-de-studii-de-masterat/",
         "filetype": "html",
         "tag": "[CHIMIE EDUCATIE PROGRAME DE STUDII DE MASTERAT]"
+    },
+    {
+        "title": "doc.pdf",
+        "path": "doc.pdf",
+        "url": "https://chimie.upb.ro/administrare/content/doc/admitere/brosura/doc.pdf",
+        "filetype": "pdf",
+        "tag": "[CHIMIE DOC]"
     }
 ]

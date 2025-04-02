@@ -47,5 +47,19 @@
         "url": "https://energ.upb.ro/educatie/studii/doctorat",
         "filetype": "html",
         "tag": "[ENERG EDUCATIE STUDII DOCTORAT]"
+    },
+    {
+        "title": "85f875c6c8226b85e592609e035c19b8.pdf",
+        "path": "85f875c6c8226b85e592609e035c19b8.pdf",
+        "url": "https://energ.upb.ro/storage/documents//85f875c6c8226b85e592609e035c19b8.pdf",
+        "filetype": "pdf",
+        "tag": "[ENERG 85F875C6C8226B85E592609E035C19B8]"
+    },
+    {
+        "title": "Cum_devii_student_la_Energetica_ro.pdf",
+        "path": "Cum_devii_student_la_Energetica_ro.pdf",
+        "url": "https://energ.upb.ro/assets/docs/admitere/licenta/Cum_devii_student_la_Energetica_ro.pdf",
+        "filetype": "pdf",
+        "tag": "[ENERG CUM DEVII STUDENT LA ENERGETICA RO]"
     }
 ]

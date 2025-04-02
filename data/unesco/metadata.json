@@ -12,5 +12,26 @@
         "url": "https://www.unesco.chair.upb.ro/admitere/",
         "filetype": "html",
         "tag": "[UNESCO ADMITERE]"
+    },
+    {
+        "title": "orase-inteligente.pdf",
+        "path": "orase-inteligente.pdf",
+        "url": "https://www.unesco.chair.upb.ro/wp-content/uploads/2025/02/orase-inteligente.pdf",
+        "filetype": "pdf",
+        "tag": "[UNESCO ORASE INTELIGENTE]"
+    },
+    {
+        "title": "aviation.pdf",
+        "path": "aviation.pdf",
+        "url": "https://www.unesco.chair.upb.ro/wp-content/uploads/2025/02/aviation.pdf",
+        "filetype": "pdf",
+        "tag": "[UNESCO AVIATION]"
+    },
+    {
+        "title": "green.pdf",
+        "path": "green.pdf",
+        "url": "https://www.unesco.chair.upb.ro/wp-content/uploads/2025/02/green.pdf",
+        "filetype": "pdf",
+        "tag": "[UNESCO GREEN]"
     }
 ]

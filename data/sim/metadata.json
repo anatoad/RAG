@@ -19,5 +19,96 @@
         "url": "https://www.sim.upb.ro/index.php/admitere-master/",
         "filetype": "html",
         "tag": "[SIM INDEX PHP ADMITERE MASTER]"
+    },
+    {
+        "title": "Anexa_2_Cerere_S1_anticipata_2025.pdf",
+        "path": "Anexa_2_Cerere_S1_anticipata_2025.pdf",
+        "url": "https://www.sim.upb.ro/wp-content/uploads/2021/01/pdf/Licenta_Planuri/adm/mas/Anexa_2_Cerere_S1_anticipata_2025.pdf",
+        "filetype": "pdf",
+        "tag": "[SIM ANEXA 2 CERERE S1 ANTICIPATA 2025]"
+    },
+    {
+        "title": "Brosura-masterat-IMPMM.pdf",
+        "path": "Brosura-masterat-IMPMM.pdf",
+        "url": "https://www.sim.upb.ro/wp-content/uploads/2021/01/pdf/prezentare/master/Brosura-masterat-IMPMM.pdf",
+        "filetype": "pdf",
+        "tag": "[SIM BROSURA MASTERAT IMPMM]"
+    },
+    {
+        "title": "Brosura-masterat-BM.pdf",
+        "path": "Brosura-masterat-BM.pdf",
+        "url": "https://www.sim.upb.ro/wp-content/uploads/2021/01/pdf/prezentare/master/Brosura-masterat-BM.pdf",
+        "filetype": "pdf",
+        "tag": "[SIM BROSURA MASTERAT BM]"
+    },
+    {
+        "title": "Brosura-masterat-PMIMM.pdf",
+        "path": "Brosura-masterat-PMIMM.pdf",
+        "url": "https://www.sim.upb.ro/wp-content/uploads/2021/01/pdf/prezentare/master/Brosura-masterat-PMIMM.pdf",
+        "filetype": "pdf",
+        "tag": "[SIM BROSURA MASTERAT PMIMM]"
+    },
+    {
+        "title": "Brosura-masterat-TAPMM.pdf",
+        "path": "Brosura-masterat-TAPMM.pdf",
+        "url": "https://www.sim.upb.ro/wp-content/uploads/2021/01/pdf/prezentare/master/Brosura-masterat-TAPMM.pdf",
+        "filetype": "pdf",
+        "tag": "[SIM BROSURA MASTERAT TAPMM]"
+    },
+    {
+        "title": "Brosura-masterat-SEMMA.pdf",
+        "path": "Brosura-masterat-SEMMA.pdf",
+        "url": "https://www.sim.upb.ro/wp-content/uploads/2021/01/pdf/prezentare/master/Brosura-masterat-SEMMA.pdf",
+        "filetype": "pdf",
+        "tag": "[SIM BROSURA MASTERAT SEMMA]"
+    },
+    {
+        "title": "Pliant_Admitere_Anticipata_2025.pdf",
+        "path": "Pliant_Admitere_Anticipata_2025.pdf",
+        "url": "https://www.sim.upb.ro/wp-content/uploads/2021/01/pdf/Licenta_Planuri/adm/lic/Pliant_Admitere_Anticipata_2025.pdf",
+        "filetype": "pdf",
+        "tag": "[SIM PLIANT ADMITERE ANTICIPATA 2025]"
+    },
+    {
+        "title": "Poster_Admitere_Anticipata.pdf",
+        "path": "Poster_Admitere_Anticipata.pdf",
+        "url": "https://www.sim.upb.ro/wp-content/uploads/2021/01/pdf/Licenta_Planuri/adm/lic/Poster_Admitere_Anticipata.pdf",
+        "filetype": "pdf",
+        "tag": "[SIM POSTER ADMITERE ANTICIPATA]"
+    },
+    {
+        "title": "Brosura-masterat-SPMMS.pdf",
+        "path": "Brosura-masterat-SPMMS.pdf",
+        "url": "https://www.sim.upb.ro/wp-content/uploads/2021/01/pdf/prezentare/master/Brosura-masterat-SPMMS.pdf",
+        "filetype": "pdf",
+        "tag": "[SIM BROSURA MASTERAT SPMMS]"
+    },
+    {
+        "title": "Brosura-masterat-SMTM.pdf",
+        "path": "Brosura-masterat-SMTM.pdf",
+        "url": "https://www.sim.upb.ro/wp-content/uploads/2021/01/pdf/prezentare/master/Brosura-masterat-SMTM.pdf",
+        "filetype": "pdf",
+        "tag": "[SIM BROSURA MASTERAT SMTM]"
+    },
+    {
+        "title": "ingineri.pdf",
+        "path": "ingineri.pdf",
+        "url": "https://www.sim.upb.ro/wp-content/uploads/2021/01/pdf/examene/ingineri.pdf",
+        "filetype": "pdf",
+        "tag": "[SIM INGINERI]"
+    },
+    {
+        "title": "Pliant_Admitere_Anticipata_Master_2025.pdf",
+        "path": "Pliant_Admitere_Anticipata_Master_2025.pdf",
+        "url": "https://www.sim.upb.ro/wp-content/uploads/2021/01/pdf/Licenta_Planuri/adm/mas/Pliant_Admitere_Anticipata_Master_2025.pdf",
+        "filetype": "pdf",
+        "tag": "[SIM PLIANT ADMITERE ANTICIPATA MASTER 2025]"
+    },
+    {
+        "title": "Conturi-taxe-doctorat_actual-UNSTPB-3.pdf",
+        "path": "Conturi-taxe-doctorat_actual-UNSTPB-3.pdf",
+        "url": "http://sdsim.upb.ro/wp-content/uploads/2024/11/Conturi-taxe-doctorat_actual-UNSTPB-3.pdf",
+        "filetype": "pdf",
+        "tag": "[SIM CONTURI TAXE DOCTORAT ACTUAL UNSTPB 3]"
     }
 ]

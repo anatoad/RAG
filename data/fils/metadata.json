@@ -47,5 +47,40 @@
         "url": "https://fils.upb.ro/ro/doctorat/",
         "filetype": "html",
         "tag": "[FILS RO DOCTORAT]"
+    },
+    {
+        "title": "2024_28_Pli_L_12_FILS_CTI_IIDI-Franceza.pdf",
+        "path": "2024_28_Pli_L_12_FILS_CTI_IIDI-Franceza.pdf",
+        "url": "https://fils.upb.ro/wp-content/uploads/2024/10/2024_28_Pli_L_12_FILS_CTI_IIDI-Franceza.pdf",
+        "filetype": "pdf",
+        "tag": "[FILS 2024 28 PLI L 12 FILS CTI IIDI FRANCEZA]"
+    },
+    {
+        "title": "2024_28_Pli_L_12_FILS_CTI_II-Engleza.pdf",
+        "path": "2024_28_Pli_L_12_FILS_CTI_II-Engleza.pdf",
+        "url": "https://fils.upb.ro/wp-content/uploads/2024/10/2024_28_Pli_L_12_FILS_CTI_II-Engleza.pdf",
+        "filetype": "pdf",
+        "tag": "[FILS 2024 28 PLI L 12 FILS CTI II ENGLEZA]"
+    },
+    {
+        "title": "Taxa-de-inscriere-LICENTA-2025-2.pdf",
+        "path": "Taxa-de-inscriere-LICENTA-2025-2.pdf",
+        "url": "https://fils.upb.ro/wp-content/uploads/2025/01/Taxa-de-inscriere-LICENTA-2025-2.pdf",
+        "filetype": "pdf",
+        "tag": "[FILS TAXA DE INSCRIERE LICENTA 2025 2]"
+    },
+    {
+        "title": "Test-limba-straina-23-05-detalii-S1-2025.pdf",
+        "path": "Test-limba-straina-23-05-detalii-S1-2025.pdf",
+        "url": "https://fils.upb.ro/wp-content/uploads/2025/02/Test-limba-straina-23-05-detalii-S1-2025.pdf",
+        "filetype": "pdf",
+        "tag": "[FILS TEST LIMBA STRAINA 23 05 DETALII S1 2025]"
+    },
+    {
+        "title": "Regulament_admitere_licenta_2025.pdf",
+        "path": "Regulament_admitere_licenta_2025.pdf",
+        "url": "https://fils.upb.ro/wp-content/uploads/2025/01/Regulament_admitere_licenta_2025.pdf",
+        "filetype": "pdf",
+        "tag": "[FILS REGULAMENT ADMITERE LICENTA 2025]"
     }
 ]

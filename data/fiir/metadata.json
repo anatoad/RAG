@@ -33,5 +33,390 @@
         "url": "https://www.fiir.upb.ro/index.php/ro/scoala-doctorala/admitere-doctorat",
         "filetype": "html",
         "tag": "[FIIR INDEX PHP RO SCOALA DOCTORALA ADMITERE DOCTORAT]"
+    },
+    {
+        "title": "ADMITERE_FIIR-2025-Informatii_generale.pdf",
+        "path": "ADMITERE_FIIR-2025-Informatii_generale.pdf",
+        "url": "https://www.fiir.upb.ro/Upload/Licenta/Admitere/2025/ADMITERE_FIIR-2025-Informatii_generale.pdf",
+        "filetype": "pdf",
+        "tag": "[FIIR ADMITERE FIIR 2025 INFORMATII GENERALE]"
+    },
+    {
+        "title": "2023_27_Pli_L_06_FIIR_IM_CSM_farasm.pdf",
+        "path": "2023_27_Pli_L_06_FIIR_IM_CSM_farasm.pdf",
+        "url": "https://www.fiir.upb.ro/Upload/Licenta/Planuri_de_invatamant/2023-2027v3semnat/2023_27_Pli_L_06_FIIR_IM_CSM_farasm.pdf",
+        "filetype": "pdf",
+        "tag": "[FIIR 2023 27 PLI L 06 FIIR IM CSM FARASM]"
+    },
+    {
+        "title": "2023_27_Pli_L_06_FIIR_IMeg_IEI_farasm.pdf",
+        "path": "2023_27_Pli_L_06_FIIR_IMeg_IEI_farasm.pdf",
+        "url": "https://www.fiir.upb.ro/Upload/Licenta/Planuri_de_invatamant/2023-2027v3semnat/2023_27_Pli_L_06_FIIR_IMeg_IEI_farasm.pdf",
+        "filetype": "pdf",
+        "tag": "[FIIR 2023 27 PLI L 06 FIIR IMEG IEI FARASM]"
+    },
+    {
+        "title": "2023_27_Pli_L_06_FIIR_II_SPD_farasm.pdf",
+        "path": "2023_27_Pli_L_06_FIIR_II_SPD_farasm.pdf",
+        "url": "https://www.fiir.upb.ro/Upload/Licenta/Planuri_de_invatamant/2023-2027v3semnat/2023_27_Pli_L_06_FIIR_II_SPD_farasm.pdf",
+        "filetype": "pdf",
+        "tag": "[FIIR 2023 27 PLI L 06 FIIR II SPD FARASM]"
+    },
+    {
+        "title": "2024_28_Pli_L_06_FIIR_L_IM_ICS_farasm.pdf",
+        "path": "2024_28_Pli_L_06_FIIR_L_IM_ICS_farasm.pdf",
+        "url": "https://www.fiir.upb.ro/Upload/Licenta/Planuri_de_invatamant/2024-2028_fara_semnatura/2024_28_Pli_L_06_FIIR_L_IM_ICS_farasm.pdf",
+        "filetype": "pdf",
+        "tag": "[FIIR 2024 28 PLI L 06 FIIR L IM ICS FARASM]"
+    },
+    {
+        "title": "2024_28_Pli_L_06_FIIR_L_SIA_II_farasm.pdf",
+        "path": "2024_28_Pli_L_06_FIIR_L_SIA_II_farasm.pdf",
+        "url": "https://www.fiir.upb.ro/Upload/Licenta/Planuri_de_invatamant/2024-2028_fara_semnatura/2024_28_Pli_L_06_FIIR_L_SIA_II_farasm.pdf",
+        "filetype": "pdf",
+        "tag": "[FIIR 2024 28 PLI L 06 FIIR L SIA II FARASM]"
+    },
+    {
+        "title": "2024_28_Pli_L_06_FIIR_MR_Rob_eng.pdf",
+        "path": "2024_28_Pli_L_06_FIIR_MR_Rob_eng.pdf",
+        "url": "https://www.fiir.upb.ro/Upload/Licenta/Planuri_de_invatamant/2024-2028/2024_28_Pli_L_06_FIIR_MR_Rob_eng.pdf",
+        "filetype": "pdf",
+        "tag": "[FIIR 2024 28 PLI L 06 FIIR MR ROB ENG]"
+    },
+    {
+        "title": "2024_28_Pli_L_06_FIIR_MR_Rob_farasm.pdf",
+        "path": "2024_28_Pli_L_06_FIIR_MR_Rob_farasm.pdf",
+        "url": "https://www.fiir.upb.ro/Upload/Licenta/Planuri_de_invatamant/2024-2028_fara_semnatura/2024_28_Pli_L_06_FIIR_MR_Rob_farasm.pdf",
+        "filetype": "pdf",
+        "tag": "[FIIR 2024 28 PLI L 06 FIIR MR ROB FARASM]"
+    },
+    {
+        "title": "2024_28_Pli_L_06_FIIR_L_IMag_IEI_farasm.pdf",
+        "path": "2024_28_Pli_L_06_FIIR_L_IMag_IEI_farasm.pdf",
+        "url": "https://www.fiir.upb.ro/Upload/Licenta/Planuri_de_invatamant/2024-2028_fara_semnatura/2024_28_Pli_L_06_FIIR_L_IMag_IEI_farasm.pdf",
+        "filetype": "pdf",
+        "tag": "[FIIR 2024 28 PLI L 06 FIIR L IMAG IEI FARASM]"
+    },
+    {
+        "title": "2024_28_Pli_L_06_FIIR_II_TII_farasm.pdf",
+        "path": "2024_28_Pli_L_06_FIIR_II_TII_farasm.pdf",
+        "url": "https://www.fiir.upb.ro/Upload/Licenta/Planuri_de_invatamant/2024-2028_fara_semnatura/2024_28_Pli_L_06_FIIR_II_TII_farasm.pdf",
+        "filetype": "pdf",
+        "tag": "[FIIR 2024 28 PLI L 06 FIIR II TII FARASM]"
+    },
+    {
+        "title": "2024_28_Pli_L_06_FIIR_L_II_SPD_farasm.pdf",
+        "path": "2024_28_Pli_L_06_FIIR_L_II_SPD_farasm.pdf",
+        "url": "https://www.fiir.upb.ro/Upload/Licenta/Planuri_de_invatamant/2024-2028_fara_semnatura/2024_28_Pli_L_06_FIIR_L_II_SPD_farasm.pdf",
+        "filetype": "pdf",
+        "tag": "[FIIR 2024 28 PLI L 06 FIIR L II SPD FARASM]"
+    },
+    {
+        "title": "2024_28_Pli_L_06_FIIR_II_IS_farasm.pdf",
+        "path": "2024_28_Pli_L_06_FIIR_II_IS_farasm.pdf",
+        "url": "https://www.fiir.upb.ro/Upload/Licenta/Planuri_de_invatamant/2024-2028_fara_semnatura/2024_28_Pli_L_06_FIIR_II_IS_farasm.pdf",
+        "filetype": "pdf",
+        "tag": "[FIIR 2024 28 PLI L 06 FIIR II IS FARASM]"
+    },
+    {
+        "title": "2024_28_Pli_L_06_FIIR_II_LI_farasm.pdf",
+        "path": "2024_28_Pli_L_06_FIIR_II_LI_farasm.pdf",
+        "url": "https://www.fiir.upb.ro/Upload/Licenta/Planuri_de_invatamant/2024-2028_fara_semnatura/2024_28_Pli_L_06_FIIR_II_LI_farasm.pdf",
+        "filetype": "pdf",
+        "tag": "[FIIR 2024 28 PLI L 06 FIIR II LI FARASM]"
+    },
+    {
+        "title": "2024_28_Pli_L_06_FIIR_II_ISI_farasm.pdf",
+        "path": "2024_28_Pli_L_06_FIIR_II_ISI_farasm.pdf",
+        "url": "https://www.fiir.upb.ro/Upload/Licenta/Planuri_de_invatamant/2024-2028_fara_semnatura/2024_28_Pli_L_06_FIIR_II_ISI_farasm.pdf",
+        "filetype": "pdf",
+        "tag": "[FIIR 2024 28 PLI L 06 FIIR II ISI FARASM]"
+    },
+    {
+        "title": "2024_28_Pli_L_06_FIIR_II_IMC_farasm.pdf",
+        "path": "2024_28_Pli_L_06_FIIR_II_IMC_farasm.pdf",
+        "url": "https://www.fiir.upb.ro/Upload/Licenta/Planuri_de_invatamant/2024-2028_fara_semnatura/2024_28_Pli_L_06_FIIR_II_IMC_farasm.pdf",
+        "filetype": "pdf",
+        "tag": "[FIIR 2024 28 PLI L 06 FIIR II IMC FARASM]"
+    },
+    {
+        "title": "2024_28_Pli_L_06_FIIR_L_II_IAII_farasm.pdf",
+        "path": "2024_28_Pli_L_06_FIIR_L_II_IAII_farasm.pdf",
+        "url": "https://www.fiir.upb.ro/Upload/Licenta/Planuri_de_invatamant/2024-2028_fara_semnatura/2024_28_Pli_L_06_FIIR_L_II_IAII_farasm.pdf",
+        "filetype": "pdf",
+        "tag": "[FIIR 2024 28 PLI L 06 FIIR L II IAII FARASM]"
+    },
+    {
+        "title": "2024_28_Pli_L_06_FIIR_L_II_TCM_dual_farasm.pdf",
+        "path": "2024_28_Pli_L_06_FIIR_L_II_TCM_dual_farasm.pdf",
+        "url": "https://www.fiir.upb.ro/Upload/Licenta/Planuri_de_invatamant/2024-2028_fara_semnatura/2024_28_Pli_L_06_FIIR_L_II_TCM_dual_farasm.pdf",
+        "filetype": "pdf",
+        "tag": "[FIIR 2024 28 PLI L 06 FIIR L II TCM DUAL FARASM]"
+    },
+    {
+        "title": "2024_28_Pli_L_06_FIIR_L_II_TCM_farasm.pdf",
+        "path": "2024_28_Pli_L_06_FIIR_L_II_TCM_farasm.pdf",
+        "url": "https://www.fiir.upb.ro/Upload/Licenta/Planuri_de_invatamant/2024-2028_fara_semnatura/2024_28_Pli_L_06_FIIR_L_II_TCM_farasm.pdf",
+        "filetype": "pdf",
+        "tag": "[FIIR 2024 28 PLI L 06 FIIR L II TCM FARASM]"
+    },
+    {
+        "title": "2024_28_Pli_L_06_FIIR_L_II_II_eng_farasm.pdf",
+        "path": "2024_28_Pli_L_06_FIIR_L_II_II_eng_farasm.pdf",
+        "url": "https://www.fiir.upb.ro/Upload/Licenta/Planuri_de_invatamant/2024-2028_fara_semnatura/2024_28_Pli_L_06_FIIR_L_II_II_eng_farasm.pdf",
+        "filetype": "pdf",
+        "tag": "[FIIR 2024 28 PLI L 06 FIIR L II II ENG FARASM]"
+    },
+    {
+        "title": "Metodologie-admitere-doctorat-2025-2026.pdf",
+        "path": "Metodologie-admitere-doctorat-2025-2026.pdf",
+        "url": "https://upb.ro/wp-content/uploads/2024/12/Metodologie-admitere-doctorat-2025-2026.pdf",
+        "filetype": "pdf",
+        "tag": "[FIIR METODOLOGIE ADMITERE DOCTORAT 2025 2026]"
+    },
+    {
+        "title": "comisii_admitere_2025.pdf",
+        "path": "comisii_admitere_2025.pdf",
+        "url": "https://www.fiir.upb.ro/Upload/Doctorat/2025/comisii_admitere_2025.pdf",
+        "filetype": "pdf",
+        "tag": "[FIIR COMISII ADMITERE 2025]"
+    },
+    {
+        "title": "2023_25_Pli_M_06_FIIR_II_CIST_fr_farasm.pdf",
+        "path": "2023_25_Pli_M_06_FIIR_II_CIST_fr_farasm.pdf",
+        "url": "https://www.fiir.upb.ro/Upload/Master/Planuri_invatamant/2023-2027/2023_25_Pli_M_06_FIIR_II_CIST_fr_farasm.pdf",
+        "filetype": "pdf",
+        "tag": "[FIIR 2023 25 PLI M 06 FIIR II CIST FR FARASM]"
+    },
+    {
+        "title": "Concurs_de_ADMITERE_MASTERAT_-_2025.pdf",
+        "path": "Concurs_de_ADMITERE_MASTERAT_-_2025.pdf",
+        "url": "https://www.fiir.upb.ro/Upload/Master/Admitere/2025/admitere_anticipata/Concurs_de_ADMITERE_MASTERAT_-_2025.pdf",
+        "filetype": "pdf",
+        "tag": "[FIIR CONCURS DE ADMITERE MASTERAT   2025]"
+    },
+    {
+        "title": "Documente_de_inscriere_ADMITERE_MASTERAT_.pdf",
+        "path": "Documente_de_inscriere_ADMITERE_MASTERAT_.pdf",
+        "url": "https://www.fiir.upb.ro/Upload/Master/Admitere/2025/admitere_anticipata/Documente_de_inscriere_ADMITERE_MASTERAT_.pdf",
+        "filetype": "pdf",
+        "tag": "[FIIR DOCUMENTE DE INSCRIERE ADMITERE MASTERAT ]"
+    },
+    {
+        "title": "ADMITERE_MASTERAT_FIIR-2025-Informatii_generale.pdf",
+        "path": "ADMITERE_MASTERAT_FIIR-2025-Informatii_generale.pdf",
+        "url": "https://www.fiir.upb.ro/Upload/Master/Admitere/2025/admitere_anticipata/ADMITERE_MASTERAT_FIIR-2025-Informatii_generale.pdf",
+        "filetype": "pdf",
+        "tag": "[FIIR ADMITERE MASTERAT FIIR 2025 INFORMATII GENERALE]"
+    },
+    {
+        "title": "Regulament_admitere_masterat_2025-2026.pdf",
+        "path": "Regulament_admitere_masterat_2025-2026.pdf",
+        "url": "https://www.fiir.upb.ro/Upload/Master/Admitere/2025/admitere_anticipata/Regulament_admitere_masterat_2025-2026.pdf",
+        "filetype": "pdf",
+        "tag": "[FIIR REGULAMENT ADMITERE MASTERAT 2025 2026]"
+    },
+    {
+        "title": "Metodologie_admitere-si-scolarizare_RP_septembrie-2024.pdf",
+        "path": "Metodologie_admitere-si-scolarizare_RP_septembrie-2024.pdf",
+        "url": "https://www.fiir.upb.ro/Upload/Master/Admitere/2025/Metodologie_admitere-si-scolarizare_RP_septembrie-2024.pdf",
+        "filetype": "pdf",
+        "tag": "[FIIR METODOLOGIE ADMITERE SI SCOLARIZARE RP SEPTEMBRIE 2024]"
+    },
+    {
+        "title": "2024_26_Pli_M_06_FIIR_II_IC_farasm.pdf",
+        "path": "2024_26_Pli_M_06_FIIR_II_IC_farasm.pdf",
+        "url": "https://www.fiir.upb.ro/Upload/Master/Planuri_invatamant/2024-2026_farasm/2024_26_Pli_M_06_FIIR_II_IC_farasm.pdf",
+        "filetype": "pdf",
+        "tag": "[FIIR 2024 26 PLI M 06 FIIR II IC FARASM]"
+    },
+    {
+        "title": "2024_26_Pli_M_06_FIIR_II_MSP_farasm.pdf",
+        "path": "2024_26_Pli_M_06_FIIR_II_MSP_farasm.pdf",
+        "url": "https://www.fiir.upb.ro/Upload/Master/Planuri_invatamant/2024-2026_farasm/2024_26_Pli_M_06_FIIR_II_MSP_farasm.pdf",
+        "filetype": "pdf",
+        "tag": "[FIIR 2024 26 PLI M 06 FIIR II MSP FARASM]"
+    },
+    {
+        "title": "2024_26_Pli_M_06_FIIR_II_MIIV_farasm.pdf",
+        "path": "2024_26_Pli_M_06_FIIR_II_MIIV_farasm.pdf",
+        "url": "https://www.fiir.upb.ro/Upload/Master/Planuri_invatamant/2024-2026_farasm/2024_26_Pli_M_06_FIIR_II_MIIV_farasm.pdf",
+        "filetype": "pdf",
+        "tag": "[FIIR 2024 26 PLI M 06 FIIR II MIIV FARASM]"
+    },
+    {
+        "title": "2024_26_Pli_M_06_FIIR_II_TSP_farasm.pdf",
+        "path": "2024_26_Pli_M_06_FIIR_II_TSP_farasm.pdf",
+        "url": "https://www.fiir.upb.ro/Upload/Master/Planuri_invatamant/2024-2026_farasm/2024_26_Pli_M_06_FIIR_II_TSP_farasm.pdf",
+        "filetype": "pdf",
+        "tag": "[FIIR 2024 26 PLI M 06 FIIR II TSP FARASM]"
+    },
+    {
+        "title": "2024_26_Pli_M_06_FIIR_II_ETR_farasm.pdf",
+        "path": "2024_26_Pli_M_06_FIIR_II_ETR_farasm.pdf",
+        "url": "https://www.fiir.upb.ro/Upload/Master/Planuri_invatamant/2024-2026_farasm/2024_26_Pli_M_06_FIIR_II_ETR_farasm.pdf",
+        "filetype": "pdf",
+        "tag": "[FIIR 2024 26 PLI M 06 FIIR II ETR FARASM]"
+    },
+    {
+        "title": "2024_26_Pli_M_06_FIIR_II_LI_farasm.pdf",
+        "path": "2024_26_Pli_M_06_FIIR_II_LI_farasm.pdf",
+        "url": "https://www.fiir.upb.ro/Upload/Master/Planuri_invatamant/2024-2026_farasm/2024_26_Pli_M_06_FIIR_II_LI_farasm.pdf",
+        "filetype": "pdf",
+        "tag": "[FIIR 2024 26 PLI M 06 FIIR II LI FARASM]"
+    },
+    {
+        "title": "2024_26_Pli_M_06_FIIR_II_DIPI_farasm.pdf",
+        "path": "2024_26_Pli_M_06_FIIR_II_DIPI_farasm.pdf",
+        "url": "https://www.fiir.upb.ro/Upload/Master/Planuri_invatamant/2024-2026_farasm/2024_26_Pli_M_06_FIIR_II_DIPI_farasm.pdf",
+        "filetype": "pdf",
+        "tag": "[FIIR 2024 26 PLI M 06 FIIR II DIPI FARASM]"
+    },
+    {
+        "title": "2024_26_Pli_M_06_FIIR_II_II_EN_farasm.pdf",
+        "path": "2024_26_Pli_M_06_FIIR_II_II_EN_farasm.pdf",
+        "url": "https://www.fiir.upb.ro/Upload/Master/Planuri_invatamant/2024-2026_farasm/2024_26_Pli_M_06_FIIR_II_II_EN_farasm.pdf",
+        "filetype": "pdf",
+        "tag": "[FIIR 2024 26 PLI M 06 FIIR II II EN FARASM]"
+    },
+    {
+        "title": "2024_26_Pli_M_06_FIIR_II_ECMP_farasm.pdf",
+        "path": "2024_26_Pli_M_06_FIIR_II_ECMP_farasm.pdf",
+        "url": "https://www.fiir.upb.ro/Upload/Master/Planuri_invatamant/2024-2026_farasm/2024_26_Pli_M_06_FIIR_II_ECMP_farasm.pdf",
+        "filetype": "pdf",
+        "tag": "[FIIR 2024 26 PLI M 06 FIIR II ECMP FARASM]"
+    },
+    {
+        "title": "2024_26_Pli_M_06_FIIR_IMec_SIS_farasm.pdf",
+        "path": "2024_26_Pli_M_06_FIIR_IMec_SIS_farasm.pdf",
+        "url": "https://www.fiir.upb.ro/Upload/Master/Planuri_invatamant/2024-2026_farasm/2024_26_Pli_M_06_FIIR_IMec_SIS_farasm.pdf",
+        "filetype": "pdf",
+        "tag": "[FIIR 2024 26 PLI M 06 FIIR IMEC SIS FARASM]"
+    },
+    {
+        "title": "2024_26_Pli_M_06_FIIR_SC_CM_farasm.pdf",
+        "path": "2024_26_Pli_M_06_FIIR_SC_CM_farasm.pdf",
+        "url": "https://www.fiir.upb.ro/Upload/Master/Planuri_invatamant/2024-2026_farasm/2024_26_Pli_M_06_FIIR_SC_CM_farasm.pdf",
+        "filetype": "pdf",
+        "tag": "[FIIR 2024 26 PLI M 06 FIIR SC CM FARASM]"
+    },
+    {
+        "title": "2024_26_Pli_M_06_FIIR_II_INPN_farasm.pdf",
+        "path": "2024_26_Pli_M_06_FIIR_II_INPN_farasm.pdf",
+        "url": "https://www.fiir.upb.ro/Upload/Master/Planuri_invatamant/2024-2026_farasm/2024_26_Pli_M_06_FIIR_II_INPN_farasm.pdf",
+        "filetype": "pdf",
+        "tag": "[FIIR 2024 26 PLI M 06 FIIR II INPN FARASM]"
+    },
+    {
+        "title": "2024_26_Pli_M_06_FIIR_II_ISSM_farasm.pdf",
+        "path": "2024_26_Pli_M_06_FIIR_II_ISSM_farasm.pdf",
+        "url": "https://www.fiir.upb.ro/Upload/Master/Planuri_invatamant/2024-2026_farasm/2024_26_Pli_M_06_FIIR_II_ISSM_farasm.pdf",
+        "filetype": "pdf",
+        "tag": "[FIIR 2024 26 PLI M 06 FIIR II ISSM FARASM]"
+    },
+    {
+        "title": "2024_26_Pli_M_06_FIIR_IMec_CPSM_farasm.pdf",
+        "path": "2024_26_Pli_M_06_FIIR_IMec_CPSM_farasm.pdf",
+        "url": "https://www.fiir.upb.ro/Upload/Master/Planuri_invatamant/2024-2026_farasm/2024_26_Pli_M_06_FIIR_IMec_CPSM_farasm.pdf",
+        "filetype": "pdf",
+        "tag": "[FIIR 2024 26 PLI M 06 FIIR IMEC CPSM FARASM]"
+    },
+    {
+        "title": "2024_26_Pli_M_06_FIIR_IMec_MSSMM_farasm.pdf",
+        "path": "2024_26_Pli_M_06_FIIR_IMec_MSSMM_farasm.pdf",
+        "url": "https://www.fiir.upb.ro/Upload/Master/Planuri_invatamant/2024-2026_farasm/2024_26_Pli_M_06_FIIR_IMec_MSSMM_farasm.pdf",
+        "filetype": "pdf",
+        "tag": "[FIIR 2024 26 PLI M 06 FIIR IMEC MSSMM FARASM]"
+    },
+    {
+        "title": "2024_26_Pli_M_06_FIIR_IM_IMST_farasm.pdf",
+        "path": "2024_26_Pli_M_06_FIIR_IM_IMST_farasm.pdf",
+        "url": "https://www.fiir.upb.ro/Upload/Master/Planuri_invatamant/2024-2026_farasm/2024_26_Pli_M_06_FIIR_IM_IMST_farasm.pdf",
+        "filetype": "pdf",
+        "tag": "[FIIR 2024 26 PLI M 06 FIIR IM IMST FARASM]"
+    },
+    {
+        "title": "2024_26_Pli_M_06_FIIR_RISE_SE_farasm.pdf",
+        "path": "2024_26_Pli_M_06_FIIR_RISE_SE_farasm.pdf",
+        "url": "https://www.fiir.upb.ro/Upload/Master/Planuri_invatamant/2024-2026_farasm/2024_26_Pli_M_06_FIIR_RISE_SE_farasm.pdf",
+        "filetype": "pdf",
+        "tag": "[FIIR 2024 26 PLI M 06 FIIR RISE SE FARASM]"
+    },
+    {
+        "title": "2024_26_Pli_M_06_FIIR_IM_MF_farasm.pdf",
+        "path": "2024_26_Pli_M_06_FIIR_IM_MF_farasm.pdf",
+        "url": "https://www.fiir.upb.ro/Upload/Master/Planuri_invatamant/2024-2026_farasm/2024_26_Pli_M_06_FIIR_IM_MF_farasm.pdf",
+        "filetype": "pdf",
+        "tag": "[FIIR 2024 26 PLI M 06 FIIR IM MF FARASM]"
+    },
+    {
+        "title": "2024_26_Pli_M_06_FIIR_MR_Rb_farasm.pdf",
+        "path": "2024_26_Pli_M_06_FIIR_MR_Rb_farasm.pdf",
+        "url": "https://www.fiir.upb.ro/Upload/Master/Planuri_invatamant/2024-2026_farasm/2024_26_Pli_M_06_FIIR_MR_Rb_farasm.pdf",
+        "filetype": "pdf",
+        "tag": "[FIIR 2024 26 PLI M 06 FIIR MR RB FARASM]"
+    },
+    {
+        "title": "2024_26_Pli_M_06_FIIR_II_IMPSC_farasm.pdf",
+        "path": "2024_26_Pli_M_06_FIIR_II_IMPSC_farasm.pdf",
+        "url": "https://www.fiir.upb.ro/Upload/Master/Planuri_invatamant/2024-2026_farasm/2024_26_Pli_M_06_FIIR_II_IMPSC_farasm.pdf",
+        "filetype": "pdf",
+        "tag": "[FIIR 2024 26 PLI M 06 FIIR II IMPSC FARASM]"
+    },
+    {
+        "title": "2024_26_Pli_M_06_FIIR_II_IPFP_farasm.pdf",
+        "path": "2024_26_Pli_M_06_FIIR_II_IPFP_farasm.pdf",
+        "url": "https://www.fiir.upb.ro/Upload/Master/Planuri_invatamant/2024-2026_farasm/2024_26_Pli_M_06_FIIR_II_IPFP_farasm.pdf",
+        "filetype": "pdf",
+        "tag": "[FIIR 2024 26 PLI M 06 FIIR II IPFP FARASM]"
+    },
+    {
+        "title": "2024_26_Pli_M_06_FIIR_II_CMP_farasm.pdf",
+        "path": "2024_26_Pli_M_06_FIIR_II_CMP_farasm.pdf",
+        "url": "https://www.fiir.upb.ro/Upload/Master/Planuri_invatamant/2024-2026_farasm/2024_26_Pli_M_06_FIIR_II_CMP_farasm.pdf",
+        "filetype": "pdf",
+        "tag": "[FIIR 2024 26 PLI M 06 FIIR II CMP FARASM]"
+    },
+    {
+        "title": "2024_26_Pli_M_06_FIIR_II_CIST_FR_farasm.pdf",
+        "path": "2024_26_Pli_M_06_FIIR_II_CIST_FR_farasm.pdf",
+        "url": "https://www.fiir.upb.ro/Upload/Master/Planuri_invatamant/2024-2026_farasm/2024_26_Pli_M_06_FIIR_II_CIST_FR_farasm.pdf",
+        "filetype": "pdf",
+        "tag": "[FIIR 2024 26 PLI M 06 FIIR II CIST FR FARASM]"
+    },
+    {
+        "title": "2024_26_Pli_M_06_FIIR_IM_IEMA_nesemn.pdf",
+        "path": "2024_26_Pli_M_06_FIIR_IM_IEMA_nesemn.pdf",
+        "url": "https://www.fiir.upb.ro/Upload/Master/Planuri_invatamant/2024-2026_farasm/2024_26_Pli_M_06_FIIR_IM_IEMA_nesemn.pdf",
+        "filetype": "pdf",
+        "tag": "[FIIR 2024 26 PLI M 06 FIIR IM IEMA NESEMN]"
+    },
+    {
+        "title": "2024_26_Pli_M_06_FIIR_II_IAAC_farasm.pdf",
+        "path": "2024_26_Pli_M_06_FIIR_II_IAAC_farasm.pdf",
+        "url": "https://www.fiir.upb.ro/Upload/Master/Planuri_invatamant/2024-2026_farasm/2024_26_Pli_M_06_FIIR_II_IAAC_farasm.pdf",
+        "filetype": "pdf",
+        "tag": "[FIIR 2024 26 PLI M 06 FIIR II IAAC FARASM]"
+    },
+    {
+        "title": "2024_26_Pli_M_06_FIIR_IM_IMPC_farasm.pdf",
+        "path": "2024_26_Pli_M_06_FIIR_IM_IMPC_farasm.pdf",
+        "url": "https://www.fiir.upb.ro/Upload/Master/Planuri_invatamant/2024-2026_farasm/2024_26_Pli_M_06_FIIR_IM_IMPC_farasm.pdf",
+        "filetype": "pdf",
+        "tag": "[FIIR 2024 26 PLI M 06 FIIR IM IMPC FARASM]"
+    },
+    {
+        "title": "2024_26_Pli_M_06_FIIR_IM_CIMA_farasm.pdf",
+        "path": "2024_26_Pli_M_06_FIIR_IM_CIMA_farasm.pdf",
+        "url": "https://www.fiir.upb.ro/Upload/Master/Planuri_invatamant/2024-2026_farasm/2024_26_Pli_M_06_FIIR_IM_CIMA_farasm.pdf",
+        "filetype": "pdf",
+        "tag": "[FIIR 2024 26 PLI M 06 FIIR IM CIMA FARASM]"
+    },
+    {
+        "title": "2024_26_Pli_M_06_FIIR_II_AIII_farasm.pdf",
+        "path": "2024_26_Pli_M_06_FIIR_II_AIII_farasm.pdf",
+        "url": "https://www.fiir.upb.ro/Upload/Master/Planuri_invatamant/2024-2026_farasm/2024_26_Pli_M_06_FIIR_II_AIII_farasm.pdf",
+        "filetype": "pdf",
+        "tag": "[FIIR 2024 26 PLI M 06 FIIR II AIII FARASM]"
     }
 ]
