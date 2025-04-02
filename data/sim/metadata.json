@@ -1,0 +1,23 @@
+[
+    {
+        "title": "sdsim.upb.ro.txt",
+        "path": "sdsim.upb.ro.txt",
+        "url": "https://sdsim.upb.ro/",
+        "filetype": "html",
+        "tag": "[SIM SDSIM UPB RO]"
+    },
+    {
+        "title": "index.php_admitere-licenta.txt",
+        "path": "index.php_admitere-licenta.txt",
+        "url": "https://www.sim.upb.ro/index.php/admitere-licenta/",
+        "filetype": "html",
+        "tag": "[SIM INDEX PHP ADMITERE LICENTA]"
+    },
+    {
+        "title": "index.php_admitere-master.txt",
+        "path": "index.php_admitere-master.txt",
+        "url": "https://www.sim.upb.ro/index.php/admitere-master/",
+        "filetype": "html",
+        "tag": "[SIM INDEX PHP ADMITERE MASTER]"
+    }
+]

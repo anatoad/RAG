@@ -1,0 +1,37 @@
+[
+    {
+        "title": "admitere-licenta.txt",
+        "path": "admitere-licenta.txt",
+        "url": "https://fim.upb.ro/admitere-licenta/",
+        "filetype": "html",
+        "tag": "[FIM ADMITERE LICENTA]"
+    },
+    {
+        "title": "admitere-masterat.txt",
+        "path": "admitere-masterat.txt",
+        "url": "https://fim.upb.ro/admitere-masterat/",
+        "filetype": "html",
+        "tag": "[FIM ADMITERE MASTERAT]"
+    },
+    {
+        "title": "informatii-generale.txt",
+        "path": "informatii-generale.txt",
+        "url": "https://fim.upb.ro/informatii-generale/",
+        "filetype": "html",
+        "tag": "[FIM INFORMATII GENERALE]"
+    },
+    {
+        "title": "programe-licenta.txt",
+        "path": "programe-licenta.txt",
+        "url": "https://fim.upb.ro/programe-licenta/",
+        "filetype": "html",
+        "tag": "[FIM PROGRAME LICENTA]"
+    },
+    {
+        "title": "programe-master.txt",
+        "path": "programe-master.txt",
+        "url": "https://fim.upb.ro/programe-master/",
+        "filetype": "html",
+        "tag": "[FIM PROGRAME MASTER]"
+    }
+]

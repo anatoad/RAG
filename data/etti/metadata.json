@@ -1,0 +1,30 @@
+[
+    {
+        "title": "oferta-educationala_domenii-licenta.txt",
+        "path": "oferta-educationala_domenii-licenta.txt",
+        "url": "https://etti.upb.ro/oferta-educationala/domenii-licenta/",
+        "filetype": "html",
+        "tag": "[ETTI OFERTA EDUCATIONALA DOMENII LICENTA]"
+    },
+    {
+        "title": "oferta-educationala_admitere-licenta.txt",
+        "path": "oferta-educationala_admitere-licenta.txt",
+        "url": "https://etti.upb.ro/oferta-educationala/admitere-licenta/",
+        "filetype": "html",
+        "tag": "[ETTI OFERTA EDUCATIONALA ADMITERE LICENTA]"
+    },
+    {
+        "title": "oferta-educationala_admitere-masterat.txt",
+        "path": "oferta-educationala_admitere-masterat.txt",
+        "url": "https://etti.upb.ro/oferta-educationala/admitere-masterat/",
+        "filetype": "html",
+        "tag": "[ETTI OFERTA EDUCATIONALA ADMITERE MASTERAT]"
+    },
+    {
+        "title": "oferta-educationala_programe-de-masterat.txt",
+        "path": "oferta-educationala_programe-de-masterat.txt",
+        "url": "https://etti.upb.ro/oferta-educationala/programe-de-masterat/",
+        "filetype": "html",
+        "tag": "[ETTI OFERTA EDUCATIONALA PROGRAME DE MASTERAT]"
+    }
+]

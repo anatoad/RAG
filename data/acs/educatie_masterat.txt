@@ -1,0 +1,123 @@
+Masterat
+Detalii despre admiterea la masterat se găsesc aici
+>A fost activată, în platforma de opționale, posibilitatea de a aplica pentru disciplinele opționale și schimbări de discipline.
+Solicitările se pot introduce până MARȚI 08 oct 2024 ora 14.
+Mai multe instructiuni au fost postate pe canalul de Informare master de pe Teams.
+Programe de studii
+Facultatea de Automatică și Calculatoare oferă 24 programe de studii universitare de masterat acreditate de către ARACIS în domeniile:
+- Calculatoare și Tehnologia Informației – 12 programe
+- Ingineria Sistemelor – 11 programe
+- Inginerie și Management – 1 program
+BROŞURA MASTER oferă informații sintetice despre masterat și despre fiecare program, iar în continuarea acestei pagini sunt prezentate planurile de învăţământ şi descrierile cursurilor.
+*planurile de invatamant 2023-2025 sunt in curs de avizare de catre CF si Senat.
+Calculatoare și Tehnologia Informației
+| Nr. crt. |
+Nume program master | |||
+| 1. | Arhitecturi Avansate de Calculatoare | |||
+| 2. | Administrarea Bazelor de Date | |||
+|
+Catedra organizatoare: Calculatoare Responsabil: Prof.Dr.Ing. Florin Radulescu Tip: Aprofundare / Cercetare avansata Informaţii: Scurtă descriere, Plan învăţământ, Cursuri Pentru a putea urma acest program de masterat, sunt necesare studii de licență într-unul din următoarele domenii: Domeniul fundamental Stiinte ingineresti , domeniile: Calculatoare si Tehnologia Informatie (specializarile Calculatoare , Tehnologia Informatiei , Ingineria Informatiei), Inginerie electronica si telecomunicatii, Ingineria sistemelor (specializarile Automatica si informatica aplicata, Ingineria sistemelor multimedia) , Stiinte Ingineresti Aplicate (specializarile Matematica si informatica aplicata in inginerie) Domeniul fundamental Stiinte Exacte , domeniile : Matematica (specializarea Matematica informatica) , Informatica (specializarile Informatica , informatica aplicata) Domeniul fundamental Stiinte Economice, domeniile: Economie, Administrarea Afacerilor, Economie si Afaceri Internationale, Management , Marketing |
+||||
+| 3. | e-Guvernare | |||
+|
+Catedra organizatoare: Calculatoare Responsabil: Prof.Dr.Ing. Nirvana Popescu, Prof.Dr.Ing. Mariana Mocanu Tip: Interdisciplinar / Transdisciplinar Informaţii: Scurtă descriere, Plan învăţământ, Cursuri Pentru a putea urma acest program de masterat, sunt necesare studii de licență într-unul din următoarele domenii: Domeniul fundamental Stiinte Domeniul fundamental Stiinte Exacte , domeniile : Matematica (specializarea Matematica informatica) , Informatica (specializarile Informatica , informatica aplicata) |
+||||
+| 4. | Grafică, Multimedia și Realitate Virtuală | |||
+|
+Catedra organizatoare: Calculatoare Responsabil: Prof.Dr.Ing. Florica Moldoveanu, Tip: Aprofundare / Cercetare avansata Informaţii: Scurtă descriere, Plan învăţământ, Cursuri Pentru a putea urma acest program de masterat, sunt necesare studii de licență într-unul din următoarele domenii: Domeniul fundamental Stiinte ingineresti , domeniile: Calculatoare si Tehnologia Informatie (specializarile Calculatoare , Tehnologia Informatiei , Ingineria Informatiei), Inginerie electronica si telecomunicatii, Ingineria sistemelor (specializarile Automatica si informatica aplicata, Ingineria sistemelor multimedia) , Stiinte Ingineresti Aplicate (specializarile Matematica si informatica aplicata in inginerie) Domeniul fundamental Stiinte Exacte , domeniile : Matematica (specializarea Matematica informatica) , Informatica (specializarile Informatica , informatica aplicata) |
+||||
+| 5. | Inteligență Artificială – în engleză | |||
+|
+Catedra organizatoare: Calculatoare Responsabil: Prof.Dr.Ing. Adina Florea Tip: Aprofundare / Cercetare avansata Informaţii: Scurtă descriere, Plan învăţământ, Cursuri Pentru a putea urma acest program de masterat, sunt necesare studii de licență într-unul din următoarele domenii: Domeniul fundamental Stiinte ingineresti , domeniile: Calculatoare si Tehnologia Informatie (specializarile Calculatoare , Tehnologia Informatiei , Ingineria Informatiei), Inginerie electronica si telecomunicatii, Ingineria sistemelor (specializarile Automatica si informatica aplicata) , Stiinte Ingineresti Aplicate (specializarile Matematica si informatica aplicata in inginerie) Domeniul fundamental Stiinte Exacte , domeniile : Matematica (specializarea Matematica informatica) , Informatica (specializarile Informatica , informatica aplicata) |
+||||
+| 6. | Ingineria Sistemelor Internet | |||
+|
+Catedra organizatoare: Calculatoare Responsabil: Prof.Dr.Ing. Stefan Trausan-Matu Tip: Aprofundare / Cercetare avansata Informaţii: Scurtă descriere, Plan învăţământ, Cursuri Pentru a putea urma acest program de masterat, sunt necesare studii de licență într-unul din următoarele domenii: Domeniul fundamental Stiinte ingineresti , domeniile: Calculatoare si Tehnologia Informatie (specializarile Calculatoare , Tehnologia Informatiei , Ingineria Informatiei), Inginerie electronica si telecomunicatii, Ingineria sistemelor (specializarile Automatica si informatica aplicata, Ingineria sistemelor multimedia) |
+||||
+| 7. | Management în Tehnologia Informației | |||
+|
+Catedra organizatoare: Calculatoare Responsabil: Prof.Dr.Ing. Florica Moldoveanu Tip: Interdisciplinar / Transdisciplinar Informaţii: Scurtă descriere, Plan învăţământ, Cursuri Pentru a putea urma acest program de masterat, sunt necesare studii de licență într-unul din următoarele domenii: Domeniul fundamental Stiinte ingineresti, domeniile: Calculatoare si Tehnologia Informatiei, Domeniul fundamental Stiinte exacte, domeniile: Matematica ( specializarea Matematica-Informatica), Informatica ( specializarile Informatica si informatica aplicata). Domeniul fundamental Stiinte Economice, domeniile: Management ( specializarea Management ), Cibernetica, |
+||||
+| 8. | Securitatea Rețelelor Informatice Complexe | |||
+|
+Catedra organizatoare: Calculatoare Responsabil: Prof.Dr.Ing. Nicolae Tapus Tip: Aprofundare / Cercetare avansata Informaţii: Scurtă descriere, Plan învăţământ, Cursuri Pentru a putea urma acest program de masterat, sunt necesare studii de licență într-unul din următoarele domenii: Domeniul fundamental Stiinte ingineresti , domeniile: Calculatoare si Tehnologia Informatie (specializarile Calculatoare , Tehnologia Informatiei , Ingineria Informatiei), Inginerie electronica si telecomunicatii, Ingineria sistemelor (specializarile Automatica si informatica aplicata, Ingineria sistemelor multimedia) |
+||||
+| 9. | Servicii Software Avansate | |||
+|
+Catedra organizatoare: Calculatoare Responsabil: Prof.dr.ing. Ciprian Dobre Tip: Aprofundare / Cercetare avansata Informaţii: Scurtă descriere, Plan învăţământ, Cursuri Pentru a putea urma acest program de masterat, sunt necesare studii de licență într-unul din următoarele domenii: Domeniul fundamental Stiinte ingineresti , domeniile: Calculatoare si Tehnologia Informatie (specializarile Calculatoare , Tehnologia Informatiei , Ingineria Informatiei), Inginerie electronica si telecomunicatii, Ingineria sistemelor (specializarile Automatica si informatica aplicata, Ingineria sistemelor multimedia), Stiinte Ingineresti Aplicate (specializarile Matematica si informatica aplicata in inginerie) Domeniul fundamental Stiinte Exacte , domeniile : Matematica (specializarea Matematica informatica) , Informatica (specializarile Informatica , informatica aplicata) |
+||||
+| 10. | Sisteme de Calcul Paralele și Distribuite – în engleză | |||
+|
+Catedra organizatoare: Calculatoare Responsabil: Prof.dr.ing. Florin Pop Tip: Aprofundare / Cercetare avansata Informaţii: Scurtă descriere, Plan învăţământ, Cursuri Pentru a putea urma acest program de masterat, sunt necesare studii de licență într-unul din următoarele domenii: Domeniul fundamental Stiinte ingineresti , domeniile: Calculatoare si Tehnologia Informatie (specializarile Calculatoare , Tehnologia Informatiei , Ingineria Informatiei), Inginerie electronica si telecomunicatii, Ingineria sistemelor (specializarile Automatica si informatica aplicata, Ingineria sistemelor multimedia), Stiinte Ingineresti Aplicate (specializarile Matematica si informatica aplicata in inginerie) Domeniul fundamental Stiinte Exacte , domeniile : Matematica (specializarea Matematica informatica) , Informatica (specializarile Informatica , informatica aplicata) |
+||||
+| 11. | Sisteme avansate de securitate – în engleză | |||
+|
+Catedra organizatoare: Calculatoare Responsabil: Prof.Dr.Ing. Nicolae Tapus Tip: Aprofundare / Cercetare avansata Informaţii: Scurtă descriere, Plan învăţământ, Cursuri Pentru a putea urma acest program de masterat, sunt necesare studii de licență într-unul din următoarele domenii: |
+||||
+| 12. | Sisteme de programe financiare – în engleză | |||
+|
+Catedra organizatoare: Calculatoare Responsabil: Conf.Dr.Ing. Andrei Olaru Tip: Aprofundare / Cercetare avansata Informaţii: Scurtă descriere, Plan învăţământ, Cursuri Pentru a putea urma acest program de masterat, sunt necesare studii de licență într-unul din următoarele domenii: |
+||||
+| 13. | Quantum Computing – în engleză | |||
+|
+Catedra organizatoare: Calculatoare Responsabil: Prof. Pantelimon George Popescu Tip: Aprofundare / Cercetare avansata Informaţii: Scurtă descriere, Plan învăţământ, Cursuri Pentru a putea urma acest program de masterat, sunt necesare studii de licență într-unul din următoarele domenii: |
+Toate disciplinele la alegere se pot alege fie dintre cele obligatorii la alte programe de masterat fie dintre cele cuprinse in Grupul G. Precizarile existente in unele planuri de invatamant privind disciplinele dintre care se poate alege devin recomandari.
+Ingineria Sistemelor
+| Nr. crt. |
+Nume program master | |||
+| 14. | Control Avansat si Sisteme în Timp Real | |||
+|
+Catedra organizatoare: AIS Responsabil: Prof.Dr.Ing. Dumitru Popescu Tip: Aprofundare / Cercetare avansata Informaţii: Scurtă descriere, Plan învăţământ, Cursuri Pentru a putea urma acest program de masterat, sunt necesare studii de licență într-unul din următoarele domenii: Domeniul fundamental Stiinte Ingineresti, domeniul : Ingineria Sistemelor ( specializarea Automatica si Informatica Aplicata), Calculatoare si Tehnologia Informatiei , Inginerie Industriala |
+||||
+| 15. | Sisteme Inteligente de Conducere | |||
+|
+Catedra organizatoare: AIS Responsabil: Prof.Dr.Ing. Nicolae Constantin Tip: Aprofundare / Cercetare avansata Informaţii: Scurtă descriere, Plan învăţământ, Cursuri Pentru a putea urma acest program de masterat, sunt necesare studii de licență într-unul din următoarele domenii: Domeniul fundamental Stiinte Ingineresti, domeniul : Ingineria Sistemelor ( specializarea Automatica si Informatica Aplicata), Calculatoare si Tehnologia Informatiei , Inginerie Industriala |
+||||
+| 16. | Automatică și Informatică Industrială | |||
+|
+Catedra organizatoare: AII Responsabil: Prof.Dr.Ing. Sergiu Stelian Iliescu, Tip: Aprofundare / Cercetare avansata Informaţii: Scurtă descriere, Plan învăţământ, Cursuri Pentru a putea urma acest program de masterat, sunt necesare studii de licență într-unul din următoarele domenii: Domeniul fundamental Stiinte Ingineresti , domeniile: Ingineria Sistemelor, Calculatoare si Tehnologia Informatiei, Inginerie Electrica, Inginerie Electronica si Telecomunicatii si Inginerie Industriala |
+||||
+| 17. | Managementul și Protecția Informației | |||
+|
+Catedra organizatoare: AII Responsabil: Prof.Dr.Ing. Dorin Carstoiu, Prof.dr.ing. Anca Daniela Ionita Tip: Aprofundare / Cercetare avansata Informaţii: Scurtă descriere, Plan învăţământ, Cursuri Pentru a putea urma acest program de masterat, sunt necesare studii de licență într-unul din următoarele domenii: Domeniul fundamental Stiinte Ingineresti , domeniile: Ingineria Sistemelor, Calculatoare si Tehnologia Informatiei, Inginerie Electrica, Inginerie Electronica si Telecomunicatii, Stiinte Ingineresti Aplicate |
+||||
+| 18. | Prelucrări Complexe de Semnal în Aplicații Multimedia | |||
+|
+Catedra organizatoare: AII Responsabil: Prof.Dr.Ing. Dan Popescu Tip: Aprofundare / Cercetare avansata Informaţii: Scurtă descriere, Plan învăţământ, Cursuri Pentru a putea urma acest program de masterat, sunt necesare studii de licență într-unul din următoarele domenii: Domeniul fundamental Stiinte Ingineresti , domeniile: Ingineria Sistemelor, Calculatoare si Tehnologia Informatiei, Inginerie Electrica, Inginerie Electronica si Telecomunicatii, Stiinte Ingineresti Aplicate, Ingineria Mediului |
+||||
+| 19. | Service Engineering and Management – în engleză | |||
+|
+Catedra organizatoare: Calculatoare + AII Responsabil: Conf.dr.ing. Silviu Raileanu, Prof.Dr.Ing. Theodor Borangiu Tip: Aprofundare / Cercetare avansata Informaţii: Scurtă descriere, Plan învăţământ, Cursuri Pentru a putea urma acest program de masterat, sunt necesare studii de licență într-unul din următoarele domenii: Domeniul fundamental Stiinte Ingineresti, domeniul : Ingineria Sistemelor , Calculatoare si tehnologia informatiei , Inginerie Electrica , Inginerie electronic si telecomunicatii , Inginerie Industriala |
+||||
+| 20. | Sisteme Informatice în Medicină | |||
+|
+Catedra organizatoare: AII Responsabil: Prof.Dr.Ing. Radu Dobrescu, Conf.dr.ing. Daniel Marian Merezeanu Tip: Complementar Informaţii: Scurtă descriere, Plan învăţământ, Cursuri Pentru a putea urma acest program de masterat, sunt necesare studii de licență într-unul din următoarele domenii: Domeniul fundamental Stiinte Ingineresti |
+||||
+| 21. | Sisteme Informatice Integrate | |||
+|
+Catedra organizatoare: AIS Responsabil: Prof.Dr.Ing. Simona Caramihai Tip: Interdisciplinar / Transdisciplinar Informaţii: Scurtă descriere, Plan învăţământ, Cursuri Pentru a putea urma acest program de masterat, sunt necesare studii de licență într-unul din următoarele domenii: Domeniul fundamental Stiinte Ingineresti, domeniile : Ingineria Sistemelor, Calculatoare si Tehnologia Informatiei, Inginerie si Management, Inginerie Industriala |
+||||
+| 22. | Sisteme Cyber-Fizice – în engleză | |||
+|
+Catedra organizatoare: AIS Responsabil: Prof.Dr.Ing Ioan Dumitrache Tip: Aprofundare / Cercetare avansata Informaţii: Scurtă descriere, Plan învăţământ, Cursuri Pentru a putea urma acest program de masterat, sunt necesare studii de licență într-unul din următoarele domenii: Domeniul fundamental Stiinte Ingineresti, domeniul : Ingineria Sistemelor , Calculatoare si tehnologia informatiei , Inginerie Electrica , Inginerie electronic si telecomunicatii , Inginerie Industriala |
+||||
+| 23. | Robotică și Automatizări – în engleză | |||
+|
+Catedra organizatoare: AII+AIS Responsabil: Conf.dr.ing. Florin Anton, Tip: Aprofundare / Cercetare avansata Informaţii: Scurtă descriere, Plan învăţământ, Cursuri Pentru a putea urma acest program de masterat, sunt necesare studii de licență într-unul din următoarele domenii: Domeniul fundamental Stiinte Ingineresti, domeniul : Ingineria Sistemelor , Calculatoare si tehnologia informatiei , Inginerie Electrica , Inginerie electronica si telecomunicatii , Inginerie Industriala |
+||||
+| 24. | Analiza avansată de date pentru afaceri – în engleză | |||
+|
+Catedra organizatoare: AIS / AII / Calculatoare Responsabil: Prof.Dr.Ing. Monica Dragoicea Tip: Aprofundare / Cercetare avansata Informaţii: Scurtă descriere, Plan învăţământ, Cursuri Pentru a putea urma acest program de masterat, sunt necesare studii de licență într-unul din următoarele domenii: |
+Inginerie și Management
+| Nr. crt. |
+Nume program master | |||
+| 25. | Ingineria și Managementul Sistemelor de Afaceri | |||
+|
+Catedra organizatoare: AIS Responsabil: Prof.Dr.Ing. Ioan Ștefan Sacală Tip: Interdisciplinar / Transdisciplinar Informaţii: Scurtă descriere, Plan învăţământ, Cursuri Pentru a putea urma acest program de masterat, sunt necesare studii de licență într-unul din următoarele domenii: Domeniul fundamental Stiinte Ingineresti, domeniile : Ingineria Sistemelor, Inginerie si Management |
+Catedra organizatoare: Calculatoare
+Responsabil: Prof.Dr.Ing. Nicolae Tapus
+Tip: Aprofundare / Cercetare avansata
+Informaţii: Scurtă descriere, Plan învăţământ, Cursuri
+Pentru a putea urma acest program de masterat, sunt necesare studii de licență într-unul din următoarele domenii:
+Domeniul fundamental Stiinte ingineresti , domeniile: Calculatoare si Tehnologia Informatie (specializarile Calculatoare , Tehnologia Informatiei , Ingineria Informatiei), Inginerie electronica si telecomunicatii, Ingineria sistemelor (specializarile Automatica si informatica aplicata, Ingineria sistemelor multimedia), Stiinte Ingineresti Aplicate (specializarile Matematica si informatica aplicata in inginerie)
+Domeniul fundamental Stiinte Exacte , domeniile : Matematica (specializarea Matematica informatica) , Informatica (specializarile Informatica , informatica aplicata)

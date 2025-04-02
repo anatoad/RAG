@@ -1,0 +1,16 @@
+Departament - Denumire program de masterat | Responsabil | |
+Departament AUTOVEHICULE RUTIERE | ||
+Conf.dr.ing. Mihail-Daniel IOZSA | ||
+Conf.dr.ing. Marius BĂȚĂUȘ | ||
+Prof.dr.ing. Gabriel Anghelache | ||
+Departament MATERIAL RULANT DE CALE FERATA | ||
+Conf.dr.ing. Marius-Andrian Spiroiu | ||
+Prof.dr.ing. Mădalina Dumitriu | ||
+Conf. dr. ing. Camil-Ion Crăciun. | ||
+Departament TRANSPORTURI, TRAFIC SI LOGISTICĂ | ||
+Conf.dr.ing. Oana Dinu | ||
+Conf.dr.ing. Vasile Dragu | ||
+Prof.dr.ing. Mihaela Popa | ||
+Departament TELECOMENZI SI ELECTRONICA IN TRANSPORTURI | ||
+Conf.dr.ing.Florin Nemțanu | ||
+Conf.dr.ing. Marius Minea |

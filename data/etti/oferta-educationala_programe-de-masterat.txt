@@ -1,0 +1,50 @@
+Programe de masterat
+20 programe de masterat (cercetare-aprofundare)
+- 19 programe de masterat în domeniul Inginerie Electronică, Telecomunicaţii şi Tehnologii Informaţionale
+- 1 program de masterat în domeniul Calculatoare şi Tehnologia Informaţiei
+În funcție de domenii de specializare şi studiu:
+Telecomunicații
+Advanced Wireless Communications (English)
+Coordinator: Călin VLĂDEANU
+Comunicaţii mobile
+Coordonator: Octavian FRATU
+Managementul serviciilor şi reţelelor
+Coordonator: Roxana ZOICAN
+Tehnologii software avansate pentru comunicaţii
+Coordonator: Sorin ZOICAN
+Telecomunicaţii
+Coordonator: Simona HALUNGA
+Observație: Programul de masterat complementar Telecomunicații se adresează absolvenților de licență din alte domenii de studiu decât cele ale facultății ETTI.
+Microelectronică
+Advanced Computing in Embedded Systems (English)
+Coordinator: George Vlăduț POPESCU
+Advanced Microelectronics (English)
+Coordinator: Claudius DAN
+Microelectronică și nanoelectronică
+Coordinator: Lidia DOBRESCU
+Microsisteme
+Coordonator Gheorghe BREZEANU
+Optoelectronică
+Coordonator: Marian VLĂDESCU
+Aplicaţii ale electronicii şi tehnologiei informaţiei
+Electric Vehicle Propulsion and Control (English)
+Coordonator: Mădălin FRUNZETE
+Electronică și Informatică Aplicată
+Coordonator: Adriana FLORESCU
+Electronică și Informatică Medicală
+Coordonator: Dragoș ȚARĂLUNGĂ
+Ingineria calităţii şi siguranţei în funcţionare în electronică şi telecomunicaţii
+Coordonator: Ioan BACIVAROV
+Ingineria informaţiei şi a sistemelor de calcul
+Coordonator: Radu DOGARU
+Tehnologii integrate avansate în electronica auto
+Coordonator: Alexandru VASILE
+Semnal, imagine şi multimedia
+Sisteme Inteligente și Vederea Artificială
+Coordonator: Victor NEAGOE
+Tehnici avansate pentru imagistica digitală
+Coordonator: Constantin VERTAN
+Tehnologii multimedia în aplicații de biometrie și securitatea Informației
+Coordonator: Dragoș BURILEANU
+Tehnologii multimedia pentru producţia de conţinut în domeniul audiovizualului și comunicațiilor
+Coordonator: Cristian NEGRESCU

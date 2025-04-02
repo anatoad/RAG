@@ -1,0 +1,16 @@
+[
+    {
+        "title": "programe-de-studii.txt",
+        "path": "programe-de-studii.txt",
+        "url": "https://www.unesco.chair.upb.ro/programe-de-studii/",
+        "filetype": "html",
+        "tag": "[UNESCO PROGRAME DE STUDII]"
+    },
+    {
+        "title": "admitere.txt",
+        "path": "admitere.txt",
+        "url": "https://www.unesco.chair.upb.ro/admitere/",
+        "filetype": "html",
+        "tag": "[UNESCO ADMITERE]"
+    }
+]

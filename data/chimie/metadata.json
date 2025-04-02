@@ -1,0 +1,37 @@
+[
+    {
+        "title": "admitere_programe-de-studii-de-licenta.txt",
+        "path": "admitere_programe-de-studii-de-licenta.txt",
+        "url": "https://chimie.upb.ro/admitere/programe-de-studii-de-licenta/",
+        "filetype": "html",
+        "tag": "[CHIMIE ADMITERE PROGRAME DE STUDII DE LICENTA]"
+    },
+    {
+        "title": "admitere_programe-de-studii-de-masterat.txt",
+        "path": "admitere_programe-de-studii-de-masterat.txt",
+        "url": "https://chimie.upb.ro/admitere/programe-de-studii-de-masterat/",
+        "filetype": "html",
+        "tag": "[CHIMIE ADMITERE PROGRAME DE STUDII DE MASTERAT]"
+    },
+    {
+        "title": "admitere_programe-de-studii-de-doctorat.txt",
+        "path": "admitere_programe-de-studii-de-doctorat.txt",
+        "url": "https://chimie.upb.ro/admitere/programe-de-studii-de-doctorat/",
+        "filetype": "html",
+        "tag": "[CHIMIE ADMITERE PROGRAME DE STUDII DE DOCTORAT]"
+    },
+    {
+        "title": "educatie_programe-de-studii-de-licenta.txt",
+        "path": "educatie_programe-de-studii-de-licenta.txt",
+        "url": "https://chimie.upb.ro/educatie/programe-de-studii-de-licenta/",
+        "filetype": "html",
+        "tag": "[CHIMIE EDUCATIE PROGRAME DE STUDII DE LICENTA]"
+    },
+    {
+        "title": "educatie_programe-de-studii-de-masterat.txt",
+        "path": "educatie_programe-de-studii-de-masterat.txt",
+        "url": "https://chimie.upb.ro/educatie/programe-de-studii-de-masterat/",
+        "filetype": "html",
+        "tag": "[CHIMIE EDUCATIE PROGRAME DE STUDII DE MASTERAT]"
+    }
+]

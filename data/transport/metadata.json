@@ -1,0 +1,37 @@
+[
+    {
+        "title": "admitere-licenta.txt",
+        "path": "admitere-licenta.txt",
+        "url": "https://transport.upb.ro/admitere-licenta/",
+        "filetype": "html",
+        "tag": "[TRANSPORT ADMITERE LICENTA]"
+    },
+    {
+        "title": "admitere-masterat.txt",
+        "path": "admitere-masterat.txt",
+        "url": "https://transport.upb.ro/admitere-masterat/",
+        "filetype": "html",
+        "tag": "[TRANSPORT ADMITERE MASTERAT]"
+    },
+    {
+        "title": "licenta.txt",
+        "path": "licenta.txt",
+        "url": "https://transport.upb.ro/licenta/",
+        "filetype": "html",
+        "tag": "[TRANSPORT LICENTA]"
+    },
+    {
+        "title": "masterat.txt",
+        "path": "masterat.txt",
+        "url": "https://transport.upb.ro/masterat/",
+        "filetype": "html",
+        "tag": "[TRANSPORT MASTERAT]"
+    },
+    {
+        "title": "doctorat.transport.upb.ro.txt",
+        "path": "doctorat.transport.upb.ro.txt",
+        "url": "https://doctorat.transport.upb.ro/",
+        "filetype": "html",
+        "tag": "[TRANSPORT DOCTORAT TRANSPORT UPB RO]"
+    }
+]

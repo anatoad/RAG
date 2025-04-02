@@ -1,0 +1,30 @@
+[
+    {
+        "title": "ro_admitere-licenta.txt",
+        "path": "ro_admitere-licenta.txt",
+        "url": "http://www.aero.pub.ro/ro/admitere-licenta/",
+        "filetype": "html",
+        "tag": "[AERO RO ADMITERE LICENTA]"
+    },
+    {
+        "title": "ro_programe-de-licenta.txt",
+        "path": "ro_programe-de-licenta.txt",
+        "url": "http://www.aero.pub.ro/ro/programe-de-licenta/",
+        "filetype": "html",
+        "tag": "[AERO RO PROGRAME DE LICENTA]"
+    },
+    {
+        "title": "ro_programe-de-master.txt",
+        "path": "ro_programe-de-master.txt",
+        "url": "http://www.aero.pub.ro/ro/programe-de-master/",
+        "filetype": "html",
+        "tag": "[AERO RO PROGRAME DE MASTER]"
+    },
+    {
+        "title": "ro_admitere-master.txt",
+        "path": "ro_admitere-master.txt",
+        "url": "http://www.aero.pub.ro/ro/admitere-master/",
+        "filetype": "html",
+        "tag": "[AERO RO ADMITERE MASTER]"
+    }
+]

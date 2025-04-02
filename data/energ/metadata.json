@@ -1,0 +1,51 @@
+[
+    {
+        "title": "admitere_licenta_de-ce-sa-ne-alegi.txt",
+        "path": "admitere_licenta_de-ce-sa-ne-alegi.txt",
+        "url": "https://energ.upb.ro/admitere/licenta/de-ce-sa-ne-alegi",
+        "filetype": "html",
+        "tag": "[ENERG ADMITERE LICENTA DE CE SA NE ALEGI]"
+    },
+    {
+        "title": "admitere_licenta_informatii-admitere.txt",
+        "path": "admitere_licenta_informatii-admitere.txt",
+        "url": "https://energ.upb.ro/admitere/licenta/informatii-admitere",
+        "filetype": "html",
+        "tag": "[ENERG ADMITERE LICENTA INFORMATII ADMITERE]"
+    },
+    {
+        "title": "admitere_masterat_informatii-admitere.txt",
+        "path": "admitere_masterat_informatii-admitere.txt",
+        "url": "https://energ.upb.ro/admitere/masterat/informatii-admitere",
+        "filetype": "html",
+        "tag": "[ENERG ADMITERE MASTERAT INFORMATII ADMITERE]"
+    },
+    {
+        "title": "admitere_doctorat_informatii-admitere.txt",
+        "path": "admitere_doctorat_informatii-admitere.txt",
+        "url": "https://energ.upb.ro/admitere/doctorat/informatii-admitere",
+        "filetype": "html",
+        "tag": "[ENERG ADMITERE DOCTORAT INFORMATII ADMITERE]"
+    },
+    {
+        "title": "educatie_studii_licenta.txt",
+        "path": "educatie_studii_licenta.txt",
+        "url": "https://energ.upb.ro/educatie/studii/licenta",
+        "filetype": "html",
+        "tag": "[ENERG EDUCATIE STUDII LICENTA]"
+    },
+    {
+        "title": "educatie_studii_master.txt",
+        "path": "educatie_studii_master.txt",
+        "url": "https://energ.upb.ro/educatie/studii/master",
+        "filetype": "html",
+        "tag": "[ENERG EDUCATIE STUDII MASTER]"
+    },
+    {
+        "title": "educatie_studii_doctorat.txt",
+        "path": "educatie_studii_doctorat.txt",
+        "url": "https://energ.upb.ro/educatie/studii/doctorat",
+        "filetype": "html",
+        "tag": "[ENERG EDUCATIE STUDII DOCTORAT]"
+    }
+]

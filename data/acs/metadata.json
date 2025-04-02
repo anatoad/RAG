@@ -1,0 +1,44 @@
+[
+    {
+        "title": "admitere_viitorii-studenti.txt",
+        "path": "admitere_viitorii-studenti.txt",
+        "url": "https://acs.pub.ro/admitere/viitorii-studenti/",
+        "filetype": "html",
+        "tag": "[ACS ADMITERE VIITORII STUDENTI]"
+    },
+    {
+        "title": "admitere_licenta.txt",
+        "path": "admitere_licenta.txt",
+        "url": "https://acs.pub.ro/admitere/licenta/",
+        "filetype": "html",
+        "tag": "[ACS ADMITERE LICENTA]"
+    },
+    {
+        "title": "admitere_masterat.txt",
+        "path": "admitere_masterat.txt",
+        "url": "https://acs.pub.ro/admitere/masterat/",
+        "filetype": "html",
+        "tag": "[ACS ADMITERE MASTERAT]"
+    },
+    {
+        "title": "admitere_doctorat.txt",
+        "path": "admitere_doctorat.txt",
+        "url": "https://acs.pub.ro/admitere/doctorat/",
+        "filetype": "html",
+        "tag": "[ACS ADMITERE DOCTORAT]"
+    },
+    {
+        "title": "educatie_licenta.txt",
+        "path": "educatie_licenta.txt",
+        "url": "https://acs.pub.ro/educatie/licenta/",
+        "filetype": "html",
+        "tag": "[ACS EDUCATIE LICENTA]"
+    },
+    {
+        "title": "educatie_masterat.txt",
+        "path": "educatie_masterat.txt",
+        "url": "https://acs.pub.ro/educatie/masterat/",
+        "filetype": "html",
+        "tag": "[ACS EDUCATIE MASTERAT]"
+    }
+]

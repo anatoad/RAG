@@ -1,0 +1,30 @@
+[
+    {
+        "title": "admitere-s3.txt",
+        "path": "admitere-s3.txt",
+        "url": "https://isb.pub.ro/admitere-s3/",
+        "filetype": "html",
+        "tag": "[ISB ADMITERE S3]"
+    },
+    {
+        "title": "admitere-master.txt",
+        "path": "admitere-master.txt",
+        "url": "https://isb.pub.ro/admitere-master/",
+        "filetype": "html",
+        "tag": "[ISB ADMITERE MASTER]"
+    },
+    {
+        "title": "licenta.txt",
+        "path": "licenta.txt",
+        "url": "https://isb.pub.ro/licenta/",
+        "filetype": "html",
+        "tag": "[ISB LICENTA]"
+    },
+    {
+        "title": "master_isb.txt",
+        "path": "master_isb.txt",
+        "url": "https://isb.pub.ro/master_isb/",
+        "filetype": "html",
+        "tag": "[ISB MASTER ISB]"
+    }
+]

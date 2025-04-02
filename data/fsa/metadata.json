@@ -1,0 +1,23 @@
+[
+    {
+        "title": "calendar-admitere.txt",
+        "path": "calendar-admitere.txt",
+        "url": "http://fsa.pub.ro/calendar-admitere",
+        "filetype": "html",
+        "tag": "[FSA CALENDAR ADMITERE]"
+    },
+    {
+        "title": "admitere-master.txt",
+        "path": "admitere-master.txt",
+        "url": "http://fsa.pub.ro/admitere-master",
+        "filetype": "html",
+        "tag": "[FSA ADMITERE MASTER]"
+    },
+    {
+        "title": "discipline-de-concurs.txt",
+        "path": "discipline-de-concurs.txt",
+        "url": "http://fsa.pub.ro/discipline-de-concurs",
+        "filetype": "html",
+        "tag": "[FSA DISCIPLINE DE CONCURS]"
+    }
+]

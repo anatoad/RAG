@@ -1,0 +1,59 @@
+Doctorat
+Admitere doctorat
+Calendar admitere doctorat
+| 1 aprilie – 20 septembrie 2024 | Înscrierea, validarea dosarului și admiterea candidaților. Platformă înscriere candidați: https://admitere.pub.ro. |
+| 26 aprilie 2024 29 mai 2024 26 iunie 2024 24 iulie 2024 28 august 2024 20 septembrie 2024, 16:00 |
+Validarea dosarelor de către secretariatul SD-AC. Evaluarea dosarelor de către conducătorii de doctorat. |
+| 30 aprilie 2024 31 mai 2024 28 iunie 2024 26 iulie 2024 30 august 2024 23 septembrie 2024 |
+Rezultate evaluare și acordarea calificativului Admis/Respins. [Rezultate aprilie 2024] [Rezultate mai 2024] [Rezultate iunie 2024] [Rezultate iulie 2024] [Rezultate august 2024] [Rezultate septembrie 2024] |
+| 25-26 septembrie 2024 | Evaluarea candidaților declarați admiși (interviu oral) de către Comisia de admitere și alocarea burselor MEN în baza ierarhiei stabilite. [Listă finală admitere și burse] |
+| 30 septembrie 2024 | Înmatricularea candidaților declarați admiși. [Rezultate finale] |
+| 1 octombrie 2024 | Începerea stagiului doctoral. |
+Legislație și regulament admitere
+SD-AC organizează ocuparea locurilor disponibile pe bază de concurs conform următoarelor reglementări:
+- Metodologia privind organizarea și desfășurarea concursului de admitere la doctorat a Instituției Organizatoare de Studii Universitare de Doctorat IOSUD – UPB [link].
+- Regulamentul de funcționare al Școlii Doctorale de Automatică și Calculatoare [link].
+Admiterea la doctorat se face în limita locurilor alocate anual de:
+- Ministerul Educației pentru doctoratul în regim de finanțare de la bugetul de stat sub formă de granturi doctorale.
+- UPB, în calitate de Instituție Organizatoare de Studii Universitare de Doctorat, pentru doctoratul în regim cu taxă, care este suportată de către doctorand. Cuantumul taxelor este publicat aici [link].
+Admitere
+Pasul 1: Validare și consiliere
+Candidații trebuie să inițieze completarea aplicației de admitere, cât mai din timp, pentru buna desfășurare a procesului de admitere folosind platforma https://admitere.pub.ro, secțiunea Doctorat. Pentru identificarea conducătorului de doctorat pentru coordonarea programului de doctorat, în conformitate cu tematicile de cercetare dorite vă rugăm să consultați secțiunea dedicată din cadrul site-ului școlii doctorale [link].
+Pasul 2: Înscrierea la concurs
+Candidații depun online dosarul de înscriere in platforma www.admitere.upb.ro, in perioada menționată, dosar care trebuie să conțină următoarele documente:
+a) Cerere de înscriere (Anexa 2) [descarcă];
+b) Curriculum vitae (se recomandă formatul Europass [link]);
+c) Lista de lucrări publicate [descarcă];
+d) Documente scanate* (la semnarea contractului de studii doctorale vor aduce documentele în original):
+- diplome de absolvire (licenţă, masterat, lunga durata);
+- suplimente la diploma (licenţă, masterat);
+- diploma de bacalaureat;
+- certificat de naştere;
+- certificat de căsătorie sau alt act de schimbare a numelui (unde este cazul);
+e) Dovada privind plata taxei de înscriere care se poate achita și online;
+f) Copie buletin/carte de identitate;
+g) Declarație pe propria răspundere ca nu a mai beneficiat anterior de un loc bugetat la studii universitare de doctorat (Anexa 4) [descarcă];
+h) Propunerea de tematica pentru studiile doctorale (PhD proposal) în limba română sau în limba engleză (Anexa 5) [descarcă];
+i) Scrisoare de recomandare de la un expert în domeniu.
+*Candidații care absolvă în cursul anului curent un program de master se pot înscrie și participa la concursul de admitere, iar ulterior absolvirii programului de master, aceștia vor depune documentele de studii (diplome și foi matricole) la dosarul de concurs.
+Valoarea taxei de înscriere la concursul de admitere la doctorat este de 200 RON, cu excepția candidaților care au absolvit un program de masterat în POLITEHNICA București pentru care taxa de înscriere este de 100 RON.
+Pasul 3: Evaluarea dosarului și a candidatului
+SD-AC asigură permanent transparenţa procedurilor de selecţie şi admitere la doctorat, a criteriilor de evaluare şi a standardelor impuse candidaţilor, egalitatea de șanse și nediscriminarea de orice tip.
+Conducătorul de doctorat evaluează individual dosarul de concurs al candidatului, validând sau invalidând aplicația acestuia. Pentru avizului pozitiv al conducătorului de doctorat se poate organiza un interviu online. În cadrul interviului, candidatul este așteptat să prezinte pe scurt parcursul său academic și profesional și, după caz, rezultatele de cercetare cele mai relevante. De asemenea, candidatul va expune tematica și preocupările de cercetare ştiinţifică vizate în cadrul tezei de doctorat, cu accent pe contribuțiile și soluțiile noi ce vor fi investigate.
+În urma evaluării, candidatul primește calificativul Admis sau Respins din partea coordonatorului de doctorat. În cazul în care este Admis, candidatul va participa la concursul de admitere la nivelul Școlii Doctorale, în vederea alocării un loc la programul doctoral din cadrul SD-AC (buget sau taxă), inclusiv a burselor doctorale acordate de către minister.
+Pasul 4: Alocarea locurilor (admiterea finală) și a burselor de doctorat
+Conform calendarului, comisia de admitere realizează evaluarea candidaților declarați Admiși de către coordonatorul de doctorat în vederea alocării locurilor la programul doctoral din cadrul SD-AC (buget sau taxă) și acordării burselor de doctorat.
+Candidaţii vor fi apreciaţi în raport cu nivelul de pregătire şi informare în domeniu, cu capacitatea de a evidenția orientările majore ale cercetării, cu capacitatea de a formula soluţii şi căi de rezolvare (teoretice şi experimentale) pentru tema de cercetare vizată, cât și cu privire la capacitatea de a urma programul doctoral.
+Criteriile cantitative de evaluare sunt prezentate în Metodologia de admitere, articolul 5 (Anexa 3) [link].
+Candidați vor pregăti pentru examenul de admitere o prezentare bazată pe propunerea de tematica pentru studiile doctorale (PhD proposal) în limba română sau în limba engleză după modelul acesta [prezentare].
+Pasul 5: Înmatriculare
+Rezultatele concursului de admitere sunt validate și afișate pe pagina de admitere a SD-AC (vezi calendarul admiterii).
+Toți candidații declarați admiși se vor înmatricula online în termen de 48 de ore de la data afișării rezultatelor (condiționată de prezentarea dovezii privind absolvirea unui program de masterat (diplomă de masterat sau adeverință de absolvire, foaie matricolă)).
+Înmatricularea constă în încărcarea pe platforma de admitere a dovezii de plată a taxei de înmatriculare în valoare de 50 RON. Aceasta se achită online, toate informațiile necesare fiind disponibile în platformă.
+Toți candidații declarați admiși vor completa și semna olograf contractul de studii universitare de doctorat până la începutul anului universitar.
+Pentru candidații străini din țări UE și non-UE
+Pentru candidații cetățeni ai statelor UE înscrierile se fac în conformitate cu:
+https://international.upb.ro/international-students/applying/students-from-eu-countries
+Pentru candidații cetățeni ai statelor non-UE înscrierile se fac în conformitate cu:
+https://international.upb.ro/international-students/applying/students-from-non-eu-countries
+Candidații străini vor urma aceleași proceduri și același flux de validare a dosarelor și admitere ca cetățenii români. Aceștia se pot prezenta la concursul de admitere începând cu luna iulie după validarea actelor de înscriere.

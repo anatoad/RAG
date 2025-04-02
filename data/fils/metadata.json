@@ -1,0 +1,51 @@
+[
+    {
+        "title": "ro_admitere.txt",
+        "path": "ro_admitere.txt",
+        "url": "https://fils.upb.ro/ro/admitere/",
+        "filetype": "html",
+        "tag": "[FILS RO ADMITERE]"
+    },
+    {
+        "title": "ro_admitere-master.txt",
+        "path": "ro_admitere-master.txt",
+        "url": "https://fils.upb.ro/ro/admitere-master/",
+        "filetype": "html",
+        "tag": "[FILS RO ADMITERE MASTER]"
+    },
+    {
+        "title": "ro_admitere-doctorat.txt",
+        "path": "ro_admitere-doctorat.txt",
+        "url": "https://fils.upb.ro/ro/admitere-doctorat/",
+        "filetype": "html",
+        "tag": "[FILS RO ADMITERE DOCTORAT]"
+    },
+    {
+        "title": "ro_oferta-educationala.txt",
+        "path": "ro_oferta-educationala.txt",
+        "url": "https://fils.upb.ro/ro/oferta-educationala/",
+        "filetype": "html",
+        "tag": "[FILS RO OFERTA EDUCATIONALA]"
+    },
+    {
+        "title": "ro_licenta.txt",
+        "path": "ro_licenta.txt",
+        "url": "https://fils.upb.ro/ro/licenta/",
+        "filetype": "html",
+        "tag": "[FILS RO LICENTA]"
+    },
+    {
+        "title": "ro_masterat.txt",
+        "path": "ro_masterat.txt",
+        "url": "https://fils.upb.ro/ro/masterat/",
+        "filetype": "html",
+        "tag": "[FILS RO MASTERAT]"
+    },
+    {
+        "title": "ro_doctorat.txt",
+        "path": "ro_doctorat.txt",
+        "url": "https://fils.upb.ro/ro/doctorat/",
+        "filetype": "html",
+        "tag": "[FILS RO DOCTORAT]"
+    }
+]

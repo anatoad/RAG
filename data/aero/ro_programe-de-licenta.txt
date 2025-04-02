@@ -1,0 +1,16 @@
+Programe de licență
+Facultatea de Inginerie Aerospațială oferă 6 programe de studii de licență în domeniul inginerie aerospațială, învățământ la zi, 4 ani, 240 puncte credit transferabile prin sistemul european ECTS. Absolvenții obțin diploma de inginer aerospațial.
+| Programul de studii de licenta | Acronim | Domeniul de licență | Limba de studiu | Departamentul | DD / RPS* | Curriculum** | Syllabus | |
+|---|---|---|---|---|---|---|---|---|
+| 1 | Construcții aerospațiale | CA | IA | română | Științe Aerospatiale "Elie Carafoli" | Prof. dr. ing. Marius Stoia-Djeska | 2024-2028 2023-2027 2022-2026 2021-2025 2020-2024 2019-2023 2018-2022 2017-2021 2016-2020 | |
+| 2 | Sisteme de propulsie | SP | IA | română | Științe Aerospatiale "Elie Carafoli" | Prof. dr. ing. Daniel-Eugeniu Crunțeanu | 2024-2028 2023-2027 2022-2026 2021-2025 2020-2024 2019-2023 2018-2022 2017-2021 2016-2020 | |
+| 3 | Echipamente si instalații de aviație | EIA | IA | română | Ingineria sistemelor Aeronautice "Nicolae Tipei" | Prof.dr.ing. Lucian Teodor Grigorie | 2024-2028 2023-2027 2022-2026 2021-2025 2020-2024 2019-2023 2018-2022 2017-2021 2016-2020 | |
+| 4 | Inginerie si management aeronautic | IMA | IA | română | Ingineria sistemelor Aeronautice "Nicolae Tipei" | S.l. dr. ing. Cornel Dinu | 2024-2028 2023-2027 2022-2026 2021-2025 2020-2024 2019-2023 2018-2022 2017-2021 2016-2020 | |
+| 5 | Navigație aeriana (Air Navigation) | NA | IA | engleză | Științe Aerospatiale "Elie Carafoli" | Conf. dr. ing. Laurențiu Eugen Moraru. | 2024-2028 2023-2027 2022-2026 2021-2025 2020-2024 2019-2023 2018-2022 2017-2021 2016-2020 | |
+| 6 | Design aeronautic | DA | IA | română | Grafică inginerească si Design Industrial | Prof. dr. ing. Ionel Simion | 2024-2028 2023-2027 2022-2026 2021-2025 2020-2024 2019-2023 2018-2022 2017-2021 2016-2020 |
+*Directorul departamentului (DD) / Responsabilul programului de studii (RPS) – daca este un cadru didactic distinct
+**valabilă pentru promoția respectivă
+Programul Navigație Aeriană începe separat din anul I. Programele în limba română au un trunchi comun de cursuri până în anul III, când studenții optează pentru programul dorit. Împărțirea pe specializări se face la începutul anului III.
+Comparație planuri de învățământ
+Se spune că o imagine face cât 1000 de cuvinte. Graficele care urmează demonstrează această afirmație încercând să ofere o imagine de ansamblu asupra ponderilor diferitelor grupuri de discipline în programul de învățământ al specializărilor FIA ușurând astfel considerabil înțelegerea opțiunilor existente. Ordonata este în ore, înălțimea barelor fiind proporțională cu numărul de ore alocat grupului de discipline.
+Sinteza informațiilor de mai sus este graficul următor ce oferă o comparația directa intre toate specializările existente. Ordinea grupurilor de discipline este aceeași ca mai sus.

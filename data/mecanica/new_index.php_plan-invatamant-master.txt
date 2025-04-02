@@ -1,0 +1,23 @@
+| Crt | Planuri de invatamant 2023-2024 |
+| 1 | Antreprenoriat industrial (PDF) |
+| 2 | Optometrie avansata (PDF) |
+| 3 | Integrated Mechanical Engineering Design (PDF) |
+| 4 | Evaluarea riscului, sigurantei si integritatii echipamentelor sub presiune (PDF) |
+| 5 | Ingineria si managementului echipamentelor si sistemelor termice (PDF) |
+| 6 | Mecanica de precizie pentru sisteme mecatronice (PDF) |
+| 7 | Ingineria calitatii si mediului in industriile de proces (PDF) |
+| 8 | Sisteme hidraulice si pneumatice avansate (PDF) |
+| 9 | Mecatronica avansata (PDF) |
+| 10 | Design de produs si inginerie inovativa (PDF) |
+| Crt | Planuri de invatamant 2019 – 2020 |
+| 1. | Antreprenoriat Industrial AI |
+| 2. | Optometrie avansată |
+| 3. | Concepție integrată în ingineria mecanică |
+| 4. | Evaluarea riscului, siguranței și integrității echipamentelor sub presiune |
+| 5. | Ingineria și managementul echipamentelor și sistemelor termice |
+| 6. | Mecanică de Precizie pentru Sisteme Mecatronice |
+| 7. | Ingineria calității și mediului în industriile de proces |
+| 8. | Sisteme hidraulice și pneumatice avansate |
+| 9. | Termodinamica echipamentelor pentru procese industriale |
+| 10. | Mecatronică Avansată |
+| 11. | Design de produs si inginerie inovativa |

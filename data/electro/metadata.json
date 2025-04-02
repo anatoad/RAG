@@ -1,0 +1,30 @@
+[
+    {
+        "title": "admitere-licenta.txt",
+        "path": "admitere-licenta.txt",
+        "url": "https://www.electro.upb.ro/admitere-licenta/",
+        "filetype": "html",
+        "tag": "[ELECTRO ADMITERE LICENTA]"
+    },
+    {
+        "title": "planuri-de-invatamant.txt",
+        "path": "planuri-de-invatamant.txt",
+        "url": "https://www.electro.upb.ro/planuri-de-invatamant/",
+        "filetype": "html",
+        "tag": "[ELECTRO PLANURI DE INVATAMANT]"
+    },
+    {
+        "title": "admitere-master.txt",
+        "path": "admitere-master.txt",
+        "url": "https://www.electro.upb.ro/admitere-master/",
+        "filetype": "html",
+        "tag": "[ELECTRO ADMITERE MASTER]"
+    },
+    {
+        "title": "planuri-de-invatamant-2.txt",
+        "path": "planuri-de-invatamant-2.txt",
+        "url": "https://www.electro.upb.ro/planuri-de-invatamant-2/",
+        "filetype": "html",
+        "tag": "[ELECTRO PLANURI DE INVATAMANT 2]"
+    }
+]

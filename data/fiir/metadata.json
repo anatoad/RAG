@@ -1,0 +1,37 @@
+[
+    {
+        "title": "index.php_ro_licenta_admitere-licenta.txt",
+        "path": "index.php_ro_licenta_admitere-licenta.txt",
+        "url": "https://www.fiir.upb.ro/index.php/ro/licenta/admitere-licenta",
+        "filetype": "html",
+        "tag": "[FIIR INDEX PHP RO LICENTA ADMITERE LICENTA]"
+    },
+    {
+        "title": "index.php_ro_licenta_planuri-de-invatamant.txt",
+        "path": "index.php_ro_licenta_planuri-de-invatamant.txt",
+        "url": "https://www.fiir.upb.ro/index.php/ro/licenta/planuri-de-invatamant",
+        "filetype": "html",
+        "tag": "[FIIR INDEX PHP RO LICENTA PLANURI DE INVATAMANT]"
+    },
+    {
+        "title": "index.php_ro_masterat_admitere-masterat.txt",
+        "path": "index.php_ro_masterat_admitere-masterat.txt",
+        "url": "https://www.fiir.upb.ro/index.php/ro/masterat/admitere-masterat",
+        "filetype": "html",
+        "tag": "[FIIR INDEX PHP RO MASTERAT ADMITERE MASTERAT]"
+    },
+    {
+        "title": "index.php_ro_masterat_planuri-de-invatamant.txt",
+        "path": "index.php_ro_masterat_planuri-de-invatamant.txt",
+        "url": "https://www.fiir.upb.ro/index.php/ro/masterat/planuri-de-invatamant",
+        "filetype": "html",
+        "tag": "[FIIR INDEX PHP RO MASTERAT PLANURI DE INVATAMANT]"
+    },
+    {
+        "title": "index.php_ro_scoala-doctorala_admitere-doctorat.txt",
+        "path": "index.php_ro_scoala-doctorala_admitere-doctorat.txt",
+        "url": "https://www.fiir.upb.ro/index.php/ro/scoala-doctorala/admitere-doctorat",
+        "filetype": "html",
+        "tag": "[FIIR INDEX PHP RO SCOALA DOCTORALA ADMITERE DOCTORAT]"
+    }
+]

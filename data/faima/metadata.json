@@ -1,0 +1,37 @@
+[
+    {
+        "title": "admitere-faima.php.txt",
+        "path": "admitere-faima.php.txt",
+        "url": "https://faima.upb.ro/admitere-faima.php",
+        "filetype": "html",
+        "tag": "[FAIMA ADMITERE FAIMA PHP]"
+    },
+    {
+        "title": "licenta.php.txt",
+        "path": "licenta.php.txt",
+        "url": "https://faima.upb.ro/licenta.php",
+        "filetype": "html",
+        "tag": "[FAIMA LICENTA PHP]"
+    },
+    {
+        "title": "master.php.txt",
+        "path": "master.php.txt",
+        "url": "https://faima.upb.ro/master.php",
+        "filetype": "html",
+        "tag": "[FAIMA MASTER PHP]"
+    },
+    {
+        "title": "doctorat.php.txt",
+        "path": "doctorat.php.txt",
+        "url": "https://faima.upb.ro/doctorat.php",
+        "filetype": "html",
+        "tag": "[FAIMA DOCTORAT PHP]"
+    },
+    {
+        "title": "postuniversitar.php.txt",
+        "path": "postuniversitar.php.txt",
+        "url": "https://faima.upb.ro/postuniversitar.php",
+        "filetype": "html",
+        "tag": "[FAIMA POSTUNIVERSITAR PHP]"
+    }
+]
