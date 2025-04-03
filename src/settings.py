@@ -20,11 +20,12 @@ DATA_DIR = BASE_DIR / "data"
 OPENSEARCH_CONFIG_DIR = BASE_DIR / "opensearch-config"
 OCR_DIR = DATA_DIR / "_ocr"
 TEMP_DIR = BASE_DIR / "temp"
-CONTENT_DIR = DATA_DIR / "content"
+# CONTENT_DIR = DATA_DIR / "content"
+CONTENT_DIR = None
 ARTICLES_DIR = BASE_DIR / "articles"
 
 # Ensure directories exist
 DATA_DIR.mkdir(parents=True, exist_ok=True)
-OCR_DIR.mkdir(parents=True, exist_ok=True)
+# OCR_DIR.mkdir(parents=True, exist_ok=True)
 TEMP_DIR.mkdir(parents=True, exist_ok=True)
-CONTENT_DIR.mkdir(parents=True, exist_ok=True)
+# CONTENT_DIR.mkdir(parents=True, exist_ok=True)
