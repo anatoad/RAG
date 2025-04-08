@@ -28,7 +28,7 @@ class PdfProcessor(DocumentProcessor):
         nlp: Language = None,
         tokenizer: AutoTokenizer = None,
         max_tokens: int = 512,
-        logger: Logger = None
+        logger: logging.Logger = None
     ) -> None:
         super().__init__(path, url, nlp, tokenizer, max_tokens, logger)
         self.type = "pdf"

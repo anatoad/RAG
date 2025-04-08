@@ -5,7 +5,6 @@ import sys
 import logging
 import settings
 from textwrap import TextWrapper
-from logging import Logger
 import pandas as pd
 
 def get_logger(
@@ -14,8 +13,8 @@ def get_logger(
     level=logging.INFO,
     format=f"%(asctime)s %(levelname)s: %(message)s",
     stderr=False
-):
-    log_dir = log_dir or settings.BASE_DIR / "logs"
+) -> logging.Logger:
+    log_dir = log_dir or settings.LOGS_DIR
     os.makedirs(log_dir, exist_ok=True)
 
     logger = logging.getLogger(name)

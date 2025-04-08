@@ -4,11 +4,13 @@ from langgraph.graph import StateGraph, END
 from typing import TypedDict, List, Optional, Any
 from langchain.prompts import PromptTemplate
 from langchain_core.documents import Document
+from openai import OpenAI
+from langchain_openai import ChatOpenAI
 
 class State(TypedDict):
-    conversation_text: Optional[str]
-    chat_history: List[dict]
+    conversation_history: List[dict]
     query: Optional[str]
+    refined_question: Optional[str]
     documents: Optional[List[Document]]
     response: Optional[str]
     model: Optional[Any]
@@ -18,7 +20,8 @@ class Chatbot:
         self,
         retriever: Retriever,
         llm: Any,
-        prompt_template: str = None
+        prompt_template: str = None,
+        question_refiner_prompt_template: str = None,
     ) -> None:
         if not prompt_template:
             prompt_template = """
@@ -27,26 +30,43 @@ class Chatbot:
             Dacă nu poți formula un răspuns pe baza datelor primite, spune că nu știi, nu încerca să inventezi un răspuns.
 
             Documente relevante:
-            ---------------------
             {relevant_docs}
 
             Întrebarea utilizatorului:
-            --------------
             {query_text}
 
             Formatează răspunsul astfel:
             <Răspunsul tău detaliat>
             Surse:
-            - <sursă>: <url> <filename> și <page_number> dacă există
+            - <sursă>: <url> <pagina> dacă există
+            """
+        if not question_refiner_prompt_template:
+            question_refiner_prompt_template = """
+            Ești un asistent specializat în reformularea întrebărilor din conversații.
+            Ținând cont că întrebarea pe care ți-o voi furniza poate depinde de contextul conversației anterioare, te rog să o rescrii astfel încât să fie complet clară și înțeleasă fără a fi nevoie de context suplimentar.
+            Păstrează cât mai mult din structura și formularea originală, dar adaugă explicit detaliile și informațiile contextuale relevante.
+
+            Contextul conversației:
+            {conversation_history}
+
+            Întrebarea:
+            {query_text}
             """
         self.prompt = PromptTemplate(
-            input_variables=["chat_history", "relevant_docs", "query_text"],
+            input_variables=["relevant_docs", "query_text"],
             template=prompt_template
         )
+        self.question_refiner_prompt = PromptTemplate(
+            input_variables=["conversation_history", "query_text"],
+            template=question_refiner_prompt_template
+        )
         self.formatted_prompt = None
+        self.formatted_question_refiner_prompt = None
+        self.refined_question = None
         self.retriever = retriever
         self.state = None
         self.llm = llm
+        self.response = None
         # Define the chatbot as a state machine
         self.graph = StateGraph(State)
         self._build_graph()
@@ -58,8 +78,7 @@ class Chatbot:
         Initialize the chatbot state with the user's query.
         """
         state = {
-            "conversation_text": "",
-            "chat_history": [],
+            "conversation_history": [],
             "query": query,
             "retrieved_documents": None,
             "bot_response": None,
@@ -67,18 +86,42 @@ class Chatbot:
         }
         return state
     
-    def load_chat_history(self, state: State) -> State:
-        """
-        Load and format the conversation history from memory.
-        Return updated state with formatted conversation text.
-        """
-        # Store formatted chat history
-        state["conversation_text"] = "\n".join(
+    def delete_last_message(self) -> State:
+        if not self.state["conversation_history"]:
+            return
+        self.state["conversation_history"].pop()
+        self.state["conversation_history"].pop()
+
+    def _format_conversation_history(self, conversation_history) -> str:
+        return "\n".join(
             [
                 f"{msg["role"]}: {msg["content"]}"
-                for msg in state["chat_history"]
+                for msg in conversation_history[:5]
             ]
         )
+
+    def refine_question(self, state: State) -> State:
+        """
+        Use the pretrained LLM for new question generation based on the conversational history.
+        Use a prompt that includes previous conversation turns along with the current ambiguous question.
+        """
+        if not state["conversation_history"]:
+            self.refined_question = state["query"]
+            state["refined_question"] = self.refined_question
+            return state
+
+        formatted_conversation_history = self._format_conversation_history(state["conversation_history"])
+
+        # Format the prompt
+        self.formatted_question_refiner_prompt = self.question_refiner_prompt.format(
+            conversation_history=formatted_conversation_history,
+            query_text=state["query"]
+        )
+
+        response = self.llm.invoke(self.formatted_question_refiner_prompt)
+        self.refined_question = response.content
+        state["refined_question"] = response.content
+
         return state
 
     def retrieve_documents(self, state: State) -> State:
@@ -98,19 +141,20 @@ class Chatbot:
         # Format the prompt
         self.formatted_prompt = self.prompt.format(
             relevant_docs=formatted_docs,
-            query_text=state["query"]
+            query_text=state["refined_question"]
         )
 
         response = self.llm.invoke(self.formatted_prompt)
+        self.response = response.content
         state["response"] = response.content
 
         return state
     
-    def update_chat_history(self, state: State) -> State:
+    def update_conversation_history(self, state: State) -> State:
         """Update chat history with the latest user query and assistant response."""
         # Append new messages
-        state["chat_history"].append({"role": "Utilizator", "content": state["query"]})
-        state["chat_history"].append({"role": "Asistent", "content": state["response"]})
+        state["conversation_history"].append({"role": "Utilizator", "content": state["query"]})
+        state["conversation_history"].append({"role": "Asistent", "content": state["response"]})
         return state
     
     def _build_graph(self) -> None:
@@ -118,17 +162,17 @@ class Chatbot:
         Build the execution graph for the RAG pipeline.
         """
         # Nodes that represent the llm and functions the chatbot can call
-        self.graph.add_node("load_chat_history", self.load_chat_history)
+        self.graph.add_node("refine_question", self.refine_question)
         self.graph.add_node("retrieve_documents", self.retrieve_documents)
         self.graph.add_node("generate_response", self.generate_response)
-        self.graph.add_node("update_chat_history", self.update_chat_history)
+        self.graph.add_node("update_conversation_history", self.update_conversation_history)
 
         # Define execution flow: edges define how the chatbot should transition between nodes
-        self.graph.set_entry_point("load_chat_history")
-        self.graph.add_edge("load_chat_history", "retrieve_documents")
+        self.graph.set_entry_point("refine_question")
+        self.graph.add_edge("refine_question", "retrieve_documents")
         self.graph.add_edge("retrieve_documents", "generate_response")
-        self.graph.add_edge("generate_response", "update_chat_history")
-        self.graph.add_edge("update_chat_history", END)
+        self.graph.add_edge("generate_response", "update_conversation_history")
+        self.graph.add_edge("update_conversation_history", END)
 
     def run(self, query: str):
         """
@@ -143,13 +187,13 @@ class Chatbot:
         self.state = final_state
     
     def _print_conversation_history(self):
-        for conversation in self.state["chat_history"]:
+        for conversation in self.state["conversation_history"]:
             print(self._wrapper.fill(f"{conversation["role"].upper()}:"))
             print(self._wrapper.fill(conversation["content"]))
             print('-' * self._wrapper.width)
     
     def _print_response(self):
-        for conversation in self.state["chat_history"][-2:]:
+        for conversation in self.state["conversation_history"][-2:]:
             print(self._wrapper.fill(f"{conversation["role"].upper()}:"))
             print(self._wrapper.fill(conversation["content"]))
             print('-' * self._wrapper.width)        
