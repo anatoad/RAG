@@ -35,7 +35,7 @@ def get_logger(
 
 def get_text_wrapper():
     wrapper = TextWrapper()
-    wrapper.width = 120
+    wrapper.width = 160
     wrapper.replace_whitespace = False
     wrapper.break_long_words = False
     wrapper.break_on_hyphens = False

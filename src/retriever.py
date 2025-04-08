@@ -29,7 +29,7 @@ class Retriever:
         """
         Retrieve documents relevant to the query_text using the OpenSearch client.
         """
-        response = self._client.semantic_search(
+        documents = self._client.semantic_search(
             index_name=self._index,
             query_text=query_text,
             k=k or self._k
@@ -38,7 +38,7 @@ class Retriever:
         # Handle tables
         retrieved_documents = [
             document 
-            for document in response["hits"]["hits"]
+            for document in documents
             if document["_score"] >= self._SCORE_THRESHOLD
         ]
 

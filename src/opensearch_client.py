@@ -172,7 +172,10 @@ class OpenSearchClient:
             },
             "size": 1000
         }
-        return self._perform_request("POST", endpoint, body=body)
+        response = self._perform_request("POST", endpoint, body=body)
+        if response:
+            return response["hits"]["hits"]
+        return response
 
     def deploy_model(self, model_id: str):
         self._logger.info(f"Deploy model, model_id = {model_id}")

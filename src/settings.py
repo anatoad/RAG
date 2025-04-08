@@ -5,6 +5,7 @@ import os
 ADMIN_PASSWD = os.environ['OPENSEARCH_INITIAL_ADMIN_PASSWORD']
 INDEX_NAME = 'unstructured-knn-index'
 MODEL_ID = 'g0Krd5UB_e6dONcEC5dk'
+OPENSEARCH_ADDRESS = 'localhost'
 
 MODEL_NAME = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
 SPACY_MODEL = "ro_core_news_lg"
