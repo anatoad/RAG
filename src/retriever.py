@@ -8,7 +8,7 @@ from opensearch_client import OpenSearchClient
 class Retriever:
     def __init__(
         self,
-        logger: logging.Logger,
+        logger: logging.Logger | None = None,
         index: str = settings.INDEX_NAME,
         model_id: str = settings.MODEL_ID,
         k: int = 10,
@@ -16,7 +16,7 @@ class Retriever:
         """
         Initialize the Retriever with OpenSearch connection details.
         """
-        self._logger = logger
+        self._logger = logger or utils.get_logger(__name__)
         self._k = k
         self._index = index
         self._model_id = model_id
@@ -72,6 +72,18 @@ class Retriever:
             )
 
         return documents
+    
+    def format_document(self, document: Document) -> str:
+        source = document.metadata.get('url')
+        page_number = document.metadata.get("page_number")
+        content = document.page_content
+
+        doc_str = f"Sursa: {source}"
+        if page_number:
+            doc_str += f", pagina: {page_number}"
+        doc_str += f"\nConținut: {content}"
+
+        return doc_str
 
     def format_documents(self, documents: list[Document]) -> str:
         """
@@ -79,7 +91,7 @@ class Retriever:
         """
         return "\n\n".join(
             [
-            f"Sursa: {doc.metadata.get('url')}\nConținut:\n{doc.page_content}"
+            self.format_document(doc)
             for doc in documents
             ]
         )
