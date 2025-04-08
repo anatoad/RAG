@@ -3,22 +3,16 @@ from logging import Logger
 from utils import get_logger
 import settings
 from opensearchpy import OpenSearch, helpers
-
-def replace_placeholders(object: dict, **kwargs):
-    if isinstance(object, dict):
-        return {key: replace_placeholders(val, **kwargs) for key, val in object.items()}
-    elif isinstance(object, list):
-        return [replace_placeholders(item, **kwargs) for item in object]
-    elif isinstance(object, str):
-        return object.format(**kwargs)
-    return object
+from opensearchpy.exceptions import TransportError
+from jinja2 import Template
+import time
 
 class OpenSearchClient:
-    def __init__(self, host: str = 'localhost', port: int = 9200, logger: Logger = None) -> None:
+    def __init__(self, host: str = settings.OPENSEARCH_ADDRESS, port: int = 9200, logger: Logger = None) -> None:
         self.host = host
         self.port = port
         self._logger = logger or get_logger("opensearch-client")
-        self.client = self._connect_to_opensearch()
+        self.client: OpenSearch = self._connect_to_opensearch()
 
     def _connect_to_opensearch(self) -> None:
         if hasattr(self, 'client') and self.client:
@@ -35,7 +29,8 @@ class OpenSearchClient:
                 ssl_show_warn = False,
             )
             self._logger.info(f"Connected to OpenSearch")
-            self._logger.info(json.dumps(client.info(), indent=4))
+            if client:
+                self._logger.info(json.dumps(client.info(), indent=4))
             return client
         except Exception as e:
             self._logger.error(f"Could not connect to Opensearch: {e}")
@@ -59,9 +54,36 @@ class OpenSearchClient:
     
     def _load_json_config(self, filepath: str, **kwargs):
         with open(filepath, 'r') as file:
-            json_config = json.load(file)
-        json_config = replace_placeholders(json_config, **kwargs)
+            template = Template(file.read())
+        json_config = template.render(**kwargs)
         return json_config
+
+    def _wait_for_task_to_finish(self, task_id, timeout=300, wait_time=5):
+        """
+        Waits for a task to complete, with retries.
+        """
+        start_time = time.time()
+        
+        while True:
+            try:
+                response = self.get_task(task_id)
+                task_status = response.get('state')
+                
+                if task_status == 'COMPLETED':
+                    self._logger.info(f"Task {task_id} completed successfully.")
+                    return response
+                else:
+                    self._logger.info(f"Task {task_id} is still in progress. Waiting...")
+                    
+                    # Check if timeout has been reached
+                    if time.time() - start_time > timeout:
+                        self._logger.error(f"Task {task_id} did not complete within the timeout period of {timeout} seconds.")
+                        break
+                    
+                    time.sleep(wait_time)
+            except TransportError as e:
+                self._logger.error(f"Error while checking task {task_id}: {e}")
+                time.sleep(10) 
 
     def get_task(self, task_id: str):
         self._logger.info(f"Get task, task_id={task_id}")
@@ -70,18 +92,29 @@ class OpenSearchClient:
 
     def register_model_group(self, group_name: str, description: str = "", access_mode: str = "public"):
         self._logger.info("Register model group")
+        model_group_id = self.get_model_group_id(group_name)
+        if model_group_id:
+            self._logger.info(f"Model group with name {group_name} already exists. Id: {model_group_id}")
+            return model_group_id
+
         endpoint = f"/_plugins/_ml/model_groups/_register"
         body = {
             "name": group_name,
             "description": description,
             "access_mode": access_mode,
         }
-        return self._perform_request("POST", endpoint, body)
+        response = self._perform_request("POST", endpoint, body)
+        if response:
+            return response.get("model_group_id")
+        return None
 
     def get_model_groups(self):
         self._logger.info("Get all model groups")
         endpoint = "/_plugins/_ml/model_groups/_search"
-        return self._perform_request("POST", endpoint, body={})
+        response = self._perform_request("POST", endpoint, body={})
+        if response:
+            return response["hits"]["hits"]
+        return []
     
     def get_model_group_id(self, group_name: str):
         self._logger.info(f"Get model group id, group_name={group_name}")
@@ -106,7 +139,10 @@ class OpenSearchClient:
             return self._perform_request("DELETE", endpoint, body={})
         return None
 
-    def register_model(self, model_name: str, version: str, group_name: str):
+    def register_model(self, model_name: str, version: str, group_name: str) -> str:
+        """
+        Register model to the model group. Wait for task to finish. Return model_id.
+        """
         self._logger.info(f"Register model, model_name={model_name}, group_name={group_name}")
         group_id = self.get_model_group_id(group_name)
         if group_id:
@@ -117,7 +153,10 @@ class OpenSearchClient:
                 "model_group_id": group_id,
                 "model_format": "TORCH_SCRIPT"
             }
-            return self._perform_request("POST", endpoint, body=body)
+            response = self._perform_request("POST", endpoint, body=body)
+            task_id = response["task_id"]
+            response = self._wait_for_task_to_finish(task_id=task_id)
+            return response.get("model_id")
         self._logger(f"Model group {group_name} not found")
         return None
     
@@ -198,12 +237,17 @@ class OpenSearchClient:
                     }
             }
         }
-        return self.client.search(
-            index=index_name,
-            body=query,
-            _source_excludes=["embedding"],
-
-        )
+        try:
+            response = self.client.search(
+                index=index_name,
+                body=query,
+                _source_excludes=["embedding"],
+            )
+            self._logger.info("Semantic search performed successfully")
+            return response["hits"]["hits"]
+        except Exception as e:
+            self._logger.error("Error occured during semantic search", exc_info=True)
+            return None
 
     def check_index_exists(self, index_name: str):
         self._logger.info(f"Check if index exists, index_name = {index_name}")
@@ -232,7 +276,6 @@ class OpenSearchClient:
         else:
             self._logger.info(f"Index {index_name} does not exist.")
 
-
     def ingest_data_bulk(self, data):
         self._logger.info("Ingest data bulk")
         try:
@@ -249,4 +292,24 @@ class OpenSearchClient:
             return ret
         except Exception as e:
             self._logger.error("Error during parallel bulk ingestion", exc_info=True)
+            return None
+
+    def delete_document(self, index: str, filename: str):
+        self._logger.info(f"Delete document {filename}")
+        try:
+            body = {
+                "query": {
+                    "term": {
+                        "filename": filename
+                    }
+                }
+            }
+            ret = self.client.delete_by_query(
+                index=index,
+                body=body
+            )
+            self._logger.info(f"Successfully deleted document {filename}", exc_info=True)
+            return ret
+        except Exception as e:
+            self._logger.error(f"Error deleting document {filename}", exc_info=True)
             return None
