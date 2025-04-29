@@ -1,32 +1,50 @@
 # Rag
 
 ## Dependencies
+
+### Virtual environment setup
+```
+python3 -m venv env && source env/bin/activate
+pip install --upgrade pip
+pip install -r requirements.txt
+```
 `Python 3.12` was used.
 
-To create a virtual environment and install dependencies from `requirements.txt` run:
-```
-source ./setup.sh
-```
-
-Activate virtual environment:
+### Activate virtual environment
 ```
 source env/bin/activate
 ```
+
+### Tools
+
 Tools used:
 - Scrapy
 - Selenium
 - scrapy-selenium
-- PyMUPDF
+- PyMuPDF
 - spaCy
-- OCRmyPDF, tesseract
+- tesseract
+
+Install [tesseract](https://tesseract-ocr.github.io/tessdoc/Installation.html) with Romanian language support:
 
 ```
-yay -Sy ocrmypdf tesseract
-sudo pacman -S tesseract-data-ron
+sudo pacman -S tesseract tesseract-data-ron
 ```
 
 ## Crawler
+
+`Scrapy`-based web crawler enhanced with `scrapy-selenium` for interacting with dynamic university web pages. It is designed to extract PDFs and page content from selected URLs (loaded from the `urls.json` file) and save them in a structured format with accompanying metadata.
+
+Features:
+* Store content in human-readable form.
+* HTML content extraction using `trafilatura` for meaningful page text.
+* Generate structured metadata.
+* Filter outdated file versions: includes a `TARGET_DATE` parameter (default: 2024-10-01) to skip old documents based on the HTTP Last-Modified header. This prevents collecting outdated PDFs from previous years that are still published on the site.
+
+
+### Run crawler
 ```
+cd crawler/crawler/spiders
 scrapy crawl upb
 ```
 
