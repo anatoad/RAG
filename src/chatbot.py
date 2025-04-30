@@ -91,6 +91,11 @@ class Chatbot:
             return
         self.state["conversation_history"].pop()
         self.state["conversation_history"].pop()
+    
+    def delete_conversation_history(self) -> None:
+        if not self.state or not self.state["conversation_history"]:
+            return
+        self.state["conversation_history"].clear()
 
     def _format_conversation_history(self, conversation_history) -> str:
         return "\n".join(
@@ -129,7 +134,7 @@ class Chatbot:
         Retrieve documents relevant to the user's query.
         Return updated state with retrieved documents.
         """
-        state["documents"] = self.retriever.retrieve_documents(state["query"])
+        state["documents"] = self.retriever.retrieve_documents(state["refined_question"])
         return state
     
     def generate_response(self, state: State) -> State:

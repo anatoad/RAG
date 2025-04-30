@@ -36,20 +36,22 @@ class OpenSearchClient:
             self._logger.error(f"Could not connect to Opensearch: {e}")
             return None
 
-    def _perform_request(self, method: str, endpoint: str, body: dict, params: dict | None = None):
+    def _perform_request(self, method: str, endpoint: str, body: dict, params: dict | None = None, verbose: bool = True):
         try:
             response = self.client.transport.perform_request(method, endpoint, body=body, params=params)
-            self._logger.info(f"{method} {endpoint}")
-            if body: self._logger.info(json.dumps(body, indent=4, ensure_ascii=False))
-            self._logger.info(f"Response:\n{json.dumps(response, indent=4, ensure_ascii=False)}")
+            if verbose:
+                self._logger.info(f"{method} {endpoint}")
+                if body: self._logger.info(json.dumps(body, indent=4, ensure_ascii=False))
+                self._logger.info(f"Response:\n{json.dumps(response, indent=4, ensure_ascii=False)}")
             return response
         except Exception as e:
-            self._logger.error("Error during request", exc_info=True)
+            if verbose:
+                self._logger.error("Error during request", exc_info=True)
             return None
         
     def _update_cluster_settings(self, settings: json):
         self._logger.info(f"Update ML-related cluster settings")
-        endpoint = "_cluster/settings"
+        endpoint = "/_cluster/settings"
         return self._perform_request("PUT", endpoint, body=settings)
     
     def _load_json_config(self, filepath: str, **kwargs):
@@ -58,7 +60,7 @@ class OpenSearchClient:
         json_config = template.render(**kwargs)
         return json_config
 
-    def _wait_for_task_to_finish(self, task_id, timeout=300, wait_time=5):
+    def _wait_for_task_to_finish(self, task_id, timeout=60000, wait_time=5):
         """
         Waits for a task to complete, with retries.
         """
@@ -83,7 +85,35 @@ class OpenSearchClient:
                     time.sleep(wait_time)
             except TransportError as e:
                 self._logger.error(f"Error while checking task {task_id}: {e}")
-                time.sleep(10) 
+                time.sleep(10)
+    
+    def _wait_for_model_to_register(self, model_name, group_name: str, timeout=60000, wait_time=5):
+        """
+        Waits for a task to complete, with retries.
+        """
+        start_time = time.time()
+        
+        while True:
+            try:
+                response = self.get_model(model_name, group_name, verbose=False)
+                # self._logger.info(json.dumps(response, indent=4))
+                task_status = response['_source'].get('model_state')
+                
+                if task_status == 'REGISTERED':
+                    self._logger.info(f"Model registered successfully.")
+                    return response
+                else:
+                    self._logger.info(f"Model is still registering. Waiting...")
+                    
+                    # Check if timeout has been reached
+                    if time.time() - start_time > timeout:
+                        self._logger.error(f"Model did not register within the timeout period of {timeout} seconds.")
+                        break
+                    
+                    time.sleep(wait_time)
+            except TransportError as e:
+                self._logger.error(f"Error occured while waiting for model to register", exc_info=True)
+                time.sleep(10)
 
     def get_task(self, task_id: str):
         self._logger.info(f"Get task, task_id={task_id}")
@@ -94,7 +124,7 @@ class OpenSearchClient:
         self._logger.info("Register model group")
         model_group_id = self.get_model_group_id(group_name)
         if model_group_id:
-            self._logger.info(f"Model group with name {group_name} already exists. Id: {model_group_id}")
+            self._logger.info(f'Model group with name "{group_name}" already exists. Id: {model_group_id}')
             return model_group_id
 
         endpoint = f"/_plugins/_ml/model_groups/_register"
@@ -105,6 +135,7 @@ class OpenSearchClient:
         }
         response = self._perform_request("POST", endpoint, body)
         if response:
+            settings.MODEL_GROUP_ID = response.get("model_group_id")
             return response.get("model_group_id")
         return None
 
@@ -116,8 +147,9 @@ class OpenSearchClient:
             return response["hits"]["hits"]
         return []
     
-    def get_model_group_id(self, group_name: str):
-        self._logger.info(f"Get model group id, group_name={group_name}")
+    def get_model_group_id(self, group_name: str, verbose: bool = True):
+        if verbose:
+            self._logger.info(f"Get model group id, group_name={group_name}")
         endpoint = "/_plugins/_ml/model_groups/_search"
         body = {
             "query": {
@@ -126,7 +158,7 @@ class OpenSearchClient:
                 }
             }
         }
-        response = self._perform_request("GET", endpoint, body=body)
+        response = self._perform_request("GET", endpoint, body=body, verbose=verbose)
         if response["hits"]["hits"]:
             return response["hits"]["hits"][0]["_id"]
         return None
@@ -144,6 +176,11 @@ class OpenSearchClient:
         Register model to the model group. Wait for task to finish. Return model_id.
         """
         self._logger.info(f"Register model, model_name={model_name}, group_name={group_name}")
+        if self.get_model(model_name, group_name):
+            self._logger.info(f"Model already exists in model group {group_name}")
+            self._wait_for_model_to_register(model_name, group_name)
+            return
+
         group_id = self.get_model_group_id(group_name)
         if group_id:
             endpoint = "/_plugins/_ml/models/_register"
@@ -156,10 +193,39 @@ class OpenSearchClient:
             response = self._perform_request("POST", endpoint, body=body)
             task_id = response["task_id"]
             response = self._wait_for_task_to_finish(task_id=task_id)
+            settings.MODEL_ID = response.get("model_id")
             return response.get("model_id")
         self._logger(f"Model group {group_name} not found")
+
         return None
     
+    def get_model(self, model_name: str, group_name: str, verbose: bool = True) -> str:
+        model_group_id = self.get_model_group_id(group_name, verbose)
+        if not model_group_id:
+            if verbose: self._logger.error(f'No model group with name "{group_name}" found.')
+            return False
+
+        endpoint = "/_plugins/_ml/models/_search"
+        body = {
+            "query": {
+                "bool": {
+                "must": [
+                    {
+                    "match": { "name": model_name }
+                    },
+                    {
+                    "match": { "model_group_id": model_group_id }
+                    }
+                ]
+                }
+            }
+        }
+        
+        response = self._perform_request("POST", endpoint, body=body, verbose=verbose)
+        if response:
+            return response["hits"]["hits"][0]
+        return None
+
     def get_model_id(self, task_id: str):
         response = self.get_task(task_id)
         return response["model_id"]
@@ -252,7 +318,7 @@ class OpenSearchClient:
             self._logger.error("Error occured during semantic search", exc_info=True)
             return None
 
-    def check_index_exists(self, index_name: str):
+    def index_exists(self, index_name: str):
         self._logger.info(f"Check if index exists, index_name = {index_name}")
         return self.client.indices.exists(index=index_name)
 
@@ -262,10 +328,32 @@ class OpenSearchClient:
         response = self._perform_request("GET", endpoint, body={})
         return [] if not response else response.split('\n')
 
-    def create_index(self, index_name: str, body: json):
-        self._logger.info(f"Create KNN index, index_name = {index_name}")
+    def create_index(self, index_name: str, body: dict | None = None):
+        self._logger.info(f"Create KNN index, index_name = {index_name}")      
         endpoint = f"/{index_name}"
+
+        # get default knn-index template config
+        if not body:
+            filepath = (settings.OPENSEARCH_CONFIG_DIR / "knn-index.json").as_posix()
+            body = self._load_json_config(filepath, pipeline=settings.PIPELINE_NAME)
+
         return self._perform_request("PUT", endpoint, body=body)
+
+    def get_documents_from_index(self, index_name: str) -> list[str]:
+        self._logger.info(f"Get documents from index {index_name}")
+        query = {"query": {"match_all": {}}}
+        response = self.client.search(
+            index=index_name,
+            body=query,
+            _source_includes=["filename"],
+            explain=True
+        )
+        if response:
+            docs = response["hits"]["hits"]
+            doc_names = sorted(list(set([doc["_source"]["filename"] for doc in docs])))
+            return doc_names
+
+        return None
 
     def delete_index(self, index_name: str):
         self._logger.info(f"Delete index {index_name}")

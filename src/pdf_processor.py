@@ -1,18 +1,13 @@
 from spacy import Language
 import re
-import ocrmypdf
 import pymupdf
 import settings
 from utils import *
 from document_helpers import *
-import img2pdf
-from pdf2image import convert_from_path
 from transformers import AutoTokenizer
 from bs4 import BeautifulSoup
 os.environ["EXTRACT_TABLE_AS_CELLS"] = "True"
 os.environ["TABLE_IMAGE_CROP_PAD"] = "20"
-# os.environ["EXTRACT_IMAGE_BLOCK_CROP_VERTICAL_PAD"] = "0"
-# os.environ["EXTRACT_IMAGE_BLOCK_CROP_HORIZONTAL_PAD"] = "0"
 import matplotlib.patches as patches
 import matplotlib.pyplot as plt
 from PIL import Image
@@ -32,97 +27,13 @@ class PdfProcessor(DocumentProcessor):
     ) -> None:
         super().__init__(path, url, nlp, tokenizer, max_tokens, logger)
         self.type = "pdf"
-        self.ocr_path = None
-        self.bw_path = None
         self.document = self._init_document(path)
-        self._needs_ocr = not any([page.get_text() for page in self.document])
         self.num_pages = len(self.document)
         self.elements = None
 
     def _init_document(self, path: str) -> None:
         return pymupdf.open(path, filetype="pdf")
 
-    def _perform_ocr(self, input_path: str, output_path: str, force_ocr: bool = False, redo_ocr: bool = False) -> None:
-        ocrmypdf.ocr(
-            input_file=input_path,
-            output_file=output_path,
-            output_type="pdf",
-            language="ron",
-            deskew=not(force_ocr or  redo_ocr),
-            rotate_pages=True,
-            progress_bar=True,
-            force_ocr=force_ocr,
-            redo_ocr=redo_ocr,
-            jobs=4,
-        )
-        self._logger.info(f"Successfully performed OCR on {input_path}. Saved at {output_path}.")
-
-    def apply_ocr(self, bw=False) -> None:
-        """
-        Apply OCR, create a new pdf, replace the path.
-        """
-        parent_dir = Path(self.path).parent.name
-        if bw and self.bw_path:
-            input_path = self.bw_path
-            dir = settings.OCR_DIR / "bw" / parent_dir
-        else:
-            input_path = self.path
-            dir = settings.OCR_DIR / parent_dir
-
-        output_path = dir / self.filename
-        self._logger.info(output_path)
-        os.makedirs(dir, exist_ok=True)
-
-        if not os.path.exists(output_path):
-            try:
-                self._perform_ocr(input_path, output_path)
-            except ocrmypdf.exceptions.TaggedPDFError:
-                self._logger.info(f"This PDF is marked as a Tagged PDF. Using --redo-ocr to override this error.")
-                self._perform_ocr(input_path, output_path, redo_ocr=True)
-            except ocrmypdf.exceptions.PriorOcrFoundError:
-                self._logger.info("This PDF contains pages that already have text.")
-                self._logger.info("Using --force-ocr to completely re-run the OCR regardless of the existing text.")
-                self._perform_ocr(input_path, output_path, force_ocr=True)
-            except Exception as e:
-                self._logger.error(f"An unexpected error occurred: {str(e)}", exc_info=True)
-                return
-        
-        self.path = output_path
-        self.document = self._init_document(self.path)
-        self._logger.info(f"OCR for {self.path} found at {output_path}")
-
-    def convert_to_bw(self, output_path: str = None, dpi: int = 400, threshold: int = 128) -> None:
-        """
-        Convert PDF to black and white.
-        """
-        if not output_path:
-            dir, filename = self.path.split("/")[-2:]
-            output_path = settings.DATA_DIR / "bw" / dir / filename
-
-        pages = convert_from_path(self.path, dpi=dpi, thread_count=4)
-        processed_image_paths = []
-
-        for i, page in enumerate(pages):
-            # apply threshold to get a binary image
-            gray_image = page.convert("L")
-            bw_image = gray_image.point(lambda x: 0 if x < threshold else 255, "1")
-            
-            # save temporary image file
-            temp_image_path = f"temp_page_{i}.png"
-            bw_image.save(temp_image_path, format="PNG")
-            processed_image_paths.append(temp_image_path)
-        
-        # merge processed images into a single PDF
-        with open(output_path, "wb") as f:
-            f.write(img2pdf.convert(processed_image_paths))
-        
-        # clean up temporary image files
-        for temp_path in processed_image_paths:
-            os.remove(temp_path)
-    
-        self.bw_path = output_path
-        self._logger.info(f"Black and white PDF saved to: {self.bw_path}")
-    
     def process(self) -> None:
         self.partition_pdf()
         self.cleanup()
