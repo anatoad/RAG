@@ -1,4 +1,31 @@
 {
+    "acs": [
+        "https://acs.pub.ro/admitere/viitorii-studenti/",
+        "https://acs.pub.ro/admitere/licenta/",
+        "https://acs.pub.ro/admitere/masterat/",
+        "https://acs.pub.ro/admitere/doctorat/",
+        "https://acs.pub.ro/educatie/licenta/",
+        "https://acs.pub.ro/educatie/masterat/"
+    ],
+    "aero": [
+        "http://www.aero.pub.ro/ro/admitere-licenta/",
+        "http://www.aero.pub.ro/ro/programe-de-licenta/",
+        "http://www.aero.pub.ro/ro/programe-de-master/",
+        "http://www.aero.pub.ro/ro/admitere-master/"
+    ],
+    "chimie": [
+        "https://chimie.upb.ro/admitere/programe-de-studii-de-licenta",
+        "https://chimie.upb.ro/admitere/programe-de-studii-de-masterat",
+        "https://chimie.upb.ro/admitere/programe-de-studii-de-doctorat",
+        "https://chimie.upb.ro/educatie/programe-de-studii-de-licenta/",
+        "https://chimie.upb.ro/educatie/programe-de-studii-de-masterat"
+    ],
+    "electro": [
+        "https://www.electro.upb.ro/admitere-licenta/",
+        "https://www.electro.upb.ro/planuri-de-invatamant/",
+        "https://www.electro.upb.ro/admitere-master/",
+        "https://www.electro.upb.ro/planuri-de-invatamant-2/"
+    ],
     "energ": [
         "https://energ.upb.ro/admitere/licenta/de-ce-sa-ne-alegi",
         "https://energ.upb.ro/admitere/licenta/informatii-admitere",
@@ -8,25 +35,18 @@
         "https://energ.upb.ro/educatie/studii/master",
         "https://energ.upb.ro/educatie/studii/doctorat"
     ],
-    "acs": [
-        "https://acs.pub.ro/admitere/viitorii-studenti/",
-        "https://acs.pub.ro/admitere/licenta/",
-        "https://acs.pub.ro/admitere/masterat/",
-        "https://acs.pub.ro/admitere/doctorat/",
-        "https://acs.pub.ro/educatie/licenta/",
-        "https://acs.pub.ro/educatie/masterat/"
-    ],
     "etti": [
         "https://etti.upb.ro/oferta-educationala/domenii-licenta/",
         "https://etti.upb.ro/oferta-educationala/admitere-licenta/",
         "https://etti.upb.ro/oferta-educationala/admitere-masterat/",
         "https://etti.upb.ro/oferta-educationala/programe-de-masterat/"
     ],
-    "aero": [
-        "http://www.aero.pub.ro/ro/admitere-licenta/",
-        "http://www.aero.pub.ro/ro/programe-de-licenta/",
-        "http://www.aero.pub.ro/ro/programe-de-master/",
-        "http://www.aero.pub.ro/ro/admitere-master/"
+    "faima": [
+        "https://faima.upb.ro/admitere-faima.php",
+        "https://faima.upb.ro/licenta.php",
+        "https://faima.upb.ro/master.php",
+        "https://faima.upb.ro/doctorat.php",
+        "https://faima.upb.ro/postuniversitar.php"
     ],
     "fiir": [
         "https://www.fiir.upb.ro/index.php/ro/licenta/admitere-licenta",
@@ -34,32 +54,6 @@
         "https://www.fiir.upb.ro/index.php/ro/masterat/admitere-masterat",
         "https://www.fiir.upb.ro/index.php/ro/masterat/planuri-de-invatamant",
         "https://www.fiir.upb.ro/index.php/ro/scoala-doctorala/admitere-doctorat"
-    ],
-    "transport": [
-        "https://transport.upb.ro/admitere-licenta/",
-        "https://transport.upb.ro/admitere-masterat/",
-        "http://doctorat.transport.upb.ro/",
-        "http://transport.upb.ro/licenta",
-        "https://transport.upb.ro/masterat/"
-    ],
-    "mecanica": [
-        "http://www.mecanica.pub.ro/new/index.php/admitere-2025/",
-        "http://www.mecanica.pub.ro/new/index.php/admitere-master-2025/",
-        "http://www.mecanica.pub.ro/new/index.php/plan-de-invatamant/",
-        "http://www.mecanica.pub.ro/new/index.php/plan-invatamant-master/"
-    ],
-    "isb": [
-        "https://isb.pub.ro/admitere-s3/",
-        "https://isb.pub.ro/admitere-master/",
-        "https://isb.pub.ro/licenta/",
-        "https://isb.pub.ro/master_isb/"
-    ],
-    "chimie": [
-        "https://chimie.upb.ro/admitere/programe-de-studii-de-licenta",
-        "https://chimie.upb.ro/admitere/programe-de-studii-de-masterat",
-        "https://chimie.upb.ro/admitere/programe-de-studii-de-doctorat",
-        "https://chimie.upb.ro/educatie/programe-de-studii-de-licenta/",
-        "https://chimie.upb.ro/educatie/programe-de-studii-de-masterat"
     ],
     "fils": [
         "https://fils.upb.ro/ro/admitere/",
@@ -70,17 +64,6 @@
         "https://fils.upb.ro/ro/masterat/",
         "https://fils.upb.ro/ro/doctorat/"
     ],
-    "electro": [
-        "https://www.electro.upb.ro/admitere-licenta/",
-        "https://www.electro.upb.ro/planuri-de-invatamant/",
-        "https://www.electro.upb.ro/admitere-master/",
-        "https://www.electro.upb.ro/planuri-de-invatamant-2/"
-    ],
-    "sim": [
-        "https://www.sim.upb.ro/index.php/admitere-licenta/",
-        "https://www.sim.upb.ro/index.php/admitere-master/",
-        "http://sdsim.upb.ro/"
-    ],
     "fim": [
         "https://fim.upb.ro/admitere-licenta/",
         "https://fim.upb.ro/admitere-masterat/",
@@ -88,21 +71,42 @@
         "https://fim.upb.ro/programe-licenta/",
         "https://fim.upb.ro/programe-master/"
     ],
-    "faima": [
-        "https://faima.upb.ro/admitere-faima.php",
-        "https://faima.upb.ro/licenta.php",
-        "https://faima.upb.ro/master.php",
-        "https://faima.upb.ro/doctorat.php",
-        "https://faima.upb.ro/postuniversitar.php"
-    ],
     "fsa": [
         "http://fsa.pub.ro/calendar-admitere",
         "http://fsa.pub.ro/admitere-master",
         "http://fsa.pub.ro/discipline-de-concurs"
     ],
+    "isb": [
+        "https://isb.pub.ro/admitere-s3/",
+        "https://isb.pub.ro/admitere-master/",
+        "https://isb.pub.ro/licenta/",
+        "https://isb.pub.ro/master_isb/"
+    ],
+    "mecanica": [
+        "http://www.mecanica.pub.ro/new/index.php/admitere-2025/",
+        "http://www.mecanica.pub.ro/new/index.php/admitere-master-2025/",
+        "http://www.mecanica.pub.ro/new/index.php/plan-de-invatamant/",
+        "http://www.mecanica.pub.ro/new/index.php/plan-invatamant-master/"
+    ],
+    "sim": [
+        "https://www.sim.upb.ro/index.php/admitere-licenta/",
+        "https://www.sim.upb.ro/index.php/admitere-master/",
+        "http://sdsim.upb.ro/"
+    ],
+    "transport": [
+        "https://transport.upb.ro/admitere-licenta/",
+        "https://transport.upb.ro/admitere-masterat/",
+        "http://doctorat.transport.upb.ro/",
+        "http://transport.upb.ro/licenta",
+        "https://transport.upb.ro/masterat/"
+    ],
     "unesco": [
         "https://www.unesco.chair.upb.ro/programe-de-studii/",
         "https://www.unesco.chair.upb.ro/admitere/"
+    ],
+    "upb": [
+        "https://upb.ro/regulamente-si-rapoarte/#1690451516639-650bb9a3-e876",
+        "https://upb.ro/regulamente-si-rapoarte/#1690451517189-68980d38-0362"
     ],
     "upit": [
         "https://www.upit.ro/ro/academia-reorganizata/facultatea-de-stiinte-educatie-fizica-si-informatica/admitere-fsefi",
@@ -113,9 +117,5 @@
         "https://www.upit.ro/ro/academia-reorganizata/facultatea-de-stiinte-economice-si-drept-1/admitere-2025-1",
         "https://www.upit.ro/ro/academia-reorganizata/facultatea-de-stiintele-educatiei-stiinte-sociale-si-psihologie-2/admitere-licentamaster-fsessp1",
         "https://www.upit.ro/ro/academia-reorganizata/facultatea-de-teologie-litere-istorie-si-arte/admitere-ftlia"
-    ],
-    "upb": [
-        "https://upb.ro/regulamente-si-rapoarte/#1690451516639-650bb9a3-e876",
-        "https://upb.ro/regulamente-si-rapoarte/#1690451517189-68980d38-0362"
     ]
 }
