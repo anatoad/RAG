@@ -11,6 +11,9 @@ MODEL_URL = "huggingface/sentence-transformers/paraphrase-multilingual-MiniLM-L1
 MODEL_NAME = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
 PIPELINE_NAME = "unstructured-pipeline"
 
+SAGEMAKER_RERANKER_ENDPOINT = "bge-reranker-endpoint"
+RERANK_MODEL_ID = "WPxSnZYBoe1QMxvKM84c"
+
 MODEL_ID = "g0Krd5UB_e6dONcEC5dk"
 SPACY_MODEL = "ro_core_news_lg"
 

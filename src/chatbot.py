@@ -38,7 +38,7 @@ class Chatbot:
             Formatează răspunsul astfel:
             <Răspunsul tău detaliat>
             Surse:
-            - <sursă>: <url> <pagina> dacă există
+            - <sursă>: <url> (și <pagina> dacă nu este null)
             """
         if not question_refiner_prompt_template:
             question_refiner_prompt_template = """
@@ -136,6 +136,13 @@ class Chatbot:
         """
         state["documents"] = self.retriever.retrieve_documents(state["refined_question"])
         return state
+
+    def rerank_documents(self, state: State) -> State:
+        """
+        Rerank documents and keep top_k with the highest score.
+        """
+        state["documents"] = self.retriever.rerank(state["refined_question"], state["documents"])
+        return state
     
     def generate_response(self, state: State) -> State:
         """
@@ -169,13 +176,15 @@ class Chatbot:
         # Nodes that represent the llm and functions the chatbot can call
         self.graph.add_node("refine_question", self.refine_question)
         self.graph.add_node("retrieve_documents", self.retrieve_documents)
+        self.graph.add_node("rerank_documents", self.rerank_documents)
         self.graph.add_node("generate_response", self.generate_response)
         self.graph.add_node("update_conversation_history", self.update_conversation_history)
 
         # Define execution flow: edges define how the chatbot should transition between nodes
         self.graph.set_entry_point("refine_question")
         self.graph.add_edge("refine_question", "retrieve_documents")
-        self.graph.add_edge("retrieve_documents", "generate_response")
+        self.graph.add_edge("retrieve_documents", "rerank_documents")
+        self.graph.add_edge("rerank_documents", "generate_response")
         self.graph.add_edge("generate_response", "update_conversation_history")
         self.graph.add_edge("update_conversation_history", END)
 

@@ -280,5 +280,43 @@ GET /rag-knn-index/_search
 }
 ```
 
-## Ingest data
 
+## AWS Sagemaker reranker model deployment
+---
+#### 1: Create AWS access key
+- IAM Console > Users > select user.
+- Security credentials tab > Create access key.
+- Download and save the access key and secret.
+
+#### 2: Create an IAM role for SageMaker
+- IAM Roles > Create role.
+- Choose SageMaker as the trusted entity.
+- Note ARN.
+
+#### 3: Configure AWS CLI
+```
+aws configure
+```
+
+Region: `eu-west-1`
+
+Output format: json
+
+#### 4: Set up python env
+```
+python -m venv venv
+source venv/bin/activate
+pip install --upgrade pip
+pip install \
+  boto3 \
+  sagemaker \
+  "transformers==4.51.3" \
+  "torch==2.7.0" \
+  opensearch-py \
+  huggingface-hub
+```
+
+#### 5: Deploy the reranker model on SageMaker
+```
+python deploy_reranker_aws.py
+```

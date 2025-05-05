@@ -171,7 +171,12 @@ class OpenSearchClient:
             return self._perform_request("DELETE", endpoint, body={})
         return None
 
-    def register_model(self, model_name: str, version: str, group_name: str) -> str:
+    def register_model(
+        self,
+        model_name: str,
+        version: str,
+        group_name: str
+    ) -> str:
         """
         Register model to the model group. Wait for task to finish. Return model_id.
         """
@@ -222,7 +227,7 @@ class OpenSearchClient:
         }
         
         response = self._perform_request("POST", endpoint, body=body, verbose=verbose)
-        if response:
+        if response and response["hits"]["hits"]:
             return response["hits"]["hits"][0]
         return None
 
@@ -236,7 +241,8 @@ class OpenSearchClient:
             "query": {
                 "match_all": {}
             },
-            "size": 1000
+            "size": 100,
+            "_source": ["model_id"]
         }
         response = self._perform_request("POST", endpoint, body=body)
         if response:
@@ -298,12 +304,12 @@ class OpenSearchClient:
             "size": k,
             "query": {
                 "neural": {
-                        "embedding": {
-                            "query_text": query_text,
-                            "model_id": model_id,
-                            "k": k
-                        }
+                    "embedding": {
+                        "query_text": query_text,
+                        "model_id": model_id,
+                        "k": k
                     }
+                }
             }
         }
         try:
