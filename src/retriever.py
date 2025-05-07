@@ -4,10 +4,6 @@ import settings
 import utils
 from langchain_core.documents import Document
 from opensearch_client import OpenSearchClient
-import boto3
-from sagemaker.predictor import Predictor
-from sagemaker.serializers import JSONSerializer
-from sagemaker.deserializers import JSONDeserializer
 
 class Retriever:
     def __init__(
@@ -15,24 +11,17 @@ class Retriever:
         logger: logging.Logger | None = None,
         index: str = settings.INDEX_NAME,
         model_id: str = settings.MODEL_ID,
-        k: int = 15,
-        top_k: int = 10
+        k: int = 15
     ) -> None:
         """
         Initialize the Retriever with OpenSearch connection details.
         """
         self._logger = logger or utils.get_logger(__name__)
         self._k = k
-        self._top_k = top_k
         self._index = index
         self._model_id = model_id
         self._client = OpenSearchClient(logger=self._logger)
         self._client._connect_to_opensearch()
-        self._predictor = Predictor(
-            endpoint_name=settings.SAGEMAKER_RERANKER_ENDPOINT,
-            serializer=JSONSerializer(),
-            deserializer=JSONDeserializer(),
-        )
         self._wrapper = utils.get_text_wrapper()
         self._SCORE_THRESHOLD = 0.07
 
@@ -83,29 +72,6 @@ class Retriever:
             )
 
         return documents
-
-    def rerank(self, query: str, documents: list[Document], top_k: int | None = None) -> list[Document]:
-        docs = [doc.page_content for doc in documents]
-        payload = {
-            "inputs": [
-                {"text": query, "text_pair": doc}
-                for doc in docs
-            ]
-        }
-        results = self._predictor.predict(payload)
-        scores = [item["score"] for item in results]
-        for doc, score in list(zip(documents, scores)):
-            doc.metadata["rerank_score"] = score
-        # keep only top_k documents with the highest score, keep order unchanged
-        top_k = top_k or self._top_k
-        best_idx = sorted(
-            sorted(
-                range(len(documents)),
-                key=lambda i: documents[i].metadata["rerank_score"],
-                reverse=True
-            )[:top_k]
-        )
-        return [documents[i] for i in best_idx]
 
     def format_document(self, document: Document) -> str:
         source = document.metadata.get('url')

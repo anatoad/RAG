@@ -4,8 +4,10 @@ from langgraph.graph import StateGraph, END
 from typing import TypedDict, List, Optional, Any
 from langchain.prompts import PromptTemplate
 from langchain_core.documents import Document
-from openai import OpenAI
-from langchain_openai import ChatOpenAI
+import json
+import requests
+from settings import RERANKER_ENDPOINT
+from reranker import Reranker
 
 class State(TypedDict):
     conversation_history: List[dict]
@@ -19,7 +21,9 @@ class Chatbot:
     def __init__(
         self,
         retriever: Retriever,
+        reranker: Reranker,
         llm: Any,
+        k: int = 10,
         prompt_template: str = None,
         question_refiner_prompt_template: str = None,
     ) -> None:
@@ -64,8 +68,10 @@ class Chatbot:
         self.formatted_question_refiner_prompt = None
         self.refined_question = None
         self.retriever = retriever
+        self.reranker = reranker
         self.state = None
         self.llm = llm
+        self.k = k
         self.response = None
         # Define the chatbot as a state machine
         self.graph = StateGraph(State)
@@ -141,9 +147,10 @@ class Chatbot:
         """
         Rerank documents and keep top_k with the highest score.
         """
-        state["documents"] = self.retriever.rerank(state["refined_question"], state["documents"])
+        state["documents"] = self.reranker.rerank_documents(state["refined_question"], state["documents"])
+        state["documents"] = state["documents"][:self.k]
         return state
-    
+
     def generate_response(self, state: State) -> State:
         """
         Invoke LLM to generate a response using the language model and the formatted prompt.
