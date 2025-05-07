@@ -126,7 +126,10 @@ class PdfProcessor(DocumentProcessor):
         ax.imshow(image)
 
         colors = {
-            "Title": "red",
+            "Title": "green",
+            "NarrativeText": "m",
+            "ListItem": "coral",
+            "UncategorizedText": "gray",
             "Table": "blue",
         }
         
