@@ -6,6 +6,7 @@ langgraph
 ocrmypdf
 openai
 opensearch-py
+pydantic
 pymupdf
 requests
 ro_core_news_lg @ https://github.com/explosion/spacy-models/releases/download/ro_core_news_lg-3.8.0/ro_core_news_lg-3.8.0-py3-none-any.whl#sha256=f8c71487a60125af5a84cdf487fc1670ec9cd1e28cfd9f7ef9561be0e25d2c8e

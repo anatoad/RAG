@@ -4,10 +4,9 @@ from langgraph.graph import StateGraph, END
 from typing import TypedDict, List, Optional, Any
 from langchain.prompts import PromptTemplate
 from langchain_core.documents import Document
-import json
-import requests
-from settings import RERANKER_ENDPOINT
 from reranker import Reranker
+from pydantic import BaseModel, ValidationError
+import json
 
 class State(TypedDict):
     conversation_history: List[dict]
@@ -16,6 +15,15 @@ class State(TypedDict):
     documents: Optional[List[Document]]
     response: Optional[str]
     model: Optional[Any]
+
+class Source(BaseModel):
+    source: str
+    url: str
+    page: Optional[int] = None
+
+class LLMResponse(BaseModel):
+    response: str
+    sources: List[Source]
 
 class Chatbot:
     def __init__(
@@ -39,15 +47,24 @@ class Chatbot:
             Întrebarea utilizatorului:
             {query_text}
 
-            Formatează răspunsul astfel:
-            <Răspunsul tău detaliat>
-            Surse:
-            - <sursă>: <url> (și <pagina> dacă nu este null)
+            Formatează răspunsul ca JSON astfel:
+            {{
+                "response": "<Răspunsul tău detaliat>",  # poate fi formatat ca Markdown
+                "sources": [
+                    {{
+                        "source": "<sursă>",
+                        "url": "<url>",
+                        "page": <pagina>  # pagina este opțională, poate fi null
+                    }}
+                ]
+            }}
+
+            Respectă formatul JSON chiar dacă nu ai informații suficiente pentru a răspunde la întrebare.
             """
         if not question_refiner_prompt_template:
             question_refiner_prompt_template = """
             Ești un asistent specializat în reformularea întrebărilor din conversații.
-            Ținând cont că întrebarea pe care ți-o voi furniza poate depinde de contextul conversației anterioare, te rog să o rescrii astfel încât să fie complet clară și înțeleasă fără a fi nevoie de context suplimentar.
+            Analizează întrebarea utilizatorului și conversația anterioară pentru a înțelege contextul. Identifică ambiguitățile și reformulează întrebarea astfel încât să fie complet clară și înțeleasă fără a fi nevoie de context suplimentar.
             Păstrează cât mai mult din structura și formularea originală, dar adaugă explicit detaliile și informațiile contextuale relevante.
 
             Contextul conversației:
@@ -86,9 +103,7 @@ class Chatbot:
         state = {
             "conversation_history": [],
             "query": query,
-            "retrieved_documents": None,
-            "bot_response": None,
-            "llm_model": None,
+            "documents": None,
         }
         return state
     
@@ -163,9 +178,29 @@ class Chatbot:
             query_text=state["refined_question"]
         )
 
-        response = self.llm.invoke(self.formatted_prompt)
-        self.response = response.content
-        state["response"] = response.content
+        self.response = self.llm.invoke(self.formatted_prompt)
+        self.response = self.response.content
+        self.response = self.response[self.response.find("{"):self.response.rfind("}")+1]
+
+        # Parse and validate the response
+        try:
+            response_obj = LLMResponse(**json.loads(self.response))
+        except (ValidationError, json.JSONDecodeError) as e:
+            # Create a fallback response object
+            response_obj = LLMResponse(response="Nu a putut fi generat un răspuns.", sources=[])
+        
+        # Update the state with the validated response object
+        state["response"] = f"""
+{response_obj.response}
+
+Surse:
+{
+    ',\n'.join([
+        f"- {source.source}, URL: {source.url}, pagina: {getattr(source, 'page', 'N/A')}"
+        for source in response_obj.sources
+    ])
+}
+        """
 
         return state
     
