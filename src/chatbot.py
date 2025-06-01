@@ -31,16 +31,17 @@ class Chatbot:
         retriever: Retriever,
         reranker: Reranker,
         llm: Any,
-        k: int = 10,
+        k: int = 5,
         prompt_template: str = None,
         question_refiner_prompt_template: str = None,
     ) -> None:
         if not prompt_template:
             prompt_template = """
             Ești un asistent care răspunde la întrebări pe baza contextului din documentele relevante.
-            Generează un răspuns formal pe baza datelor primite. Pentru fiecare afirmație furnizează explicit sursa extrasă din metadatele documentului.
-            Dacă nu poți formula un răspuns pe baza datelor primite, spune că nu știi, nu încerca să inventezi un răspuns.
-
+            Generează un răspuns formal pe baza datelor primite. Ia în considerare întreaga întrebare, nu ignora detalii sau părți din întrebare.
+            Pentru fiecare afirmație furnizează explicit sursa extrasă din metadatele documentului.
+            Dacă nu poți formula un răspuns pe baza datelor primite, spune că nu ai suficiente informații pentru a răspunde la întrebare, nu încerca să inventezi un răspuns.
+            
             Documente relevante:
             {relevant_docs}
 
@@ -90,6 +91,8 @@ class Chatbot:
         self.llm = llm
         self.k = k
         self.response = None
+        self.rewrite_query = True
+        self.rerank = True
         # Define the chatbot as a state machine
         self.graph = StateGraph(State)
         self._build_graph()
@@ -131,7 +134,7 @@ class Chatbot:
         Use the pretrained LLM for new question generation based on the conversational history.
         Use a prompt that includes previous conversation turns along with the current ambiguous question.
         """
-        if not state["conversation_history"]:
+        if not self.rewrite_query or not state["conversation_history"]:
             self.refined_question = state["query"]
             state["refined_question"] = self.refined_question
             return state
@@ -162,6 +165,8 @@ class Chatbot:
         """
         Rerank documents and keep top_k with the highest score.
         """
+        if not self.rerank:
+            return state
         state["documents"] = self.reranker.rerank_documents(state["refined_question"], state["documents"])
         state["documents"] = state["documents"][:self.k]
         return state
@@ -190,18 +195,19 @@ class Chatbot:
             response_obj = LLMResponse(response="Nu a putut fi generat un răspuns.", sources=[])
         
         # Update the state with the validated response object
-        state["response"] = f"""
-{response_obj.response}
-
+        state["response"] = response_obj.response
+        if response_obj.sources:
+            state["response"] += f"""\n
 Surse:
 {
     ',\n'.join([
-        f"- {source.source}, URL: {source.url}, pagina: {getattr(source, 'page', 'N/A')}"
+        f"- {source.source}, URL: {source.url}, pagina: {source.page}"
+        if getattr(source, 'page', None) is not None
+        else f"- URL: {source.url}"
         for source in response_obj.sources
     ])
 }
-        """
-
+"""
         return state
     
     def update_conversation_history(self, state: State) -> State:
@@ -230,7 +236,7 @@ Surse:
         self.graph.add_edge("generate_response", "update_conversation_history")
         self.graph.add_edge("update_conversation_history", END)
 
-    def run(self, query: str):
+    def run(self, query: str, rewrite_query: bool = True) -> None:
         """
         Run the RAG pipeline for the provided query text.
         """
@@ -238,10 +244,22 @@ Surse:
             self.state = self._initialize_state(query)
         else:
             self.state["query"] = query
-        
+        self.rewrite_query = rewrite_query
         final_state = self.executor.invoke(self.state)
         self.state = final_state
     
+    def get_response(self) -> str:
+        return self.state.get("response")
+
+    def get_context(self) -> List[str]:
+        return [doc.page_content for doc in self.state.get("documents", [])]
+    
+    def get_documents_ids(self) -> List[str]:
+        return [doc.metadata["id"] for doc in self.state.get("documents", [])]
+
+    def get_documents(self) -> List[Document]:
+        return self.state.get("documents", [])
+
     def _print_conversation_history(self):
         for conversation in self.state["conversation_history"]:
             print(self._wrapper.fill(f"{conversation["role"].upper()}:"))

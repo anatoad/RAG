@@ -1,0 +1,22 @@
+{
+  "ragas_version": "0.2.15",
+  "original_hash": 385810463881641351,
+  "language": "romanian",
+  "instruction": "Given a question and an answer, analyze the complexity of each sentence in the answer. Break down each sentence into one or more fully understandable statements. Ensure that no pronouns are used in any statement. Format the outputs in JSON.",
+  "examples": [
+    {
+      "input": {
+        "question": "Cine a fost Albert Einstein și pentru ce este el cel mai bine cunoscut?",
+        "answer": "A fost un fizician teoretician născut în Germania, recunoscut pe scară largă ca fiind unul dintre cei mai mari și mai influenți fizicieni din toate timpurile. A fost cel mai bine cunoscut pentru dezvoltarea teoriei relativității, dar a adus și contribuții importante la dezvoltarea teoriei mecanicii cuantice."
+      },
+      "output": {
+        "statements": [
+          "Albert Einstein a fost un fizician teoretician născut în Germania.",
+          "Albert Einstein este recunoscut ca unul dintre cei mai mari și mai influenți fizicieni din toate timpurile.",
+          "Albert Einstein a fost cel mai bine cunoscut pentru dezvoltarea teoriei relativității.",
+          "Albert Einstein a adus, de asemenea, contribuții importante la dezvoltarea teoriei mecanicii cuantice."
+        ]
+      }
+    }
+  ]
+}

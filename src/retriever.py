@@ -29,34 +29,17 @@ class Retriever:
         """
         Retrieve documents relevant to the query_text using the OpenSearch client.
         """
-        documents = self._client.semantic_search(
+        retrieved_documents = self._client.semantic_search(
             index_name=self._index,
             query_text=query_text,
             k=k or self._k
         )
-
-        # Handle tables
-        retrieved_documents = [
-            document 
-            for document in documents
-            if document["_score"] >= self._SCORE_THRESHOLD
-        ]
-
-        # Sort document chunks - group by document, maintain order
-        retrieved_documents = sorted(retrieved_documents, key=lambda doc: doc["_id"])
-
-        table_ids = set()
+        retrieved_documents = sorted(retrieved_documents, key=lambda doc: doc["_score"], reverse=True)
         documents = []
-
         for document in retrieved_documents:
-            table_id = document["_source"]["table_id"]
-            if table_id and table_id in table_ids: # table can be split into multiple chunks
-                continue
-
-            if not table_id:
+            if not document["_source"].get("table_id"):
                 page_content = document["_source"]["text"]
-            elif table_id not in table_ids:
-                table_ids.add(table_id)
+            else:
                 page_content = document["_source"]["table_text"]
 
             documents.append(
@@ -70,7 +53,6 @@ class Retriever:
                     }
                 )
             )
-
         return documents
 
     def format_document(self, document: Document) -> str:
@@ -85,14 +67,37 @@ class Retriever:
 
         return doc_str
 
+    def filter_documents(self, documents: list[Document]) -> list[Document]:
+        # Sort document chunks - group by document, maintain order
+        ordered_docs = sorted(documents, key=lambda doc: doc.metadata["id"])
+
+        # Filter out documents with the same table_id
+        table_ids = set()
+        filtered_docs = []
+
+        for document in ordered_docs:
+            table_id = document.metadata.get("table_id")
+            if table_id and table_id in table_ids: # table can be split into multiple chunks
+                continue
+
+            filtered_docs.append(document)
+            table_ids.add(table_id)
+
+        documents = list(filter(lambda doc: doc.metadata.get("score", 0) >= self._SCORE_THRESHOLD, filtered_docs))
+
+        return documents
+
     def format_documents(self, documents: list[Document]) -> str:
         """
         Format the retrieved documents into a string for inclusion in the prompt.
         """
+
+        filtered_docs = self.filter_documents(documents)
+
         return "\n\n".join(
             [
             self.format_document(doc)
-            for doc in documents
+            for doc in filtered_docs
             ]
         )
 

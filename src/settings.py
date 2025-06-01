@@ -6,12 +6,10 @@ OPENSEARCH_ADDRESS = "localhost"
 ADMIN_PASSWD = os.environ['OPENSEARCH_INITIAL_ADMIN_PASSWORD']
 
 MODEL_GROUP_NAME = "Unstructured"
-# INDEX_NAME = "unstructured-knn-index"
+PIPELINE_NAME = "ingest-pipeline"
 INDEX_NAME = "knn-index"
 MODEL_URL = "huggingface/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
 MODEL_NAME = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
-# PIPELINE_NAME = "unstructured-pipeline"
-PIPELINE_NAME = "ingest-pipeline"
 MODEL_ID = "g0Krd5UB_e6dONcEC5dk"
 
 RERANKER_MODEL = "BAAI/bge-reranker-v2-m3"

@@ -1,0 +1,60 @@
+{
+  "ragas_version": "0.2.15",
+  "original_hash": 359454873713812460,
+  "language": "romanian",
+  "instruction": "Your task is to judge the faithfulness of a series of statements based on a given context. For each statement you must return verdict as 1 if the statement can be directly inferred based on the context or 0 if the statement can not be directly inferred based on the context.",
+  "examples": [
+    {
+      "input": {
+        "context": "John este student la Universitatea XYZ. El urmează o diplomă în Informatică. Este înscris la mai multe cursuri în acest semestru, inclusiv Structuri de Date, Algoritmi și Managementul Bazelor de Date. John este un student sârguincios și petrece mult timp studiind și realizând teme. Adesea rămâne până târziu în bibliotecă pentru a lucra la proiectele sale.",
+        "statements": [
+          "John este specializat în Biologie.",
+          "John urmează un curs de Inteligență Artificială.",
+          "John este un student dedicat.",
+          "John are un loc de muncă part-time."
+        ]
+      },
+      "output": {
+        "statements": [
+          {
+            "statement": "John este specializat în Biologie.",
+            "reason": "Specializarea lui John este menționată explicit ca Informatică. Nu există informații care să sugereze că el este specializat în Biologie.",
+            "verdict": 0
+          },
+          {
+            "statement": "John urmează un curs de Inteligență Artificială.",
+            "reason": "Contextul menționează cursurile la care John este înscris în prezent, iar Inteligența Artificială nu este menționată. Prin urmare, nu se poate deduce că John urmează un curs de IA.",
+            "verdict": 0
+          },
+          {
+            "statement": "John este un student dedicat.",
+            "reason": "Contextul afirmă că el petrece mult timp studiind și realizând teme. În plus, se menționează că adesea rămâne până târziu în bibliotecă pentru a lucra la proiectele sale, ceea ce implică dedicare.",
+            "verdict": 1
+          },
+          {
+            "statement": "John are un loc de muncă part-time.",
+            "reason": "Nu există informații oferite în context despre faptul că John ar avea un loc de muncă part-time.",
+            "verdict": 0
+          }
+        ]
+      }
+    },
+    {
+      "input": {
+        "context": "Fotosinteza este un proces folosit de plante, alge și anumite bacterii pentru a converti energia luminoasă în energie chimică.",
+        "statements": [
+          "Albert Einstein a fost un geniu."
+        ]
+      },
+      "output": {
+        "statements": [
+          {
+            "statement": "Albert Einstein a fost un geniu.",
+            "reason": "Contextul și afirmația nu au legătură.",
+            "verdict": 0
+          }
+        ]
+      }
+    }
+  ]
+}

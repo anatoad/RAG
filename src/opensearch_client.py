@@ -360,6 +360,13 @@ class OpenSearchClient:
             return doc_names
 
         return None
+    
+    def get_document_by_id(self, id: str, index_name: str = settings.INDEX_NAME) -> str:
+        self._logger.info(f"Get document from index {index_name} by id {id}")
+        response = self.client.get(index=index_name, id=id)
+        if response:
+            return response["_source"]["text"]
+        return None
 
     def delete_index(self, index_name: str):
         self._logger.info(f"Delete index {index_name}")
