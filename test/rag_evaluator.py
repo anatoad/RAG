@@ -11,6 +11,8 @@ from ragas import evaluate
 from ragas.dataset_schema import EvaluationDataset
 from ragas.metrics import Metric, Faithfulness, ResponseRelevancy
 from ragas.llms import LangchainLLMWrapper
+from langchain.embeddings import HuggingFaceEmbeddings
+from ragas.embeddings import LangchainEmbeddingsWrapper
 
 class RAGEvaluator:
     def __init__(self, k: int = 5, llm: ChatOpenAI | None = None):
@@ -23,6 +25,7 @@ class RAGEvaluator:
         self.dataset = None
         self.judge_llm = llm or ChatOpenAI(model="gpt-4.1", temperature=0, top_p=1)
         self.ragas_llm = LangchainLLMWrapper(ChatOpenAI(model="gpt-4.1", temperature=0, top_p=1))
+        self.embedding_model = LangchainEmbeddingsWrapper(HuggingFaceEmbeddings(model_name="sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"))
         # Prompts translated to Romanian from:
         # from ragas.metrics import ContextRelevance
         # ContextRelevance.template_relevance1
@@ -192,10 +195,10 @@ class RAGEvaluator:
         return score / hits if hits > 0 else 0.0
 
     def _llm_judge_faithfulness(self, query: str, answer: str, docs: List[str], doc_ids: List[str]) -> int:
-        # check if the pair (query, document) has already been judged
+        # check if the pair (answer, context) has already been judged
         results_filepath = f"{self.logs_dir}/llm_judge_faithfulness.json"
         data = self._load_json(results_filepath)
-        
+
         item = list(filter(lambda entry: entry["answer"] == answer and entry["context"] == doc_ids, data))
         if item:
             return item[0]["faithfulness_score"]
@@ -300,13 +303,13 @@ class RAGEvaluator:
         ]
         return float(np.mean([score / 10 for score in answer_relevance_scores])) # scale to [0, 1], average over all queries
 
-    async def _initialize_ragas_metric(self, metric: Metric) -> Metric:
+    async def _initialize_ragas_metric(self, metric: Metric, **kwargs) -> Metric:
         """
         Set up metric with adapted prompts and save them.
         Prompts are adapted to Romanian:
         https://docs.ragas.io/en/latest/howtos/customizations/metrics/_metrics_language_adaptation/
         """
-        metric = metric(llm=self.ragas_llm)
+        metric = metric(llm=self.ragas_llm, **kwargs)
         try:
             prompts = await metric.adapt_prompts(language="romanian", llm=self.ragas_llm)
             metric.set_prompts(**prompts)
@@ -314,30 +317,64 @@ class RAGEvaluator:
         except Exception as e:
             print(f"Error saving prompts: {e}")
         return metric
-
+    
     def _run_ragas_evaluation(self, metric: Metric, metric_name: str, results_filepath: str | None = None) -> float:
         """Run the RAGAS evaluation for a given metric."""
+        # first load existing results if available
+        existing_results = self._load_json(results_filepath) if results_filepath else []
+
+        # identify which entries to evaluate
+        existing_lookup = {item["user_input"]: item for item in existing_results}
+        entries_to_eval, new_entries_to_add = [], []
+
+        for i, entry in enumerate(self.dataset):
+            existing_entry = existing_lookup.get(entry.user_input)
+
+            if not existing_entry or existing_entry.get(metric_name, "nan") == "nan":
+                entries_to_eval.append(i)
+                new_entries_to_add.append(entry)
+
+        if not entries_to_eval:
+            print("All entries already evaluated.")
+            return float(np.mean([float(item.get(metric_name)) for item in existing_results]))
+
+        # select only the entries that need evaluation
+        dataset_entries = [self.dataset[i] for i in entries_to_eval]
+        dataset = EvaluationDataset(samples=dataset_entries)
+
         result = evaluate(
-            dataset=self.dataset,
+            dataset=dataset,
             metrics=[metric],
             llm=self.ragas_llm
         )
+    
+        # update or add new results
+        for entry, score_dict in zip(new_entries_to_add, result.scores):
+            user_input = entry.user_input
+            score = str(score_dict.get(metric_name, "nan"))
 
-        if results_filepath:
-            # get scores for all dataset entries
-            scores = [str(item[metric_name]) for item in result.scores]
+            updated_entry = {
+                "user_input": user_input,
+                "retrieved_contexts": entry.retrieved_contexts,
+                "response": entry.response,
+                metric_name: score
+            }
 
-            # append the scores to the results file
-            scored_ds = self.dataset.to_hf_dataset().add_column(metric_name, scores)
-            scored_ds.to_json(
-                results_filepath,
-                orient="records",
-                lines=False,
-                indent=4,
-                force_ascii=False
-            )
-        
-        return result
+            if user_input in existing_lookup:
+                # Update the entry
+                for i, item in enumerate(existing_results):
+                    if item["user_input"] == user_input:
+                        existing_results[i] = updated_entry
+                        break
+            else:
+                existing_results.append(updated_entry)
+
+        # Save updated results
+        with open(results_filepath, "w", encoding="utf-8") as f:
+            json.dump(existing_results, f, indent=4, ensure_ascii=False)
+
+        valid_scores = [float(item.get(metric_name)) for item in existing_results if item[metric_name] != "nan"]
+        return float(np.mean(valid_scores))
 
     async def compute_faithfulness_ragas(self) -> float:
         """
@@ -352,24 +389,24 @@ class RAGEvaluator:
             metric_name="faithfulness",
             results_filepath=f"{self.logs_dir}/ragas_faithfulness_results.json"
         )
-        return np.mean(result['faithfulness'])
+        return result
 
     async def compute_answer_relevance_ragas(self) -> float:
         """
         Compute the relevance of an answer to the user query using RAGAs. Generates a set of (3) questions
-        for each query, compute cosine similarity between each generated question and the query.
+        for each answer, compute cosine similarity between each generated question and the query.
         The answer relevance score is the average score over all the queries.
         answer_relevance = (avg cosine similarity between query and generated questions) / (# of queries)
 
         https://docs.ragas.io/en/latest/concepts/metrics/available_metrics/answer_relevance/
         """
-        answer_relevance = await self._initialize_ragas_metric(ResponseRelevancy)
+        answer_relevance = await self._initialize_ragas_metric(ResponseRelevancy, embeddings=self.embedding_model)
         result = self._run_ragas_evaluation(
             metric=answer_relevance,
             metric_name="answer_relevancy",
             results_filepath=f"{self.logs_dir}/ragas_answer_relevance_results.json"
         )
-        return np.mean(result['answer_relevancy'])
+        return result
 
     def evaluate_all(self) -> Dict[str, float]:
         """

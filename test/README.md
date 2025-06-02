@@ -58,9 +58,13 @@ Use **GPT Score** and **RAGAs** to measure faithfulness and answer relevance, as
 
 **GPT Score**: use GPT-4.1 as a judge, ask it to assign a score between 0-10 to measure faithfulness / answer relevance. Generate prompts based on the translated prompt templates from the *[RAGAs paper](http://arxiv.org/abs/2309.15217)*.
 
-### 4.1 Faithfulness
+### 4.1 Faithfulness - GPT Score
 
-### 4.2 Answer relevance
+### 4.2 Answer relevance - GPT Score
+
+### 4.3 Faithfulness - RAGAs
+
+### 4.4 Answer relevance - RAGAs
 
 ## 5. Performance
 
