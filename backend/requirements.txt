@@ -1,0 +1,9 @@
+Flask
+flask-cors
+dotenv
+pandas
+langchain
+langchain-openai
+langchain-core
+opensearch-py
+langgraph
