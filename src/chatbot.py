@@ -1,4 +1,4 @@
-from utils import get_text_wrapper
+from utils import get_text_wrapper, get_logger
 from retriever import Retriever
 from langgraph.graph import StateGraph, END
 from typing import TypedDict, List, Optional, Any
@@ -7,6 +7,7 @@ from langchain_core.documents import Document
 from reranker import Reranker
 from pydantic import BaseModel, ValidationError
 import json
+from logging import Logger
 
 class State(TypedDict):
     conversation_history: List[dict]
@@ -32,48 +33,44 @@ class Chatbot:
         reranker: Reranker,
         llm: Any,
         k: int = 5,
+        logger: Logger | None = None,
         prompt_template: str = None,
         question_refiner_prompt_template: str = None,
     ) -> None:
         if not prompt_template:
-            prompt_template = """
-            Ești un asistent care răspunde la întrebări pe baza contextului din documentele relevante.
-            Generează un răspuns formal pe baza datelor primite. Ia în considerare întreaga întrebare, nu ignora detalii sau părți din întrebare.
-            Pentru fiecare afirmație furnizează explicit sursa extrasă din metadatele documentului.
-            Dacă nu poți formula un răspuns pe baza datelor primite, spune că nu ai suficiente informații pentru a răspunde la întrebare, nu încerca să inventezi un răspuns.
-            
-            Documente relevante:
-            {relevant_docs}
-
-            Întrebarea utilizatorului:
-            {query_text}
-
-            Formatează răspunsul ca JSON astfel:
-            {{
-                "response": "<Răspunsul tău detaliat>",  # poate fi formatat ca Markdown
-                "sources": [
-                    {{
-                        "source": "<sursă>",
-                        "url": "<url>",
-                        "page": <pagina>  # pagina este opțională, poate fi null
-                    }}
-                ]
-            }}
-
-            Respectă formatul JSON chiar dacă nu ai informații suficiente pentru a răspunde la întrebare.
-            """
+            prompt_template = (
+            "Ești un asistent care răspunde la întrebări pe baza contextului din documentele relevante.\n"
+            "Generează un răspuns formal pe baza datelor primite. Ia în considerare întreaga întrebare, nu ignora detalii sau părți din întrebare.\n"
+            "Pentru fiecare afirmație furnizează explicit sursa extrasă din metadatele documentului.\n"
+            "Dacă nu poți formula un răspuns pe baza datelor primite, spune că nu ai suficiente informații pentru a răspunde la întrebare, nu încerca să inventezi un răspuns.\n"
+            "Documente relevante:\n"
+            "{relevant_docs}\n\n"
+            "Întrebarea utilizatorului:\n"
+            "{query_text}\n\n"
+            "Formatează răspunsul ca JSON astfel:\n"
+            "{{\n"
+            "    \"response\": \"<Răspunsul tău detaliat formatat ca Markdown>\",\n"
+            "    \"sources\": [\n"
+            "        {{\n"
+            "            \"source\": \"<sursă>\",\n"
+            "            \"url\": \"<url>\",\n"
+            "            \"page\": <pagina>  # pagina este opțională, poate fi null\n"
+            "        }}\n"
+            "    ]\n"
+            "}}\n\n"
+            "Respectă formatul JSON chiar dacă nu ai informații suficiente pentru a răspunde la întrebare.\n"
+            )
         if not question_refiner_prompt_template:
-            question_refiner_prompt_template = """
-            Ești un asistent specializat în reformularea întrebărilor din conversații.
-            Analizează întrebarea utilizatorului și conversația anterioară pentru a înțelege contextul. Identifică ambiguitățile și reformulează întrebarea astfel încât să fie complet clară și înțeleasă fără a fi nevoie de context suplimentar.
-            Păstrează cât mai mult din structura și formularea originală, dar adaugă explicit detaliile și informațiile contextuale relevante.
-
-            Contextul conversației:
-            {conversation_history}
-
-            Întrebarea:
-            {query_text}
-            """
+            question_refiner_prompt_template = (
+            "Ești un asistent specializat în reformularea întrebărilor din conversații.\n"
+            "Analizează întrebarea utilizatorului și conversația anterioară pentru a înțelege contextul.\n"
+            "Identifică ambiguitățile și reformulează întrebarea astfel încât să fie complet clară și înțeleasă fără a fi nevoie de context suplimentar.\n"
+            "Păstrează cât mai mult din structura și formularea originală, dar adaugă explicit detaliile și informațiile contextuale relevante, dacă sunt necesare.\n\n"
+            "Contextul conversației:\n"
+            "{conversation_history}\n\n"
+            "Întrebarea:\n"
+            "{query_text}\n\n"
+            )
         self.prompt = PromptTemplate(
             input_variables=["relevant_docs", "query_text"],
             template=prompt_template
@@ -87,6 +84,7 @@ class Chatbot:
         self.refined_question = None
         self.retriever = retriever
         self.reranker = reranker
+        self.logger = logger or get_logger(__name__)
         self.state = None
         self.llm = llm
         self.k = k
@@ -117,6 +115,7 @@ class Chatbot:
         self.state["conversation_history"].pop()
     
     def delete_conversation_history(self) -> None:
+        self.logger.info("Deleted conversation history")
         if not self.state or not self.state["conversation_history"]:
             return
         self.state["conversation_history"].clear()
@@ -150,6 +149,10 @@ class Chatbot:
         response = self.llm.invoke(self.formatted_question_refiner_prompt)
         self.refined_question = response.content
         state["refined_question"] = response.content
+
+        self.logger.info("------ Query Refiner ------")
+        self.logger.info(f"Initial query: {state["query"]}")
+        self.logger.info(f"Refined query: {state["refined_question"]}")
 
         return state
 
@@ -197,17 +200,16 @@ class Chatbot:
         # Update the state with the validated response object
         state["response"] = response_obj.response
         if response_obj.sources:
-            state["response"] += f"""\n
-Surse:
-{
-    ',\n'.join([
-        f"- {source.source}, URL: {source.url}, pagina: {source.page}"
-        if getattr(source, 'page', None) is not None
-        else f"- URL: {source.url}"
-        for source in response_obj.sources
-    ])
-}
-"""
+            state["response"] += (
+                "\nSurse:\n" +
+                '\n'.join([
+                    f"- {source.source}, URL: {source.url}, pagina: {source.page}"
+                    if getattr(source, 'page', None) is not None or source.page != source.url
+                    else f"- URL: {source.url}"
+                    for source in response_obj.sources
+                ])
+            )
+
         return state
     
     def update_conversation_history(self, state: State) -> State:

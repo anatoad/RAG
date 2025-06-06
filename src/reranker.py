@@ -29,6 +29,10 @@ class Reranker:
             [question, passage]
             for passage in passages
         ]
+        self._logger.info("------------------")
+        self._logger.info("Reranking passages:")
+        for passage in passages:
+            self._logger.info(passage)
 
         # send the request to the reranker
         request_body = {
@@ -58,5 +62,9 @@ class Reranker:
             key=lambda x: (x.metadata["rerank_score"], x.metadata["id"].split("-")[1]),
             reverse=True
         )
+
+        self._logger.info("Reranked:")
+        for doc in sorted_documents:
+            self._logger.info(doc.page_content)
 
         return sorted_documents
