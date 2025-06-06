@@ -201,10 +201,10 @@ class Chatbot:
         state["response"] = response_obj.response
         if response_obj.sources:
             state["response"] += (
-                "\nSurse:\n" +
+                "\n\nSurse:\n" +
                 '\n'.join([
                     f"- {source.source}, URL: {source.url}, pagina: {source.page}"
-                    if getattr(source, 'page', None) is not None or source.page != source.url
+                    if getattr(source, 'page', None) is not None
                     else f"- URL: {source.url}"
                     for source in response_obj.sources
                 ])
@@ -217,6 +217,7 @@ class Chatbot:
         # Append new messages
         state["conversation_history"].append({"role": "Utilizator", "content": state["query"]})
         state["conversation_history"].append({"role": "Asistent", "content": state["response"]})
+        state["conversation_history"] = state["conversation_history"][-10:]
         return state
     
     def _build_graph(self) -> None:
