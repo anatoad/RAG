@@ -1,0 +1,2921 @@
+[
+    {
+        "query": "Cum se calculeaza media de bursa la Politehnica?",
+        "document_id": "c1de7ec9e0df65a266e2d1db74e580922ed6e6cc884fca4958957970115686fd-5",
+        "llm_score_1": 1,
+        "llm_score_2": 0,
+        "relevance_score": 1
+    },
+    {
+        "query": "Cum se calculeaza media de bursa la Politehnica?",
+        "document_id": "79426a1571b68492454210a4455253ad1c6ca02f95283000457c0e0eb426d81d-20",
+        "llm_score_1": 1,
+        "llm_score_2": 0,
+        "relevance_score": 1
+    },
+    {
+        "query": "Exista posibilitatea de a plati taxa de scolarizare in rate?",
+        "document_id": "0939dd251ffa3b90ecb8af564934dc6ba1b92e780dfdf58548d6652a993628eb-72",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Exista posibilitatea de a plati taxa de scolarizare in rate?",
+        "document_id": "3b29b0516a0b7af978077a8daaa189c3b82dad4559940a8acebc9017b6e97310-13",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Exista posibilitatea de a plati taxa de scolarizare in rate?",
+        "document_id": "79426a1571b68492454210a4455253ad1c6ca02f95283000457c0e0eb426d81d-13",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Care este calendarul de admitere?",
+        "document_id": "95f42f60814f794ccc7649e18c987903cf095f32dab527bc4154e215474c483d-31",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Care este calendarul de admitere?",
+        "document_id": "6ccd6e8cf90ac5e0f62d36ab0c6545bdb0df7714986675e4854d0f00e6cfc934-1",
+        "llm_score_1": 2,
+        "llm_score_2": 2,
+        "relevance_score": 1
+    },
+    {
+        "query": "Care este calendarul de admitere?",
+        "document_id": "1b1ea7137bcac57a08ed409352d4dafea078d3672aaa23e9e88a89e6ba380ff4-1",
+        "llm_score_1": 2,
+        "llm_score_2": 2,
+        "relevance_score": 1
+    },
+    {
+        "query": "Cum pot intra pe locurile pentru olimpici la admiterea la licenta la ACS?",
+        "document_id": "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-156",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Cum pot intra pe locurile pentru olimpici la admiterea la licenta la ACS?",
+        "document_id": "d30921449a2b0b31d12ccc546028a7e3af51f9dc6a39bcbd675f7003c2029704-7",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Cum pot intra pe locurile pentru olimpici la admiterea la licenta la ACS?",
+        "document_id": "90d452286979bc3ba13df942fe481c229bca45f701e35a41aac700dcf99479f4-6",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "In ce ordine se face admiterea candidatilor la Politehnica?",
+        "document_id": "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-30",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "In ce ordine se face admiterea candidatilor la Politehnica?",
+        "document_id": "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-62",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "In ce ordine se face admiterea candidatilor la Politehnica?",
+        "document_id": "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-146",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Ma pot inscrie la examenul de admitere la licenta la mai multe facultati?",
+        "document_id": "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-211",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Ma pot inscrie la examenul de admitere la licenta la mai multe facultati?",
+        "document_id": "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-13",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Ma pot inscrie la examenul de admitere la licenta la mai multe facultati?",
+        "document_id": "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-144",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Care sunt disciplinele de concurs de la examenul de admitere la licenta?",
+        "document_id": "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-91",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Care sunt disciplinele de concurs de la examenul de admitere la licenta?",
+        "document_id": "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-37",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Care sunt disciplinele de concurs de la examenul de admitere la licenta?",
+        "document_id": "a860fecfb47c89e5a6bc295c7fcaf02446c872f33f681a42931f51aacf7e106e-1",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Care este cuantumul taxei de inscriere la examenul de admitere la licenta la Politehnica?",
+        "document_id": "70316c29c4e024cfb07239b8cb041fe2e61b063ecc31311c2a24497c18e0195a-9",
+        "llm_score_1": 1,
+        "llm_score_2": 0,
+        "relevance_score": 1
+    },
+    {
+        "query": "Care este cuantumul taxei de inscriere la examenul de admitere la licenta la Politehnica?",
+        "document_id": "79426a1571b68492454210a4455253ad1c6ca02f95283000457c0e0eb426d81d-17",
+        "llm_score_1": 1,
+        "llm_score_2": 0,
+        "relevance_score": 1
+    },
+    {
+        "query": "Care este cuantumul taxei de inscriere la examenul de admitere la licenta la Politehnica?",
+        "document_id": "ec2388509c14d869761ef5d7b677f47daec0847c082df56e3d07909b3a20a0cc-6",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Care este cuantumul taxei de inscriere la examenul de admitere la master la Politehnica?",
+        "document_id": "70316c29c4e024cfb07239b8cb041fe2e61b063ecc31311c2a24497c18e0195a-9",
+        "llm_score_1": 1,
+        "llm_score_2": 0,
+        "relevance_score": 1
+    },
+    {
+        "query": "Care este cuantumul taxei de inscriere la examenul de admitere la master la Politehnica?",
+        "document_id": "0a7047bd9ee00f3d76a3f6e330d97e214cbc6a81ed25ef001a0d2834d408455f-3",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Care este cuantumul taxei de inscriere la examenul de admitere la master la Politehnica?",
+        "document_id": "71788602578701b9e9b11da963eee9859a06e0dc3d482036b87e7c9c12f5fab5-23",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Care este cuantumul taxei de inscriere la examenul de admitere la doctorat la ACS?",
+        "document_id": "0a7047bd9ee00f3d76a3f6e330d97e214cbc6a81ed25ef001a0d2834d408455f-3",
+        "llm_score_1": 2,
+        "llm_score_2": 2,
+        "relevance_score": 1
+    },
+    {
+        "query": "Care este cuantumul taxei de inscriere la examenul de admitere la doctorat la ACS?",
+        "document_id": "70316c29c4e024cfb07239b8cb041fe2e61b063ecc31311c2a24497c18e0195a-9",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Care este cuantumul taxei de inscriere la examenul de admitere la doctorat la ACS?",
+        "document_id": "71788602578701b9e9b11da963eee9859a06e0dc3d482036b87e7c9c12f5fab5-23",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Cand se afiseaza rezultatele la admiterea la licenta la ACS?",
+        "document_id": "6ccd6e8cf90ac5e0f62d36ab0c6545bdb0df7714986675e4854d0f00e6cfc934-2",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Cand se afiseaza rezultatele la admiterea la licenta la ACS?",
+        "document_id": "57fffc9ae7f67be9c637b16ae3a994af2cbec240e5ea61a02f4d25fea85f1d10-4",
+        "llm_score_1": 2,
+        "llm_score_2": 2,
+        "relevance_score": 1
+    },
+    {
+        "query": "Cand se afiseaza rezultatele la admiterea la licenta la ACS?",
+        "document_id": "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-23",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Cand se afiseaza rezultatele la admiterea la licenta la FAIMA?",
+        "document_id": "57fffc9ae7f67be9c637b16ae3a994af2cbec240e5ea61a02f4d25fea85f1d10-4",
+        "llm_score_1": 2,
+        "llm_score_2": 2,
+        "relevance_score": 1
+    },
+    {
+        "query": "Cand se afiseaza rezultatele la admiterea la licenta la FAIMA?",
+        "document_id": "96e70f4bda047167435c1c790d1eed7085397707930e9d47fee17c191c260855-2",
+        "llm_score_1": 2,
+        "llm_score_2": 2,
+        "relevance_score": 1
+    },
+    {
+        "query": "Cand se afiseaza rezultatele la admiterea la licenta la FAIMA?",
+        "document_id": "a6d93e140ed275d649d698d7fc77e3bef36eb660ae7f730e74df6a05ba887174-2",
+        "llm_score_1": 2,
+        "llm_score_2": 2,
+        "relevance_score": 1
+    },
+    {
+        "query": "Ce facultati sunt in cadrul Politehnicii?",
+        "document_id": "79426a1571b68492454210a4455253ad1c6ca02f95283000457c0e0eb426d81d-3",
+        "llm_score_1": 1,
+        "llm_score_2": 0,
+        "relevance_score": 1
+    },
+    {
+        "query": "Ce facultati sunt in cadrul Politehnicii?",
+        "document_id": "0939dd251ffa3b90ecb8af564934dc6ba1b92e780dfdf58548d6652a993628eb-51",
+        "llm_score_1": 2,
+        "llm_score_2": 2,
+        "relevance_score": 1
+    },
+    {
+        "query": "Ce facultati sunt in cadrul Politehnicii?",
+        "document_id": "0939dd251ffa3b90ecb8af564934dc6ba1b92e780dfdf58548d6652a993628eb-52",
+        "llm_score_1": 2,
+        "llm_score_2": 2,
+        "relevance_score": 1
+    },
+    {
+        "query": "Cate programe de studii de masterat sunt la ACS?",
+        "document_id": "6ccd6e8cf90ac5e0f62d36ab0c6545bdb0df7714986675e4854d0f00e6cfc934-2",
+        "llm_score_1": 2,
+        "llm_score_2": 2,
+        "relevance_score": 1
+    },
+    {
+        "query": "Cate programe de studii de masterat sunt la ACS?",
+        "document_id": "79426a1571b68492454210a4455253ad1c6ca02f95283000457c0e0eb426d81d-3",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Cate programe de studii de masterat sunt la ACS?",
+        "document_id": "36527b3da039b452b387028c350e8e537c8c6b5176f91649e53bf33924e493bb-2",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Ce materii sunt la facultatea de Automatica si Calculatoare?",
+        "document_id": "6ccd6e8cf90ac5e0f62d36ab0c6545bdb0df7714986675e4854d0f00e6cfc934-8",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Ce materii sunt la facultatea de Automatica si Calculatoare?",
+        "document_id": "6ccd6e8cf90ac5e0f62d36ab0c6545bdb0df7714986675e4854d0f00e6cfc934-10",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Ce materii sunt la facultatea de Automatica si Calculatoare?",
+        "document_id": "6ccd6e8cf90ac5e0f62d36ab0c6545bdb0df7714986675e4854d0f00e6cfc934-4",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Care sunt conditiile de admitere la licenta la ETTI?",
+        "document_id": "36527b3da039b452b387028c350e8e537c8c6b5176f91649e53bf33924e493bb-4",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Care sunt conditiile de admitere la licenta la ETTI?",
+        "document_id": "36527b3da039b452b387028c350e8e537c8c6b5176f91649e53bf33924e493bb-9",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Care sunt conditiile de admitere la licenta la ETTI?",
+        "document_id": "c642c14d935f4cf36dcf3277811b920052336016da4e5f53e7161b29d9d179a3-1",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Care este cuantumul burselor?",
+        "document_id": "0939dd251ffa3b90ecb8af564934dc6ba1b92e780dfdf58548d6652a993628eb-72",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Care este cuantumul burselor?",
+        "document_id": "d9aaa3233afc85c50c8869a9a97f45c2e80bd9dcea6b434aec2d66ca2234b796-18",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Care este cuantumul burselor?",
+        "document_id": "71788602578701b9e9b11da963eee9859a06e0dc3d482036b87e7c9c12f5fab5-34",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Care este cuantumul bursei sociale?",
+        "document_id": "d9aaa3233afc85c50c8869a9a97f45c2e80bd9dcea6b434aec2d66ca2234b796-18",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Care este cuantumul bursei sociale?",
+        "document_id": "d9aaa3233afc85c50c8869a9a97f45c2e80bd9dcea6b434aec2d66ca2234b796-10",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Care este cuantumul bursei sociale?",
+        "document_id": "d9aaa3233afc85c50c8869a9a97f45c2e80bd9dcea6b434aec2d66ca2234b796-13",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Ce presupune sesiunea 3 de admitere la licenta?",
+        "document_id": "81eecb583745caf19cfcc51fd6934ec333208f8b5736456e051aa42e11c6104e-7",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Ce presupune sesiunea 3 de admitere la licenta?",
+        "document_id": "a192eeb16b38c512b52907612a334423de5ea7a64b05047d05038e52e01dcad9-5",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Ce presupune sesiunea 3 de admitere la licenta?",
+        "document_id": "7261d53c1bc03b86e5609b82811972b54096ba162fef6abf2a9fc84018d179b4-3",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Cand are loc simularea examenului de admitere la licenta la ACS?",
+        "document_id": "0a7047bd9ee00f3d76a3f6e330d97e214cbc6a81ed25ef001a0d2834d408455f-4",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Cand are loc simularea examenului de admitere la licenta la ACS?",
+        "document_id": "1b1ea7137bcac57a08ed409352d4dafea078d3672aaa23e9e88a89e6ba380ff4-1",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Cand are loc simularea examenului de admitere la licenta la ACS?",
+        "document_id": "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-127",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Cum se calculeaza media de admitere la licenta?",
+        "document_id": "36527b3da039b452b387028c350e8e537c8c6b5176f91649e53bf33924e493bb-9",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Cum se calculeaza media de admitere la licenta?",
+        "document_id": "0a7047bd9ee00f3d76a3f6e330d97e214cbc6a81ed25ef001a0d2834d408455f-3",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Cum se calculeaza media de admitere la licenta?",
+        "document_id": "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-321",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Daca ma inscriu la mai multe facultati pot plati o singura taxa de inscriere?",
+        "document_id": "79426a1571b68492454210a4455253ad1c6ca02f95283000457c0e0eb426d81d-17",
+        "llm_score_1": 1,
+        "llm_score_2": 0,
+        "relevance_score": 1
+    },
+    {
+        "query": "Daca ma inscriu la mai multe facultati pot plati o singura taxa de inscriere?",
+        "document_id": "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-223",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Daca ma inscriu la mai multe facultati pot plati o singura taxa de inscriere?",
+        "document_id": "ec2388509c14d869761ef5d7b677f47daec0847c082df56e3d07909b3a20a0cc-6",
+        "llm_score_1": 1,
+        "llm_score_2": 0,
+        "relevance_score": 1
+    },
+    {
+        "query": "Cum pot opta pentru cazare la camin?",
+        "document_id": "5fe6fc7e457fe49fc645ddd2f88550ce3d5a2c0f3f63fa795b3a120b53c2e748-7",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Cum pot opta pentru cazare la camin?",
+        "document_id": "5fe6fc7e457fe49fc645ddd2f88550ce3d5a2c0f3f63fa795b3a120b53c2e748-5",
+        "llm_score_1": 1,
+        "llm_score_2": 0,
+        "relevance_score": 1
+    },
+    {
+        "query": "Cum pot opta pentru cazare la camin?",
+        "document_id": "d12056e2c2c334eab800875dc06fe79b0639c4249b41a79f3d3e27777b354074-32",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Care este structura unui an universitar?",
+        "document_id": "2350258c519b2dda96612268851c0f3932f97cd1681d19df7eec652511e653db-19",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Care este structura unui an universitar?",
+        "document_id": "71788602578701b9e9b11da963eee9859a06e0dc3d482036b87e7c9c12f5fab5-36",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Care este structura unui an universitar?",
+        "document_id": "3b29b0516a0b7af978077a8daaa189c3b82dad4559940a8acebc9017b6e97310-32",
+        "llm_score_1": 1,
+        "llm_score_2": 0,
+        "relevance_score": 1
+    },
+    {
+        "query": "Cand are loc admiterea la licenta la ACS?",
+        "document_id": "6ccd6e8cf90ac5e0f62d36ab0c6545bdb0df7714986675e4854d0f00e6cfc934-2",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Cand are loc admiterea la licenta la ACS?",
+        "document_id": "95433f95bf4f9e5fef2fb7938a0ae137f2588497cb46ca97e61fd05660532466-6",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Cand are loc admiterea la licenta la ACS?",
+        "document_id": "96e70f4bda047167435c1c790d1eed7085397707930e9d47fee17c191c260855-2",
+        "llm_score_1": 2,
+        "llm_score_2": 2,
+        "relevance_score": 1
+    },
+    {
+        "query": "Cand are loc admiterea la licenta?",
+        "document_id": "6ccd6e8cf90ac5e0f62d36ab0c6545bdb0df7714986675e4854d0f00e6cfc934-1",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Cand are loc admiterea la licenta?",
+        "document_id": "57fffc9ae7f67be9c637b16ae3a994af2cbec240e5ea61a02f4d25fea85f1d10-4",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Cand are loc admiterea la licenta?",
+        "document_id": "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-68",
+        "llm_score_1": 2,
+        "llm_score_2": 2,
+        "relevance_score": 1
+    },
+    {
+        "query": "Cand are loc admiterea la master?",
+        "document_id": "95433f95bf4f9e5fef2fb7938a0ae137f2588497cb46ca97e61fd05660532466-1",
+        "llm_score_1": 2,
+        "llm_score_2": 2,
+        "relevance_score": 1
+    },
+    {
+        "query": "Cand are loc admiterea la master?",
+        "document_id": "6ccd6e8cf90ac5e0f62d36ab0c6545bdb0df7714986675e4854d0f00e6cfc934-1",
+        "llm_score_1": 2,
+        "llm_score_2": 2,
+        "relevance_score": 1
+    },
+    {
+        "query": "Cand are loc admiterea la master?",
+        "document_id": "a6d93e140ed275d649d698d7fc77e3bef36eb660ae7f730e74df6a05ba887174-1",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Cand are loc admiterea la doctorat?",
+        "document_id": "2857876d53734150ffb44fc71e4dbc6585d2bc1415ee25bfcea3633c54158da3-1",
+        "llm_score_1": 2,
+        "llm_score_2": 2,
+        "relevance_score": 1
+    },
+    {
+        "query": "Cand are loc admiterea la doctorat?",
+        "document_id": "d43f4eaa3d93bf485a402f19f967f21b14b8011a675d9a5e0301629717d64291-7",
+        "llm_score_1": 2,
+        "llm_score_2": 2,
+        "relevance_score": 1
+    },
+    {
+        "query": "Cand are loc admiterea la doctorat?",
+        "document_id": "36527b3da039b452b387028c350e8e537c8c6b5176f91649e53bf33924e493bb-8",
+        "llm_score_1": 2,
+        "llm_score_2": 2,
+        "relevance_score": 1
+    },
+    {
+        "query": "Ce documente sunt necesare pentru inmatriculare?",
+        "document_id": "a192eeb16b38c512b52907612a334423de5ea7a64b05047d05038e52e01dcad9-8",
+        "llm_score_1": 2,
+        "llm_score_2": 2,
+        "relevance_score": 1
+    },
+    {
+        "query": "Ce documente sunt necesare pentru inmatriculare?",
+        "document_id": "c1de7ec9e0df65a266e2d1db74e580922ed6e6cc884fca4958957970115686fd-4",
+        "llm_score_1": 2,
+        "llm_score_2": 2,
+        "relevance_score": 1
+    },
+    {
+        "query": "Ce documente sunt necesare pentru inmatriculare?",
+        "document_id": "05290e8c4920a551795485a7f7241a1add0260eeef7870d7cbfdc2b62d1e812e-5",
+        "llm_score_1": 2,
+        "llm_score_2": 2,
+        "relevance_score": 1
+    },
+    {
+        "query": "Ce documente sunt necesare pentru inscrierea la examenul de admitere?",
+        "document_id": "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-64",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Ce documente sunt necesare pentru inscrierea la examenul de admitere?",
+        "document_id": "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-47",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Ce documente sunt necesare pentru inscrierea la examenul de admitere?",
+        "document_id": "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-146",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Cate locuri sunt disponibile pentru admiterea la ACS?",
+        "document_id": "6ccd6e8cf90ac5e0f62d36ab0c6545bdb0df7714986675e4854d0f00e6cfc934-2",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Cate locuri sunt disponibile pentru admiterea la ACS?",
+        "document_id": "5ed022490c4bb6b106bfb96e9f513a2f775f895e59731b26cd505937a92b04e3-1",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Cate locuri sunt disponibile pentru admiterea la ACS?",
+        "document_id": "ba75f0389538768538a511b967d4615e92eea881cff88fe9b1a8f115522830a3-1",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Cand are loc testul online de limba de la Politehnica?",
+        "document_id": "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-36",
+        "llm_score_1": 2,
+        "llm_score_2": 2,
+        "relevance_score": 1
+    },
+    {
+        "query": "Cand are loc testul online de limba de la Politehnica?",
+        "document_id": "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-335",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Cand are loc testul online de limba de la Politehnica?",
+        "document_id": "85fcf9d8684602276ff1fc4ac04e10d3fb6a6c2732942ac846889086a23d3e5d-1",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Ce documente sunt necesare pentru a demonstra cunostintele lingvistice la inscrierea la un program de studii in limba engleza?",
+        "document_id": "4a8af42a6c47f11b1d13d802bee4da49f7d449950fa3f74b338baa449e1e595b-2",
+        "llm_score_1": 2,
+        "llm_score_2": 2,
+        "relevance_score": 1
+    },
+    {
+        "query": "Ce documente sunt necesare pentru a demonstra cunostintele lingvistice la inscrierea la un program de studii in limba engleza?",
+        "document_id": "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-218",
+        "llm_score_1": 1,
+        "llm_score_2": 2,
+        "relevance_score": 1
+    },
+    {
+        "query": "Ce documente sunt necesare pentru a demonstra cunostintele lingvistice la inscrierea la un program de studii in limba engleza?",
+        "document_id": "4a8af42a6c47f11b1d13d802bee4da49f7d449950fa3f74b338baa449e1e595b-1",
+        "llm_score_1": 1,
+        "llm_score_2": 2,
+        "relevance_score": 1
+    },
+    {
+        "query": "Cum pot sa ma inscriu la testul online de limba straina?",
+        "document_id": "ea1eefdfe13b4e547017a55349bc78edf700398a89c7cb73363d4ba10f043fd0-2",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Cum pot sa ma inscriu la testul online de limba straina?",
+        "document_id": "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-36",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Cum pot sa ma inscriu la testul online de limba straina?",
+        "document_id": "4a8af42a6c47f11b1d13d802bee4da49f7d449950fa3f74b338baa449e1e595b-1",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Ce tipuri de burse sunt disponibile la Politehnica?",
+        "document_id": "d9aaa3233afc85c50c8869a9a97f45c2e80bd9dcea6b434aec2d66ca2234b796-3",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Ce tipuri de burse sunt disponibile la Politehnica?",
+        "document_id": "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-78",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Ce tipuri de burse sunt disponibile la Politehnica?",
+        "document_id": "d9aaa3233afc85c50c8869a9a97f45c2e80bd9dcea6b434aec2d66ca2234b796-2",
+        "llm_score_1": 2,
+        "llm_score_2": 2,
+        "relevance_score": 1
+    },
+    {
+        "query": "Cum pot obtine bursa la Politehnica?",
+        "document_id": "d1e89b524e5b8b47f1f93467914735f9474cdc10081d397e6f315687d09db052-30",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Cum pot obtine bursa la Politehnica?",
+        "document_id": "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-272",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Cum pot obtine bursa la Politehnica?",
+        "document_id": "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-315",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Care este media minima necesara pentru a obtine o bursa?",
+        "document_id": "d9aaa3233afc85c50c8869a9a97f45c2e80bd9dcea6b434aec2d66ca2234b796-10",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Care este media minima necesara pentru a obtine o bursa?",
+        "document_id": "d9aaa3233afc85c50c8869a9a97f45c2e80bd9dcea6b434aec2d66ca2234b796-13",
+        "llm_score_1": 1,
+        "llm_score_2": 0,
+        "relevance_score": 1
+    },
+    {
+        "query": "Care este media minima necesara pentru a obtine o bursa?",
+        "document_id": "d9aaa3233afc85c50c8869a9a97f45c2e80bd9dcea6b434aec2d66ca2234b796-14",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Care sunt conditiile de promovare a unui an universitar la Politehnica?",
+        "document_id": "d1e89b524e5b8b47f1f93467914735f9474cdc10081d397e6f315687d09db052-30",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Care sunt conditiile de promovare a unui an universitar la Politehnica?",
+        "document_id": "bcba579c444019f0d3049720ae28075e7e2d3834011a96d548acb8c751e8d95b-22",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Care sunt conditiile de promovare a unui an universitar la Politehnica?",
+        "document_id": "36527b3da039b452b387028c350e8e537c8c6b5176f91649e53bf33924e493bb-5",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Care este cuantumul taxei de scolarizare la ACS?",
+        "document_id": "0939dd251ffa3b90ecb8af564934dc6ba1b92e780dfdf58548d6652a993628eb-72",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Care este cuantumul taxei de scolarizare la ACS?",
+        "document_id": "70316c29c4e024cfb07239b8cb041fe2e61b063ecc31311c2a24497c18e0195a-9",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Care este cuantumul taxei de scolarizare la ACS?",
+        "document_id": "305ffba5f7d4c89b1b0d23204ead08d29eea1ec1098c7799ba545633bab3c3c2-1",
+        "llm_score_1": 1,
+        "llm_score_2": 0,
+        "relevance_score": 1
+    },
+    {
+        "query": "Cum pot plati taxa de scolarizare?",
+        "document_id": "79426a1571b68492454210a4455253ad1c6ca02f95283000457c0e0eb426d81d-13",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Cum pot plati taxa de scolarizare?",
+        "document_id": "0939dd251ffa3b90ecb8af564934dc6ba1b92e780dfdf58548d6652a993628eb-72",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Cum pot plati taxa de scolarizare?",
+        "document_id": "70316c29c4e024cfb07239b8cb041fe2e61b063ecc31311c2a24497c18e0195a-9",
+        "llm_score_1": 2,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Cum se calculeaza media de bursa la Politehnica?",
+        "document_id": "36527b3da039b452b387028c350e8e537c8c6b5176f91649e53bf33924e493bb-9",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Cand are loc admiterea la licenta la ACS?",
+        "document_id": "6ccd6e8cf90ac5e0f62d36ab0c6545bdb0df7714986675e4854d0f00e6cfc934-1",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Cand are loc admiterea la licenta la ACS?",
+        "document_id": "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-68",
+        "llm_score_1": 2,
+        "llm_score_2": 2,
+        "relevance_score": 1
+    },
+    {
+        "query": "Cand are loc admiterea la licenta?",
+        "document_id": "95433f95bf4f9e5fef2fb7938a0ae137f2588497cb46ca97e61fd05660532466-6",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Cand are loc admiterea la master?",
+        "document_id": "1b1ea7137bcac57a08ed409352d4dafea078d3672aaa23e9e88a89e6ba380ff4-1",
+        "llm_score_1": 2,
+        "llm_score_2": 2,
+        "relevance_score": 1
+    },
+    {
+        "query": "Cand are loc admiterea la master?",
+        "document_id": "a6d9cdea7b06db11d13e1fd4b50c30fbca9db6da2616cd019773eb4baee44a2e-5",
+        "llm_score_1": 2,
+        "llm_score_2": 2,
+        "relevance_score": 1
+    },
+    {
+        "query": "Cand are loc admiterea la doctorat?",
+        "document_id": "0a7047bd9ee00f3d76a3f6e330d97e214cbc6a81ed25ef001a0d2834d408455f-1",
+        "llm_score_1": 2,
+        "llm_score_2": 2,
+        "relevance_score": 1
+    },
+    {
+        "query": "Cand are loc admiterea la doctorat?",
+        "document_id": "d43f4eaa3d93bf485a402f19f967f21b14b8011a675d9a5e0301629717d64291-6",
+        "llm_score_1": 2,
+        "llm_score_2": 2,
+        "relevance_score": 1
+    },
+    {
+        "query": "Ce documente sunt necesare pentru inmatriculare?",
+        "document_id": "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-146",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Ce documente sunt necesare pentru inmatriculare?",
+        "document_id": "57fffc9ae7f67be9c637b16ae3a994af2cbec240e5ea61a02f4d25fea85f1d10-6",
+        "llm_score_1": 2,
+        "llm_score_2": 2,
+        "relevance_score": 1
+    },
+    {
+        "query": "Ce documente sunt necesare pentru inscrierea la examenul de admitere?",
+        "document_id": "0a7047bd9ee00f3d76a3f6e330d97e214cbc6a81ed25ef001a0d2834d408455f-4",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Ce documente sunt necesare pentru inscrierea la examenul de admitere?",
+        "document_id": "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-219",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Ce documente sunt necesare pentru inscrierea la examenul de admitere?",
+        "document_id": "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-147",
+        "llm_score_1": 2,
+        "llm_score_2": 2,
+        "relevance_score": 1
+    },
+    {
+        "query": "Cate locuri sunt disponibile pentru admiterea la ACS?",
+        "document_id": "7261d53c1bc03b86e5609b82811972b54096ba162fef6abf2a9fc84018d179b4-4",
+        "llm_score_1": 1,
+        "llm_score_2": 2,
+        "relevance_score": 1
+    },
+    {
+        "query": "Cand are loc testul online de limba de la Politehnica?",
+        "document_id": "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-53",
+        "llm_score_1": 2,
+        "llm_score_2": 2,
+        "relevance_score": 1
+    },
+    {
+        "query": "Cand are loc testul online de limba de la Politehnica?",
+        "document_id": "4a8af42a6c47f11b1d13d802bee4da49f7d449950fa3f74b338baa449e1e595b-3",
+        "llm_score_1": 2,
+        "llm_score_2": 2,
+        "relevance_score": 1
+    },
+    {
+        "query": "Cum pot sa ma inscriu la testul online de limba straina?",
+        "document_id": "4a8af42a6c47f11b1d13d802bee4da49f7d449950fa3f74b338baa449e1e595b-3",
+        "llm_score_1": 2,
+        "llm_score_2": 2,
+        "relevance_score": 1
+    },
+    {
+        "query": "Cum pot sa ma inscriu la testul online de limba straina?",
+        "document_id": "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-53",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Ce tipuri de burse sunt disponibile la Politehnica?",
+        "document_id": "d9aaa3233afc85c50c8869a9a97f45c2e80bd9dcea6b434aec2d66ca2234b796-18",
+        "llm_score_1": 2,
+        "llm_score_2": 2,
+        "relevance_score": 1
+    },
+    {
+        "query": "Cum pot obtine bursa la Politehnica?",
+        "document_id": "3b29b0516a0b7af978077a8daaa189c3b82dad4559940a8acebc9017b6e97310-33",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Cum pot obtine bursa la Politehnica?",
+        "document_id": "36527b3da039b452b387028c350e8e537c8c6b5176f91649e53bf33924e493bb-3",
+        "llm_score_1": 1,
+        "llm_score_2": 0,
+        "relevance_score": 1
+    },
+    {
+        "query": "Cum pot obtine bursa la Politehnica?",
+        "document_id": "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-97",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Care sunt conditiile de promovare a unui an universitar la Politehnica?",
+        "document_id": "71788602578701b9e9b11da963eee9859a06e0dc3d482036b87e7c9c12f5fab5-15",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Care sunt conditiile de promovare a unui an universitar la Politehnica?",
+        "document_id": "3b29b0516a0b7af978077a8daaa189c3b82dad4559940a8acebc9017b6e97310-33",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Care este cuantumul taxei de scolarizare la ACS?",
+        "document_id": "79426a1571b68492454210a4455253ad1c6ca02f95283000457c0e0eb426d81d-13",
+        "llm_score_1": 1,
+        "llm_score_2": 0,
+        "relevance_score": 1
+    },
+    {
+        "query": "Care este cuantumul taxei de scolarizare la ACS?",
+        "document_id": "672577271c2e708d1597a074314ae1c6e2c501a0ea55477ba9124d256f0d763d-3",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Cum pot plati taxa de scolarizare?",
+        "document_id": "672577271c2e708d1597a074314ae1c6e2c501a0ea55477ba9124d256f0d763d-14",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Cum pot plati taxa de scolarizare?",
+        "document_id": "672577271c2e708d1597a074314ae1c6e2c501a0ea55477ba9124d256f0d763d-3",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Cum pot plati taxa de scolarizare?",
+        "document_id": "020962287c1797917927df2a9e9c5f1c0d701b8180527b701504210f7f4b3927-1",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Cum se calculeaza media de bursa la Politehnica?",
+        "document_id": "d9aaa3233afc85c50c8869a9a97f45c2e80bd9dcea6b434aec2d66ca2234b796-14",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Cum se calculeaza media de bursa la Politehnica?",
+        "document_id": "d9aaa3233afc85c50c8869a9a97f45c2e80bd9dcea6b434aec2d66ca2234b796-10",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Cum se calculeaza media de bursa la Politehnica?",
+        "document_id": "d9aaa3233afc85c50c8869a9a97f45c2e80bd9dcea6b434aec2d66ca2234b796-18",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Exista posibilitatea de a plati taxa de scolarizare in rate?",
+        "document_id": "672577271c2e708d1597a074314ae1c6e2c501a0ea55477ba9124d256f0d763d-14",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Exista posibilitatea de a plati taxa de scolarizare in rate?",
+        "document_id": "bcba579c444019f0d3049720ae28075e7e2d3834011a96d548acb8c751e8d95b-15",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Exista posibilitatea de a plati taxa de scolarizare in rate?",
+        "document_id": "672577271c2e708d1597a074314ae1c6e2c501a0ea55477ba9124d256f0d763d-3",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Care este calendarul de admitere?",
+        "document_id": "a6d9cdea7b06db11d13e1fd4b50c30fbca9db6da2616cd019773eb4baee44a2e-2",
+        "llm_score_1": 2,
+        "llm_score_2": 2,
+        "relevance_score": 1
+    },
+    {
+        "query": "Care este calendarul de admitere?",
+        "document_id": "0a7047bd9ee00f3d76a3f6e330d97e214cbc6a81ed25ef001a0d2834d408455f-1",
+        "llm_score_1": 2,
+        "llm_score_2": 2,
+        "relevance_score": 1
+    },
+    {
+        "query": "Cum pot intra pe locurile pentru olimpici la admiterea la licenta la ACS?",
+        "document_id": "90d452286979bc3ba13df942fe481c229bca45f701e35a41aac700dcf99479f4-1",
+        "llm_score_1": 2,
+        "llm_score_2": 2,
+        "relevance_score": 1
+    },
+    {
+        "query": "Cum pot intra pe locurile pentru olimpici la admiterea la licenta la ACS?",
+        "document_id": "d9aaa3233afc85c50c8869a9a97f45c2e80bd9dcea6b434aec2d66ca2234b796-6",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "In ce ordine se face admiterea candidatilor la Politehnica?",
+        "document_id": "491f908948d53e5b16fb1e16d5db1345049605301c9e3d3f7116532b523b9d98-5",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "In ce ordine se face admiterea candidatilor la Politehnica?",
+        "document_id": "2350258c519b2dda96612268851c0f3932f97cd1681d19df7eec652511e653db-12",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "In ce ordine se face admiterea candidatilor la Politehnica?",
+        "document_id": "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-234",
+        "llm_score_1": 2,
+        "llm_score_2": 2,
+        "relevance_score": 1
+    },
+    {
+        "query": "Ma pot inscrie la examenul de admitere la licenta la mai multe facultati?",
+        "document_id": "7261d53c1bc03b86e5609b82811972b54096ba162fef6abf2a9fc84018d179b4-10",
+        "llm_score_1": 2,
+        "llm_score_2": 2,
+        "relevance_score": 1
+    },
+    {
+        "query": "Ma pot inscrie la examenul de admitere la licenta la mai multe facultati?",
+        "document_id": "57fffc9ae7f67be9c637b16ae3a994af2cbec240e5ea61a02f4d25fea85f1d10-1",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Care sunt disciplinele de concurs de la examenul de admitere la licenta?",
+        "document_id": "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-18",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Care este cuantumul taxei de inscriere la examenul de admitere la licenta la Politehnica?",
+        "document_id": "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-213",
+        "llm_score_1": 2,
+        "llm_score_2": 2,
+        "relevance_score": 1
+    },
+    {
+        "query": "Care este cuantumul taxei de inscriere la examenul de admitere la licenta la Politehnica?",
+        "document_id": "96e70f4bda047167435c1c790d1eed7085397707930e9d47fee17c191c260855-6",
+        "llm_score_1": 2,
+        "llm_score_2": 2,
+        "relevance_score": 1
+    },
+    {
+        "query": "Care este cuantumul taxei de inscriere la examenul de admitere la licenta la Politehnica?",
+        "document_id": "81eecb583745caf19cfcc51fd6934ec333208f8b5736456e051aa42e11c6104e-2",
+        "llm_score_1": 2,
+        "llm_score_2": 2,
+        "relevance_score": 1
+    },
+    {
+        "query": "Care este cuantumul taxei de inscriere la examenul de admitere la master la Politehnica?",
+        "document_id": "6b808561f11405e18487fc62e100ff4fa8a350384fb5f9ec6723131d690d862f-6",
+        "llm_score_1": 2,
+        "llm_score_2": 2,
+        "relevance_score": 1
+    },
+    {
+        "query": "Care este cuantumul taxei de inscriere la examenul de admitere la master la Politehnica?",
+        "document_id": "6b808561f11405e18487fc62e100ff4fa8a350384fb5f9ec6723131d690d862f-4",
+        "llm_score_1": 2,
+        "llm_score_2": 2,
+        "relevance_score": 1
+    },
+    {
+        "query": "Care este cuantumul taxei de inscriere la examenul de admitere la doctorat la ACS?",
+        "document_id": "c642c14d935f4cf36dcf3277811b920052336016da4e5f53e7161b29d9d179a3-1",
+        "llm_score_1": 1,
+        "llm_score_2": 2,
+        "relevance_score": 1
+    },
+    {
+        "query": "Care este cuantumul taxei de inscriere la examenul de admitere la doctorat la ACS?",
+        "document_id": "6b808561f11405e18487fc62e100ff4fa8a350384fb5f9ec6723131d690d862f-6",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Cand se afiseaza rezultatele la admiterea la licenta la ACS?",
+        "document_id": "491f908948d53e5b16fb1e16d5db1345049605301c9e3d3f7116532b523b9d98-7",
+        "llm_score_1": 2,
+        "llm_score_2": 2,
+        "relevance_score": 1
+    },
+    {
+        "query": "Cand se afiseaza rezultatele la admiterea la licenta la FAIMA?",
+        "document_id": "491f908948d53e5b16fb1e16d5db1345049605301c9e3d3f7116532b523b9d98-7",
+        "llm_score_1": 2,
+        "llm_score_2": 2,
+        "relevance_score": 1
+    },
+    {
+        "query": "Cand se afiseaza rezultatele la admiterea la licenta la FAIMA?",
+        "document_id": "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-23",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Cand se afiseaza rezultatele la admiterea la licenta la FAIMA?",
+        "document_id": "a192eeb16b38c512b52907612a334423de5ea7a64b05047d05038e52e01dcad9-1",
+        "llm_score_1": 2,
+        "llm_score_2": 2,
+        "relevance_score": 1
+    },
+    {
+        "query": "Ce facultati sunt in cadrul Politehnicii?",
+        "document_id": "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-9",
+        "llm_score_1": 1,
+        "llm_score_2": 0,
+        "relevance_score": 1
+    },
+    {
+        "query": "Cate programe de studii de masterat sunt la ACS?",
+        "document_id": "b0cbeb3807d8d4381a6714716c6b975a969f6f161745575e700833bee09cd1c7-1",
+        "llm_score_1": 2,
+        "llm_score_2": 2,
+        "relevance_score": 1
+    },
+    {
+        "query": "Cate programe de studii de masterat sunt la ACS?",
+        "document_id": "be5ae40f334f68882d68d7d4400977cb93057a69e326335fee6a238e0cf042f4-1",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Ce materii sunt la facultatea de Automatica si Calculatoare?",
+        "document_id": "699b8dd450c1d79a46377ef809f95fb7a405af6c53b96aba0945dd16837ac73c-1",
+        "llm_score_1": 2,
+        "llm_score_2": 2,
+        "relevance_score": 1
+    },
+    {
+        "query": "Ce materii sunt la facultatea de Automatica si Calculatoare?",
+        "document_id": "b0cbeb3807d8d4381a6714716c6b975a969f6f161745575e700833bee09cd1c7-1",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Ce materii sunt la facultatea de Automatica si Calculatoare?",
+        "document_id": "491f908948d53e5b16fb1e16d5db1345049605301c9e3d3f7116532b523b9d98-1",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Care sunt conditiile de admitere la licenta la ETTI?",
+        "document_id": "3b29b0516a0b7af978077a8daaa189c3b82dad4559940a8acebc9017b6e97310-21",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Care este cuantumul burselor?",
+        "document_id": "d9aaa3233afc85c50c8869a9a97f45c2e80bd9dcea6b434aec2d66ca2234b796-10",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Care este cuantumul burselor?",
+        "document_id": "d9aaa3233afc85c50c8869a9a97f45c2e80bd9dcea6b434aec2d66ca2234b796-13",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Ce presupune sesiunea 3 de admitere la licenta?",
+        "document_id": "f73ea1d90056ccb3e9135467f94bef99f2294b8ec52d73cc838a697a36565ea8-1",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Ce presupune sesiunea 3 de admitere la licenta?",
+        "document_id": "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-51",
+        "llm_score_1": 0,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Ce presupune sesiunea 3 de admitere la licenta?",
+        "document_id": "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-12",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Cand are loc simularea examenului de admitere la licenta la ACS?",
+        "document_id": "6ccd6e8cf90ac5e0f62d36ab0c6545bdb0df7714986675e4854d0f00e6cfc934-2",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Cand are loc simularea examenului de admitere la licenta la ACS?",
+        "document_id": "491f908948d53e5b16fb1e16d5db1345049605301c9e3d3f7116532b523b9d98-7",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Cand are loc simularea examenului de admitere la licenta la ACS?",
+        "document_id": "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-23",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Cum se calculeaza media de admitere la licenta?",
+        "document_id": "85fcf9d8684602276ff1fc4ac04e10d3fb6a6c2732942ac846889086a23d3e5d-5",
+        "llm_score_1": 2,
+        "llm_score_2": 2,
+        "relevance_score": 1
+    },
+    {
+        "query": "Cum se calculeaza media de admitere la licenta?",
+        "document_id": "70316c29c4e024cfb07239b8cb041fe2e61b063ecc31311c2a24497c18e0195a-13",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Daca ma inscriu la mai multe facultati pot plati o singura taxa de inscriere?",
+        "document_id": "020962287c1797917927df2a9e9c5f1c0d701b8180527b701504210f7f4b3927-1",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Daca ma inscriu la mai multe facultati pot plati o singura taxa de inscriere?",
+        "document_id": "c642c14d935f4cf36dcf3277811b920052336016da4e5f53e7161b29d9d179a3-1",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Daca ma inscriu la mai multe facultati pot plati o singura taxa de inscriere?",
+        "document_id": "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-145",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Cum pot opta pentru cazare la camin?",
+        "document_id": "bcba579c444019f0d3049720ae28075e7e2d3834011a96d548acb8c751e8d95b-9",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Cum pot opta pentru cazare la camin?",
+        "document_id": "a98a700ef6b47f46f4820a8597f1e9f15e10b6ff2acf9ea891b73ec6c83fabb0-30",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Care este structura unui an universitar?",
+        "document_id": "71788602578701b9e9b11da963eee9859a06e0dc3d482036b87e7c9c12f5fab5-15",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Cand are loc admiterea la licenta la ACS?",
+        "document_id": "1b1ea7137bcac57a08ed409352d4dafea078d3672aaa23e9e88a89e6ba380ff4-1",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Cand are loc admiterea la licenta la ACS?",
+        "document_id": "c0a422c70b7570fc7a2ae691c825eb5983b6554c05d5f5d6c27c39417ce17437-1",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Cand are loc admiterea la licenta?",
+        "document_id": "1b1ea7137bcac57a08ed409352d4dafea078d3672aaa23e9e88a89e6ba380ff4-1",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Cand are loc admiterea la master?",
+        "document_id": "57fffc9ae7f67be9c637b16ae3a994af2cbec240e5ea61a02f4d25fea85f1d10-4",
+        "llm_score_1": 0,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Cand are loc admiterea la doctorat?",
+        "document_id": "36527b3da039b452b387028c350e8e537c8c6b5176f91649e53bf33924e493bb-5",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Ce documente sunt necesare pentru inmatriculare?",
+        "document_id": "36527b3da039b452b387028c350e8e537c8c6b5176f91649e53bf33924e493bb-6",
+        "llm_score_1": 2,
+        "llm_score_2": 2,
+        "relevance_score": 1
+    },
+    {
+        "query": "Ce documente sunt necesare pentru inmatriculare?",
+        "document_id": "79426a1571b68492454210a4455253ad1c6ca02f95283000457c0e0eb426d81d-5",
+        "llm_score_1": 1,
+        "llm_score_2": 2,
+        "relevance_score": 1
+    },
+    {
+        "query": "Ce documente sunt necesare pentru inscrierea la examenul de admitere?",
+        "document_id": "3b29b0516a0b7af978077a8daaa189c3b82dad4559940a8acebc9017b6e97310-36",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Ce documente sunt necesare pentru inscrierea la examenul de admitere?",
+        "document_id": "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-208",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Cate locuri sunt disponibile pentru admiterea la ACS?",
+        "document_id": "0c535a64d99d22c4e510b4d924b4810e38635b89c37f76a59829b2a585f798d6-1",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Cate locuri sunt disponibile pentru admiterea la ACS?",
+        "document_id": "57fffc9ae7f67be9c637b16ae3a994af2cbec240e5ea61a02f4d25fea85f1d10-7",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Cand are loc testul online de limba de la Politehnica?",
+        "document_id": "d30921449a2b0b31d12ccc546028a7e3af51f9dc6a39bcbd675f7003c2029704-2",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Ce documente sunt necesare pentru a demonstra cunostintele lingvistice la inscrierea la un program de studii in limba engleza?",
+        "document_id": "672577271c2e708d1597a074314ae1c6e2c501a0ea55477ba9124d256f0d763d-12",
+        "llm_score_1": 2,
+        "llm_score_2": 2,
+        "relevance_score": 1
+    },
+    {
+        "query": "Ce documente sunt necesare pentru a demonstra cunostintele lingvistice la inscrierea la un program de studii in limba engleza?",
+        "document_id": "d12056e2c2c334eab800875dc06fe79b0639c4249b41a79f3d3e27777b354074-14",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Cum pot sa ma inscriu la testul online de limba straina?",
+        "document_id": "4a8af42a6c47f11b1d13d802bee4da49f7d449950fa3f74b338baa449e1e595b-2",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Ce tipuri de burse sunt disponibile la Politehnica?",
+        "document_id": "d1e89b524e5b8b47f1f93467914735f9474cdc10081d397e6f315687d09db052-45",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Ce tipuri de burse sunt disponibile la Politehnica?",
+        "document_id": "0939dd251ffa3b90ecb8af564934dc6ba1b92e780dfdf58548d6652a993628eb-20",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Cum pot obtine bursa la Politehnica?",
+        "document_id": "0939dd251ffa3b90ecb8af564934dc6ba1b92e780dfdf58548d6652a993628eb-47",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Cum pot obtine bursa la Politehnica?",
+        "document_id": "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-123",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Care este media minima necesara pentru a obtine o bursa?",
+        "document_id": "c642c14d935f4cf36dcf3277811b920052336016da4e5f53e7161b29d9d179a3-1",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Care este media minima necesara pentru a obtine o bursa?",
+        "document_id": "020962287c1797917927df2a9e9c5f1c0d701b8180527b701504210f7f4b3927-1",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Care sunt conditiile de promovare a unui an universitar la Politehnica?",
+        "document_id": "3b29b0516a0b7af978077a8daaa189c3b82dad4559940a8acebc9017b6e97310-32",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Care este cuantumul taxei de scolarizare la ACS?",
+        "document_id": "71788602578701b9e9b11da963eee9859a06e0dc3d482036b87e7c9c12f5fab5-26",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Care este cuantumul taxei de scolarizare la ACS?",
+        "document_id": "71788602578701b9e9b11da963eee9859a06e0dc3d482036b87e7c9c12f5fab5-23",
+        "llm_score_1": 1,
+        "llm_score_2": 0,
+        "relevance_score": 1
+    },
+    {
+        "query": "Cum pot plati taxa de scolarizare?",
+        "document_id": "a37342ebebbd2f79a70786a132bbcef95f2580f4ba5ed4d031106c77e9acf1dc-1",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Cum pot plati taxa de scolarizare?",
+        "document_id": "3b29b0516a0b7af978077a8daaa189c3b82dad4559940a8acebc9017b6e97310-13",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Cum se calculeaza media de bursa la Politehnica?",
+        "document_id": "0939dd251ffa3b90ecb8af564934dc6ba1b92e780dfdf58548d6652a993628eb-19",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Cum se calculeaza media de bursa la Politehnica?",
+        "document_id": "0939dd251ffa3b90ecb8af564934dc6ba1b92e780dfdf58548d6652a993628eb-20",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Cum se calculeaza media de bursa la Politehnica?",
+        "document_id": "0939dd251ffa3b90ecb8af564934dc6ba1b92e780dfdf58548d6652a993628eb-72",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Exista posibilitatea de a plati taxa de scolarizare in rate?",
+        "document_id": "70316c29c4e024cfb07239b8cb041fe2e61b063ecc31311c2a24497c18e0195a-9",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Exista posibilitatea de a plati taxa de scolarizare in rate?",
+        "document_id": "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-211",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Care este calendarul de admitere?",
+        "document_id": "6b808561f11405e18487fc62e100ff4fa8a350384fb5f9ec6723131d690d862f-5",
+        "llm_score_1": 2,
+        "llm_score_2": 2,
+        "relevance_score": 1
+    },
+    {
+        "query": "Care este calendarul de admitere?",
+        "document_id": "79426a1571b68492454210a4455253ad1c6ca02f95283000457c0e0eb426d81d-24",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Cum pot intra pe locurile pentru olimpici la admiterea la licenta la ACS?",
+        "document_id": "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-161",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Cum pot intra pe locurile pentru olimpici la admiterea la licenta la ACS?",
+        "document_id": "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-158",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "In ce ordine se face admiterea candidatilor la Politehnica?",
+        "document_id": "6b808561f11405e18487fc62e100ff4fa8a350384fb5f9ec6723131d690d862f-7",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "In ce ordine se face admiterea candidatilor la Politehnica?",
+        "document_id": "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-150",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Ma pot inscrie la examenul de admitere la licenta la mai multe facultati?",
+        "document_id": "f9a22cdce6042599959124756d15ab044d82bdda0dac2c00134ba7b326d76d5a-1",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Care sunt disciplinele de concurs de la examenul de admitere la licenta?",
+        "document_id": "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-52",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Care sunt disciplinele de concurs de la examenul de admitere la licenta?",
+        "document_id": "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-95",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Care este cuantumul taxei de inscriere la examenul de admitere la licenta la Politehnica?",
+        "document_id": "79426a1571b68492454210a4455253ad1c6ca02f95283000457c0e0eb426d81d-22",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Care este cuantumul taxei de inscriere la examenul de admitere la licenta la Politehnica?",
+        "document_id": "7bf57b4b6d7cbb0dddcbce41c0a9202ff1f3449b21e0725519cf9b30214b66f8-5",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Care este cuantumul taxei de inscriere la examenul de admitere la master la Politehnica?",
+        "document_id": "79426a1571b68492454210a4455253ad1c6ca02f95283000457c0e0eb426d81d-17",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Care este cuantumul taxei de inscriere la examenul de admitere la master la Politehnica?",
+        "document_id": "ec2388509c14d869761ef5d7b677f47daec0847c082df56e3d07909b3a20a0cc-6",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Care este cuantumul taxei de inscriere la examenul de admitere la doctorat la ACS?",
+        "document_id": "d43f4eaa3d93bf485a402f19f967f21b14b8011a675d9a5e0301629717d64291-10",
+        "llm_score_1": 1,
+        "llm_score_2": 0,
+        "relevance_score": 1
+    },
+    {
+        "query": "Cand se afiseaza rezultatele la admiterea la licenta la ACS?",
+        "document_id": "96e70f4bda047167435c1c790d1eed7085397707930e9d47fee17c191c260855-2",
+        "llm_score_1": 2,
+        "llm_score_2": 2,
+        "relevance_score": 1
+    },
+    {
+        "query": "Cand se afiseaza rezultatele la admiterea la licenta la FAIMA?",
+        "document_id": "491f908948d53e5b16fb1e16d5db1345049605301c9e3d3f7116532b523b9d98-4",
+        "llm_score_1": 2,
+        "llm_score_2": 2,
+        "relevance_score": 1
+    },
+    {
+        "query": "Ce facultati sunt in cadrul Politehnicii?",
+        "document_id": "2350258c519b2dda96612268851c0f3932f97cd1681d19df7eec652511e653db-19",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Ce facultati sunt in cadrul Politehnicii?",
+        "document_id": "020962287c1797917927df2a9e9c5f1c0d701b8180527b701504210f7f4b3927-2",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Ce materii sunt la facultatea de Automatica si Calculatoare?",
+        "document_id": "a98a700ef6b47f46f4820a8597f1e9f15e10b6ff2acf9ea891b73ec6c83fabb0-29",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Ce materii sunt la facultatea de Automatica si Calculatoare?",
+        "document_id": "b0cbeb3807d8d4381a6714716c6b975a969f6f161745575e700833bee09cd1c7-3",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Care sunt conditiile de admitere la licenta la ETTI?",
+        "document_id": "5ed022490c4bb6b106bfb96e9f513a2f775f895e59731b26cd505937a92b04e3-1",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Care sunt conditiile de admitere la licenta la ETTI?",
+        "document_id": "020962287c1797917927df2a9e9c5f1c0d701b8180527b701504210f7f4b3927-1",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Care este cuantumul burselor?",
+        "document_id": "0939dd251ffa3b90ecb8af564934dc6ba1b92e780dfdf58548d6652a993628eb-20",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Care este cuantumul bursei sociale?",
+        "document_id": "bcba579c444019f0d3049720ae28075e7e2d3834011a96d548acb8c751e8d95b-21",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Care este cuantumul bursei sociale?",
+        "document_id": "0939dd251ffa3b90ecb8af564934dc6ba1b92e780dfdf58548d6652a993628eb-72",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Ce presupune sesiunea 3 de admitere la licenta?",
+        "document_id": "96e70f4bda047167435c1c790d1eed7085397707930e9d47fee17c191c260855-2",
+        "llm_score_1": 0,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Cand are loc simularea examenului de admitere la licenta la ACS?",
+        "document_id": "85fcf9d8684602276ff1fc4ac04e10d3fb6a6c2732942ac846889086a23d3e5d-1",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Cum se calculeaza media de admitere la licenta?",
+        "document_id": "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-362",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Cum se calculeaza media de admitere la licenta?",
+        "document_id": "020962287c1797917927df2a9e9c5f1c0d701b8180527b701504210f7f4b3927-1",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Daca ma inscriu la mai multe facultati pot plati o singura taxa de inscriere?",
+        "document_id": "79426a1571b68492454210a4455253ad1c6ca02f95283000457c0e0eb426d81d-22",
+        "llm_score_1": 1,
+        "llm_score_2": 0,
+        "relevance_score": 1
+    },
+    {
+        "query": "Daca ma inscriu la mai multe facultati pot plati o singura taxa de inscriere?",
+        "document_id": "7bf57b4b6d7cbb0dddcbce41c0a9202ff1f3449b21e0725519cf9b30214b66f8-5",
+        "llm_score_1": 1,
+        "llm_score_2": 0,
+        "relevance_score": 1
+    },
+    {
+        "query": "Care este structura unui an universitar?",
+        "document_id": "bcba579c444019f0d3049720ae28075e7e2d3834011a96d548acb8c751e8d95b-22",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Care este structura unui an universitar?",
+        "document_id": "79426a1571b68492454210a4455253ad1c6ca02f95283000457c0e0eb426d81d-3",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Cand are loc admiterea la licenta la ACS?",
+        "document_id": "491f908948d53e5b16fb1e16d5db1345049605301c9e3d3f7116532b523b9d98-7",
+        "llm_score_1": 2,
+        "llm_score_2": 2,
+        "relevance_score": 1
+    },
+    {
+        "query": "Cand are loc admiterea la licenta la ACS?",
+        "document_id": "a6d93e140ed275d649d698d7fc77e3bef36eb660ae7f730e74df6a05ba887174-2",
+        "llm_score_1": 2,
+        "llm_score_2": 2,
+        "relevance_score": 1
+    },
+    {
+        "query": "Cand are loc admiterea la doctorat?",
+        "document_id": "d43f4eaa3d93bf485a402f19f967f21b14b8011a675d9a5e0301629717d64291-4",
+        "llm_score_1": 2,
+        "llm_score_2": 2,
+        "relevance_score": 1
+    },
+    {
+        "query": "Ce documente sunt necesare pentru inmatriculare?",
+        "document_id": "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-219",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Ce documente sunt necesare pentru inmatriculare?",
+        "document_id": "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-215",
+        "llm_score_1": 2,
+        "llm_score_2": 2,
+        "relevance_score": 1
+    },
+    {
+        "query": "Cate locuri sunt disponibile pentru admiterea la ACS?",
+        "document_id": "57fffc9ae7f67be9c637b16ae3a994af2cbec240e5ea61a02f4d25fea85f1d10-1",
+        "llm_score_1": 0,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Cand are loc testul online de limba de la Politehnica?",
+        "document_id": "ea1eefdfe13b4e547017a55349bc78edf700398a89c7cb73363d4ba10f043fd0-2",
+        "llm_score_1": 2,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Cand are loc testul online de limba de la Politehnica?",
+        "document_id": "79426a1571b68492454210a4455253ad1c6ca02f95283000457c0e0eb426d81d-10",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Ce documente sunt necesare pentru a demonstra cunostintele lingvistice la inscrierea la un program de studii in limba engleza?",
+        "document_id": "2f00f574cf6bcfcaa980d0cc9820112b399e68a252d8bcc1248ce1c84c8bf16f-24",
+        "llm_score_1": 2,
+        "llm_score_2": 2,
+        "relevance_score": 1
+    },
+    {
+        "query": "Ce tipuri de burse sunt disponibile la Politehnica?",
+        "document_id": "3b29b0516a0b7af978077a8daaa189c3b82dad4559940a8acebc9017b6e97310-33",
+        "llm_score_1": 2,
+        "llm_score_2": 2,
+        "relevance_score": 1
+    },
+    {
+        "query": "Ce tipuri de burse sunt disponibile la Politehnica?",
+        "document_id": "71788602578701b9e9b11da963eee9859a06e0dc3d482036b87e7c9c12f5fab5-37",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Cum pot obtine bursa la Politehnica?",
+        "document_id": "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-78",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Care este media minima necesara pentru a obtine o bursa?",
+        "document_id": "85fcf9d8684602276ff1fc4ac04e10d3fb6a6c2732942ac846889086a23d3e5d-5",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Care este media minima necesara pentru a obtine o bursa?",
+        "document_id": "36527b3da039b452b387028c350e8e537c8c6b5176f91649e53bf33924e493bb-9",
+        "llm_score_1": 1,
+        "llm_score_2": 2,
+        "relevance_score": 1
+    },
+    {
+        "query": "Care sunt conditiile de promovare a unui an universitar la Politehnica?",
+        "document_id": "3b29b0516a0b7af978077a8daaa189c3b82dad4559940a8acebc9017b6e97310-35",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Exista posibilitatea de a plati taxa de scolarizare in rate?",
+        "document_id": "a37342ebebbd2f79a70786a132bbcef95f2580f4ba5ed4d031106c77e9acf1dc-1",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Cum pot intra pe locurile pentru olimpici la admiterea la licenta la ACS?",
+        "document_id": "7a3c161eaf2c5b7bc3810c3326c09ba92a280b04a12139ef85fd0206c692aef1-1",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Cum pot intra pe locurile pentru olimpici la admiterea la licenta la ACS?",
+        "document_id": "3964e339dd97768e4b15e556ba83828d25ca962d94dc2564c1b90f49c60d9064-1",
+        "llm_score_1": 1,
+        "llm_score_2": 2,
+        "relevance_score": 1
+    },
+    {
+        "query": "In ce ordine se face admiterea candidatilor la Politehnica?",
+        "document_id": "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-235",
+        "llm_score_1": 2,
+        "llm_score_2": 2,
+        "relevance_score": 1
+    },
+    {
+        "query": "Ma pot inscrie la examenul de admitere la licenta la mai multe facultati?",
+        "document_id": "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-14",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Ma pot inscrie la examenul de admitere la licenta la mai multe facultati?",
+        "document_id": "a6d93e140ed275d649d698d7fc77e3bef36eb660ae7f730e74df6a05ba887174-6",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Care sunt disciplinele de concurs de la examenul de admitere la licenta?",
+        "document_id": "c19be514f53e9a2835519a0ee7a66d214e8146993b799c6e8816566647253006-10",
+        "llm_score_1": 2,
+        "llm_score_2": 2,
+        "relevance_score": 1
+    },
+    {
+        "query": "Care sunt disciplinele de concurs de la examenul de admitere la licenta?",
+        "document_id": "dfdb8f5a548d82b6a9366ea708589337dc0eba49f639f17a23bcf8d922b12a3f-2",
+        "llm_score_1": 2,
+        "llm_score_2": 2,
+        "relevance_score": 1
+    },
+    {
+        "query": "Care este cuantumul taxei de inscriere la examenul de admitere la licenta la Politehnica?",
+        "document_id": "c642c14d935f4cf36dcf3277811b920052336016da4e5f53e7161b29d9d179a3-1",
+        "llm_score_1": 2,
+        "llm_score_2": 2,
+        "relevance_score": 1
+    },
+    {
+        "query": "Care este cuantumul taxei de inscriere la examenul de admitere la licenta la Politehnica?",
+        "document_id": "0a7047bd9ee00f3d76a3f6e330d97e214cbc6a81ed25ef001a0d2834d408455f-3",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Care este cuantumul taxei de inscriere la examenul de admitere la master la Politehnica?",
+        "document_id": "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-155",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Care este cuantumul taxei de inscriere la examenul de admitere la doctorat la ACS?",
+        "document_id": "6b808561f11405e18487fc62e100ff4fa8a350384fb5f9ec6723131d690d862f-4",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Care este cuantumul taxei de inscriere la examenul de admitere la doctorat la ACS?",
+        "document_id": "96e70f4bda047167435c1c790d1eed7085397707930e9d47fee17c191c260855-6",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Cand se afiseaza rezultatele la admiterea la licenta la ACS?",
+        "document_id": "0a7047bd9ee00f3d76a3f6e330d97e214cbc6a81ed25ef001a0d2834d408455f-4",
+        "llm_score_1": 1,
+        "llm_score_2": 0,
+        "relevance_score": 1
+    },
+    {
+        "query": "Cand se afiseaza rezultatele la admiterea la licenta la ACS?",
+        "document_id": "36527b3da039b452b387028c350e8e537c8c6b5176f91649e53bf33924e493bb-8",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Ce facultati sunt in cadrul Politehnicii?",
+        "document_id": "0939dd251ffa3b90ecb8af564934dc6ba1b92e780dfdf58548d6652a993628eb-66",
+        "llm_score_1": 2,
+        "llm_score_2": 2,
+        "relevance_score": 1
+    },
+    {
+        "query": "Cate programe de studii de masterat sunt la ACS?",
+        "document_id": "3bd13d1d34b8e5760ef3fac434d28f3cde6cb006513c736cba0833a0f067ab49-1",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Ce materii sunt la facultatea de Automatica si Calculatoare?",
+        "document_id": "6ccd6e8cf90ac5e0f62d36ab0c6545bdb0df7714986675e4854d0f00e6cfc934-11",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Ce materii sunt la facultatea de Automatica si Calculatoare?",
+        "document_id": "8aba3ef0eb6c17525f9db33637b2edba7417d5506b86b267ece713e2fa83822e-2",
+        "llm_score_1": 1,
+        "llm_score_2": 0,
+        "relevance_score": 1
+    },
+    {
+        "query": "Care sunt conditiile de admitere la licenta la ETTI?",
+        "document_id": "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-211",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Care sunt conditiile de admitere la licenta la ETTI?",
+        "document_id": "81eecb583745caf19cfcc51fd6934ec333208f8b5736456e051aa42e11c6104e-2",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Care este cuantumul burselor?",
+        "document_id": "672577271c2e708d1597a074314ae1c6e2c501a0ea55477ba9124d256f0d763d-14",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Care este cuantumul burselor?",
+        "document_id": "bcba579c444019f0d3049720ae28075e7e2d3834011a96d548acb8c751e8d95b-22",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Care este cuantumul bursei sociale?",
+        "document_id": "d9aaa3233afc85c50c8869a9a97f45c2e80bd9dcea6b434aec2d66ca2234b796-15",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Care este cuantumul bursei sociale?",
+        "document_id": "d9aaa3233afc85c50c8869a9a97f45c2e80bd9dcea6b434aec2d66ca2234b796-14",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Ce presupune sesiunea 3 de admitere la licenta?",
+        "document_id": "1b1ea7137bcac57a08ed409352d4dafea078d3672aaa23e9e88a89e6ba380ff4-1",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Ce presupune sesiunea 3 de admitere la licenta?",
+        "document_id": "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-45",
+        "llm_score_1": 0,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Cand are loc simularea examenului de admitere la licenta la ACS?",
+        "document_id": "f73ea1d90056ccb3e9135467f94bef99f2294b8ec52d73cc838a697a36565ea8-1",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Cand are loc simularea examenului de admitere la licenta la ACS?",
+        "document_id": "57fffc9ae7f67be9c637b16ae3a994af2cbec240e5ea61a02f4d25fea85f1d10-4",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Cum se calculeaza media de admitere la licenta?",
+        "document_id": "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-361",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Daca ma inscriu la mai multe facultati pot plati o singura taxa de inscriere?",
+        "document_id": "96e70f4bda047167435c1c790d1eed7085397707930e9d47fee17c191c260855-6",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Daca ma inscriu la mai multe facultati pot plati o singura taxa de inscriere?",
+        "document_id": "81eecb583745caf19cfcc51fd6934ec333208f8b5736456e051aa42e11c6104e-2",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Cum pot opta pentru cazare la camin?",
+        "document_id": "bcba579c444019f0d3049720ae28075e7e2d3834011a96d548acb8c751e8d95b-10",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Care este structura unui an universitar?",
+        "document_id": "71788602578701b9e9b11da963eee9859a06e0dc3d482036b87e7c9c12f5fab5-34",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Cand are loc admiterea la licenta la ACS?",
+        "document_id": "57fffc9ae7f67be9c637b16ae3a994af2cbec240e5ea61a02f4d25fea85f1d10-4",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Cand are loc admiterea la licenta la ACS?",
+        "document_id": "6b808561f11405e18487fc62e100ff4fa8a350384fb5f9ec6723131d690d862f-7",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Cand are loc admiterea la licenta?",
+        "document_id": "96e70f4bda047167435c1c790d1eed7085397707930e9d47fee17c191c260855-2",
+        "llm_score_1": 2,
+        "llm_score_2": 2,
+        "relevance_score": 1
+    },
+    {
+        "query": "Cand are loc admiterea la licenta?",
+        "document_id": "6b808561f11405e18487fc62e100ff4fa8a350384fb5f9ec6723131d690d862f-5",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Cand are loc admiterea la master?",
+        "document_id": "a6d9cdea7b06db11d13e1fd4b50c30fbca9db6da2616cd019773eb4baee44a2e-3",
+        "llm_score_1": 2,
+        "llm_score_2": 2,
+        "relevance_score": 1
+    },
+    {
+        "query": "Cand are loc admiterea la master?",
+        "document_id": "d1e89b524e5b8b47f1f93467914735f9474cdc10081d397e6f315687d09db052-31",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Cand are loc admiterea la doctorat?",
+        "document_id": "b7917beb790ca93b316b750aabe00a45e594c01536dc44731387c51d5812e372-1",
+        "llm_score_1": 2,
+        "llm_score_2": 2,
+        "relevance_score": 1
+    },
+    {
+        "query": "Cand are loc admiterea la doctorat?",
+        "document_id": "95433f95bf4f9e5fef2fb7938a0ae137f2588497cb46ca97e61fd05660532466-1",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Ce documente sunt necesare pentru inmatriculare?",
+        "document_id": "04c1e1af9cd50ab53ce9e2c650c01f09b94401edadccca40f8d84e10111fabfc-3",
+        "llm_score_1": 2,
+        "llm_score_2": 2,
+        "relevance_score": 1
+    },
+    {
+        "query": "Ce documente sunt necesare pentru inscrierea la examenul de admitere?",
+        "document_id": "2350258c519b2dda96612268851c0f3932f97cd1681d19df7eec652511e653db-12",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Cate locuri sunt disponibile pentru admiterea la ACS?",
+        "document_id": "d43f4eaa3d93bf485a402f19f967f21b14b8011a675d9a5e0301629717d64291-5",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Cand are loc testul online de limba de la Politehnica?",
+        "document_id": "7261d53c1bc03b86e5609b82811972b54096ba162fef6abf2a9fc84018d179b4-11",
+        "llm_score_1": 2,
+        "llm_score_2": 2,
+        "relevance_score": 1
+    },
+    {
+        "query": "Ce documente sunt necesare pentru a demonstra cunostintele lingvistice la inscrierea la un program de studii in limba engleza?",
+        "document_id": "a6d93e140ed275d649d698d7fc77e3bef36eb660ae7f730e74df6a05ba887174-13",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Ce documente sunt necesare pentru a demonstra cunostintele lingvistice la inscrierea la un program de studii in limba engleza?",
+        "document_id": "5d71a3e187fad8c7a617b3412c84a34381ede66ac591f5e512fd0b8e902be7f6-5",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Cum pot sa ma inscriu la testul online de limba straina?",
+        "document_id": "a6d93e140ed275d649d698d7fc77e3bef36eb660ae7f730e74df6a05ba887174-13",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Ce tipuri de burse sunt disponibile la Politehnica?",
+        "document_id": "3b29b0516a0b7af978077a8daaa189c3b82dad4559940a8acebc9017b6e97310-26",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Cum pot obtine bursa la Politehnica?",
+        "document_id": "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-281",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Care este media minima necesara pentru a obtine o bursa?",
+        "document_id": "732087e78176abf56bae370e2ba62c59007b4fee638d65d43def3634abfd5601-1",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Care este media minima necesara pentru a obtine o bursa?",
+        "document_id": "3b29b0516a0b7af978077a8daaa189c3b82dad4559940a8acebc9017b6e97310-21",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Care sunt conditiile de promovare a unui an universitar la Politehnica?",
+        "document_id": "d9aaa3233afc85c50c8869a9a97f45c2e80bd9dcea6b434aec2d66ca2234b796-19",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Care sunt conditiile de promovare a unui an universitar la Politehnica?",
+        "document_id": "2350258c519b2dda96612268851c0f3932f97cd1681d19df7eec652511e653db-19",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Care este cuantumul taxei de scolarizare la ACS?",
+        "document_id": "bcba579c444019f0d3049720ae28075e7e2d3834011a96d548acb8c751e8d95b-19",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Care este cuantumul taxei de scolarizare la ACS?",
+        "document_id": "3b29b0516a0b7af978077a8daaa189c3b82dad4559940a8acebc9017b6e97310-13",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Cum pot plati taxa de scolarizare?",
+        "document_id": "305ffba5f7d4c89b1b0d23204ead08d29eea1ec1098c7799ba545633bab3c3c2-1",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Cum pot plati taxa de scolarizare?",
+        "document_id": "71788602578701b9e9b11da963eee9859a06e0dc3d482036b87e7c9c12f5fab5-26",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Cum pot plati taxa de scolarizare?",
+        "document_id": "79426a1571b68492454210a4455253ad1c6ca02f95283000457c0e0eb426d81d-4",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Cum se calculeaza media de bursa la Politehnica?",
+        "document_id": "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-78",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Exista posibilitatea de a plati taxa de scolarizare in rate?",
+        "document_id": "79426a1571b68492454210a4455253ad1c6ca02f95283000457c0e0eb426d81d-4",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Exista posibilitatea de a plati taxa de scolarizare in rate?",
+        "document_id": "3b29b0516a0b7af978077a8daaa189c3b82dad4559940a8acebc9017b6e97310-32",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Care este calendarul de admitere?",
+        "document_id": "0939dd251ffa3b90ecb8af564934dc6ba1b92e780dfdf58548d6652a993628eb-76",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Care este calendarul de admitere?",
+        "document_id": "a6d9cdea7b06db11d13e1fd4b50c30fbca9db6da2616cd019773eb4baee44a2e-7",
+        "llm_score_1": 2,
+        "llm_score_2": 2,
+        "relevance_score": 1
+    },
+    {
+        "query": "Cum pot intra pe locurile pentru olimpici la admiterea la licenta la ACS?",
+        "document_id": "90d452286979bc3ba13df942fe481c229bca45f701e35a41aac700dcf99479f4-3",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "In ce ordine se face admiterea candidatilor la Politehnica?",
+        "document_id": "d777b13488f59ee3809732f0621b1d67c57f740aacb1ef6deebaa33512338af5-1",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Ma pot inscrie la examenul de admitere la licenta la mai multe facultati?",
+        "document_id": "6b808561f11405e18487fc62e100ff4fa8a350384fb5f9ec6723131d690d862f-6",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Care sunt disciplinele de concurs de la examenul de admitere la licenta?",
+        "document_id": "96e70f4bda047167435c1c790d1eed7085397707930e9d47fee17c191c260855-3",
+        "llm_score_1": 2,
+        "llm_score_2": 2,
+        "relevance_score": 1
+    },
+    {
+        "query": "Care sunt disciplinele de concurs de la examenul de admitere la licenta?",
+        "document_id": "c19be514f53e9a2835519a0ee7a66d214e8146993b799c6e8816566647253006-5",
+        "llm_score_1": 2,
+        "llm_score_2": 2,
+        "relevance_score": 1
+    },
+    {
+        "query": "Care este cuantumul taxei de inscriere la examenul de admitere la master la Politehnica?",
+        "document_id": "79426a1571b68492454210a4455253ad1c6ca02f95283000457c0e0eb426d81d-22",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Care este cuantumul taxei de inscriere la examenul de admitere la master la Politehnica?",
+        "document_id": "7bf57b4b6d7cbb0dddcbce41c0a9202ff1f3449b21e0725519cf9b30214b66f8-5",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Care este cuantumul taxei de inscriere la examenul de admitere la doctorat la ACS?",
+        "document_id": "81eecb583745caf19cfcc51fd6934ec333208f8b5736456e051aa42e11c6104e-2",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Cand se afiseaza rezultatele la admiterea la licenta la ACS?",
+        "document_id": "6b808561f11405e18487fc62e100ff4fa8a350384fb5f9ec6723131d690d862f-7",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Cand se afiseaza rezultatele la admiterea la licenta la FAIMA?",
+        "document_id": "a6d93e140ed275d649d698d7fc77e3bef36eb660ae7f730e74df6a05ba887174-8",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Cand se afiseaza rezultatele la admiterea la licenta la FAIMA?",
+        "document_id": "5ed022490c4bb6b106bfb96e9f513a2f775f895e59731b26cd505937a92b04e3-1",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Ce facultati sunt in cadrul Politehnicii?",
+        "document_id": "732087e78176abf56bae370e2ba62c59007b4fee638d65d43def3634abfd5601-2",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Ce facultati sunt in cadrul Politehnicii?",
+        "document_id": "3b29b0516a0b7af978077a8daaa189c3b82dad4559940a8acebc9017b6e97310-26",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Cate programe de studii de masterat sunt la ACS?",
+        "document_id": "699b8dd450c1d79a46377ef809f95fb7a405af6c53b96aba0945dd16837ac73c-1",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Cate programe de studii de masterat sunt la ACS?",
+        "document_id": "3b29b0516a0b7af978077a8daaa189c3b82dad4559940a8acebc9017b6e97310-33",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Ce materii sunt la facultatea de Automatica si Calculatoare?",
+        "document_id": "b0cbeb3807d8d4381a6714716c6b975a969f6f161745575e700833bee09cd1c7-5",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Care sunt conditiile de admitere la licenta la ETTI?",
+        "document_id": "732087e78176abf56bae370e2ba62c59007b4fee638d65d43def3634abfd5601-1",
+        "llm_score_1": 1,
+        "llm_score_2": 0,
+        "relevance_score": 1
+    },
+    {
+        "query": "Care este cuantumul burselor?",
+        "document_id": "0939dd251ffa3b90ecb8af564934dc6ba1b92e780dfdf58548d6652a993628eb-75",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Care este cuantumul burselor?",
+        "document_id": "d1e89b524e5b8b47f1f93467914735f9474cdc10081d397e6f315687d09db052-45",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Care este cuantumul bursei sociale?",
+        "document_id": "bcba579c444019f0d3049720ae28075e7e2d3834011a96d548acb8c751e8d95b-22",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Ce presupune sesiunea 3 de admitere la licenta?",
+        "document_id": "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-64",
+        "llm_score_1": 0,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Ce presupune sesiunea 3 de admitere la licenta?",
+        "document_id": "a192eeb16b38c512b52907612a334423de5ea7a64b05047d05038e52e01dcad9-3",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Cand are loc simularea examenului de admitere la licenta la ACS?",
+        "document_id": "2935a2b5655aa08b392c5057783524909312371c87c2fd95a71bd36ba6c57cf8-9",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Cand are loc simularea examenului de admitere la licenta la ACS?",
+        "document_id": "79426a1571b68492454210a4455253ad1c6ca02f95283000457c0e0eb426d81d-10",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Cum se calculeaza media de admitere la licenta?",
+        "document_id": "732087e78176abf56bae370e2ba62c59007b4fee638d65d43def3634abfd5601-1",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Cum se calculeaza media de admitere la licenta?",
+        "document_id": "c642c14d935f4cf36dcf3277811b920052336016da4e5f53e7161b29d9d179a3-1",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Daca ma inscriu la mai multe facultati pot plati o singura taxa de inscriere?",
+        "document_id": "70316c29c4e024cfb07239b8cb041fe2e61b063ecc31311c2a24497c18e0195a-9",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Cum pot opta pentru cazare la camin?",
+        "document_id": "a98a700ef6b47f46f4820a8597f1e9f15e10b6ff2acf9ea891b73ec6c83fabb0-53",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Cum pot opta pentru cazare la camin?",
+        "document_id": "3b29b0516a0b7af978077a8daaa189c3b82dad4559940a8acebc9017b6e97310-26",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Care este structura unui an universitar?",
+        "document_id": "d1e89b524e5b8b47f1f93467914735f9474cdc10081d397e6f315687d09db052-30",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Cand are loc admiterea la licenta la ACS?",
+        "document_id": "6b808561f11405e18487fc62e100ff4fa8a350384fb5f9ec6723131d690d862f-5",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Cand are loc admiterea la licenta?",
+        "document_id": "491f908948d53e5b16fb1e16d5db1345049605301c9e3d3f7116532b523b9d98-7",
+        "llm_score_1": 2,
+        "llm_score_2": 2,
+        "relevance_score": 1
+    },
+    {
+        "query": "Cand are loc admiterea la master?",
+        "document_id": "a6d9cdea7b06db11d13e1fd4b50c30fbca9db6da2616cd019773eb4baee44a2e-1",
+        "llm_score_1": 2,
+        "llm_score_2": 2,
+        "relevance_score": 1
+    },
+    {
+        "query": "Ce documente sunt necesare pentru inmatriculare?",
+        "document_id": "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-47",
+        "llm_score_1": 2,
+        "llm_score_2": 2,
+        "relevance_score": 1
+    },
+    {
+        "query": "Ce documente sunt necesare pentru inmatriculare?",
+        "document_id": "3b29b0516a0b7af978077a8daaa189c3b82dad4559940a8acebc9017b6e97310-36",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Ce documente sunt necesare pentru inscrierea la examenul de admitere?",
+        "document_id": "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-211",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Cate locuri sunt disponibile pentru admiterea la ACS?",
+        "document_id": "3ce85f62ac0462282f15ad6370536847c866a7d8ea12b3d467a1c78ed9bbbfde-1",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Cate locuri sunt disponibile pentru admiterea la ACS?",
+        "document_id": "3c5e824db35a33f37d5e5e8ec458990f117f37c89c1e509155108c94d078dd3a-1",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Cand are loc testul online de limba de la Politehnica?",
+        "document_id": "70316c29c4e024cfb07239b8cb041fe2e61b063ecc31311c2a24497c18e0195a-16",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Ce documente sunt necesare pentru a demonstra cunostintele lingvistice la inscrierea la un program de studii in limba engleza?",
+        "document_id": "ea1eefdfe13b4e547017a55349bc78edf700398a89c7cb73363d4ba10f043fd0-2",
+        "llm_score_1": 2,
+        "llm_score_2": 2,
+        "relevance_score": 1
+    },
+    {
+        "query": "Ce documente sunt necesare pentru a demonstra cunostintele lingvistice la inscrierea la un program de studii in limba engleza?",
+        "document_id": "672577271c2e708d1597a074314ae1c6e2c501a0ea55477ba9124d256f0d763d-9",
+        "llm_score_1": 1,
+        "llm_score_2": 0,
+        "relevance_score": 1
+    },
+    {
+        "query": "Cum pot sa ma inscriu la testul online de limba straina?",
+        "document_id": "7261d53c1bc03b86e5609b82811972b54096ba162fef6abf2a9fc84018d179b4-11",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Ce tipuri de burse sunt disponibile la Politehnica?",
+        "document_id": "a91f4d68dd54d560f86b6907491cd022cf37f55e4abd59a00f65b8b2c3418dfe-9",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Ce tipuri de burse sunt disponibile la Politehnica?",
+        "document_id": "d9aaa3233afc85c50c8869a9a97f45c2e80bd9dcea6b434aec2d66ca2234b796-4",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Cum pot obtine bursa la Politehnica?",
+        "document_id": "0939dd251ffa3b90ecb8af564934dc6ba1b92e780dfdf58548d6652a993628eb-51",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Care este media minima necesara pentru a obtine o bursa?",
+        "document_id": "81eecb583745caf19cfcc51fd6934ec333208f8b5736456e051aa42e11c6104e-2",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Care sunt conditiile de promovare a unui an universitar la Politehnica?",
+        "document_id": "3bd13d1d34b8e5760ef3fac434d28f3cde6cb006513c736cba0833a0f067ab49-1",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Care este cuantumul taxei de scolarizare la ACS?",
+        "document_id": "0939dd251ffa3b90ecb8af564934dc6ba1b92e780dfdf58548d6652a993628eb-74",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Care este cuantumul taxei de scolarizare la ACS?",
+        "document_id": "3b29b0516a0b7af978077a8daaa189c3b82dad4559940a8acebc9017b6e97310-21",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Cum se calculeaza media de bursa la Politehnica?",
+        "document_id": "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-97",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Cum se calculeaza media de bursa la Politehnica?",
+        "document_id": "0939dd251ffa3b90ecb8af564934dc6ba1b92e780dfdf58548d6652a993628eb-1",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Cum se calculeaza media de bursa la Politehnica?",
+        "document_id": "71788602578701b9e9b11da963eee9859a06e0dc3d482036b87e7c9c12f5fab5-19",
+        "llm_score_1": 1,
+        "llm_score_2": 0,
+        "relevance_score": 1
+    },
+    {
+        "query": "Exista posibilitatea de a plati taxa de scolarizare in rate?",
+        "document_id": "71788602578701b9e9b11da963eee9859a06e0dc3d482036b87e7c9c12f5fab5-23",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Care este calendarul de admitere?",
+        "document_id": "6b808561f11405e18487fc62e100ff4fa8a350384fb5f9ec6723131d690d862f-7",
+        "llm_score_1": 2,
+        "llm_score_2": 2,
+        "relevance_score": 1
+    },
+    {
+        "query": "Care este calendarul de admitere?",
+        "document_id": "a6d9cdea7b06db11d13e1fd4b50c30fbca9db6da2616cd019773eb4baee44a2e-3",
+        "llm_score_1": 2,
+        "llm_score_2": 2,
+        "relevance_score": 1
+    },
+    {
+        "query": "In ce ordine se face admiterea candidatilor la Politehnica?",
+        "document_id": "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-214",
+        "llm_score_1": 1,
+        "llm_score_2": 0,
+        "relevance_score": 1
+    },
+    {
+        "query": "Ma pot inscrie la examenul de admitere la licenta la mai multe facultati?",
+        "document_id": "95433f95bf4f9e5fef2fb7938a0ae137f2588497cb46ca97e61fd05660532466-1",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Care sunt disciplinele de concurs de la examenul de admitere la licenta?",
+        "document_id": "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-232",
+        "llm_score_1": 1,
+        "llm_score_2": 0,
+        "relevance_score": 1
+    },
+    {
+        "query": "Care este cuantumul taxei de inscriere la examenul de admitere la doctorat la ACS?",
+        "document_id": "36527b3da039b452b387028c350e8e537c8c6b5176f91649e53bf33924e493bb-4",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Cand se afiseaza rezultatele la admiterea la licenta la ACS?",
+        "document_id": "491f908948d53e5b16fb1e16d5db1345049605301c9e3d3f7116532b523b9d98-4",
+        "llm_score_1": 2,
+        "llm_score_2": 2,
+        "relevance_score": 1
+    },
+    {
+        "query": "Cand se afiseaza rezultatele la admiterea la licenta la ACS?",
+        "document_id": "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-67",
+        "llm_score_1": 2,
+        "llm_score_2": 2,
+        "relevance_score": 1
+    },
+    {
+        "query": "Cand se afiseaza rezultatele la admiterea la licenta la FAIMA?",
+        "document_id": "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-46",
+        "llm_score_1": 2,
+        "llm_score_2": 2,
+        "relevance_score": 1
+    },
+    {
+        "query": "Ce facultati sunt in cadrul Politehnicii?",
+        "document_id": "0939dd251ffa3b90ecb8af564934dc6ba1b92e780dfdf58548d6652a993628eb-60",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Cate programe de studii de masterat sunt la ACS?",
+        "document_id": "3bd13d1d34b8e5760ef3fac434d28f3cde6cb006513c736cba0833a0f067ab49-2",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Cate programe de studii de masterat sunt la ACS?",
+        "document_id": "71788602578701b9e9b11da963eee9859a06e0dc3d482036b87e7c9c12f5fab5-16",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Ce materii sunt la facultatea de Automatica si Calculatoare?",
+        "document_id": "6ccd6e8cf90ac5e0f62d36ab0c6545bdb0df7714986675e4854d0f00e6cfc934-6",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Care sunt conditiile de admitere la licenta la ETTI?",
+        "document_id": "79426a1571b68492454210a4455253ad1c6ca02f95283000457c0e0eb426d81d-17",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Care sunt conditiile de admitere la licenta la ETTI?",
+        "document_id": "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-145",
+        "llm_score_1": 1,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Ce presupune sesiunea 3 de admitere la licenta?",
+        "document_id": "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-30",
+        "llm_score_1": 0,
+        "llm_score_2": 1,
+        "relevance_score": 1
+    },
+    {
+        "query": "Cand are loc simularea examenului de admitere la licenta la ACS?",
+        "document_id": "6b808561f11405e18487fc62e100ff4fa8a350384fb5f9ec6723131d690d862f-7",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Cum se calculeaza media de admitere la licenta?",
+        "document_id": "6930f6043ce465836c2788efa837b7e6db01b3713a353e51d7fdda1e6a0d1e1e-7",
+        "llm_score_1": 1,
+        "llm_score_2": 0,
+        "relevance_score": 1
+    },
+    {
+        "query": "Cum se calculeaza media de admitere la licenta?",
+        "document_id": "36527b3da039b452b387028c350e8e537c8c6b5176f91649e53bf33924e493bb-4",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Cum pot opta pentru cazare la camin?",
+        "document_id": "cfa34550ed37e5778fc1f1c4e21e758bccc51b15bccd8eae15e654d0f71c4361-10",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Care este structura unui an universitar?",
+        "document_id": "305ffba5f7d4c89b1b0d23204ead08d29eea1ec1098c7799ba545633bab3c3c2-5",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    },
+    {
+        "query": "Care este structura unui an universitar?",
+        "document_id": "79426a1571b68492454210a4455253ad1c6ca02f95283000457c0e0eb426d81d-13",
+        "llm_score_1": 0,
+        "llm_score_2": 0,
+        "relevance_score": 0
+    }
+]

@@ -1,0 +1,14 @@
+{
+    "answer_relevance_gpt_score": 0.7925000000000001,
+    "answer_relevance_ragas": 0.615606458843647,
+    "faithfulness_gpt_score": 0.8425,
+    "faithfulness_ragas": 0.8645741659814885,
+    "reranker_map_at_k": 0.8253125000000001,
+    "reranker_mrr_at_k": 0.85,
+    "retriever_answer_relevance_gpt_score": 0.49749999999999994,
+    "retriever_answer_relevance_ragas": 0.3593356491950696,
+    "retriever_faithfulness_gpt_score": 0.5675,
+    "retriever_faithfulness_ragas": 0.8185597572362278,
+    "retriever_map_at_k": 0.6915625,
+    "retriever_mrr_at_k": 0.7020833333333333
+}

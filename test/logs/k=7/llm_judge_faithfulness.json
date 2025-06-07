@@ -1,0 +1,1122 @@
+[
+    {
+        "query": "Cand are loc admiterea la licenta la ACS?",
+        "answer": "Nu am suficiente informații pentru a răspunde la întrebare.",
+        "context": [
+            "6ccd6e8cf90ac5e0f62d36ab0c6545bdb0df7714986675e4854d0f00e6cfc934-2",
+            "95433f95bf4f9e5fef2fb7938a0ae137f2588497cb46ca97e61fd05660532466-6",
+            "57fffc9ae7f67be9c637b16ae3a994af2cbec240e5ea61a02f4d25fea85f1d10-4",
+            "96e70f4bda047167435c1c790d1eed7085397707930e9d47fee17c191c260855-2",
+            "1b1ea7137bcac57a08ed409352d4dafea078d3672aaa23e9e88a89e6ba380ff4-1",
+            "6b808561f11405e18487fc62e100ff4fa8a350384fb5f9ec6723131d690d862f-7",
+            "c0a422c70b7570fc7a2ae691c825eb5983b6554c05d5f5d6c27c39417ce17437-1"
+        ],
+        "faithfulness_score": 0
+    },
+    {
+        "query": "Cand are loc admiterea la licenta?",
+        "answer": "Admiterea la licență se va desfășura conform următorului calendar: Rezultatele preliminare vor fi anunțate pe 11 iunie 2025, ora 12:00. Contestațiile pot fi depuse online până la 12 iunie 2025, ora 12:00, iar rezultatele finale privind admiterea preliminară vor fi comunicate pe 16 iunie 2025, ora 12:00. În plus, admiterea anticipată fără concurs este disponibilă pentru absolvenții de liceu cu distincții la olimpiadele școlare internaționale, care pot solicita înscrierea fără susținerea concursului de admitere. Detalii suplimentare pot fi găsite în regulamentul de admitere.\n\nSurse:\n- URL: https://energ.upb.ro/admitere/licenta/informatii-admitere",
+        "context": [
+            "6ccd6e8cf90ac5e0f62d36ab0c6545bdb0df7714986675e4854d0f00e6cfc934-1",
+            "57fffc9ae7f67be9c637b16ae3a994af2cbec240e5ea61a02f4d25fea85f1d10-4",
+            "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-68",
+            "1b1ea7137bcac57a08ed409352d4dafea078d3672aaa23e9e88a89e6ba380ff4-1",
+            "95433f95bf4f9e5fef2fb7938a0ae137f2588497cb46ca97e61fd05660532466-6",
+            "96e70f4bda047167435c1c790d1eed7085397707930e9d47fee17c191c260855-2",
+            "6b808561f11405e18487fc62e100ff4fa8a350384fb5f9ec6723131d690d862f-5"
+        ],
+        "faithfulness_score": 8
+    },
+    {
+        "query": "Cand are loc admiterea la master?",
+        "answer": "Admiterea la studiile universitare de masterat se desfășoară în mai multe sesiuni. În sesiunea de admitere din luna septembrie 2024, procesul va începe pe data de 02.09.2024, iar calendarul este următorul:\n- Înscrierea candidaților: 02.09 - 13.09.2024\n- Concursul de admitere: 16.09 – 17.09.2024\n- Comunicarea rezultatelor: 16.09 – 18.09.2024\n- Înmatricularea candidaților: 16.09 – 20.09.2024.\n\nDe asemenea, există și o sesiune de admitere anticipată în luna mai, cu înscrierea între 15 decembrie 2024 și 9 mai 2025, iar concursul va avea loc între 13 și 16 mai 2025. Rezultatele vor fi comunicate pe 17 mai 2025, iar înmatricularea se va desfășura în perioada 01-31 iulie 2025.\n\nSurse:\n- URL: https://chimie.upb.ro/admitere/programe-de-studii-de-masterat/\n- URL: https://acs.pub.ro/admitere/masterat/",
+        "context": [
+            "95433f95bf4f9e5fef2fb7938a0ae137f2588497cb46ca97e61fd05660532466-1",
+            "6ccd6e8cf90ac5e0f62d36ab0c6545bdb0df7714986675e4854d0f00e6cfc934-1",
+            "a6d93e140ed275d649d698d7fc77e3bef36eb660ae7f730e74df6a05ba887174-1",
+            "57fffc9ae7f67be9c637b16ae3a994af2cbec240e5ea61a02f4d25fea85f1d10-4",
+            "1b1ea7137bcac57a08ed409352d4dafea078d3672aaa23e9e88a89e6ba380ff4-1",
+            "a6d9cdea7b06db11d13e1fd4b50c30fbca9db6da2616cd019773eb4baee44a2e-3",
+            "d1e89b524e5b8b47f1f93467914735f9474cdc10081d397e6f315687d09db052-31"
+        ],
+        "faithfulness_score": 10
+    },
+    {
+        "query": "Cand are loc admiterea la doctorat?",
+        "answer": "Admiterea la doctorat se va desfășura în perioada 1 aprilie – 20 septembrie 2024. În această perioadă, candidații trebuie să se înscrie, să valideze dosarul și să participe la evaluarea dosarelor. Evaluarea dosarelor va avea loc în mai multe etape, iar rezultatele vor fi anunțate la sfârșitul fiecărei luni. Evaluarea candidaților declarați admiși va avea loc pe 25-26 septembrie 2024, iar înmatricularea acestora este programată pentru 30 septembrie 2024. Stagiul doctoral va începe pe 1 octombrie 2024.\n\nSurse:\n- URL: https://acs.pub.ro/admitere/doctorat/",
+        "context": [
+            "2857876d53734150ffb44fc71e4dbc6585d2bc1415ee25bfcea3633c54158da3-1",
+            "d43f4eaa3d93bf485a402f19f967f21b14b8011a675d9a5e0301629717d64291-7",
+            "36527b3da039b452b387028c350e8e537c8c6b5176f91649e53bf33924e493bb-8",
+            "0a7047bd9ee00f3d76a3f6e330d97e214cbc6a81ed25ef001a0d2834d408455f-1",
+            "36527b3da039b452b387028c350e8e537c8c6b5176f91649e53bf33924e493bb-5",
+            "b7917beb790ca93b316b750aabe00a45e594c01536dc44731387c51d5812e372-1",
+            "95433f95bf4f9e5fef2fb7938a0ae137f2588497cb46ca97e61fd05660532466-1"
+        ],
+        "faithfulness_score": 10
+    },
+    {
+        "query": "Ce documente sunt necesare pentru inmatriculare?",
+        "answer": "Pentru înmatricularea la studii universitare, candidații trebuie să depună următoarele documente:\n\n1. **Diploma de Bacalaureat** însoțită de foaia matricolă (în original).\n2. **Certificat de naștere** (în original).\n3. **Carte de identitate** sau **pașaport** (în original).\n4. **3 fotografii color** – dimensiune 3x4 cm (rămân la dosar).\n5. **Documente care să ateste rezultatele obținute** la concursurile considerate la înscriere (în original).\n6. **Dovada achitării taxei de înscriere** sau dovada scutirii de plata taxei (în original).\n7. **Cerere de înscriere** semnată (în original).\n8. **Declarație pe proprie răspundere** semnată privind veridicitatea documentelor (în original).\n9. **Adeverință medicală** (în original).\n10. **Dovada achitării taxei de înmatriculare** (în original). Taxa de înmatriculare este 50 lei și se poate plăti în aceleași modalități ca și taxa de înscriere.\n\nSurse:\n- Admitere sesiunea 1 - olimpici 2025, URL: http://fsa.pub.ro/wp-content/uploads/2025/02/Admitere-ses1-olimpici-2025.pdf, pagina: 9",
+        "context": [
+            "a192eeb16b38c512b52907612a334423de5ea7a64b05047d05038e52e01dcad9-8",
+            "c1de7ec9e0df65a266e2d1db74e580922ed6e6cc884fca4958957970115686fd-4",
+            "05290e8c4920a551795485a7f7241a1add0260eeef7870d7cbfdc2b62d1e812e-5",
+            "36527b3da039b452b387028c350e8e537c8c6b5176f91649e53bf33924e493bb-6",
+            "79426a1571b68492454210a4455253ad1c6ca02f95283000457c0e0eb426d81d-5",
+            "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-146",
+            "04c1e1af9cd50ab53ce9e2c650c01f09b94401edadccca40f8d84e10111fabfc-3"
+        ],
+        "faithfulness_score": 10
+    },
+    {
+        "query": "Ce documente sunt necesare pentru inscrierea la examenul de admitere?",
+        "answer": "Pentru înscrierea la examenul de admitere, candidații trebuie să pregătească o prezentare bazată pe propunerea de tematică pentru studiile doctorale (PhD proposal) în limba română sau în limba engleză. De asemenea, este necesar să prezinte dovezi privind absolvirea unui program de masterat (diplomă de masterat sau adeverință de absolvire, foaie matricolă) și să efectueze plata taxei de înmatriculare în valoare de 50 RON, care se achită online. Toate informațiile necesare sunt disponibile pe platforma de admitere. Este important ca toți candidații declarați admiși să completeze și să semneze contractul de studii universitare de doctorat până la începutul anului universitar.\n\nSurse:\n- URL: https://acs.pub.ro/admitere/doctorat/",
+        "context": [
+            "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-64",
+            "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-47",
+            "3b29b0516a0b7af978077a8daaa189c3b82dad4559940a8acebc9017b6e97310-36",
+            "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-146",
+            "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-208",
+            "0a7047bd9ee00f3d76a3f6e330d97e214cbc6a81ed25ef001a0d2834d408455f-4",
+            "2350258c519b2dda96612268851c0f3932f97cd1681d19df7eec652511e653db-12"
+        ],
+        "faithfulness_score": 10
+    },
+    {
+        "query": "Cate locuri sunt disponibile pentru admiterea la ACS?",
+        "answer": "Nu am suficiente informații pentru a răspunde la întrebare.",
+        "context": [
+            "6ccd6e8cf90ac5e0f62d36ab0c6545bdb0df7714986675e4854d0f00e6cfc934-2",
+            "57fffc9ae7f67be9c637b16ae3a994af2cbec240e5ea61a02f4d25fea85f1d10-1",
+            "5ed022490c4bb6b106bfb96e9f513a2f775f895e59731b26cd505937a92b04e3-1",
+            "ba75f0389538768538a511b967d4615e92eea881cff88fe9b1a8f115522830a3-1",
+            "0c535a64d99d22c4e510b4d924b4810e38635b89c37f76a59829b2a585f798d6-1",
+            "57fffc9ae7f67be9c637b16ae3a994af2cbec240e5ea61a02f4d25fea85f1d10-7",
+            "d43f4eaa3d93bf485a402f19f967f21b14b8011a675d9a5e0301629717d64291-5"
+        ],
+        "faithfulness_score": 0
+    },
+    {
+        "query": "Cand are loc testul online de limba de la Politehnica?",
+        "answer": "Testul online de limba de la Politehnica va avea loc la data de 21 martie 2025 pentru toți candidații care optează pentru un domeniu cu limbă de predare engleză, franceză sau germană. De asemenea, există o a doua dată, 23 mai 2025, care este valabilă doar pentru candidații înscriși la facultățile unde admiterea anticipată se bazează pe rezultatele la activitățile școlare (dosar). Detalii suplimentare privind organizarea testului pot fi găsite pe site-ul oficial al universității.\n\nSurse:\n- Regulament admitere licență 2025, URL: https://upb.ro/wp-content/uploads/2024/12/Regulament_admitere_licenta_2025.pdf, pagina: 26",
+        "context": [
+            "79426a1571b68492454210a4455253ad1c6ca02f95283000457c0e0eb426d81d-10",
+            "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-53",
+            "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-36",
+            "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-335",
+            "85fcf9d8684602276ff1fc4ac04e10d3fb6a6c2732942ac846889086a23d3e5d-1",
+            "d30921449a2b0b31d12ccc546028a7e3af51f9dc6a39bcbd675f7003c2029704-2",
+            "7261d53c1bc03b86e5609b82811972b54096ba162fef6abf2a9fc84018d179b4-11"
+        ],
+        "faithfulness_score": 10
+    },
+    {
+        "query": "Ce documente sunt necesare pentru a demonstra cunostintele lingvistice la inscrierea la un program de studii in limba engleza?",
+        "answer": "Pentru a demonstra cunoștințele lingvistice la înscrierea la un program de studii în limba engleză, este necesar să furnizezi unul dintre următoarele documente:\n\n1. **Liceu absolvit în respectiva limbă de predare**: Dacă acest lucru nu apare evident din celelalte documente furnizate la înscriere, trebuie să încarci o copie a unui document eliberat de liceu din care să reiasă că ai urmat un program de studii în respectiva limbă.\n2. **Certificat de competențe lingvistice pentru respectiva limbă de predare (minim B2)**: Trebuie să încarci o copie a certificatului.\n3. **Disciplină de tip limbă străină promovată în liceu cu media cel puțin 8,00** (pentru clasele a IX-a, a X-a, a XI-a): Este necesar să încarci o copie a unui document eliberat de liceul urmat din care reiese acest lucru.\n4. **Proba A, B sau C de la examenul de Bacalaureat**: Trebuie să încarci o copie completă a diplomei de Bacalaureat (inclusiv situația la examen).\n5. **Aleg să susțin testul de limbă POLITEHNICA Bucureşti**: Nu este necesar să încarci nimic la înscriere.\n6. **La înscriere optez numai pentru domenii pentru care şcolarizarea se desfăşoară în română**: Nu este necesar să încarci nimic la înscriere.\n\nEste important de menționat că, în funcție de opțiunile alese, unele dintre aceste documente pot fi opționale sau nu sunt necesare deloc.\n\nSurse:\n- Testul de limbă on-line POLITEHNICA București din data de 23 mai 2025, URL: https://fils.upb.ro/wp-content/uploads/2025/02/Test-limba-straina-23-05-detalii-S1-2025.pdf, pagina: 1",
+        "context": [
+            "4a8af42a6c47f11b1d13d802bee4da49f7d449950fa3f74b338baa449e1e595b-2",
+            "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-218",
+            "4a8af42a6c47f11b1d13d802bee4da49f7d449950fa3f74b338baa449e1e595b-1",
+            "a6d93e140ed275d649d698d7fc77e3bef36eb660ae7f730e74df6a05ba887174-13",
+            "672577271c2e708d1597a074314ae1c6e2c501a0ea55477ba9124d256f0d763d-12",
+            "5d71a3e187fad8c7a617b3412c84a34381ede66ac591f5e512fd0b8e902be7f6-5",
+            "d12056e2c2c334eab800875dc06fe79b0639c4249b41a79f3d3e27777b354074-14"
+        ],
+        "faithfulness_score": 10
+    },
+    {
+        "query": "Cum pot sa ma inscriu la testul online de limba straina?",
+        "answer": "Pentru a te înscrie la testul online de limbă străină POLITEHNICA București, trebuie să urmezi următorii pași:\n\n1. **Înscriere**: Completează formularul de înscriere disponibil la adresa [https://forms.office.com/e/2AWesNbYr9](https://forms.office.com/e/2AWesNbYr9). Este important ca adresa de e-mail completată în formular să fie aceeași cu cea utilizată în procesul de înscriere la concurs pe pagina [http://admitere.pub.ro/](http://admitere.pub.ro/).\n2. **Termen limită**: Asigură-te că formularul este completat până cel târziu pe 21 mai 2025, ora 12:00. Candidații care nu respectă acest termen nu vor putea susține testul.\n3. **Obținerea datelor de acces**: După completarea formularului, vei primi un e-mail pe adresa ta de e-mail, care va conține informațiile necesare pentru accesarea testului online, inclusiv linkul de acces, user și parolă.\n4. **Susținerea testului**: Accesează platforma de testare folosind datele primite și susține testul la ora programată.\n\nEste important să te asiguri că ai completat toate câmpurile din formular, deoarece toate sunt obligatorii.\n\nSurse:\n- Testul de limbă on-line POLITEHNICA București, URL: https://fils.upb.ro/wp-content/uploads/2025/02/Test-limba-straina-23-05-detalii-S1-2025.pdf, pagina: 1",
+        "context": [
+            "ea1eefdfe13b4e547017a55349bc78edf700398a89c7cb73363d4ba10f043fd0-2",
+            "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-36",
+            "4a8af42a6c47f11b1d13d802bee4da49f7d449950fa3f74b338baa449e1e595b-1",
+            "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-53",
+            "4a8af42a6c47f11b1d13d802bee4da49f7d449950fa3f74b338baa449e1e595b-2",
+            "4a8af42a6c47f11b1d13d802bee4da49f7d449950fa3f74b338baa449e1e595b-3",
+            "a6d93e140ed275d649d698d7fc77e3bef36eb660ae7f730e74df6a05ba887174-13"
+        ],
+        "faithfulness_score": 10
+    },
+    {
+        "query": "Ce tipuri de burse sunt disponibile la Politehnica?",
+        "answer": "La Universitatea Națională de Știință și Tehnologie POLITEHNICA București, sunt disponibile următoarele tipuri de burse:\n\n1. **Burse și alte forme de sprijin** - Acestea sunt oferite studenților prin proiecte instituționale, fonduri nerambursabile sau din alte surse legal constituite, conform metodologiilor proprii.\n2. **Burse speciale** - Aceste burse sunt acordate pe baza unei metodologii aprobate de senatul universitar.\n3. **Premii, burse și alte stimulente financiare** - Acestea sunt destinate studenților cu performanțe remarcabile în activitățile extrașcolare sau în activități culturale și sportive, precum și studenților în situație de risc.\n4. **Granturi de studii și burse pentru românii de pretutindeni și cetățenii străini** - Acestea sunt acordate în conformitate cu metodologiile proprii ale universității.\n5. **Burse finanțate din bugetul POLITEHNICA București** - Aceste burse sunt stabilite prin hotărârea Senatului Universității, la propunerea Consiliului de Administrație.\n6. **Burse, mobilități și alte drepturi** - Acestea sunt finanțate din contracte de finanțare externă nerambursabilă câștigate de POLITEHNICA București în competiții naționale și internaționale.\n\nBursele se acordă pe toată durata anului universitar, cu excepția burselor sociale ocazionale, și încetează în cazul pierderii calității de student sau neîndeplinirii criteriilor de promovabilitate.\n\nSurse:\n- Metodologie burse rectificată, URL: https://upb.ro/wp-content/uploads/2024/12/Metodologie-burse_rectificata.pdf, pagina: 2\n- Metodologie burse rectificată, URL: https://upb.ro/wp-content/uploads/2024/12/Metodologie-burse_rectificata.pdf, pagina: 3",
+        "context": [
+            "d9aaa3233afc85c50c8869a9a97f45c2e80bd9dcea6b434aec2d66ca2234b796-3",
+            "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-78",
+            "d9aaa3233afc85c50c8869a9a97f45c2e80bd9dcea6b434aec2d66ca2234b796-2",
+            "d1e89b524e5b8b47f1f93467914735f9474cdc10081d397e6f315687d09db052-45",
+            "71788602578701b9e9b11da963eee9859a06e0dc3d482036b87e7c9c12f5fab5-37",
+            "3b29b0516a0b7af978077a8daaa189c3b82dad4559940a8acebc9017b6e97310-26",
+            "0939dd251ffa3b90ecb8af564934dc6ba1b92e780dfdf58548d6652a993628eb-20"
+        ],
+        "faithfulness_score": 10
+    },
+    {
+        "query": "Cum pot obtine bursa la Politehnica?",
+        "answer": "Pentru a obține o bursă la Universitatea Națională de Știință și Tehnologie POLITEHNICA București, studenții trebuie să îndeplinească anumite criterii. Universitatea poate acorda burse de performanță pentru rezultate deosebite în activitatea profesională, științifică și de cercetare, precum și pentru implicarea în activitățile comunității. Tipurile de burse includ burse de voluntariat, diplome de merit, diplome și burse speciale pentru șefii de promoție, diplome de excelență pentru studenții cu rezultate remarcabile la nivel național și/sau internațional, burse de mobilități în programe internaționale și alte diplome sau premii. Este important ca studenții să se informeze despre criteriile specifice și procedurile de aplicare stabilite de facultatea lor. Detalii suplimentare pot fi găsite în regulamentul universității.\n\nSurse:\n- Regulament privind raportarea instituțională în vederea obținerii finanțării publice a universității, URL: https://upb.ro/wp-content/uploads/2022/11/Regulament-privind-raportarea-institutionala-in-vederea-obtinerii-finantarii-publice-a-universitatii.pdf, pagina: 28\n- Regulament organizare studii universitare de licență, URL: https://upb.ro/wp-content/uploads/2022/11/Regulament-org-studii-univ-licenta_2024.pdf, pagina: 20",
+        "context": [
+            "d1e89b524e5b8b47f1f93467914735f9474cdc10081d397e6f315687d09db052-30",
+            "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-281",
+            "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-272",
+            "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-315",
+            "0939dd251ffa3b90ecb8af564934dc6ba1b92e780dfdf58548d6652a993628eb-47",
+            "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-123",
+            "3b29b0516a0b7af978077a8daaa189c3b82dad4559940a8acebc9017b6e97310-33"
+        ],
+        "faithfulness_score": 9
+    },
+    {
+        "query": "Care este media minima necesara pentru a obtine o bursa?",
+        "answer": "Nu am suficiente informații pentru a răspunde la întrebare.",
+        "context": [
+            "d9aaa3233afc85c50c8869a9a97f45c2e80bd9dcea6b434aec2d66ca2234b796-10",
+            "d9aaa3233afc85c50c8869a9a97f45c2e80bd9dcea6b434aec2d66ca2234b796-13",
+            "c642c14d935f4cf36dcf3277811b920052336016da4e5f53e7161b29d9d179a3-1",
+            "d9aaa3233afc85c50c8869a9a97f45c2e80bd9dcea6b434aec2d66ca2234b796-14",
+            "020962287c1797917927df2a9e9c5f1c0d701b8180527b701504210f7f4b3927-1",
+            "732087e78176abf56bae370e2ba62c59007b4fee638d65d43def3634abfd5601-1",
+            "3b29b0516a0b7af978077a8daaa189c3b82dad4559940a8acebc9017b6e97310-21"
+        ],
+        "faithfulness_score": 0
+    },
+    {
+        "query": "Care sunt conditiile de promovare a unui an universitar la Politehnica?",
+        "answer": "Nu am suficiente informații pentru a răspunde la întrebare.",
+        "context": [
+            "d1e89b524e5b8b47f1f93467914735f9474cdc10081d397e6f315687d09db052-30",
+            "bcba579c444019f0d3049720ae28075e7e2d3834011a96d548acb8c751e8d95b-22",
+            "36527b3da039b452b387028c350e8e537c8c6b5176f91649e53bf33924e493bb-5",
+            "71788602578701b9e9b11da963eee9859a06e0dc3d482036b87e7c9c12f5fab5-15",
+            "3b29b0516a0b7af978077a8daaa189c3b82dad4559940a8acebc9017b6e97310-32",
+            "d9aaa3233afc85c50c8869a9a97f45c2e80bd9dcea6b434aec2d66ca2234b796-19",
+            "2350258c519b2dda96612268851c0f3932f97cd1681d19df7eec652511e653db-19"
+        ],
+        "faithfulness_score": 0
+    },
+    {
+        "query": "Care este cuantumul taxei de scolarizare la ACS?",
+        "answer": "Nu am suficiente informații pentru a răspunde la întrebare.",
+        "context": [
+            "0939dd251ffa3b90ecb8af564934dc6ba1b92e780dfdf58548d6652a993628eb-72",
+            "70316c29c4e024cfb07239b8cb041fe2e61b063ecc31311c2a24497c18e0195a-9",
+            "305ffba5f7d4c89b1b0d23204ead08d29eea1ec1098c7799ba545633bab3c3c2-1",
+            "71788602578701b9e9b11da963eee9859a06e0dc3d482036b87e7c9c12f5fab5-26",
+            "71788602578701b9e9b11da963eee9859a06e0dc3d482036b87e7c9c12f5fab5-23",
+            "bcba579c444019f0d3049720ae28075e7e2d3834011a96d548acb8c751e8d95b-19",
+            "3b29b0516a0b7af978077a8daaa189c3b82dad4559940a8acebc9017b6e97310-13"
+        ],
+        "faithfulness_score": 0
+    },
+    {
+        "query": "Cum pot plati taxa de scolarizare?",
+        "answer": "Pentru a plăti taxa de școlarizare la Universitatea Națională de Știință și Tehnologie POLITEHNICA București, studenții au la dispoziție următoarele opțiuni:\n\n1. **Plata online** - Aceasta este o metodă convenabilă care permite studenților să efectueze plata direct prin intermediul platformei online a universității.\n2. **Plata la casieria universității** - Studenții pot efectua plata direct la casieria instituției, unde vor primi o chitanță de plată.\n\nEste important ca studenții să se asigure că taxa este achitată la zi, conform reglementărilor universității, pentru a evita eventuale probleme legate de înscrierea la examene sau continuarea studiilor.\n\nSurse:\n- Regulament privind organizarea și desfășurarea examenelor de absolvire licență/diplomă și disertație pentru anul universitar 2024_2025, URL: https://upb.ro/wp-content/uploads/2025/02/Regulament-privind-organizarea-si-desfasurarea-examenelor-de-absolvire-licentadiploma-si-disertatie-pentru-anul-universitar-2024_2025.pdf, pagina: 7",
+        "context": [
+            "79426a1571b68492454210a4455253ad1c6ca02f95283000457c0e0eb426d81d-13",
+            "0939dd251ffa3b90ecb8af564934dc6ba1b92e780dfdf58548d6652a993628eb-72",
+            "70316c29c4e024cfb07239b8cb041fe2e61b063ecc31311c2a24497c18e0195a-9",
+            "3b29b0516a0b7af978077a8daaa189c3b82dad4559940a8acebc9017b6e97310-13",
+            "305ffba5f7d4c89b1b0d23204ead08d29eea1ec1098c7799ba545633bab3c3c2-1",
+            "71788602578701b9e9b11da963eee9859a06e0dc3d482036b87e7c9c12f5fab5-26",
+            "79426a1571b68492454210a4455253ad1c6ca02f95283000457c0e0eb426d81d-4"
+        ],
+        "faithfulness_score": 10
+    },
+    {
+        "query": "Cum se calculeaza media de bursa la Politehnica?",
+        "answer": "Nu am suficiente informații pentru a răspunde la întrebare.",
+        "context": [
+            "36527b3da039b452b387028c350e8e537c8c6b5176f91649e53bf33924e493bb-9",
+            "0939dd251ffa3b90ecb8af564934dc6ba1b92e780dfdf58548d6652a993628eb-19",
+            "d9aaa3233afc85c50c8869a9a97f45c2e80bd9dcea6b434aec2d66ca2234b796-18",
+            "0939dd251ffa3b90ecb8af564934dc6ba1b92e780dfdf58548d6652a993628eb-20",
+            "d9aaa3233afc85c50c8869a9a97f45c2e80bd9dcea6b434aec2d66ca2234b796-10",
+            "0939dd251ffa3b90ecb8af564934dc6ba1b92e780dfdf58548d6652a993628eb-72",
+            "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-78"
+        ],
+        "faithfulness_score": 0
+    },
+    {
+        "query": "Exista posibilitatea de a plati taxa de scolarizare in rate?",
+        "answer": "Nu am suficiente informații pentru a răspunde la întrebare.",
+        "context": [
+            "0939dd251ffa3b90ecb8af564934dc6ba1b92e780dfdf58548d6652a993628eb-72",
+            "3b29b0516a0b7af978077a8daaa189c3b82dad4559940a8acebc9017b6e97310-13",
+            "79426a1571b68492454210a4455253ad1c6ca02f95283000457c0e0eb426d81d-13",
+            "70316c29c4e024cfb07239b8cb041fe2e61b063ecc31311c2a24497c18e0195a-9",
+            "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-211",
+            "79426a1571b68492454210a4455253ad1c6ca02f95283000457c0e0eb426d81d-4",
+            "3b29b0516a0b7af978077a8daaa189c3b82dad4559940a8acebc9017b6e97310-32"
+        ],
+        "faithfulness_score": 0
+    },
+    {
+        "query": "Care este calendarul de admitere?",
+        "answer": "# Calendarul de Admitere pentru Studiile Universitare de Masterat\n\n## Sesiunea Septembrie 2024\n- **Înscrierea candidaților:** 02.09 - 13.09.2024  \n- **Concursul de admitere:** 16.09 – 17.09.2024  \n- **Comunicarea rezultatelor:** 16.09 – 18.09.2024  \n- **Înmatricularea candidaților:** 16.09 – 20.09.2024  \n\n(Sursa: https://chimie.upb.ro/admitere/programe-de-studii-de-masterat/)\n\n## Sesiunea Iulie 2025\n- **Înscrierea candidaților:** 30.06 — 07.07.2025  \n- **Concurs de admitere:** 09.07 — 11.07.2025  \n- **Comunicarea rezultatelor:** 09.07 — 13.07.2025  \n- **Înmatricularea candidaților:** 15.07 — 31.07.2025  \n\n(Sursa: https://www.fiir.upb.ro/Upload/Master/Admitere/2025/admitere_anticipata/ADMITERE_MASTERAT_FIIR-2025-Informatii_generale.pdf, pagina: 2)\n\n## Sesiunea Mai 2025\n- **Înscriere:** 15 decembrie – 9 mai (ora 16)  \n- **Verificarea dosarelor:** 14 aprilie – 9 mai  \n- **Concurs:** 13-16 mai  \n- **Rezultate:** 17 mai  \n- **Înmatriculare:** 01-31 iulie  \n\n(Sursa: https://acs.pub.ro/admitere/masterat/)\n\n## Observații\nCalendarul concursului se stabilește de către fiecare facultate și trebuie adus la cunoștința candidaților cu minim 6 luni înainte de începerea concursului.\n\n(Sursa: https://upb.ro/wp-content/uploads/2024/12/Regulament-admitere-masterat-2025-2026.pdf, pagina: 14)\n\nSurse:\n- URL: https://chimie.upb.ro/admitere/programe-de-studii-de-masterat/\n- Sesiunea Iulie 2025, URL: https://www.fiir.upb.ro/Upload/Master/Admitere/2025/admitere_anticipata/ADMITERE_MASTERAT_FIIR-2025-Informatii_generale.pdf, pagina: 2\n- URL: https://acs.pub.ro/admitere/masterat/\n- Observații, URL: https://upb.ro/wp-content/uploads/2024/12/Regulament-admitere-masterat-2025-2026.pdf, pagina: 14",
+        "context": [
+            "95f42f60814f794ccc7649e18c987903cf095f32dab527bc4154e215474c483d-31",
+            "6ccd6e8cf90ac5e0f62d36ab0c6545bdb0df7714986675e4854d0f00e6cfc934-1",
+            "6b808561f11405e18487fc62e100ff4fa8a350384fb5f9ec6723131d690d862f-5",
+            "1b1ea7137bcac57a08ed409352d4dafea078d3672aaa23e9e88a89e6ba380ff4-1",
+            "79426a1571b68492454210a4455253ad1c6ca02f95283000457c0e0eb426d81d-24",
+            "0939dd251ffa3b90ecb8af564934dc6ba1b92e780dfdf58548d6652a993628eb-76",
+            "a6d9cdea7b06db11d13e1fd4b50c30fbca9db6da2616cd019773eb4baee44a2e-7"
+        ],
+        "faithfulness_score": 10
+    },
+    {
+        "query": "Cum pot intra pe locurile pentru olimpici la admiterea la licenta la ACS?",
+        "answer": "Pentru a intra pe locurile destinate olimpicilor la admiterea la licență la Universitatea Națională de Știință și Tehnologie POLITEHNICA București (UNSTPB), este necesar să aveți rezultate deosebite obținute la olimpiade sau concursuri naționale recunoscute. Detaliile specifice privind admiterea olimpicilor și a candidaților cu rezultate deosebite sunt reglementate în Anexa VI a regulamentului de admitere. Este recomandat să consultați regulamentul pentru a verifica cerințele exacte și tipurile de rezultate acceptate pentru admiterea fără concurs. Informațiile pot fi găsite în documentele oficiale ale universității.\n\nSurse:\n- Regulament admitere licență 2025, URL: https://upb.ro/wp-content/uploads/2024/12/Regulament_admitere_licenta_2025.pdf, pagina: 78\n- Regulament admitere licență 2025, URL: https://upb.ro/wp-content/uploads/2024/12/Regulament_admitere_licenta_2025.pdf, pagina: 79",
+        "context": [
+            "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-156",
+            "d30921449a2b0b31d12ccc546028a7e3af51f9dc6a39bcbd675f7003c2029704-7",
+            "90d452286979bc3ba13df942fe481c229bca45f701e35a41aac700dcf99479f4-6",
+            "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-161",
+            "90d452286979bc3ba13df942fe481c229bca45f701e35a41aac700dcf99479f4-3",
+            "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-158",
+            "d9aaa3233afc85c50c8869a9a97f45c2e80bd9dcea6b434aec2d66ca2234b796-6"
+        ],
+        "faithfulness_score": 10
+    },
+    {
+        "query": "In ce ordine se face admiterea candidatilor la Politehnica?",
+        "answer": "Admiterea candidaților la Politehnica București se desfășoară în următoarea ordine:\n\n1. **Înscrierea candidaților**: Aceasta se realizează în perioada stabilită de regulament, iar candidații trebuie să depună dosarul de admitere conform cerințelor specificate.\n2. **Concursul de admitere**: Candidații participă la un concurs de admitere, care variază în funcție de programul de studii (licență, master, doctorat). De exemplu, pentru masterat, concursul se desfășoară în perioada 15.09—17.09.2025, iar rezultatele sunt comunicate în zilele imediat următoare.\n3. **Validarea dosarului**: După concurs, candidații declarați admiși trebuie să valideze dosarul de concurs și să confirme locul obținut.\n4. **Înmatricularea**: Înmatricularea candidaților declarați admişi se face prin decizia rectorului, în perioada stabilită, ținând cont de clauzele stabilite în acordul de parteneriat interinstituțional.\n5. **Înscrierea în Registrul matricol**: Aceasta se realizează conform prevederilor legale în vigoare, iar candidații admiși devin studenți pe întreaga durată a programului de studii.\n\nEste important ca fiecare etapă să fie respectată conform regulamentului și să se țină cont de termenele stabilite pentru fiecare program de studii.\n\nSurse:\n- Regulament programe de studii universitare integrate sau deja acreditate, URL: https://upb.ro/wp-content/uploads/2025/03/Regulament-programe-de-studii-universitare-integrate-sau-deja-acreditate.pdf, pagina: 9\n- Admitere masterat FIIR-2025 - Informații generale, URL: https://www.fiir.upb.ro/Upload/Master/Admitere/2025/admitere_anticipata/ADMITERE_MASTERAT_FIIR-2025-Informatii_generale.pdf, pagina: 3",
+        "context": [
+            "6b808561f11405e18487fc62e100ff4fa8a350384fb5f9ec6723131d690d862f-7",
+            "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-30",
+            "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-62",
+            "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-146",
+            "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-150",
+            "2350258c519b2dda96612268851c0f3932f97cd1681d19df7eec652511e653db-12",
+            "d777b13488f59ee3809732f0621b1d67c57f740aacb1ef6deebaa33512338af5-1"
+        ],
+        "faithfulness_score": 9
+    },
+    {
+        "query": "Ma pot inscrie la examenul de admitere la licenta la mai multe facultati?",
+        "answer": "Conform regulamentului de admitere, un candidat se poate înscrie pentru susținerea concursului de admitere prin intermediul unei singure facultăți de bază din Universitatea Națională de Știință și Tehnologie POLITEHNICA București (UNSTPB). Aceasta înseamnă că nu este permisă înscrierea la examenul de admitere la mai multe facultăți simultan. Candidatul va plăti o singură taxă de înscriere la sesiunea curentă.\n\nSurse:\n- Regulament admitere licență 2025, URL: https://upb.ro/wp-content/uploads/2024/12/Regulament_admitere_licenta_2025.pdf, pagina: 11",
+        "context": [
+            "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-211",
+            "7261d53c1bc03b86e5609b82811972b54096ba162fef6abf2a9fc84018d179b4-10",
+            "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-13",
+            "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-144",
+            "f9a22cdce6042599959124756d15ab044d82bdda0dac2c00134ba7b326d76d5a-1",
+            "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-14",
+            "6b808561f11405e18487fc62e100ff4fa8a350384fb5f9ec6723131d690d862f-6"
+        ],
+        "faithfulness_score": 8
+    },
+    {
+        "query": "Care sunt disciplinele de concurs de la examenul de admitere la licenta?",
+        "answer": "Disciplinele de concurs pentru examenul de admitere la licență sunt următoarele:\n\n1. **Proba P1**: Mediile de la disciplina Matematică sau Chimie anorganică (40%)\n2. **Proba P2**: Mediile/media de la disciplinele Fizică, Informatică, Economie, Chimie organică, Biologie, Procesarea computerizată a imaginii sau Geografie (40%)\n3. **Proba P3**: Mediile generale anuale obținute de candidat în clasele a IX-a, a X-a și a XI-a (10%) și criterii suplimentare (10%) care includ activitățile desfășurate în anii de liceu.\n\nAceste informații sunt detaliate în regulamentul de admitere al Universității Naționale de Știință și Tehnologie POLITEHNICA București.\n\nSurse:\n- Regulament admitere licență 2025, URL: https://upb.ro/wp-content/uploads/2024/12/Regulament_admitere_licenta_2025.pdf, pagina: 26\n- URL: https://www.sim.upb.ro/index.php/admitere-licenta/",
+        "context": [
+            "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-91",
+            "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-37",
+            "a860fecfb47c89e5a6bc295c7fcaf02446c872f33f681a42931f51aacf7e106e-1",
+            "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-52",
+            "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-95",
+            "96e70f4bda047167435c1c790d1eed7085397707930e9d47fee17c191c260855-3",
+            "c19be514f53e9a2835519a0ee7a66d214e8146993b799c6e8816566647253006-5"
+        ],
+        "faithfulness_score": 10
+    },
+    {
+        "query": "Care este cuantumul taxei de inscriere la examenul de admitere la licenta la Politehnica?",
+        "answer": "Cuantumul taxei de înscriere la examenul de admitere la licență la Universitatea Națională de Știință și Tehnologie POLITEHNICA București este de 100 RON pentru înscrierea la sesiunile din iulie și septembrie și de 50 RON pentru înscrierea la sesiunea de admitere anticipată.\n\nSurse:\n- TAXA de înscriere, URL: https://www.upit.ro/_document/300645/taxa_de_inscriere.pdf, pagina: 1",
+        "context": [
+            "70316c29c4e024cfb07239b8cb041fe2e61b063ecc31311c2a24497c18e0195a-9",
+            "79426a1571b68492454210a4455253ad1c6ca02f95283000457c0e0eb426d81d-17",
+            "ec2388509c14d869761ef5d7b677f47daec0847c082df56e3d07909b3a20a0cc-6",
+            "79426a1571b68492454210a4455253ad1c6ca02f95283000457c0e0eb426d81d-22",
+            "7bf57b4b6d7cbb0dddcbce41c0a9202ff1f3449b21e0725519cf9b30214b66f8-5",
+            "0a7047bd9ee00f3d76a3f6e330d97e214cbc6a81ed25ef001a0d2834d408455f-3",
+            "c642c14d935f4cf36dcf3277811b920052336016da4e5f53e7161b29d9d179a3-1"
+        ],
+        "faithfulness_score": 10
+    },
+    {
+        "query": "Care este cuantumul taxei de inscriere la examenul de admitere la master la Politehnica?",
+        "answer": "Cuantumul taxei de înscriere la examenul de admitere la masterat la Universitatea Națională de Știință și Tehnologie POLITEHNICA București este de 200 RON. Totuși, pentru candidații care au absolvit un program de masterat în POLITEHNICA București, taxa de înscriere este redusă la 100 RON.\n\nSurse:\n- Regulament admitere masterat 2025-2026, URL: https://upb.ro/wp-content/uploads/2024/12/Regulament-admitere-masterat-2025-2026.pdf, pagina: 11",
+        "context": [
+            "70316c29c4e024cfb07239b8cb041fe2e61b063ecc31311c2a24497c18e0195a-9",
+            "0a7047bd9ee00f3d76a3f6e330d97e214cbc6a81ed25ef001a0d2834d408455f-3",
+            "71788602578701b9e9b11da963eee9859a06e0dc3d482036b87e7c9c12f5fab5-23",
+            "79426a1571b68492454210a4455253ad1c6ca02f95283000457c0e0eb426d81d-17",
+            "ec2388509c14d869761ef5d7b677f47daec0847c082df56e3d07909b3a20a0cc-6",
+            "79426a1571b68492454210a4455253ad1c6ca02f95283000457c0e0eb426d81d-22",
+            "7bf57b4b6d7cbb0dddcbce41c0a9202ff1f3449b21e0725519cf9b30214b66f8-5"
+        ],
+        "faithfulness_score": 0
+    },
+    {
+        "query": "Care este cuantumul taxei de inscriere la examenul de admitere la doctorat la ACS?",
+        "answer": "Cuantumul taxei de înscriere la concursul de admitere la doctorat la ACS este de 200 RON. Totuși, pentru candidații care au absolvit un program de masterat în POLITEHNICA București, taxa de înscriere este redusă la 100 RON.\n\nSurse:\n- URL: https://acs.pub.ro/admitere/doctorat/",
+        "context": [
+            "0a7047bd9ee00f3d76a3f6e330d97e214cbc6a81ed25ef001a0d2834d408455f-3",
+            "70316c29c4e024cfb07239b8cb041fe2e61b063ecc31311c2a24497c18e0195a-9",
+            "71788602578701b9e9b11da963eee9859a06e0dc3d482036b87e7c9c12f5fab5-23",
+            "6b808561f11405e18487fc62e100ff4fa8a350384fb5f9ec6723131d690d862f-6",
+            "d43f4eaa3d93bf485a402f19f967f21b14b8011a675d9a5e0301629717d64291-10",
+            "6b808561f11405e18487fc62e100ff4fa8a350384fb5f9ec6723131d690d862f-4",
+            "81eecb583745caf19cfcc51fd6934ec333208f8b5736456e051aa42e11c6104e-2"
+        ],
+        "faithfulness_score": 10
+    },
+    {
+        "query": "Cand se afiseaza rezultatele la admiterea la licenta la ACS?",
+        "answer": "Rezultatele preliminare la admiterea la licență la ACS vor fi afișate pe data de 15 iulie, iar rezultatele finale ale concursului vor fi disponibile pe 16 iulie. Aceste informații sunt conforme cu calendarul admiterii publicat pe site-ul oficial al ACS.\n\nSurse:\n- URL: https://acs.pub.ro/admitere/licenta/",
+        "context": [
+            "6ccd6e8cf90ac5e0f62d36ab0c6545bdb0df7714986675e4854d0f00e6cfc934-2",
+            "57fffc9ae7f67be9c637b16ae3a994af2cbec240e5ea61a02f4d25fea85f1d10-4",
+            "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-23",
+            "96e70f4bda047167435c1c790d1eed7085397707930e9d47fee17c191c260855-2",
+            "491f908948d53e5b16fb1e16d5db1345049605301c9e3d3f7116532b523b9d98-7",
+            "6b808561f11405e18487fc62e100ff4fa8a350384fb5f9ec6723131d690d862f-7",
+            "0a7047bd9ee00f3d76a3f6e330d97e214cbc6a81ed25ef001a0d2834d408455f-4"
+        ],
+        "faithfulness_score": 10
+    },
+    {
+        "query": "Cand se afiseaza rezultatele la admiterea la licenta la FAIMA?",
+        "answer": "Rezultatele preliminare la admiterea la licență la FAIMA vor fi afișate pe data de 9 aprilie 2025 pentru sesiunea de admitere anticipată, iar pentru sesiunea de admitere din iulie 2025, rezultatele preliminare vor fi afișate pe 15 iulie 2025.\n\nSurse:\n- URL: https://acs.pub.ro/admitere/licenta/\n- URL: https://acs.pub.ro/admitere/licenta/",
+        "context": [
+            "57fffc9ae7f67be9c637b16ae3a994af2cbec240e5ea61a02f4d25fea85f1d10-4",
+            "96e70f4bda047167435c1c790d1eed7085397707930e9d47fee17c191c260855-2",
+            "a6d93e140ed275d649d698d7fc77e3bef36eb660ae7f730e74df6a05ba887174-2",
+            "491f908948d53e5b16fb1e16d5db1345049605301c9e3d3f7116532b523b9d98-7",
+            "491f908948d53e5b16fb1e16d5db1345049605301c9e3d3f7116532b523b9d98-4",
+            "a6d93e140ed275d649d698d7fc77e3bef36eb660ae7f730e74df6a05ba887174-8",
+            "5ed022490c4bb6b106bfb96e9f513a2f775f895e59731b26cd505937a92b04e3-1"
+        ],
+        "faithfulness_score": 8
+    },
+    {
+        "query": "Ce facultati sunt in cadrul Politehnicii?",
+        "answer": "Nu am suficiente informații pentru a răspunde la întrebare.",
+        "context": [
+            "79426a1571b68492454210a4455253ad1c6ca02f95283000457c0e0eb426d81d-3",
+            "0939dd251ffa3b90ecb8af564934dc6ba1b92e780dfdf58548d6652a993628eb-51",
+            "0939dd251ffa3b90ecb8af564934dc6ba1b92e780dfdf58548d6652a993628eb-52",
+            "2350258c519b2dda96612268851c0f3932f97cd1681d19df7eec652511e653db-19",
+            "020962287c1797917927df2a9e9c5f1c0d701b8180527b701504210f7f4b3927-2",
+            "732087e78176abf56bae370e2ba62c59007b4fee638d65d43def3634abfd5601-2",
+            "3b29b0516a0b7af978077a8daaa189c3b82dad4559940a8acebc9017b6e97310-26"
+        ],
+        "faithfulness_score": 0
+    },
+    {
+        "query": "Cate programe de studii de masterat sunt la ACS?",
+        "answer": "Facultatea de Automatică și Calculatoare (ACS) oferă 24 de programe de studii universitare de masterat acreditate de către ARACIS. Acestea sunt împărțite în domeniile: Calculatoare și Tehnologia Informației (12 programe), Ingineria Sistemelor (11 programe) și Inginerie și Management (1 program).\n\nSurse:\n- URL: https://acs.pub.ro/educatie/masterat/",
+        "context": [
+            "6ccd6e8cf90ac5e0f62d36ab0c6545bdb0df7714986675e4854d0f00e6cfc934-2",
+            "79426a1571b68492454210a4455253ad1c6ca02f95283000457c0e0eb426d81d-3",
+            "36527b3da039b452b387028c350e8e537c8c6b5176f91649e53bf33924e493bb-2",
+            "b0cbeb3807d8d4381a6714716c6b975a969f6f161745575e700833bee09cd1c7-1",
+            "be5ae40f334f68882d68d7d4400977cb93057a69e326335fee6a238e0cf042f4-1",
+            "699b8dd450c1d79a46377ef809f95fb7a405af6c53b96aba0945dd16837ac73c-1",
+            "3b29b0516a0b7af978077a8daaa189c3b82dad4559940a8acebc9017b6e97310-33"
+        ],
+        "faithfulness_score": 10
+    },
+    {
+        "query": "Ce materii sunt la facultatea de Automatica si Calculatoare?",
+        "answer": "Nu am suficiente informații pentru a răspunde la întrebare.",
+        "context": [
+            "6ccd6e8cf90ac5e0f62d36ab0c6545bdb0df7714986675e4854d0f00e6cfc934-8",
+            "6ccd6e8cf90ac5e0f62d36ab0c6545bdb0df7714986675e4854d0f00e6cfc934-10",
+            "6ccd6e8cf90ac5e0f62d36ab0c6545bdb0df7714986675e4854d0f00e6cfc934-4",
+            "a98a700ef6b47f46f4820a8597f1e9f15e10b6ff2acf9ea891b73ec6c83fabb0-29",
+            "b0cbeb3807d8d4381a6714716c6b975a969f6f161745575e700833bee09cd1c7-3",
+            "6ccd6e8cf90ac5e0f62d36ab0c6545bdb0df7714986675e4854d0f00e6cfc934-11",
+            "b0cbeb3807d8d4381a6714716c6b975a969f6f161745575e700833bee09cd1c7-5"
+        ],
+        "faithfulness_score": 0
+    },
+    {
+        "query": "Care sunt conditiile de admitere la licenta la ETTI?",
+        "answer": "Nu am suficiente informații pentru a răspunde la întrebare.",
+        "context": [
+            "36527b3da039b452b387028c350e8e537c8c6b5176f91649e53bf33924e493bb-4",
+            "5ed022490c4bb6b106bfb96e9f513a2f775f895e59731b26cd505937a92b04e3-1",
+            "36527b3da039b452b387028c350e8e537c8c6b5176f91649e53bf33924e493bb-9",
+            "c642c14d935f4cf36dcf3277811b920052336016da4e5f53e7161b29d9d179a3-1",
+            "020962287c1797917927df2a9e9c5f1c0d701b8180527b701504210f7f4b3927-1",
+            "732087e78176abf56bae370e2ba62c59007b4fee638d65d43def3634abfd5601-1",
+            "3b29b0516a0b7af978077a8daaa189c3b82dad4559940a8acebc9017b6e97310-21"
+        ],
+        "faithfulness_score": 0
+    },
+    {
+        "query": "Care este cuantumul burselor?",
+        "answer": "Nu am suficiente informații pentru a răspunde la întrebare.",
+        "context": [
+            "0939dd251ffa3b90ecb8af564934dc6ba1b92e780dfdf58548d6652a993628eb-72",
+            "d9aaa3233afc85c50c8869a9a97f45c2e80bd9dcea6b434aec2d66ca2234b796-18",
+            "0939dd251ffa3b90ecb8af564934dc6ba1b92e780dfdf58548d6652a993628eb-20",
+            "71788602578701b9e9b11da963eee9859a06e0dc3d482036b87e7c9c12f5fab5-34",
+            "d9aaa3233afc85c50c8869a9a97f45c2e80bd9dcea6b434aec2d66ca2234b796-10",
+            "0939dd251ffa3b90ecb8af564934dc6ba1b92e780dfdf58548d6652a993628eb-75",
+            "d1e89b524e5b8b47f1f93467914735f9474cdc10081d397e6f315687d09db052-45"
+        ],
+        "faithfulness_score": 0
+    },
+    {
+        "query": "Care este cuantumul bursei sociale?",
+        "answer": "Cuantumul minim al bursei sociale se propune anual, până la data de 1 septembrie, de către Comisia Națională pentru Finanțarea Învățământului Superior (CNFIS) și se adoptă prin ordin al ministrului educației, având rolul de a acoperi cheltuielile minime de masă și cazare. De asemenea, cuantumul burselor sociale se stabilește prin hotărâre a senatului universității POLITEHNICA București, la propunerea Consiliului de administrație, în limita fondurilor disponibile și în funcție de nevoile identificate la nivelul comunității studențești, prin consultarea reprezentanților studenților, inclusiv cu organizațiile studențești din POLITEHNICA București.\n\nSurse:\n- Metodologie burse rectificata, URL: https://upb.ro/wp-content/uploads/2024/12/Metodologie-burse_rectificata.pdf, pagina: 8",
+        "context": [
+            "d9aaa3233afc85c50c8869a9a97f45c2e80bd9dcea6b434aec2d66ca2234b796-18",
+            "d9aaa3233afc85c50c8869a9a97f45c2e80bd9dcea6b434aec2d66ca2234b796-10",
+            "d9aaa3233afc85c50c8869a9a97f45c2e80bd9dcea6b434aec2d66ca2234b796-13",
+            "bcba579c444019f0d3049720ae28075e7e2d3834011a96d548acb8c751e8d95b-21",
+            "0939dd251ffa3b90ecb8af564934dc6ba1b92e780dfdf58548d6652a993628eb-72",
+            "d9aaa3233afc85c50c8869a9a97f45c2e80bd9dcea6b434aec2d66ca2234b796-14",
+            "bcba579c444019f0d3049720ae28075e7e2d3834011a96d548acb8c751e8d95b-22"
+        ],
+        "faithfulness_score": 10
+    },
+    {
+        "query": "Ce presupune sesiunea 3 de admitere la licenta?",
+        "answer": "Sesiunea III de admitere la licență este destinată completării locurilor rămase neocupate în sesiunile I și II. Aceasta se va desfășura în perioada august-septembrie 2025, iar detaliile specifice pentru această sesiune vor fi stabilite și anunțate ulterior, după finalizarea Sesiunii II. Candidații interesați pot consulta regulamentul de admitere al U.P.B. pentru informații suplimentare.\n\nSurse:\n- Sursa: https://chimie.upb.ro/administrare/content/doc/admitere/brosura/doc.pdf, URL: https://chimie.upb.ro/administrare/content/doc/admitere/brosura/doc.pdf, pagina: 13\n- Sursa: https://upb.ro/wp-content/uploads/2024/12/Regulament_admitere_licenta_2025.pdf, URL: https://upb.ro/wp-content/uploads/2024/12/Regulament_admitere_licenta_2025.pdf, pagina: 35",
+        "context": [
+            "81eecb583745caf19cfcc51fd6934ec333208f8b5736456e051aa42e11c6104e-7",
+            "a192eeb16b38c512b52907612a334423de5ea7a64b05047d05038e52e01dcad9-5",
+            "7261d53c1bc03b86e5609b82811972b54096ba162fef6abf2a9fc84018d179b4-3",
+            "96e70f4bda047167435c1c790d1eed7085397707930e9d47fee17c191c260855-2",
+            "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-51",
+            "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-64",
+            "a192eeb16b38c512b52907612a334423de5ea7a64b05047d05038e52e01dcad9-3"
+        ],
+        "faithfulness_score": 10
+    },
+    {
+        "query": "Cand are loc simularea examenului de admitere la licenta la ACS?",
+        "answer": "Nu am suficiente informații pentru a răspunde la întrebare.",
+        "context": [
+            "0a7047bd9ee00f3d76a3f6e330d97e214cbc6a81ed25ef001a0d2834d408455f-4",
+            "1b1ea7137bcac57a08ed409352d4dafea078d3672aaa23e9e88a89e6ba380ff4-1",
+            "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-127",
+            "85fcf9d8684602276ff1fc4ac04e10d3fb6a6c2732942ac846889086a23d3e5d-1",
+            "6ccd6e8cf90ac5e0f62d36ab0c6545bdb0df7714986675e4854d0f00e6cfc934-2",
+            "2935a2b5655aa08b392c5057783524909312371c87c2fd95a71bd36ba6c57cf8-9",
+            "79426a1571b68492454210a4455253ad1c6ca02f95283000457c0e0eb426d81d-10"
+        ],
+        "faithfulness_score": 0
+    },
+    {
+        "query": "Cum se calculeaza media de admitere la licenta?",
+        "answer": "Nu am suficiente informații pentru a răspunde la întrebare.",
+        "context": [
+            "36527b3da039b452b387028c350e8e537c8c6b5176f91649e53bf33924e493bb-9",
+            "0a7047bd9ee00f3d76a3f6e330d97e214cbc6a81ed25ef001a0d2834d408455f-3",
+            "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-321",
+            "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-362",
+            "020962287c1797917927df2a9e9c5f1c0d701b8180527b701504210f7f4b3927-1",
+            "732087e78176abf56bae370e2ba62c59007b4fee638d65d43def3634abfd5601-1",
+            "c642c14d935f4cf36dcf3277811b920052336016da4e5f53e7161b29d9d179a3-1"
+        ],
+        "faithfulness_score": 0
+    },
+    {
+        "query": "Daca ma inscriu la mai multe facultati pot plati o singura taxa de inscriere?",
+        "answer": "Nu am suficiente informații pentru a răspunde la întrebare.",
+        "context": [
+            "79426a1571b68492454210a4455253ad1c6ca02f95283000457c0e0eb426d81d-17",
+            "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-223",
+            "ec2388509c14d869761ef5d7b677f47daec0847c082df56e3d07909b3a20a0cc-6",
+            "79426a1571b68492454210a4455253ad1c6ca02f95283000457c0e0eb426d81d-22",
+            "7bf57b4b6d7cbb0dddcbce41c0a9202ff1f3449b21e0725519cf9b30214b66f8-5",
+            "70316c29c4e024cfb07239b8cb041fe2e61b063ecc31311c2a24497c18e0195a-9",
+            "81eecb583745caf19cfcc51fd6934ec333208f8b5736456e051aa42e11c6104e-2"
+        ],
+        "faithfulness_score": 0
+    },
+    {
+        "query": "Cum pot opta pentru cazare la camin?",
+        "answer": "Pentru a opta pentru cazare la cămin, studenții trebuie să se prezinte cu legitimația de cămin eliberată și vizată la zi de administratorul căminului. De asemenea, este necesar să se respecte regulile și procedurile stabilite de universitate în acest sens. Detalii suplimentare pot fi obținute de la secretariatele facultăților sau de la administratorii căminelor.\n\nSurse:\n- Regulament acces U.P.B., URL: https://upb.ro/wp-content/uploads/2025/04/Regulament-acces-UPB_actualizat-noiembrie-2022-01.pdf, pagina: 4",
+        "context": [
+            "5fe6fc7e457fe49fc645ddd2f88550ce3d5a2c0f3f63fa795b3a120b53c2e748-7",
+            "5fe6fc7e457fe49fc645ddd2f88550ce3d5a2c0f3f63fa795b3a120b53c2e748-5",
+            "d12056e2c2c334eab800875dc06fe79b0639c4249b41a79f3d3e27777b354074-32",
+            "bcba579c444019f0d3049720ae28075e7e2d3834011a96d548acb8c751e8d95b-9",
+            "a98a700ef6b47f46f4820a8597f1e9f15e10b6ff2acf9ea891b73ec6c83fabb0-30",
+            "a98a700ef6b47f46f4820a8597f1e9f15e10b6ff2acf9ea891b73ec6c83fabb0-53",
+            "3b29b0516a0b7af978077a8daaa189c3b82dad4559940a8acebc9017b6e97310-26"
+        ],
+        "faithfulness_score": 8
+    },
+    {
+        "query": "Care este structura unui an universitar?",
+        "answer": "Structura anului universitar este aprobată de către Senatul Universității, conform dispozițiilor legale. La începutul fiecărui an universitar, facultățile au obligația de a afișa pe pagina web structura anului universitar și planurile de învățământ pentru fiecare program de studii. Aceasta include informații despre disciplinele care vor fi studiate, precum și despre organizarea activităților didactice și evaluările corespunzătoare.\n\nSurse:\n- Regulament privind organizarea și funcționarea studiilor universitare de masterat, URL: https://upb.ro/wp-content/uploads/2022/11/Regulament-privind-organizarea-si-functionarea-studiilor-universitare-de-masterat.pdf, pagina: 6",
+        "context": [
+            "2350258c519b2dda96612268851c0f3932f97cd1681d19df7eec652511e653db-19",
+            "71788602578701b9e9b11da963eee9859a06e0dc3d482036b87e7c9c12f5fab5-15",
+            "71788602578701b9e9b11da963eee9859a06e0dc3d482036b87e7c9c12f5fab5-36",
+            "3b29b0516a0b7af978077a8daaa189c3b82dad4559940a8acebc9017b6e97310-32",
+            "bcba579c444019f0d3049720ae28075e7e2d3834011a96d548acb8c751e8d95b-22",
+            "79426a1571b68492454210a4455253ad1c6ca02f95283000457c0e0eb426d81d-3",
+            "d1e89b524e5b8b47f1f93467914735f9474cdc10081d397e6f315687d09db052-30"
+        ],
+        "faithfulness_score": 9
+    },
+    {
+        "query": "Cand are loc admiterea la licenta la ACS?",
+        "answer": "Admiterea la licență la Facultatea de Automatică și Calculatoare (ACS) are loc conform următorului calendar: \n- Examen scris (ambele probe): 14 Iulie începând cu ora 09:00 \n- Afișare rezultate preliminare: 15 iulie \n- Afișare rezultate finale concurs: 16 iulie \n- Validare, confirmare, înscriere în anul I și înmatriculare: 16 Iulie ora 9.00 – 17 Iulie ora 16.00, fizic, la sediul facultății. \n- Dacă se va organiza Sesiunea 2+ (în funcție de situația locurilor vacante): Validare, confirmare, înscriere în anul I și înmatriculare candidați Sesiunea 2+: 18 Iulie ora 9.00 – 19 Iulie ora 16.00, fizic, la sediul facultății. \n- Rezultate finale admiși și înscriși în anul I: 19 Iulie.\n\nSurse:\n- URL: https://acs.pub.ro/admitere/licenta/",
+        "context": [
+            "6ccd6e8cf90ac5e0f62d36ab0c6545bdb0df7714986675e4854d0f00e6cfc934-1",
+            "6ccd6e8cf90ac5e0f62d36ab0c6545bdb0df7714986675e4854d0f00e6cfc934-2",
+            "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-68",
+            "491f908948d53e5b16fb1e16d5db1345049605301c9e3d3f7116532b523b9d98-7",
+            "a6d93e140ed275d649d698d7fc77e3bef36eb660ae7f730e74df6a05ba887174-2",
+            "1b1ea7137bcac57a08ed409352d4dafea078d3672aaa23e9e88a89e6ba380ff4-1",
+            "6b808561f11405e18487fc62e100ff4fa8a350384fb5f9ec6723131d690d862f-5"
+        ],
+        "faithfulness_score": 10
+    },
+    {
+        "query": "Cand are loc admiterea la licenta?",
+        "answer": "Admiterea la licență are loc în perioada 14 iulie 2025, când se va desfășura examenul scris, urmat de afișarea rezultatelor preliminare pe 15 iulie și rezultatelor finale pe 16 iulie. Validarea, confirmarea, înscrierea în anul I și înmatricularea se vor realiza între 16 iulie (ora 9:00) și 17 iulie (ora 16:00). În cazul în care se va organiza Sesiunea 2+, aceasta va avea loc între 18 iulie (ora 9:00) și 19 iulie (ora 16:00). Detalii suplimentare pot fi găsite pe site-ul oficial al facultății.\n\nSurse:\n- URL: https://acs.pub.ro/admitere/licenta/",
+        "context": [
+            "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-68",
+            "6ccd6e8cf90ac5e0f62d36ab0c6545bdb0df7714986675e4854d0f00e6cfc934-1",
+            "95433f95bf4f9e5fef2fb7938a0ae137f2588497cb46ca97e61fd05660532466-6",
+            "1b1ea7137bcac57a08ed409352d4dafea078d3672aaa23e9e88a89e6ba380ff4-1",
+            "57fffc9ae7f67be9c637b16ae3a994af2cbec240e5ea61a02f4d25fea85f1d10-4",
+            "491f908948d53e5b16fb1e16d5db1345049605301c9e3d3f7116532b523b9d98-7",
+            "6b808561f11405e18487fc62e100ff4fa8a350384fb5f9ec6723131d690d862f-5"
+        ],
+        "faithfulness_score": 10
+    },
+    {
+        "query": "Cand are loc admiterea la master?",
+        "answer": "Admiterea la studiile universitare de masterat se desfășoară în mai multe sesiuni. În sesiunea Septembrie 2024, procesul de admitere va începe pe data de 02.09.2024, iar calendarul este următorul:\n- Înscrierea candidaților: 02.09 - 13.09.2024\n- Concursul de admitere: 16.09 – 17.09.2024\n- Comunicarea rezultatelor: 16.09 – 18.09.2024\n- Înmatricularea candidaților: 16.09 – 20.09.2024.\n\nDe asemenea, în anul 2025, admiterea se va organiza în trei sesiuni: sesiunea anticipată (decembrie - mai), sesiunea iulie și sesiunea septembrie. Detalii specifice pentru fiecare sesiune vor fi disponibile pe site-ul universității.\n\nPentru mai multe informații, vă rugăm să consultați regulamentul de admitere disponibil pe site-ul oficial.\n\nSurse:\n- URL: https://chimie.upb.ro/admitere/programe-de-studii-de-masterat/\n- URL: https://acs.pub.ro/admitere/masterat/",
+        "context": [
+            "95433f95bf4f9e5fef2fb7938a0ae137f2588497cb46ca97e61fd05660532466-1",
+            "1b1ea7137bcac57a08ed409352d4dafea078d3672aaa23e9e88a89e6ba380ff4-1",
+            "a6d9cdea7b06db11d13e1fd4b50c30fbca9db6da2616cd019773eb4baee44a2e-5",
+            "6ccd6e8cf90ac5e0f62d36ab0c6545bdb0df7714986675e4854d0f00e6cfc934-1",
+            "a6d93e140ed275d649d698d7fc77e3bef36eb660ae7f730e74df6a05ba887174-1",
+            "a6d9cdea7b06db11d13e1fd4b50c30fbca9db6da2616cd019773eb4baee44a2e-1",
+            "a6d9cdea7b06db11d13e1fd4b50c30fbca9db6da2616cd019773eb4baee44a2e-3"
+        ],
+        "faithfulness_score": 9
+    },
+    {
+        "query": "Cand are loc admiterea la doctorat?",
+        "answer": "Admiterea la doctorat pentru anul 2024 se va desfășura în perioada 1 aprilie – 20 septembrie 2024. În această perioadă, candidații vor putea să se înscrie, iar validarea dosarului și evaluarea acestora vor avea loc în intervale specifice. Rezultatele evaluării vor fi anunțate începând cu 30 aprilie 2024, iar evaluarea candidaților admiși va avea loc pe 25-26 septembrie 2024. Înmatricularea candidaților declarați admiși va avea loc pe 30 septembrie 2024, iar stagiul doctoral va începe pe 1 octombrie 2024.\n\nSurse:\n- URL: https://acs.pub.ro/admitere/doctorat/",
+        "context": [
+            "0a7047bd9ee00f3d76a3f6e330d97e214cbc6a81ed25ef001a0d2834d408455f-1",
+            "2857876d53734150ffb44fc71e4dbc6585d2bc1415ee25bfcea3633c54158da3-1",
+            "d43f4eaa3d93bf485a402f19f967f21b14b8011a675d9a5e0301629717d64291-6",
+            "d43f4eaa3d93bf485a402f19f967f21b14b8011a675d9a5e0301629717d64291-7",
+            "d43f4eaa3d93bf485a402f19f967f21b14b8011a675d9a5e0301629717d64291-4",
+            "36527b3da039b452b387028c350e8e537c8c6b5176f91649e53bf33924e493bb-8",
+            "36527b3da039b452b387028c350e8e537c8c6b5176f91649e53bf33924e493bb-5"
+        ],
+        "faithfulness_score": 10
+    },
+    {
+        "query": "Ce documente sunt necesare pentru inmatriculare?",
+        "answer": "# Documente necesare pentru înmatriculare\n\nPentru înmatricularea candidaților admiși, sunt necesare următoarele documente:\n\n1. **Certificatul de naștere** al candidatului (original și copie).\n2. **Act de identitate** (Carte de identitate sau Pașaport) aflat în perioada de valabilitate la data înscrierii; dacă acesta a expirat, se va prezenta o copie după vechiul act de identitate și originalul noului act.\n3. **3 fotografii color** recente, identice, dimensiune 3x4 cm, pe hârtie fotografică.\n4. **Diploma de Bacalaureat** (sau diploma echivalentă) însoțită de foaia matricolă (original).\n5. **Documente care să ateste rezultatele obținute** la olimpiade și concursuri de profil, dacă este cazul (original).\n6. **Dovada achitării taxei de înscriere** la concurs sau dovada scutirii de plată a acestei taxe (original).\n7. **Cererea de înscriere** semnată de candidat (original).\n8. **Declarație pe proprie răspundere** semnată de candidat, privind veridicitatea datelor și documentelor furnizate (original).\n9. **Adeverință medicală** din care să rezulte că este apt medical (original).\n10. **Dovada achitării taxei de înmatriculare** (original). Taxa de înmatriculare este de 50 lei și se poate achita online sau prin alte metode specificate.\n\nAceste documente trebuie prezentate la sediul facultății la care candidatul a fost declarat pre-admis.\n\nSurse:\n- Regulament admitere licență 2025, URL: https://upb.ro/wp-content/uploads/2024/12/Regulament_admitere_licenta_2025.pdf, pagina: 98\n- Regulament admitere licență 2025, URL: https://upb.ro/wp-content/uploads/2024/12/Regulament_admitere_licenta_2025.pdf, pagina: 99",
+        "context": [
+            "a192eeb16b38c512b52907612a334423de5ea7a64b05047d05038e52e01dcad9-8",
+            "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-146",
+            "57fffc9ae7f67be9c637b16ae3a994af2cbec240e5ea61a02f4d25fea85f1d10-6",
+            "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-219",
+            "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-215",
+            "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-47",
+            "3b29b0516a0b7af978077a8daaa189c3b82dad4559940a8acebc9017b6e97310-36"
+        ],
+        "faithfulness_score": 10
+    },
+    {
+        "query": "Ce documente sunt necesare pentru inscrierea la examenul de admitere?",
+        "answer": "Pentru înscrierea la examenul de admitere, candidații trebuie să pregătească următoarele documente:\n\n1. **Diploma de Bacalaureat** (sau diploma echivalentă) însoțită de foaia matricolă - Original.\n2. **Certificatul de naștere** al candidatului - Original.\n3. **Act de identitate** (Carte de identitate sau Pașaport) aflat în perioada de valabilitate - Original.\n4. **3 fotografii color** recente, identice, dimensiune 3x4 cm.\n5. **Situație școlară** (adeverință, foaie matricolă) emisă de liceul de proveniență, specificând mediile obținute - Original.\n6. **Dovada achitării taxei de înscriere** la concurs - Original.\n7. **Cererea de înscriere** la concurs semnată de candidat - Original.\n8. **Declarație pe proprie răspundere** privind veridicitatea datelor și documentelor furnizate - Original.\n9. **Adeverință medicală** din care să rezulte că este apt medical - Original.\n10. **Documente care atestă rezultatele obținute** la activități suplimentare, dacă este cazul - Original.\n11. **Documente care fac dovada cunoașterii limbii** respective, pentru candidații care optează pentru programe în limbi străine - Original.\n12. **Eseul motivațional** pentru candidații care optează la domeniul Științe ale educației, dacă este cazul - Original.\n\nAceste documente sunt necesare pentru validarea dosarului de concurs și ulterior pentru înmatricularea candidaților admiși. Este important ca toate documentele să fie originale, iar unele pot necesita completarea unor formulare specifice în funcție de situația personală a fiecărui candidat.\n\nSurse:\n- Regulament admitere licență 2025, URL: https://upb.ro/wp-content/uploads/2024/12/Regulament_admitere_licenta_2025.pdf, pagina: 75",
+        "context": [
+            "0a7047bd9ee00f3d76a3f6e330d97e214cbc6a81ed25ef001a0d2834d408455f-4",
+            "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-219",
+            "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-147",
+            "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-208",
+            "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-64",
+            "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-47",
+            "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-211"
+        ],
+        "faithfulness_score": 10
+    },
+    {
+        "query": "Cate locuri sunt disponibile pentru admiterea la ACS?",
+        "answer": "Nu am suficiente informații pentru a răspunde la întrebare.",
+        "context": [
+            "6ccd6e8cf90ac5e0f62d36ab0c6545bdb0df7714986675e4854d0f00e6cfc934-2",
+            "7261d53c1bc03b86e5609b82811972b54096ba162fef6abf2a9fc84018d179b4-4",
+            "5ed022490c4bb6b106bfb96e9f513a2f775f895e59731b26cd505937a92b04e3-1",
+            "57fffc9ae7f67be9c637b16ae3a994af2cbec240e5ea61a02f4d25fea85f1d10-1",
+            "ba75f0389538768538a511b967d4615e92eea881cff88fe9b1a8f115522830a3-1",
+            "3ce85f62ac0462282f15ad6370536847c866a7d8ea12b3d467a1c78ed9bbbfde-1",
+            "3c5e824db35a33f37d5e5e8ec458990f117f37c89c1e509155108c94d078dd3a-1"
+        ],
+        "faithfulness_score": 0
+    },
+    {
+        "query": "Cand are loc testul online de limba de la Politehnica?",
+        "answer": "Testul online de limbă de la Politehnica București are loc în două date: \n1. **21 martie 2025** - această dată este valabilă pentru toți candidații. \n2. **23 mai 2025** - această a doua dată este valabilă doar pentru candidații înscriși la facultățile la care admiterea anticipată se face pe baza rezultatelor la activitățile școlare (dosar). Detalii suplimentare pot fi găsite pe site-ul oficial al universității.\n\nSurse:\n- Regulament admitere licență 2025, URL: https://upb.ro/wp-content/uploads/2024/12/Regulament_admitere_licenta_2025.pdf, pagina: 26\n- Test limbă străină 23-05 detalii S1 2025, URL: https://fils.upb.ro/wp-content/uploads/2025/02/Test-limba-straina-23-05-detalii-S1-2025.pdf, pagina: 1",
+        "context": [
+            "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-36",
+            "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-53",
+            "4a8af42a6c47f11b1d13d802bee4da49f7d449950fa3f74b338baa449e1e595b-3",
+            "ea1eefdfe13b4e547017a55349bc78edf700398a89c7cb73363d4ba10f043fd0-2",
+            "79426a1571b68492454210a4455253ad1c6ca02f95283000457c0e0eb426d81d-10",
+            "70316c29c4e024cfb07239b8cb041fe2e61b063ecc31311c2a24497c18e0195a-16",
+            "7261d53c1bc03b86e5609b82811972b54096ba162fef6abf2a9fc84018d179b4-11"
+        ],
+        "faithfulness_score": 10
+    },
+    {
+        "query": "Ce documente sunt necesare pentru a demonstra cunostintele lingvistice la inscrierea la un program de studii in limba engleza?",
+        "answer": "Pentru a demonstra cunoștințele lingvistice la înscrierea la un program de studii în limba engleză, sunt necesare următoarele documente:\n\n1. **Liceu absolvit în respectiva limbă de predare**: Dacă acest lucru nu apare evident din celelalte documente furnizate la înscriere, trebuie să încarci o copie a unui document eliberat de liceu care să ateste că ai urmat un program de studii în limba engleză.\n2. **Certificat de competențe lingvistice**: Este necesar un certificat de competențe lingvistice pentru limba engleză, cu un nivel minim B2.\n3. **Disciplina de tip limbă străină promovată în liceu**: Trebuie să demonstrezi că ai promovat o disciplină de tip limbă străină cu media cel puțin 8,00 în clasele a IX-a, a X-a, a XI-a.\n4. **Proba A, B sau C de la examenul de Bacalaureat**: Este necesară o copie completă a diplomei de Bacalaureat, inclusiv situația la examen.\n5. **Testul de limbă POLITEHNICA București**: Poți alege să susții testul de limbă organizat de POLITEHNICA București, fără a fi necesar să încarci alte documente la înscriere.\n\nAceste documente trebuie să fie încărcate în platforma de înscriere, conform reglementărilor instituției.\n\nSurse:\n- Testul de limbă on-line POLITEHNICA București, URL: https://fils.upb.ro/wp-content/uploads/2025/02/Test-limba-straina-23-05-detalii-S1-2025.pdf, pagina: 1\n- Metodologie admitere și școlarizare RP septembrie-2024, URL: https://www.fiir.upb.ro/Upload/Master/Admitere/2025/Metodologie_admitere-si-scolarizare_RP_septembrie-2024.pdf, pagina: 10",
+        "context": [
+            "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-218",
+            "4a8af42a6c47f11b1d13d802bee4da49f7d449950fa3f74b338baa449e1e595b-1",
+            "4a8af42a6c47f11b1d13d802bee4da49f7d449950fa3f74b338baa449e1e595b-2",
+            "672577271c2e708d1597a074314ae1c6e2c501a0ea55477ba9124d256f0d763d-12",
+            "2f00f574cf6bcfcaa980d0cc9820112b399e68a252d8bcc1248ce1c84c8bf16f-24",
+            "ea1eefdfe13b4e547017a55349bc78edf700398a89c7cb73363d4ba10f043fd0-2",
+            "672577271c2e708d1597a074314ae1c6e2c501a0ea55477ba9124d256f0d763d-9"
+        ],
+        "faithfulness_score": 10
+    },
+    {
+        "query": "Cum pot sa ma inscriu la testul online de limba straina?",
+        "answer": "Pentru a te înscrie la testul online de limbă străină POLITEHNICA București, trebuie să urmezi următorii pași:\n\n1. **Înscriere**: Completează formularul de înscriere disponibil la adresa [https://forms.office.com/e/2AWesNbYr9](https://forms.office.com/e/2AWesNbYr9). Este important ca adresa de e-mail completată în formular să fie aceeași cu cea utilizată în procesul de înscriere la concurs pe pagina [http://admitere.pub.ro/](http://admitere.pub.ro/).\n2. **Termen limită**: Asigură-te că formularul este completat până cel târziu pe 21 mai 2025, ora 12:00. Candidații care nu respectă acest termen nu vor putea susține testul.\n3. **Obținerea datelor de acces**: După completarea formularului, vei primi un e-mail pe adresa ta de e-mail, care va conține informațiile necesare pentru accesarea testului online, inclusiv linkul de acces, user și parolă.\n4. **Susținerea testului**: Accesează platforma de testare folosind datele primite și susține testul la ora programată. Testul pentru limba engleză începe la ora 10:00, pentru limba germană la ora 12:00, iar pentru limba franceză la ora 14:00. Ai la dispoziție 100 de minute pentru a răspunde la întrebări, iar testul se va închide automat după 120 de minute de la ora de început programată.\n5. **Primirea rezultatelor**: Vei primi rezultatul testului după finalizarea acestuia.\n\nAsigură-te că urmezi toți pașii menționați pentru a te putea înscrie cu succes la test.\n\nSurse:\n- Testul de limbă on-line POLITEHNICA București, URL: https://fils.upb.ro/wp-content/uploads/2025/02/Test-limba-straina-23-05-detalii-S1-2025.pdf, pagina: 1",
+        "context": [
+            "4a8af42a6c47f11b1d13d802bee4da49f7d449950fa3f74b338baa449e1e595b-3",
+            "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-36",
+            "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-53",
+            "4a8af42a6c47f11b1d13d802bee4da49f7d449950fa3f74b338baa449e1e595b-1",
+            "4a8af42a6c47f11b1d13d802bee4da49f7d449950fa3f74b338baa449e1e595b-2",
+            "ea1eefdfe13b4e547017a55349bc78edf700398a89c7cb73363d4ba10f043fd0-2",
+            "7261d53c1bc03b86e5609b82811972b54096ba162fef6abf2a9fc84018d179b4-11"
+        ],
+        "faithfulness_score": 10
+    },
+    {
+        "query": "Ce tipuri de burse sunt disponibile la Politehnica?",
+        "answer": "La Universitatea Națională de Știință și Tehnologie POLITEHNICA București sunt disponibile următoarele tipuri de burse:\n\n1. **Burse de performanță** - acordate studenților cu rezultate deosebite în activitatea profesională, științifică și de cercetare.\n2. **Burse sociale** - destinate studenților cu venituri reduse, distribuite în ordine crescătoare a venitului net pe membru de familie.\n3. **Burse de voluntariat** - pentru studenții implicați în activități de voluntariat.\n4. **Burse speciale** - acordate pe baza unei metodologii aprobate de senatul universitar.\n5. **Diplome și burse speciale pentru șefii de promoție** - pentru studenții care au obținut rezultate remarcabile.\n6. **Diplome de excelență** - pentru studenții cu rezultate profesionale științifice remarcabile la nivel național și/sau internațional.\n7. **Burse de mobilitate** - pentru studenții care participă la programe internaționale.\n8. **Granturi de studii** - pentru românii de pretutindeni și cetățenii străini, conform metodologiilor proprii.\n\nAceste burse sunt acordate pe toată durata anului universitar, cu excepția burselor sociale ocazionale, și sunt reglementate prin hotărâri ale Senatului Universității, la propunerea Consiliului de Administrație.\n\nSurse:\n- Metodologie burse rectificata, URL: https://upb.ro/wp-content/uploads/2024/12/Metodologie-burse_rectificata.pdf, pagina: 2\n- Metodologie burse rectificata, URL: https://upb.ro/wp-content/uploads/2024/12/Metodologie-burse_rectificata.pdf, pagina: 13",
+        "context": [
+            "d9aaa3233afc85c50c8869a9a97f45c2e80bd9dcea6b434aec2d66ca2234b796-3",
+            "d9aaa3233afc85c50c8869a9a97f45c2e80bd9dcea6b434aec2d66ca2234b796-2",
+            "d9aaa3233afc85c50c8869a9a97f45c2e80bd9dcea6b434aec2d66ca2234b796-18",
+            "3b29b0516a0b7af978077a8daaa189c3b82dad4559940a8acebc9017b6e97310-33",
+            "71788602578701b9e9b11da963eee9859a06e0dc3d482036b87e7c9c12f5fab5-37",
+            "a91f4d68dd54d560f86b6907491cd022cf37f55e4abd59a00f65b8b2c3418dfe-9",
+            "d9aaa3233afc85c50c8869a9a97f45c2e80bd9dcea6b434aec2d66ca2234b796-4"
+        ],
+        "faithfulness_score": 9
+    },
+    {
+        "query": "Cum pot obtine bursa la Politehnica?",
+        "answer": "Pentru a obține o bursă la Universitatea Națională de Știință și Tehnologie POLITEHNICA București, studenții trebuie să îndeplinească anumite criterii de performanță. Universitatea poate acorda burse de performanță pentru rezultate deosebite în activitatea profesională, științifică și de cercetare, precum și pentru implicarea în activitățile comunității. Tipurile de burse includ burse de voluntariat, diplome de merit, diplome și burse speciale pentru șefii de promoție, diplome de excelență pentru studenții cu rezultate remarcabile la nivel național și/sau internațional, burse de mobilități în programe internaționale și alte diplome sau premii. Este important ca studenții să se informeze despre criteriile specifice și procedurile de aplicare pentru bursele disponibile, care pot varia de la un an la altul.\n\nSurse:\n- Regulament privind raportarea instituțională în vederea obținerii finanțării publice a universității, URL: https://upb.ro/wp-content/uploads/2022/11/Regulament-privind-raportarea-institutionala-in-vederea-obtinerii-finantarii-publice-a-universitatii.pdf, pagina: 20",
+        "context": [
+            "3b29b0516a0b7af978077a8daaa189c3b82dad4559940a8acebc9017b6e97310-33",
+            "36527b3da039b452b387028c350e8e537c8c6b5176f91649e53bf33924e493bb-3",
+            "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-97",
+            "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-78",
+            "0939dd251ffa3b90ecb8af564934dc6ba1b92e780dfdf58548d6652a993628eb-47",
+            "0939dd251ffa3b90ecb8af564934dc6ba1b92e780dfdf58548d6652a993628eb-51",
+            "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-281"
+        ],
+        "faithfulness_score": 9
+    },
+    {
+        "query": "Care este media minima necesara pentru a obtine o bursa?",
+        "answer": "Nu am suficiente informații pentru a răspunde la întrebare.",
+        "context": [
+            "d9aaa3233afc85c50c8869a9a97f45c2e80bd9dcea6b434aec2d66ca2234b796-13",
+            "d9aaa3233afc85c50c8869a9a97f45c2e80bd9dcea6b434aec2d66ca2234b796-14",
+            "d9aaa3233afc85c50c8869a9a97f45c2e80bd9dcea6b434aec2d66ca2234b796-10",
+            "85fcf9d8684602276ff1fc4ac04e10d3fb6a6c2732942ac846889086a23d3e5d-5",
+            "36527b3da039b452b387028c350e8e537c8c6b5176f91649e53bf33924e493bb-9",
+            "3b29b0516a0b7af978077a8daaa189c3b82dad4559940a8acebc9017b6e97310-21",
+            "81eecb583745caf19cfcc51fd6934ec333208f8b5736456e051aa42e11c6104e-2"
+        ],
+        "faithfulness_score": 0
+    },
+    {
+        "query": "Care sunt conditiile de promovare a unui an universitar la Politehnica?",
+        "answer": "Condițiile de promovare a unui an universitar la Politehnica București includ acumularea ECTS aferente disciplinelor obligatorii și opționale din planul de învățământ al programului formativ al studentului. Media minimă pentru promovarea examenului de diplomă/licență este de 6. De asemenea, studenții care nu reușesc să ocupe un loc finanțat de la bugetul de stat, în urma redistribuirii locurilor, vor continua studiile în regim cu taxă. Aceste condiții sunt reglementate de regulamentul de organizare și desfășurare a examenelor de finalizare a studiilor, aprobat de către Senatul Politehnica București.\n\nSurse:\n- Regulament organizare studii universitare licență, URL: https://upb.ro/wp-content/uploads/2022/11/Regulament-org-studii-univ-licenta_2024.pdf, pagina: 20",
+        "context": [
+            "bcba579c444019f0d3049720ae28075e7e2d3834011a96d548acb8c751e8d95b-22",
+            "71788602578701b9e9b11da963eee9859a06e0dc3d482036b87e7c9c12f5fab5-15",
+            "3b29b0516a0b7af978077a8daaa189c3b82dad4559940a8acebc9017b6e97310-33",
+            "3b29b0516a0b7af978077a8daaa189c3b82dad4559940a8acebc9017b6e97310-32",
+            "3b29b0516a0b7af978077a8daaa189c3b82dad4559940a8acebc9017b6e97310-35",
+            "3bd13d1d34b8e5760ef3fac434d28f3cde6cb006513c736cba0833a0f067ab49-1",
+            "36527b3da039b452b387028c350e8e537c8c6b5176f91649e53bf33924e493bb-5"
+        ],
+        "faithfulness_score": 10
+    },
+    {
+        "query": "Care este cuantumul taxei de scolarizare la ACS?",
+        "answer": "Nu am suficiente informații pentru a răspunde la întrebare.",
+        "context": [
+            "79426a1571b68492454210a4455253ad1c6ca02f95283000457c0e0eb426d81d-13",
+            "672577271c2e708d1597a074314ae1c6e2c501a0ea55477ba9124d256f0d763d-3",
+            "305ffba5f7d4c89b1b0d23204ead08d29eea1ec1098c7799ba545633bab3c3c2-1",
+            "71788602578701b9e9b11da963eee9859a06e0dc3d482036b87e7c9c12f5fab5-26",
+            "0939dd251ffa3b90ecb8af564934dc6ba1b92e780dfdf58548d6652a993628eb-72",
+            "0939dd251ffa3b90ecb8af564934dc6ba1b92e780dfdf58548d6652a993628eb-74",
+            "3b29b0516a0b7af978077a8daaa189c3b82dad4559940a8acebc9017b6e97310-21"
+        ],
+        "faithfulness_score": 0
+    },
+    {
+        "query": "Cum pot plati taxa de scolarizare?",
+        "answer": "Taxa de școlarizare poate fi plătită prin următoarele metode:\n\n1. **Direct în platforma on-line**: Plata se poate efectua cu card bancar pe site-ul [https://admitere.pub.ro/](https://admitere.pub.ro/).\n2. **Prin transfer bancar**: Aceasta se poate realiza fie într-o aplicație de e-banking, fie la ghișeul unei bănci, având menționate la explicațiile plății numele și prenumele complet al candidatului, precum și Facultatea de bază la care acesta se înscrie pentru concursul de admitere.\n\nSurse:\n- Taxa de înscriere, URL: https://fils.upb.ro/wp-content/uploads/2025/01/Taxa-de-inscriere-LICENTA-2025-2.pdf, pagina: 1",
+        "context": [
+            "672577271c2e708d1597a074314ae1c6e2c501a0ea55477ba9124d256f0d763d-14",
+            "672577271c2e708d1597a074314ae1c6e2c501a0ea55477ba9124d256f0d763d-3",
+            "020962287c1797917927df2a9e9c5f1c0d701b8180527b701504210f7f4b3927-1",
+            "0939dd251ffa3b90ecb8af564934dc6ba1b92e780dfdf58548d6652a993628eb-72",
+            "a37342ebebbd2f79a70786a132bbcef95f2580f4ba5ed4d031106c77e9acf1dc-1",
+            "70316c29c4e024cfb07239b8cb041fe2e61b063ecc31311c2a24497c18e0195a-9",
+            "71788602578701b9e9b11da963eee9859a06e0dc3d482036b87e7c9c12f5fab5-26"
+        ],
+        "faithfulness_score": 10
+    },
+    {
+        "query": "Cum se calculeaza media de bursa la Politehnica?",
+        "answer": "Nu am suficiente informații pentru a răspunde la întrebare.",
+        "context": [
+            "d9aaa3233afc85c50c8869a9a97f45c2e80bd9dcea6b434aec2d66ca2234b796-14",
+            "d9aaa3233afc85c50c8869a9a97f45c2e80bd9dcea6b434aec2d66ca2234b796-10",
+            "d9aaa3233afc85c50c8869a9a97f45c2e80bd9dcea6b434aec2d66ca2234b796-18",
+            "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-97",
+            "0939dd251ffa3b90ecb8af564934dc6ba1b92e780dfdf58548d6652a993628eb-72",
+            "0939dd251ffa3b90ecb8af564934dc6ba1b92e780dfdf58548d6652a993628eb-1",
+            "71788602578701b9e9b11da963eee9859a06e0dc3d482036b87e7c9c12f5fab5-19"
+        ],
+        "faithfulness_score": 0
+    },
+    {
+        "query": "Exista posibilitatea de a plati taxa de scolarizare in rate?",
+        "answer": "Nu am suficiente informații pentru a răspunde la întrebare.",
+        "context": [
+            "672577271c2e708d1597a074314ae1c6e2c501a0ea55477ba9124d256f0d763d-14",
+            "bcba579c444019f0d3049720ae28075e7e2d3834011a96d548acb8c751e8d95b-15",
+            "672577271c2e708d1597a074314ae1c6e2c501a0ea55477ba9124d256f0d763d-3",
+            "0939dd251ffa3b90ecb8af564934dc6ba1b92e780dfdf58548d6652a993628eb-72",
+            "a37342ebebbd2f79a70786a132bbcef95f2580f4ba5ed4d031106c77e9acf1dc-1",
+            "71788602578701b9e9b11da963eee9859a06e0dc3d482036b87e7c9c12f5fab5-23",
+            "3b29b0516a0b7af978077a8daaa189c3b82dad4559940a8acebc9017b6e97310-13"
+        ],
+        "faithfulness_score": 0
+    },
+    {
+        "query": "Care este calendarul de admitere?",
+        "answer": "# Calendarul de admitere la doctorat\n\n- **Înscrierea**: 1 aprilie – 20 septembrie 2024  \n- **Validarea dosarelor**: 26 aprilie 2024 – 20 septembrie 2024  \n- **Evaluarea dosarelor**: 30 aprilie 2024 – 23 septembrie 2024  \n- **Rezultate evaluare**: 30 aprilie 2024 – 30 august 2024  \n- **Evaluarea candidaților admiși (interviu oral)**: 25-26 septembrie 2024  \n- **Înmatricularea candidaților admiși**: 30 septembrie 2024  \n- **Începerea stagiului doctoral**: 1 octombrie 2024  \n\n# Calendarul de admitere la masterat\n\n## Sesiunea Mai 2025  \n- **Înscriere**: 15 decembrie – 9 mai  \n- **Verificarea dosarelor**: 14 aprilie – 9 mai  \n- **Concurs**: 13-16 mai  \n- **Rezultate**: 17 mai  \n- **Înmatriculare**: 01-31 iulie  \n\n## Sesiunea Iulie 2025  \n- **Înscriere**: 30.06 – 07.07.2025  \n- **Concurs de admitere**: 09.07 – 11.07.2025  \n- **Comunicarea rezultatelor**: 09.07 – 13.07.2025  \n- **Înmatricularea candidaților**: 15.07 – 31.07.2025  \n\n## Sesiunea Septembrie 2025  \n- **Înscriere**: 01.09 – 13.09.2025  \n- **Concurs de admitere**: 15.09 – 17.09.2025  \n- **Comunicarea rezultatelor**: 16.09 – 17.09.2025  \n- **Înmatricularea candidaților**: 17.09 – 19.09.2025  \n\n\nSurse:\n- URL: https://acs.pub.ro/admitere/doctorat/\n- URL: https://acs.pub.ro/admitere/masterat/\n- https://www.fiir.upb.ro/Upload/Master/Admitere/2025/admitere_anticipata/ADMITERE_MASTERAT_FIIR-2025-Informatii_generale.pdf, URL: https://www.fiir.upb.ro/Upload/Master/Admitere/2025/admitere_anticipata/ADMITERE_MASTERAT_FIIR-2025-Informatii_generale.pdf, pagina: 2\n- https://www.fiir.upb.ro/Upload/Master/Admitere/2025/admitere_anticipata/ADMITERE_MASTERAT_FIIR-2025-Informatii_generale.pdf, URL: https://www.fiir.upb.ro/Upload/Master/Admitere/2025/admitere_anticipata/ADMITERE_MASTERAT_FIIR-2025-Informatii_generale.pdf, pagina: 3",
+        "context": [
+            "a6d9cdea7b06db11d13e1fd4b50c30fbca9db6da2616cd019773eb4baee44a2e-2",
+            "1b1ea7137bcac57a08ed409352d4dafea078d3672aaa23e9e88a89e6ba380ff4-1",
+            "0a7047bd9ee00f3d76a3f6e330d97e214cbc6a81ed25ef001a0d2834d408455f-1",
+            "6b808561f11405e18487fc62e100ff4fa8a350384fb5f9ec6723131d690d862f-5",
+            "6ccd6e8cf90ac5e0f62d36ab0c6545bdb0df7714986675e4854d0f00e6cfc934-1",
+            "6b808561f11405e18487fc62e100ff4fa8a350384fb5f9ec6723131d690d862f-7",
+            "a6d9cdea7b06db11d13e1fd4b50c30fbca9db6da2616cd019773eb4baee44a2e-3"
+        ],
+        "faithfulness_score": 10
+    },
+    {
+        "query": "Cum pot intra pe locurile pentru olimpici la admiterea la licenta la ACS?",
+        "answer": "Pentru a intra pe locurile destinate olimpicilor la admiterea la licență la Universitatea Națională de Știință și Tehnologie POLITEHNICA București (ACS), trebuie să îndeplinești următoarele condiții:\n\n1. **Obținerea de distincții**: Absolvenții de liceu care au obținut premii (I, II, III) sau mențiuni la olimpiadele școlare internaționale recunoscute de Ministerul Educației pot beneficia de admitere fără susținerea concursului de admitere, la cerere.\n\n2. **Înscrierea**: Este necesar să te înscrii în cadrul numărului de locuri/granturi alocate pentru admiterea în învățământul superior de stat, în domeniile de studiu corespunzătoare disciplinelor la care ai fost distins.\n\n3. **Perioada de eligibilitate**: Candidații care au obținut aceste performanțe în timpul studiilor liceale beneficiază de facilitățile menționate pe o perioadă de cel mult trei ani de la absolvirea liceului.\n\nPentru detalii suplimentare, este recomandat să consulți regulamentul specific al universității sau să contactezi biroul de admitere al ACS.\n\nSurse:\n- Anexa VI Admiterea olimpicilor și a candidaților cu rezultate deosebite, URL: https://admitere.pub.ro/docs/Anexa_VI_Regulament_2025.pdf, pagina: 1\n- Admiterea olimpicilor și a candidaților cu rezultate deosebite, URL: https://www.upit.ro/_document/300296/admiterea_olimpicilor_si_a_candidatilor_cu_rezultate_deosebite.pdf, pagina: 1",
+        "context": [
+            "90d452286979bc3ba13df942fe481c229bca45f701e35a41aac700dcf99479f4-1",
+            "d30921449a2b0b31d12ccc546028a7e3af51f9dc6a39bcbd675f7003c2029704-7",
+            "d9aaa3233afc85c50c8869a9a97f45c2e80bd9dcea6b434aec2d66ca2234b796-6",
+            "7a3c161eaf2c5b7bc3810c3326c09ba92a280b04a12139ef85fd0206c692aef1-1",
+            "3964e339dd97768e4b15e556ba83828d25ca962d94dc2564c1b90f49c60d9064-1",
+            "90d452286979bc3ba13df942fe481c229bca45f701e35a41aac700dcf99479f4-3",
+            "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-158"
+        ],
+        "faithfulness_score": 10
+    },
+    {
+        "query": "In ce ordine se face admiterea candidatilor la Politehnica?",
+        "answer": "Admiterea candidaților la Politehnica București se desfășoară în mai multe etape, conform regulamentului de admitere. Iată ordinea procesului:\n\n1. **Înscrierea candidaților**: Aceasta se face în perioada specificată în calendarul de admitere, prin completarea dosarului de înscriere pe portalul dedicat. Candidații pot fi admiși fără concurs, pe baza rezultatelor la olimpiade și concursuri, sau prin concurs, care constă într-un examen scris.\n\n2. **Validarea dosarului**: După finalizarea înscrierii, dosarele sunt analizate de Comisia Locală de admitere. Candidații care îndeplinesc criteriile vor fi declarați pre-admiși.\n\n3. **Concursul de admitere**: Candidații cu dosarul validat se prezintă la examenul scris, care se desfășoară într-o zi specificată. Detalii precum ora de începere și sălile de examen sunt comunicate pe portalul de admitere.\n\n4. **Validare, confirmare și înmatriculare**: Candidații declarați admiși trebuie să se prezinte la sediul facultății pentru validarea dosarului, confirmarea locului obținut și înmatricularea. Aceasta se face în perioada stabilită, iar candidații care nu se înmatriculează își pierd locul rezervat.\n\n5. **Publicarea rezultatelor**: Rezultatele finale ale admiterii sunt publicate, iar eventualele locuri rămase vacante pot fi redistribuite în sesiuni suplimentare.\n\nAceste etape sunt reglementate de legislația națională și de metodologia adoptată de POLITEHNICA București.\n\nSurse:\n- Regulament admitere licență 2025, URL: https://upb.ro/wp-content/uploads/2024/12/Regulament_admitere_licenta_2025.pdf, pagina: 22\n- Regulament admitere licență 2025, URL: https://upb.ro/wp-content/uploads/2024/12/Regulament_admitere_licenta_2025.pdf, pagina: 42\n- Regulament admitere licență 2025, URL: https://upb.ro/wp-content/uploads/2024/12/Regulament_admitere_licenta_2025.pdf, pagina: 97",
+        "context": [
+            "491f908948d53e5b16fb1e16d5db1345049605301c9e3d3f7116532b523b9d98-5",
+            "2350258c519b2dda96612268851c0f3932f97cd1681d19df7eec652511e653db-12",
+            "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-234",
+            "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-62",
+            "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-235",
+            "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-214",
+            "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-30"
+        ],
+        "faithfulness_score": 10
+    },
+    {
+        "query": "Ma pot inscrie la examenul de admitere la licenta la mai multe facultati?",
+        "answer": "Conform regulamentului de admitere la Universitatea Națională de Știință și Tehnologie POLITEHNICA București (UNSTPB), un candidat se poate înscrie pentru susținerea concursului de admitere prin intermediul unei singure facultăți de bază din UNSTPB. Aceasta este facultatea la care își dorește cel mai mult să urmeze un program de studii, iar candidatul va plăti o singură taxă de înscriere la sesiunea curentă. Astfel, nu este permisă înscrierea la examenul de admitere la mai multe facultăți simultan. \n\nPentru mai multe detalii, vă recomand să consultați regulamentul de admitere disponibil pe site-ul universității.\n\nSurse:\n- Regulamentul privind organizarea și desfășurarea concursului de admitere în ciclul de studii universitare de licență, URL: https://upb.ro/wp-content/uploads/2024/12/Regulament_admitere_licenta_2025.pdf, pagina: 11",
+        "context": [
+            "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-13",
+            "7261d53c1bc03b86e5609b82811972b54096ba162fef6abf2a9fc84018d179b4-10",
+            "57fffc9ae7f67be9c637b16ae3a994af2cbec240e5ea61a02f4d25fea85f1d10-1",
+            "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-14",
+            "a6d93e140ed275d649d698d7fc77e3bef36eb660ae7f730e74df6a05ba887174-6",
+            "95433f95bf4f9e5fef2fb7938a0ae137f2588497cb46ca97e61fd05660532466-1",
+            "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-211"
+        ],
+        "faithfulness_score": 10
+    },
+    {
+        "query": "Care sunt disciplinele de concurs de la examenul de admitere la licenta?",
+        "answer": "Disciplinele de concurs pentru examenul de admitere la licență includ următoarele:\n\n1. **Proba P1**: \n   - Matematică (mediile din clasele IX-XI) sau Chimie anorganică (40%)\n\n2. **Proba P2**: \n   - Fizică, Informatică, Economie, Chimie organică, Biologie, Procesarea computerizată a imaginii, Geografie (mediile din clasele IX-XI) (40%)\n\n3. **Proba P3**: \n   - Media generală de la examenul de Bacalaureat (20%)\n\nAceste discipline sunt utilizate pentru evaluarea performanțelor candidaților și ierarhizarea lor în vederea admiterii, conform regulamentului de admitere.\n\nSurse:\n- Regulament admitere licență 2025, URL: https://upb.ro/wp-content/uploads/2024/12/Regulament_admitere_licenta_2025.pdf, pagina: 14\n- Regulament admitere licență 2025, URL: https://upb.ro/wp-content/uploads/2024/12/Regulament_admitere_licenta_2025.pdf, pagina: 26\n- Cum devii student la Energetica, URL: https://energ.upb.ro/assets/docs/admitere/licenta/Cum_devii_student_la_Energetica_ro.pdf, pagina: 18",
+        "context": [
+            "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-37",
+            "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-18",
+            "a860fecfb47c89e5a6bc295c7fcaf02446c872f33f681a42931f51aacf7e106e-1",
+            "c19be514f53e9a2835519a0ee7a66d214e8146993b799c6e8816566647253006-10",
+            "dfdb8f5a548d82b6a9366ea708589337dc0eba49f639f17a23bcf8d922b12a3f-2",
+            "96e70f4bda047167435c1c790d1eed7085397707930e9d47fee17c191c260855-3",
+            "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-232"
+        ],
+        "faithfulness_score": 7
+    },
+    {
+        "query": "Care este cuantumul taxei de inscriere la examenul de admitere la licenta la Politehnica?",
+        "answer": "Cuantumul taxei de înscriere la examenul de admitere la licență la Universitatea Națională de Știință și Tehnologie POLITEHNICA București este de 125 lei. Aceasta se poate achita direct în platforma online sau prin transfer bancar, având menționate la explicațiile plății numele și prenumele complet al candidatului, precum și facultatea la care acesta se înscrie pentru concursul de admitere.\n\nSurse:\n- URL: https://www.sim.upb.ro/index.php/admitere-licenta/\n- Sursa: https://upb.ro/wp-content/uploads/2024/12/Regulament_admitere_licenta_2025.pdf, URL: https://upb.ro/wp-content/uploads/2024/12/Regulament_admitere_licenta_2025.pdf, pagina: 96",
+        "context": [
+            "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-213",
+            "96e70f4bda047167435c1c790d1eed7085397707930e9d47fee17c191c260855-6",
+            "81eecb583745caf19cfcc51fd6934ec333208f8b5736456e051aa42e11c6104e-2",
+            "c642c14d935f4cf36dcf3277811b920052336016da4e5f53e7161b29d9d179a3-1",
+            "0a7047bd9ee00f3d76a3f6e330d97e214cbc6a81ed25ef001a0d2834d408455f-3",
+            "70316c29c4e024cfb07239b8cb041fe2e61b063ecc31311c2a24497c18e0195a-9",
+            "79426a1571b68492454210a4455253ad1c6ca02f95283000457c0e0eb426d81d-17"
+        ],
+        "faithfulness_score": 10
+    },
+    {
+        "query": "Care este cuantumul taxei de inscriere la examenul de admitere la master la Politehnica?",
+        "answer": "Cuantumul taxei de înscriere la examenul de admitere la masterat la Universitatea Națională de Știință și Tehnologie POLITEHNICA București este de 100 RON. Această taxă se aplică pentru candidații care se înscriu în sesiunea de admitere din iulie 2025 și sesiunea din septembrie 2025.\n\nSurse:\n- ADMITERE_MASTERAT_FIIR-2025-Informatii_generale.pdf, URL: https://www.fiir.upb.ro/Upload/Master/Admitere/2025/admitere_anticipata/ADMITERE_MASTERAT_FIIR-2025-Informatii_generale.pdf, pagina: 2\n- ADMITERE_MASTERAT_FIIR-2025-Informatii_generale.pdf, URL: https://www.fiir.upb.ro/Upload/Master/Admitere/2025/admitere_anticipata/ADMITERE_MASTERAT_FIIR-2025-Informatii_generale.pdf, pagina: 3",
+        "context": [
+            "0a7047bd9ee00f3d76a3f6e330d97e214cbc6a81ed25ef001a0d2834d408455f-3",
+            "6b808561f11405e18487fc62e100ff4fa8a350384fb5f9ec6723131d690d862f-6",
+            "6b808561f11405e18487fc62e100ff4fa8a350384fb5f9ec6723131d690d862f-4",
+            "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-155",
+            "79426a1571b68492454210a4455253ad1c6ca02f95283000457c0e0eb426d81d-17",
+            "79426a1571b68492454210a4455253ad1c6ca02f95283000457c0e0eb426d81d-22",
+            "7bf57b4b6d7cbb0dddcbce41c0a9202ff1f3449b21e0725519cf9b30214b66f8-5"
+        ],
+        "faithfulness_score": 10
+    },
+    {
+        "query": "Care este cuantumul taxei de inscriere la examenul de admitere la doctorat la ACS?",
+        "answer": "Cuantumul taxei de înscriere la concursul de admitere la doctorat la ACS este de 200 RON. Totuși, candidații care au absolvit un program de masterat în POLITEHNICA București beneficiază de o reducere, având taxa de înscriere de 100 RON.\n\nSurse:\n- URL: https://acs.pub.ro/admitere/doctorat/",
+        "context": [
+            "0a7047bd9ee00f3d76a3f6e330d97e214cbc6a81ed25ef001a0d2834d408455f-3",
+            "c642c14d935f4cf36dcf3277811b920052336016da4e5f53e7161b29d9d179a3-1",
+            "6b808561f11405e18487fc62e100ff4fa8a350384fb5f9ec6723131d690d862f-6",
+            "6b808561f11405e18487fc62e100ff4fa8a350384fb5f9ec6723131d690d862f-4",
+            "96e70f4bda047167435c1c790d1eed7085397707930e9d47fee17c191c260855-6",
+            "81eecb583745caf19cfcc51fd6934ec333208f8b5736456e051aa42e11c6104e-2",
+            "36527b3da039b452b387028c350e8e537c8c6b5176f91649e53bf33924e493bb-4"
+        ],
+        "faithfulness_score": 10
+    },
+    {
+        "query": "Cand se afiseaza rezultatele la admiterea la licenta la ACS?",
+        "answer": "Rezultatele preliminare la admiterea la licență la ACS vor fi afișate pe 12 aprilie, iar rezultatele finale pe 16 iulie. Aceste date sunt specificate în regulamentul de admitere pentru anul 2025.\n\nSurse:\n- Regulament admitere licență 2025, URL: https://upb.ro/wp-content/uploads/2024/12/Regulament_admitere_licenta_2025.pdf, pagina: 17\n- Regulament admitere licență 2025, URL: https://upb.ro/wp-content/uploads/2024/12/Regulament_admitere_licenta_2025.pdf, pagina: 44",
+        "context": [
+            "6ccd6e8cf90ac5e0f62d36ab0c6545bdb0df7714986675e4854d0f00e6cfc934-2",
+            "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-23",
+            "491f908948d53e5b16fb1e16d5db1345049605301c9e3d3f7116532b523b9d98-7",
+            "0a7047bd9ee00f3d76a3f6e330d97e214cbc6a81ed25ef001a0d2834d408455f-4",
+            "36527b3da039b452b387028c350e8e537c8c6b5176f91649e53bf33924e493bb-8",
+            "491f908948d53e5b16fb1e16d5db1345049605301c9e3d3f7116532b523b9d98-4",
+            "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-67"
+        ],
+        "faithfulness_score": 8
+    },
+    {
+        "query": "Cand se afiseaza rezultatele la admiterea la licenta la FAIMA?",
+        "answer": "Rezultatele preliminare la admiterea la licență la FAIMA vor fi afișate pe data de 11 iunie 2025, ora 12:00. Rezultatele finale vor fi publicate pe 16 iunie 2025, ora 12:00.\n\nSurse:\n- URL: https://energ.upb.ro/admitere/licenta/informatii-admitere\n- Sursa: http://fsa.pub.ro/wp-content/uploads/2025/02/Admitere-ses1-olimpici-2025.pdf, URL: http://fsa.pub.ro/wp-content/uploads/2025/02/Admitere-ses1-olimpici-2025.pdf, pagina: 1",
+        "context": [
+            "491f908948d53e5b16fb1e16d5db1345049605301c9e3d3f7116532b523b9d98-7",
+            "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-23",
+            "a192eeb16b38c512b52907612a334423de5ea7a64b05047d05038e52e01dcad9-1",
+            "491f908948d53e5b16fb1e16d5db1345049605301c9e3d3f7116532b523b9d98-4",
+            "96e70f4bda047167435c1c790d1eed7085397707930e9d47fee17c191c260855-2",
+            "57fffc9ae7f67be9c637b16ae3a994af2cbec240e5ea61a02f4d25fea85f1d10-4",
+            "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-46"
+        ],
+        "faithfulness_score": 10
+    },
+    {
+        "query": "Ce facultati sunt in cadrul Politehnicii?",
+        "answer": "# Facultățile din cadrul Universității Naționale de Știință și Tehnologie POLITEHNICA București\n\n1. **Facultatea de Inginerie Electrică** (IE)\n2. **Facultatea de Energetică** (lEn)\n3. **Facultatea de Automatică şi Calculatoare** (AC)\n4. **Facultatea de Electronică, Telecomunicații şi Tehnologia Informației** (ETTI)\n5. **Facultatea de Inginerie Mecanică și Mecatronică** (IMM)\n6. **Facultatea de Inginerie Industrială şi Robotică** (IIR)\n7. **Facultatea de Ingineria Sistemelor Biotehnice** (ISB)\n8. **Facultatea de Transporturi** (TR)\n9. **Facultatea de Inginerie Aerospațială** (IA)\n10. **Facultatea de Ştiința şi Ingineria Materialelor** (SIM)\n11. **Facultatea de Inginerie Chimică şi Biotehnologii** (ICBi)\n12. **Facultatea de Inginerie în Limbi Străine** (ILS)\n13. **Facultatea de Ştiințe Aplicate** (SA)\n14. **Facultatea de Inginerie Medicală** (IM)\n15. **Facultatea de Antreprenoriat, Ingineria şi Managementul Afacerilor** (AIMA)\n16. **Departamentul de Formare pentru Cariera Didactica si Ştiințe Socio - Umane** (FCDS-SU)\n17. **Catedra UNESCO Inginerie pentru Societate** (UNESCO)\n18. **Facultatea de Ştiințe, Educație Fizică şi Informatică** (SEFI)\n19. **Facultatea de Mecanică şi Tehnologie** (MT)\n20. **Facultatea de Electronică, Comunicații şi Calculatoare** (ECC)\n21. **Facultatea de Științe Economice și Drept** (SED)\n\nSurse:\n- Regulament privind raportarea institutionala in vederea obtinerii finantarii publice a universității, URL: https://upb.ro/wp-content/uploads/2022/11/Regulament-privind-raportarea-institutionala-in-vederea-obtinerii-finantarii-publice-a-universitatii.pdf, pagina: 36",
+        "context": [
+            "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-9",
+            "0939dd251ffa3b90ecb8af564934dc6ba1b92e780dfdf58548d6652a993628eb-52",
+            "79426a1571b68492454210a4455253ad1c6ca02f95283000457c0e0eb426d81d-3",
+            "0939dd251ffa3b90ecb8af564934dc6ba1b92e780dfdf58548d6652a993628eb-66",
+            "0939dd251ffa3b90ecb8af564934dc6ba1b92e780dfdf58548d6652a993628eb-51",
+            "0939dd251ffa3b90ecb8af564934dc6ba1b92e780dfdf58548d6652a993628eb-60",
+            "3b29b0516a0b7af978077a8daaa189c3b82dad4559940a8acebc9017b6e97310-26"
+        ],
+        "faithfulness_score": 10
+    },
+    {
+        "query": "Cate programe de studii de masterat sunt la ACS?",
+        "answer": "Facultatea de Automatică și Calculatoare (ACS) oferă 25 de programe de studii universitare de masterat acreditate ARACIS. Acestea sunt împărțite în următoarele domenii: 13 programe în domeniul Calculatoare și Tehnologia Informației, 11 programe în domeniul Ingineria Sistemelor și 1 program în domeniul Inginerie și Management.\n\nSurse:\n- URL: https://acs.pub.ro/admitere/masterat/",
+        "context": [
+            "6ccd6e8cf90ac5e0f62d36ab0c6545bdb0df7714986675e4854d0f00e6cfc934-2",
+            "b0cbeb3807d8d4381a6714716c6b975a969f6f161745575e700833bee09cd1c7-1",
+            "be5ae40f334f68882d68d7d4400977cb93057a69e326335fee6a238e0cf042f4-1",
+            "3bd13d1d34b8e5760ef3fac434d28f3cde6cb006513c736cba0833a0f067ab49-1",
+            "79426a1571b68492454210a4455253ad1c6ca02f95283000457c0e0eb426d81d-3",
+            "3bd13d1d34b8e5760ef3fac434d28f3cde6cb006513c736cba0833a0f067ab49-2",
+            "71788602578701b9e9b11da963eee9859a06e0dc3d482036b87e7c9c12f5fab5-16"
+        ],
+        "faithfulness_score": 10
+    },
+    {
+        "query": "Ce materii sunt la facultatea de Automatica si Calculatoare?",
+        "answer": "La Facultatea de Automatică și Calculatoare, studenții urmează cursuri de bază în primii doi ani de studiu, care includ discipline precum:\n- Matematică\n- Fizică\n- Metode numerice de calcul\n- Mecanică\n- Electronică\n- Teoria sistemelor\n\nDe asemenea, studenții își însușesc cunoștințe generale despre:\n- Știința sistemelor\n- Știința și ingineria calculatoarelor\n- Tehnici și limbaje de programare (C, C++, Java, limbaje de asamblare)\n- Cunoștințe de limbi străine.\n\nÎncepând cu anul 3, programele de studiu includ discipline de specialitate, iar studenții urmează cursuri obligatorii și opționale care definesc profilul de bază al specializării. Specializările oferite includ:\n- Automatică și Ingineria Sistemelor\n- Automatică și Informatică Aplicată\n- Arhitectura sistemelor de calcul\n- Sisteme incorporate\n- Sisteme de programe de bază\n- Sisteme de programe de aplicații\n- Tehnologia informației.\n\nSurse:\n- URL: https://acs.pub.ro/educatie/licenta/",
+        "context": [
+            "699b8dd450c1d79a46377ef809f95fb7a405af6c53b96aba0945dd16837ac73c-1",
+            "b0cbeb3807d8d4381a6714716c6b975a969f6f161745575e700833bee09cd1c7-1",
+            "491f908948d53e5b16fb1e16d5db1345049605301c9e3d3f7116532b523b9d98-1",
+            "6ccd6e8cf90ac5e0f62d36ab0c6545bdb0df7714986675e4854d0f00e6cfc934-11",
+            "8aba3ef0eb6c17525f9db33637b2edba7417d5506b86b267ece713e2fa83822e-2",
+            "6ccd6e8cf90ac5e0f62d36ab0c6545bdb0df7714986675e4854d0f00e6cfc934-6",
+            "6ccd6e8cf90ac5e0f62d36ab0c6545bdb0df7714986675e4854d0f00e6cfc934-4"
+        ],
+        "faithfulness_score": 10
+    },
+    {
+        "query": "Care sunt conditiile de admitere la licenta la ETTI?",
+        "answer": "Nu am suficiente informații pentru a răspunde la întrebare.",
+        "context": [
+            "36527b3da039b452b387028c350e8e537c8c6b5176f91649e53bf33924e493bb-4",
+            "3b29b0516a0b7af978077a8daaa189c3b82dad4559940a8acebc9017b6e97310-21",
+            "36527b3da039b452b387028c350e8e537c8c6b5176f91649e53bf33924e493bb-9",
+            "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-211",
+            "81eecb583745caf19cfcc51fd6934ec333208f8b5736456e051aa42e11c6104e-2",
+            "79426a1571b68492454210a4455253ad1c6ca02f95283000457c0e0eb426d81d-17",
+            "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-145"
+        ],
+        "faithfulness_score": 0
+    },
+    {
+        "query": "Care este cuantumul burselor?",
+        "answer": "Nu am suficiente informații pentru a răspunde la întrebare.",
+        "context": [
+            "d9aaa3233afc85c50c8869a9a97f45c2e80bd9dcea6b434aec2d66ca2234b796-10",
+            "d9aaa3233afc85c50c8869a9a97f45c2e80bd9dcea6b434aec2d66ca2234b796-13",
+            "d9aaa3233afc85c50c8869a9a97f45c2e80bd9dcea6b434aec2d66ca2234b796-18",
+            "672577271c2e708d1597a074314ae1c6e2c501a0ea55477ba9124d256f0d763d-14",
+            "bcba579c444019f0d3049720ae28075e7e2d3834011a96d548acb8c751e8d95b-22",
+            "0939dd251ffa3b90ecb8af564934dc6ba1b92e780dfdf58548d6652a993628eb-20",
+            "0939dd251ffa3b90ecb8af564934dc6ba1b92e780dfdf58548d6652a993628eb-72"
+        ],
+        "faithfulness_score": 0
+    },
+    {
+        "query": "Care este cuantumul bursei sociale?",
+        "answer": "Nu am suficiente informații pentru a răspunde la întrebare.",
+        "context": [
+            "d9aaa3233afc85c50c8869a9a97f45c2e80bd9dcea6b434aec2d66ca2234b796-10",
+            "d9aaa3233afc85c50c8869a9a97f45c2e80bd9dcea6b434aec2d66ca2234b796-13",
+            "d9aaa3233afc85c50c8869a9a97f45c2e80bd9dcea6b434aec2d66ca2234b796-18",
+            "d9aaa3233afc85c50c8869a9a97f45c2e80bd9dcea6b434aec2d66ca2234b796-15",
+            "d9aaa3233afc85c50c8869a9a97f45c2e80bd9dcea6b434aec2d66ca2234b796-14",
+            "bcba579c444019f0d3049720ae28075e7e2d3834011a96d548acb8c751e8d95b-21",
+            "bcba579c444019f0d3049720ae28075e7e2d3834011a96d548acb8c751e8d95b-22"
+        ],
+        "faithfulness_score": 0
+    },
+    {
+        "query": "Ce presupune sesiunea 3 de admitere la licenta?",
+        "answer": "Sesiunea III de admitere la licență presupune un proces structurat în trei faze: 1. **Faza I – Înscriere la sesiunea curentă**: Candidații se înscriu online la facultatea dorită. 2. **Faza II – Admitere preliminară (Etapa I)**: Aceasta include evaluarea dosarelor și stabilirea candidaților admiși preliminar. 3. **Faza III – Admitere – Etapa II**: Aceasta constă în validarea, confirmarea locului obținut, participarea la glisare (opțional), înscrierea în anul I și înmatricularea. Este esențial ca toți candidații să parcurgă toate fazele pentru a obține statutul de candidat admis, înscris și înmatriculat în anul I. Detaliile specifice pentru sesiunea III de admitere, inclusiv datele și procedurile, sunt disponibile în regulamentul de admitere.  \n\nPentru anul universitar 2025-2026, admiterea se va desfășura în trei sesiuni: Sesiunea I – Admitere anticipată, Sesiunea II – Admitere și, dacă este cazul, Sesiunea III – Admitere-completare.\n\nSurse:\n- URL: https://chimie.upb.ro/admitere/programe-de-studii-de-licenta/",
+        "context": [
+            "f73ea1d90056ccb3e9135467f94bef99f2294b8ec52d73cc838a697a36565ea8-1",
+            "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-51",
+            "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-12",
+            "1b1ea7137bcac57a08ed409352d4dafea078d3672aaa23e9e88a89e6ba380ff4-1",
+            "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-45",
+            "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-30",
+            "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-64"
+        ],
+        "faithfulness_score": 9
+    },
+    {
+        "query": "Cand are loc simularea examenului de admitere la licenta la ACS?",
+        "answer": "Nu am suficiente informații pentru a răspunde la întrebare.",
+        "context": [
+            "6ccd6e8cf90ac5e0f62d36ab0c6545bdb0df7714986675e4854d0f00e6cfc934-2",
+            "491f908948d53e5b16fb1e16d5db1345049605301c9e3d3f7116532b523b9d98-7",
+            "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-23",
+            "f73ea1d90056ccb3e9135467f94bef99f2294b8ec52d73cc838a697a36565ea8-1",
+            "57fffc9ae7f67be9c637b16ae3a994af2cbec240e5ea61a02f4d25fea85f1d10-4",
+            "1b1ea7137bcac57a08ed409352d4dafea078d3672aaa23e9e88a89e6ba380ff4-1",
+            "6b808561f11405e18487fc62e100ff4fa8a350384fb5f9ec6723131d690d862f-7"
+        ],
+        "faithfulness_score": 0
+    },
+    {
+        "query": "Cum se calculeaza media de admitere la licenta?",
+        "answer": "Media de admitere la licență se calculează utilizând următoarea formulă: M = NC1 * 0.4 + NC2 * 0.4 + NB * 0.2, unde NC1 reprezintă nota pentru proba P1, NC2 pentru proba P2, iar NB pentru proba P3. Această formulă ia în considerare ponderile fiecărei probe în calculul mediei generale de admitere.\n\nSurse:\n- Prezentare calcul medie admitere 2025, URL: https://www.upit.ro/_document/305732/prezentare_calcul_medie_admitere_2025.pdf, pagina: 6",
+        "context": [
+            "85fcf9d8684602276ff1fc4ac04e10d3fb6a6c2732942ac846889086a23d3e5d-5",
+            "36527b3da039b452b387028c350e8e537c8c6b5176f91649e53bf33924e493bb-9",
+            "70316c29c4e024cfb07239b8cb041fe2e61b063ecc31311c2a24497c18e0195a-13",
+            "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-362",
+            "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-361",
+            "6930f6043ce465836c2788efa837b7e6db01b3713a353e51d7fdda1e6a0d1e1e-7",
+            "36527b3da039b452b387028c350e8e537c8c6b5176f91649e53bf33924e493bb-4"
+        ],
+        "faithfulness_score": 10
+    },
+    {
+        "query": "Daca ma inscriu la mai multe facultati pot plati o singura taxa de inscriere?",
+        "answer": "Nu am suficiente informații pentru a răspunde la întrebare.",
+        "context": [
+            "020962287c1797917927df2a9e9c5f1c0d701b8180527b701504210f7f4b3927-1",
+            "c642c14d935f4cf36dcf3277811b920052336016da4e5f53e7161b29d9d179a3-1",
+            "85ab8a2001db129d9b28c1a868567dde770e21f5c8ba133a94ef4814a7badfc9-145",
+            "96e70f4bda047167435c1c790d1eed7085397707930e9d47fee17c191c260855-6",
+            "81eecb583745caf19cfcc51fd6934ec333208f8b5736456e051aa42e11c6104e-2",
+            "79426a1571b68492454210a4455253ad1c6ca02f95283000457c0e0eb426d81d-17",
+            "79426a1571b68492454210a4455253ad1c6ca02f95283000457c0e0eb426d81d-22"
+        ],
+        "faithfulness_score": 0
+    },
+    {
+        "query": "Cum pot opta pentru cazare la camin?",
+        "answer": "Pentru a opta pentru cazare la cămin, studenții trebuie să se prezinte cu legitimația de cămin eliberată și vizată la zi de administratorul căminului. Aceasta este o condiție necesară pentru a avea acces în spațiile de cazare. De asemenea, este important ca studenții să fie înregistrați în sistemul universitar și să respecte regulamentele interne ale Universității Politehnica din București.\n\nSurse:\n- Regulament acces UPB actualizat noiembrie 2022, URL: https://upb.ro/wp-content/uploads/2025/04/Regulament-acces-UPB_actualizat-noiembrie-2022-01.pdf, pagina: 4",
+        "context": [
+            "bcba579c444019f0d3049720ae28075e7e2d3834011a96d548acb8c751e8d95b-9",
+            "5fe6fc7e457fe49fc645ddd2f88550ce3d5a2c0f3f63fa795b3a120b53c2e748-5",
+            "a98a700ef6b47f46f4820a8597f1e9f15e10b6ff2acf9ea891b73ec6c83fabb0-30",
+            "bcba579c444019f0d3049720ae28075e7e2d3834011a96d548acb8c751e8d95b-10",
+            "5fe6fc7e457fe49fc645ddd2f88550ce3d5a2c0f3f63fa795b3a120b53c2e748-7",
+            "a98a700ef6b47f46f4820a8597f1e9f15e10b6ff2acf9ea891b73ec6c83fabb0-53",
+            "cfa34550ed37e5778fc1f1c4e21e758bccc51b15bccd8eae15e654d0f71c4361-10"
+        ],
+        "faithfulness_score": 10
+    },
+    {
+        "query": "Care este structura unui an universitar?",
+        "answer": "Structura anului universitar este aprobată de către Senatul Universității, conform dispozițiilor legale. La începutul fiecărui an universitar, facultățile au obligația de a afișa pe pagina web structura anului universitar și planurile de învățământ pentru fiecare program de studii. De asemenea, fișa disciplinei se aduce la cunoștința studentului de către cadrul didactic titular al disciplinei în cadrul primului curs/seminar al semestrului și se publică pe platforma Moodle.\n\nSurse:\n- Regulament privind organizarea și funcționarea studiilor universitare de masterat, URL: https://upb.ro/wp-content/uploads/2022/11/Regulament-privind-organizarea-si-functionarea-studiilor-universitare-de-masterat.pdf, pagina: 6",
+        "context": [
+            "71788602578701b9e9b11da963eee9859a06e0dc3d482036b87e7c9c12f5fab5-15",
+            "71788602578701b9e9b11da963eee9859a06e0dc3d482036b87e7c9c12f5fab5-36",
+            "3b29b0516a0b7af978077a8daaa189c3b82dad4559940a8acebc9017b6e97310-32",
+            "bcba579c444019f0d3049720ae28075e7e2d3834011a96d548acb8c751e8d95b-22",
+            "71788602578701b9e9b11da963eee9859a06e0dc3d482036b87e7c9c12f5fab5-34",
+            "305ffba5f7d4c89b1b0d23204ead08d29eea1ec1098c7799ba545633bab3c3c2-5",
+            "79426a1571b68492454210a4455253ad1c6ca02f95283000457c0e0eb426d81d-13"
+        ],
+        "faithfulness_score": 10
+    }
+]

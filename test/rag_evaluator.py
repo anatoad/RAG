@@ -23,8 +23,8 @@ class RAGEvaluator:
         self.docs = None
         self.doc_ids = None
         self.dataset = None
-        self.judge_llm = llm or ChatOpenAI(model="gpt-4.1", temperature=0, top_p=1)
-        self.ragas_llm = LangchainLLMWrapper(ChatOpenAI(model="gpt-4.1", temperature=0, top_p=1))
+        self.judge_llm = llm or ChatOpenAI(model="gpt-4.1", temperature=settings.TEMPERATURE)
+        self.ragas_llm = LangchainLLMWrapper(ChatOpenAI(model="gpt-4.1", temperature=settings.TEMPERATURE))
         self.embedding_model = LangchainEmbeddingsWrapper(HuggingFaceEmbeddings(model_name="sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"))
         # Prompts translated to Romanian from:
         # from ragas.metrics import ContextRelevance
@@ -68,6 +68,8 @@ class RAGEvaluator:
             "Orice afirmații din răspuns care nu pot fi deduse din context trebuie penalizate.\n"
             "Având un Răspuns și un Context, acordă un scor pentru acuratețe în intervalul 0–10.\n\n"
             "Trebuie să furnizezi scorul de fidelitate din intervalul 0-10, nimic altceva.\n"
+            "Dacă Răspunsul afirmă că nu are suficiente informații pentru a răspunde sau nu a putut fi generat un răspuns, acordă un scor de 0.\n"
+            "Dacă Răspunsul nu "
             "Nu explica.\n"
             "### Context: {context}\n\n"
             "### Răspuns: {answer}\n"
@@ -80,14 +82,15 @@ class RAGEvaluator:
             "Ea penalizează prezența informațiilor redundante sau a răspunsurilor incomplete în raport cu întrebarea.\n"
             "Având o Întrebare și un Răspuns, acordă un scor pentru relevanță în intervalul 0–10.\n\n"
             "Trebuie să furnizezi scorul de relevanță din intervalul 0-10, nimic altceva.\n"
+            "Dacă Răspunsul afirmă că nu are suficiente informații pentru a răspunde sau nu a putut fi generat un răspuns, acordă un scor de 0.\n"
             "Nu explica.\n"
             "### Întrebare: {question}\n\n"
             "### Răspuns: {answer}\n"
             "Nu încerca să explici.\n"
             "Pe baza Întrebării și Răspunsului furnizate, scorul de relevanță este "
         )
-        self.logs_dir = os.path.join(settings.BASE_DIR, "test", "logs")
-        self.results_dir = os.path.join(settings.BASE_DIR, "test", "results")
+        self.logs_dir = os.path.join(settings.BASE_DIR, "test", f"logs/k={k}")
+        self.results_dir = os.path.join(settings.BASE_DIR, "test", f"results/k={k}")
         self.prompts_dir = os.path.join(settings.BASE_DIR, "test", "prompts")
 
     def load_data(self, data: List[Dict[str, Any]]) -> None:
@@ -121,6 +124,8 @@ class RAGEvaluator:
     
     def _convert_to_dataset(self, data: List[Dict[str, Any]]):
         """ Convert JSON to a RAGAs-compatible dataset. """
+        for entry in data:
+            entry["rubrics"] = {"id": entry["id"]}
         return EvaluationDataset.from_dict(data)
 
     def _append_to_json_file(self, filepath: str, obj: dict) -> None:
@@ -323,24 +328,25 @@ class RAGEvaluator:
         # first load existing results if available
         existing_results = self._load_json(results_filepath) if results_filepath else []
 
-        # identify which entries to evaluate
-        existing_lookup = {item["user_input"]: item for item in existing_results}
-        entries_to_eval, new_entries_to_add = [], []
+        # keep results that match the dataset entries
+        dataset_ids = [entry.rubrics["id"] for entry in self.dataset]
+        dataset_results = [result for result in existing_results if result["id"] in dataset_ids]
+
+        results_lookup = {entry["id"]: entry for entry in dataset_results}
+        entries_to_eval = []
 
         for i, entry in enumerate(self.dataset):
-            existing_entry = existing_lookup.get(entry.user_input)
+            existing_entry = results_lookup.get(entry.rubrics["id"])
 
             if not existing_entry or existing_entry.get(metric_name, "nan") == "nan":
-                entries_to_eval.append(i)
-                new_entries_to_add.append(entry)
+                entries_to_eval.append(entry)
 
         if not entries_to_eval:
             print("All entries already evaluated.")
-            return float(np.mean([float(item.get(metric_name)) for item in existing_results]))
+            return float(np.mean([float(item.get(metric_name)) for item in dataset_results]))
 
         # select only the entries that need evaluation
-        dataset_entries = [self.dataset[i] for i in entries_to_eval]
-        dataset = EvaluationDataset(samples=dataset_entries)
+        dataset = EvaluationDataset(samples=entries_to_eval)
 
         result = evaluate(
             dataset=dataset,
@@ -349,21 +355,20 @@ class RAGEvaluator:
         )
     
         # update or add new results
-        for entry, score_dict in zip(new_entries_to_add, result.scores):
-            user_input = entry.user_input
-            score = str(score_dict.get(metric_name, "nan"))
-
+        for entry, score_dict in zip(entries_to_eval, result.scores):
+            id = entry.rubrics["id"]
             updated_entry = {
-                "user_input": user_input,
+                "id": id,
+                "user_input": entry.user_input,
                 "retrieved_contexts": entry.retrieved_contexts,
                 "response": entry.response,
-                metric_name: score
+                metric_name: str(score_dict.get(metric_name, "nan"))
             }
 
-            if user_input in existing_lookup:
+            if id in results_lookup:
                 # Update the entry
                 for i, item in enumerate(existing_results):
-                    if item["user_input"] == user_input:
+                    if item["id"] == id:
                         existing_results[i] = updated_entry
                         break
             else:
