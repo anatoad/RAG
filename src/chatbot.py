@@ -262,6 +262,9 @@ class Chatbot:
 
     def get_documents(self) -> List[Document]:
         return self.state.get("documents", [])
+    
+    def get_retrieved_scores(self) -> List[int]:
+        return [doc.metadata["score"] for doc in self.state.get("documents", [])]
 
     def _print_conversation_history(self):
         for conversation in self.state["conversation_history"]:

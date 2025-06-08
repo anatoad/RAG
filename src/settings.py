@@ -19,6 +19,7 @@ SPACY_MODEL = "ro_core_news_lg"
 
 OPENAI_MODEL = "gpt-4o-mini"
 TEMPERATURE = 1e-8
+TOP_P = 1
 
 # Define paths dynamically relative to this file
 SRC_DIR = Path(__file__).resolve().parent

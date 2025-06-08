@@ -1,0 +1,8 @@
+{
+    "gemma-3n-e4b-it": {
+        "answer_relevance_gpt_score": 0.63,
+        "answer_relevance_ragas": 0.5124450990406219,
+        "faithfulness_gpt_score": 0.8399999999999999,
+        "faithfulness_ragas": 0.6642926517926517
+    }
+}

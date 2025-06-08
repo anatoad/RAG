@@ -1,0 +1,11 @@
+{
+    "deepseek": {
+        "answer_relevance_gpt_score": 0.7649999999999999,
+        "answer_relevance_ragas": 0.5137790193751176,
+        "faithfulness_gpt_score": 0.9375,
+        "faithfulness_ragas": 0.7523294793466325
+    },
+    "gpt-4o-mini": {
+        "faithfulness_gpt_score": 0.8399999999999999
+    }
+}

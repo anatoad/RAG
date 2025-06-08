@@ -115,6 +115,10 @@ class RAGEvaluator:
         self.doc_ids = [item["retrieved_ids"] for item in data]
 
     def _load_json(self, filepath: str) -> List[dict]:
+        if not os.path.exists(filepath):
+            with open(filepath, "w", encoding="utf-8") as file:
+                json.dump([], file)
+
         with open(filepath, "r", encoding="utf-8") as file:
             try:
                 data = json.load(file)
@@ -174,7 +178,7 @@ class RAGEvaluator:
 
         # average the scores
         avg_score = (score1 + score2) / 2
-        final_score = 1 if avg_score >= 0.25 else 0
+        final_score = 1 if avg_score >= 0.5 else 0
 
         # append llm responses to a log file
         self._append_to_json_file(results_filepath, {
