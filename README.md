@@ -1,8 +1,59 @@
-# Rag
+# RAG Pipeline: End‑to‑End Neural Retrieval and Grounded Generation
 
-## Dependencies
+Multilingual RAG system that crawls, parses, indexes, retrieves, reranks, and generates grounded answers over organizational knowledge, with end‑to‑end Docker orchestration and OpenSearch‑native neural search. Designed and implemented as a Bachelor’s [thesis project](thesis.pdf), emphasizing source attribution, modularity, and leveraging pre-trained deep learning models.
 
-### Virtual environment setup
+### Architecture overview
+
+![Architecture Overview](img/architecture-overview.png)
+
+The system is split into two pipelines:
+
+- **Preprocessing**: executed once to prepare the knowledge base, or periodically to
+update it. It performs data collection with [Scrapy](https://www.scrapy.org/) + [Selenium](https://selenium-python.readthedocs.io/), layout parsing and table extraction with [unstructured](https://github.com/Unstructured-IO/unstructured) and [PyMuPDF](https://pymupdf.readthedocs.io/en/latest/), OCR via [Tesseract](https://github.com/tesseract-ocr/tesseract) (`tesseract-ron` data), cleaning, sentence‑aware chunking, embedding and indexing through an [OpenSearch](https://opensearch.org/) ingest pipeline.
+
+- **Inference**: a [LangGraph](https://www.langchain.com/langgraph)‑orchestrated flow refines the user query using conversation state, performs neural retrieval against the same multilingual embedding model, applies cross‑encoder reranking for fine‑grained relevance, and prompts the LLM to synthesize an answer with explicit source citations.
+
+
+### Software components
+
+![Software Components](img/software-components.png)
+
+A Flask API (Python 3.12) hosts the LangGraph pipeline and exposes /chat and /restart endpoints, while the OpenSearch client ([`opensearch‑py`](https://pypi.org/project/opensearch-py/)) runs in‑process for low‑latency retrieval operations.
+
+- OpenSearch cluster runs in Docker; an ingest pipeline maps "text" → "embedding" using [paraphrase‑multilingual‑MiniLM‑L12‑v2](https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2). 
+- A GPU compute service exposes a /score Flask endpoint for the reranker module, decoupled so it can scale independently or be swapped without touching retrieval components.
+- The LLM provider is abstracted via [LangChain](https://www.langchain.com/), allowing drop‑in replacement of models (e.g., GPT‑4o‑mini) without architectural changes.
+
+
+### Crawler
+
+[Scrapy](https://www.scrapy.org/)-based web crawler for interacting with dynamic web pages. It is designed to extract PDFs and page content from selected URLs (loaded from the `urls.json` file) and save them in a structured format with accompanying metadata.
+
+Features:
+* Store content in human-readable form.
+* HTML content extraction using [trafilatura](https://trafilatura.readthedocs.io/en/latest/) for meaningful page text.
+* Generate structured metadata.
+* Filter outdated file versions: includes a `TARGET_DATE` parameter (default: 2024-10-01) to skip old documents based on the HTTP Last-Modified header. This prevents collecting outdated PDFs from previous years that are still published on the site.
+
+#### Run crawler
+```
+cd crawler/crawler/spiders
+scrapy crawl upb
+```
+
+### Evaluation
+
+The system was evaluated end‑to‑end using two methods: an LLM‑judge protocol (GPT Score) and [RAGAs](https://docs.ragas.io/en/stable/) metrics, each measuring faithfulness to retrieved context and answer relevance to the user query.
+
+- **Metrics:** **GPT‑4.1** was prompted with rubric‑style instructions to score **faithfulness** and **answer relevance**; RAGAs computed Faithfulness via claim‑support checks with a judge LLM and Answer Relevance via cosine similarity between embeddings of synthetic questions and the original query using the same multilingual model.
+- R**eranker ablation and k‑sweep:** Across k ∈ {3,5,7}, adding the cross‑encoder reranker consistently improved **MAP@k, MRR@k, faithfulness, and answer relevance**; k = 5 provided the best trade‑off between context sufficiency and noise, and was selected as default.
+- **Generator comparison:** With k = 5 and temperature 0, **GPT‑4o‑mini** achieved the strongest overall balance of faithfulness, answer relevance, and latency; **DeepSeek‑V3‑0324** trailed with higher latency and cost, while **Gemma‑3n‑E4B** underperformed but offers open‑source/local deployment advantages.
+- **Sanity checks:** Negative‑control prompts yielded near‑zero scores across metrics, validating the evaluation harness; a small non‑zero RAGAs relevance arose from embedding‑space cosine similarity not being strictly orthogonal for unrelated texts.
+
+
+### Quick Start
+
+#### Virtual environment setup
 ```
 python3 -m venv env && source env/bin/activate
 pip install --upgrade pip
@@ -10,20 +61,10 @@ pip install -r requirements.txt
 ```
 `Python 3.12` was used.
 
-### Activate virtual environment
+#### Activate virtual environment
 ```
 source env/bin/activate
 ```
-
-### Tools
-
-Tools used:
-- Scrapy
-- Selenium
-- scrapy-selenium
-- PyMuPDF
-- spaCy
-- tesseract
 
 Install [tesseract](https://tesseract-ocr.github.io/tessdoc/Installation.html) with Romanian language support:
 
@@ -31,24 +72,14 @@ Install [tesseract](https://tesseract-ocr.github.io/tessdoc/Installation.html) w
 sudo pacman -S tesseract tesseract-data-ron
 ```
 
-## Crawler
+#### OpenSearch Dashboard
+[Neural search tutorial](https://opensearch.org/docs/latest/search-plugins/neural-search-tutorial/)
 
-`Scrapy`-based web crawler enhanced with `scrapy-selenium` for interacting with dynamic university web pages. It is designed to extract PDFs and page content from selected URLs (loaded from the `urls.json` file) and save them in a structured format with accompanying metadata.
+Open: `http://localhost:5601/` \
+Default username: `admin` \
+Password: `$OPENSEARCH_INITIAL_ADMIN_PASSWORD`
 
-Features:
-* Store content in human-readable form.
-* HTML content extraction using `trafilatura` for meaningful page text.
-* Generate structured metadata.
-* Filter outdated file versions: includes a `TARGET_DATE` parameter (default: 2024-10-01) to skip old documents based on the HTTP Last-Modified header. This prevents collecting outdated PDFs from previous years that are still published on the site.
-
-
-### Run crawler
-```
-cd crawler/crawler/spiders
-scrapy crawl upb
-```
-
-## Docker setup
+#### Docker setup
 Install `docker` and `docker-compose`
  ```
  sudo pacman -Sy docker docker-compose
@@ -66,257 +97,3 @@ Create and start the cluster as a background process
 docker compose up -d
 ```
 
-## OpenSearch Dashboard
-Open: `http://localhost:5601/` \
-Default username: `admin` \
-Password: `$OPENSEARCH_INITIAL_ADMIN_PASSWORD`
-
-## OpenSearch setup
-#### [Neural search tutorial](https://opensearch.org/docs/latest/search-plugins/neural-search-tutorial/)
-
-#### Update ML-related cluster settings
-```
-PUT _cluster/settings
-{
-  "persistent": {
-    "plugins.ml_commons.only_run_on_ml_node": "false",
-    "plugins.ml_commons.model_access_control_enabled": "true",
-    "plugins.ml_commons.native_memory_threshold": "99",
-    "plugins.ml_commons.allow_registering_model_via_url": "true"
-  }
-}
-```
-
-### Registering a model
-
-#### Register a model group
-```
-POST /_plugins/_ml/model_groups/_register
-{
-  "name": "NLP_model_group",
-  "description": "A model group for NLP models",
-  "access_mode": "public"
-}
-```
-
-You will need the `model_group_id`
-```
-{
-  "model_group_id": "ckKnd5UB_e6dONcE9pdb",
-  "status": "CREATED"
-}
-```
-
-To get all model groups:
-```
-POST /_plugins/_ml/model_groups/_search
-{
-  "query": {
-    "match_all": {}
-  }
-}
-```
-
-
-#### Register the model to the model group
-I used the [paraphrase-multilingual-MiniLM-L12-v2](https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2) sentence-transformer model from Hugging Face, trained on data for 50+ languages, including Romanian.
-
-```
-POST /_plugins/_ml/models/_register
-{
-  "name": "huggingface/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
-  "version": "1.0.1",
-  "model_group_id": "RWo2V5UB7VJulTW8i0FV",
-  "model_format": "TORCH_SCRIPT"
-}
-```
-Response:
-```
-{
-  "task_id": "f0Krd5UB_e6dONcEBpec",
-  "status": "CREATED"
-}
-```
-Use the `task_id`:
-```
-GET /_plugins/_ml/tasks/f0Krd5UB_e6dONcEBpec
-```
-
-```
-{
-  "model_id": "g0Krd5UB_e6dONcEC5dk",
-  "task_type": "REGISTER_MODEL",
-  "function_name": "TEXT_EMBEDDING",
-  "state": "COMPLETED",
-  "worker_node": [
-    "CpF0gs_vT1uHwx_LxmrMVg"
-  ],
-  "create_time": 1741469451791,
-  "last_update_time": 1741469598173,
-  "is_async": true
-}
-```
-
-#### Deploy the model
-```
-POST /_plugins/_ml/models/g0Krd5UB_e6dONcEC5dk/_deploy
-```
-
-### Create an ingest pipeline
-
-Create an ingest pipeline to transform the text into embeddings using the registered embedding model before storing it.
-
-You will need the `model_id` of the model you registered.
-
-```
-PUT /_ingest/pipeline/nlp-ingest-pipeline
-{
-  "description": "An NLP ingest pipeline",
-  "processors": [
-    {
-      "text_embedding": {
-        "model_id": "g0Krd5UB_e6dONcEC5dk",
-        "field_map": {
-          "text": "embedding"
-        }
-      }
-    }
-  ]
-}
-```
-
-The pipeline automatically generates an embedding for `"text"` and stores it in the `"embedding"` field.
-
-
-### Create a KNN index
-```
-PUT /rag-knn-index
-{
-  "settings": {
-    "index.knn": true,
-    "default_pipeline": "nlp-ingest-pipeline"
-  },
-  "mappings": {
-    "properties": {
-      "id": {
-        "type": "text"
-      },
-      "embedding": {
-        "type": "knn_vector",
-        "dimension": 384,
-        "method": {
-          "engine": "lucene",
-          "space_type": "l2",
-          "name": "hnsw",
-          "parameters": {}
-        }
-      },
-      "text": {
-        "type": "text"
-      },
-      "url": {
-        "type": "keyword"
-      },
-      "type": {
-        "type": "keyword"
-      },
-      "filename": {
-        "type": "keyword"
-      },
-      "page_number": {
-        "type": "integer"
-      },
-      "table_id": {
-        "type": "text"
-      },
-      "table_text": {
-        "type": "text"
-      }
-    }
-  }
-}
-```
-
-## Search data
-
-Get all elements
-```
-GET /rag-knn-index/_search
-{
-  "query": {
-    "match_all": {}
-  }
-}
-```
-
-Get number of elements
-```
-GET /rag-knn-index/_count
-{
-  "query": {
-    "match_all": {}
-  }
-}
-```
-
-Semantic search
-```
-GET /rag-knn-index/_search
-{
-  "_source": {
-    "excludes": [
-      "embedding"
-    ]
-  },
-  "query": {
-    "neural": {
-      "embedding": {
-        "query_text": "control financiar preventiv",
-        "model_id": "g0Krd5UB_e6dONcEC5dk",
-        "k": 5
-      }
-    }
-  }
-}
-```
-
-
-## AWS Sagemaker reranker model deployment
----
-#### 1: Create AWS access key
-- IAM Console > Users > select user.
-- Security credentials tab > Create access key.
-- Download and save the access key and secret.
-
-#### 2: Create an IAM role for SageMaker
-- IAM Roles > Create role.
-- Choose SageMaker as the trusted entity.
-- Note ARN.
-
-#### 3: Configure AWS CLI
-```
-aws configure
-```
-
-Region: `eu-west-1`
-
-Output format: json
-
-#### 4: Set up python env
-```
-python -m venv venv
-source venv/bin/activate
-pip install --upgrade pip
-pip install \
-  boto3 \
-  sagemaker \
-  "transformers==4.51.3" \
-  "torch==2.7.0" \
-  opensearch-py \
-  huggingface-hub
-```
-
-#### 5: Deploy the reranker model on SageMaker
-```
-python deploy_reranker_aws.py
-```
